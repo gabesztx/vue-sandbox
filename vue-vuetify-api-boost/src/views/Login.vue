@@ -2,7 +2,11 @@
   <Panel title="Login">
     <template slot="content">
       <v-container grid-list-md class="pt-5">
-        <v-form ref="form" v-model="validInput" @submit.prevent="validateAndLogin">
+        <v-form
+          ref="form"
+          v-model="validInput"
+          @submit.prevent="validateAndLogin"
+        >
           <v-row justify="center">
             <v-col cols="12" md="6" class="pt-3">
               <v-text-field
@@ -26,7 +30,7 @@
                 :rules="[rules.max20Chars]"
                 :append-icon="passShow ? 'mdi-eye' : 'mdi-eye-off'"
                 :type="passShow ? 'password' : 'text'"
-                @click:append="() => (passShow = !passShow)"
+                @click:append="passShow = !passShow"
               ></v-text-field>
             </v-col>
             <v-col md="12"></v-col>
@@ -40,7 +44,9 @@
                   class="pt-3 caption grey--text text-darken-5"
                   style="text-decoration: none"
                   @click="confirmAndPassReset"
-                >Forgot Password?</a>
+                >
+                  Forgot Password?
+                </a>
               </span>
             </v-col>
             <v-col md="12"></v-col>
