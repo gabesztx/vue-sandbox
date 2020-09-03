@@ -1,4 +1,4 @@
-# web-mobile-project
+# vue-playground
 
 ## Project setup
 ```
