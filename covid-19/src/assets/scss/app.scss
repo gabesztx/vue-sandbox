@@ -1,0 +1,234 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+$pagination-current-background-color: #00d1b2;
+$pagination-focus-color: transparentize;
+$tag-radius: 0;
+
+/*
+
+@media screen and (max-width: $desktop) {
+  .bd-lead {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+@media screen and (max-width: $navbar-breakpoint) {
+  .bd-lead {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+*/
+
+$headerHeight: 55px;
+$navBgColor: #f5f5f5;
+.header-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $headerHeight;
+  z-index: 30;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
+
+  .navbar {
+    height: $headerHeight;
+    background-color: transparent;
+    .logo-title{
+      font-weight: 400;
+      font-size: 20px;
+    }
+    img {
+      max-height: 2.5rem;
+    }
+    .navbar-start{
+      align-items: center;
+    }
+  }
+
+  .navbar-burger {
+    height: inherit;
+  }
+
+}
+
+
+.main-content {
+  margin-top: $headerHeight;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+.box {
+  box-shadow: 3px 6px 15px -4px rgba(0, 0, 0, 0.35);
+  padding: 0;
+  border-radius: 10px;
+}
+
+$hoverColor: #E0E0E0;
+.tags-content {
+  display: flex;
+
+  .tag {
+    margin-right: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      //background-color: $hoverColor;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: $hoverColor;
+
+      &:hover {
+        //background-color: $hoverColor;
+      }
+    }
+  }
+}
+
+.input-content {
+  padding-top: 10px;
+
+  label {
+    color: #363636;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.padding-content {
+  padding: 20px
+}
+
+.settings-content {
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  .settings-item {
+    padding: 5px 15px 5px 0;
+    display: flex;
+
+    label {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title-label {
+    color: #363636;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .tags-content {
+    .tag {
+      &.is-delete {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.collapse-container {
+  position: relative;
+  .copy-btn {
+    position: absolute;
+    border:0;
+    right:20px;
+    top:5px;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #363636;
+    &:hover{
+      color: #535353;
+    }
+  }
+
+  span {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  pre {
+    line-height: 1.5;
+    font-size: 13px;
+    padding: 10px 20px;
+    text-align: left;
+    max-height: 200px;
+  }
+}
+
+.b-table {
+  .table-wrapper {
+    margin-bottom: 0;
+  }
+
+  .level {
+    margin-bottom: 0;
+
+    &:not(.top) {
+      padding-bottom: 0;
+    }
+  }
+
+}
+
+.b-tabs {
+  .tab-content {
+    padding: 0;
+  }
+
+  .tabs {
+    ul {
+      border: 0;
+
+      li {
+        a {
+          border: 0;
+          padding: 0;
+          margin: 0;
+        }
+
+        &.is-active {
+          a {
+            color: #212121;
+            border-bottom-color: #212121;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tag-btn {
+  cursor: pointer;
+  font-size: 0.75rem;
+  height: 2em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border-radius: 4px;
+}
