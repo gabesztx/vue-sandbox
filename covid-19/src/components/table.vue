@@ -45,24 +45,23 @@
       :width="column.width"
       :centered="column.centered"
       :subheading="column.subheading"
+      :cell-class="column.cellClass"
+      :header-class="column.headerClass"
     >
       <template v-if="column.image">
         <img :src="props.row[column.field]" />
       </template>
       <template v-else>
-        {{ props.row[column.field] }}
+        <span :class="column.class">
+          {{ props.row[column.field] }}
+        </span>
       </template>
       <template v-if="column.button">
-        <div
-          class="tag cell-btn"
-          :class="column.button.class" v-on:click="onCellClick(props.row)">
-          {{ column.button.label }}
-        </div>
-        <!-- <b-button
-           :class="column.button.class"
-           :label="column.button.label"
-           v-on:click="onCellClick(props.row)"
-         ></b-button>-->
+        <b-button
+          :class="column.button.class"
+          :label="column.button.label"
+          v-on:click="onCellClick(props.row)"
+        ></b-button>
       </template>
     </b-table-column>
   </b-table>
@@ -136,6 +135,7 @@
       filtersEvent: String,
       centered: Boolean,
       subheading: [String, Number],
+      cellClass: String,
       id: [String, Number],
       image: Boolean,
     },

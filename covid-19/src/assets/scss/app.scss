@@ -2,7 +2,7 @@
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
-//$pagination-current-background-color: #00d1b2;
+
 $pagination-focus-color: transparentize;
 .page-title {
   text-align: center;
@@ -15,8 +15,15 @@ $pagination-focus-color: transparentize;
   }
 }
 
-.cell-btn {
-  cursor: pointer;
+.table {
+  td{
+    //font-size: 14px;
+    font-weight: 400;
+  }
+  .cell-value {}
+  .cell-btn {
+    cursor: pointer;
+  }
 }
 
 

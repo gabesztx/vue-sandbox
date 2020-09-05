@@ -6,19 +6,18 @@
         :data="tableState.data"
         :columns="tableState.columns"
         :sticky-header="false"
-        :paginated="true"
-        :scrollable="true"
+        :paginated="false"
         :pagination-simple="true"
         :pagination-size="'is-small'"
         :per-page="7"
-        :striped="false"
+        :striped="true"
         :narrowed="false"
         :mobile-cards="true"
-        :hoverable="false"
+        :hoverable="true"
         :show-detail-icon="true"
         :sort-icon-size="'is-small'"
         :sort-icon="'menu-up'"
-        @cellClick="onCellClick"
+        @rowClick="onClick"
       ></v-icell-table>
     </div>
   </section>
@@ -27,6 +26,7 @@
 <script lang="ts">
   import { reactive } from '@vue/composition-api';
   import { getGlobalData } from '@/services/covid-19-tracking.service';
+  import router from '@/router';
 
   export default {
     setup() {
@@ -58,24 +58,21 @@
             field: 'deceasedCount',
             label: 'Elhunytak',
           },
-          {
+          /*{
             width: 50,
             button: {
               label: 'Részletek',
-              class: 'is-rounded is-primary is-small',
+              class: 'tag is-primary is-rounded',
             },
-          },
+          },*/
         ],
       });
-      const onRowClick = (row: any) => {
-        console.log('rowClick', row);
-      };
-      const onCellClick = (cell: any) => {
-        console.log('cellClick', cell);
+      const onClick = (cell: any) => {
+        // router.push({ name: 'Detail', params: { id: 'hungary' } });
+        router.push({ path: '/covid/hun' });
       };
       return {
-        onRowClick,
-        onCellClick,
+        onClick,
         tableState,
       };
     },
