@@ -23,13 +23,18 @@
     :sticky-header="stickyHeader"
     :sort-icon="sortIcon"
     :sort-icon-size="sortIconSize"
+    :show-detail-icon="showDetailIcon"
+    :detailed="detailed"
+    :card-layout="cardLayout"
+    :scrollable="scrollable"
     @page-change="onPageChange"
     @select="onSelect"
     @check="onCheck"
+    @click="onRowClick"
   >
     <b-table-column
-      v-for="(column, index) in columns"
       v-slot="props"
+      v-for="(column, index) in columns"
       :key="index"
       :field="column.field"
       :label="column.label"
@@ -38,11 +43,27 @@
       :sortable="column.sortable"
       :visible="column.visible"
       :width="column.width"
+      :centered="column.centered"
+      :subheading="column.subheading"
     >
       <template v-if="column.image">
         <img :src="props.row[column.field]" />
       </template>
-      <template v-else>{{ props.row[column.field] }}</template>
+      <template v-else>
+        {{ props.row[column.field] }}
+      </template>
+      <template v-if="column.button">
+        <div
+          class="tag cell-btn"
+          :class="column.button.class" v-on:click="onCellClick(props.row)">
+          {{ column.button.label }}
+        </div>
+        <!-- <b-button
+           :class="column.button.class"
+           :label="column.button.label"
+           v-on:click="onCellClick(props.row)"
+         ></b-button>-->
+      </template>
     </b-table-column>
   </b-table>
 </template>
@@ -77,6 +98,7 @@
       isRowSelectable: Function,
 
       mobileCards: Boolean,
+      cardLayout: Boolean,
       defaultSort: [String, Array],
       defaultSortDirection: String,
       sortIcon: String,
@@ -112,6 +134,8 @@
       stickyHeader: Boolean,
       height: [Number, String],
       filtersEvent: String,
+      centered: Boolean,
+      subheading: [String, Number],
       id: [String, Number],
       image: Boolean,
     },
@@ -119,10 +143,15 @@
     setup(props: any, attr: any) {
       const selectValue = ref(props.selected);
       const checkedRowsValue = ref(props.checkedRows);
-
       const onSelect = (value: any) => {
         selectValue.value = value;
         attr.emit('onSelectChange', value);
+      };
+      const onRowClick = (value: any) => {
+        attr.emit('rowClick', value);
+      };
+      const onCellClick = (value: any) => {
+        attr.emit('cellClick', value);
       };
       const onCheck = (value: any) => {
         checkedRowsValue.value = value;
@@ -131,25 +160,16 @@
       const onPageChange = (page: number) => {
         attr.emit('pageChange', page);
       };
-
       return {
         onSelect,
         onCheck,
         onPageChange,
+        onRowClick,
+        onCellClick,
         selectValue,
         checkedRowsValue,
       };
     },
   };
 </script>
-
 <style scoped></style>
-
-<!-- onUpdated(() => {});-->
-<!-- onUnmounted(() => {});-->
-<!--
-const stopWatchEffect = watchEffect(() => {
-if (props.selected) {
-selectValue.value = props.selected;
-}
-});-->

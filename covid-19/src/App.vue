@@ -1,19 +1,14 @@
 <template>
   <div class="app-content">
-    <header class="header-content">
-      <div class="container bd-lead">
-        <div class="columns">
-          <div class="column i-12">
-            <bue-nav-bar></bue-nav-bar>
+    <section class="hero is-light is-small is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="main-content">
+            <router-view />
           </div>
         </div>
       </div>
-    </header>
-    <div class="main-content">
-      <div class="container bd-lead">
-        <router-view />
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 

@@ -1,22 +1,25 @@
 <template>
   <section>
-    <div class="columns">
-      <div class="column is-12">
-        <v-icell-table
-          :data="tableState.data"
-          :columns="tableState.columns"
-          :paginated="true"
-          :pagination-simple="true"
-          :pagination-size="'is-small'"
-          :per-page="10"
-          :striped="true"
-          :narrowed="false"
-          :sort-icon="'menu-up'"
-          :sort-icon-size="'is-small'"
-          :mobile-cards="true"
-          :hoverable="true"
-        ></v-icell-table>
-      </div>
+    <div class="box">
+      <h1 class="title">Covid adatok</h1>
+      <v-icell-table
+        :data="tableState.data"
+        :columns="tableState.columns"
+        :sticky-header="false"
+        :paginated="true"
+        :scrollable="true"
+        :pagination-simple="true"
+        :pagination-size="'is-small'"
+        :per-page="7"
+        :striped="false"
+        :narrowed="false"
+        :mobile-cards="true"
+        :hoverable="false"
+        :show-detail-icon="true"
+        :sort-icon-size="'is-small'"
+        :sort-icon="'menu-up'"
+        @cellClick="onCellClick"
+      ></v-icell-table>
     </div>
   </section>
 </template>
@@ -32,7 +35,6 @@
         columns: [
           {
             field: 'regionFlagUrl',
-            label: '',
             image: true,
             width: 50,
           },
@@ -56,9 +58,24 @@
             field: 'deceasedCount',
             label: 'Elhunytak',
           },
+          {
+            width: 50,
+            button: {
+              label: 'Részletek',
+              class: 'is-rounded is-primary is-small',
+            },
+          },
         ],
       });
+      const onRowClick = (row: any) => {
+        console.log('rowClick', row);
+      };
+      const onCellClick = (cell: any) => {
+        console.log('cellClick', cell);
+      };
       return {
+        onRowClick,
+        onCellClick,
         tableState,
       };
     },

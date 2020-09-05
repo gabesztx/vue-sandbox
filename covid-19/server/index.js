@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
-const unirest = require('unirest');
 const axios = require('axios');
 const app = express();
 
@@ -17,7 +16,6 @@ app.set('env', NODE_ENV);
 app.use(cors());
 
 app.get('/data', (req, res) => {
-  // getCovidData().then(response => {});
   res.send({});
 });
 
