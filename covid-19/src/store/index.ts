@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import CovidModule from './modules/CovidModule';
-
+import CovidDataModule from '@/store/modules/covid-data.module';
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   modules: {
-    covid: CovidModule,
+    covidData: CovidDataModule,
   },
 });
+export const useStore = () => store
 
 // const { useState } = createNamespacedHelpers('covid');
 // export const states = {

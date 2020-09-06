@@ -27,12 +27,12 @@
 <script lang="ts">
   import router from '@/router';
   import { reactive } from '@vue/composition-api';
-  import { getAllData } from '@/services/covid-data.service';
+  // import { getAllData } from '@/services/covid-data.service';
 
   export default {
     setup() {
       const state = reactive({
-        data: getAllData(),
+        data: [],
         columns: columns,
       });
       const onClick = (cell: any) => {
@@ -82,7 +82,3 @@
     */
   ];
 </script>
-
-<!--import { createNamespacedHelpers } from 'vuex-composition-helpers';-->
-<!--const { useState, useActions } = createNamespacedHelpers('covid');-->
-<!--const { setEmptyItems } = useActions(['setEmptyItems']);-->

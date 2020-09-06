@@ -1,9 +1,7 @@
 import Vue from 'vue';
 import VueCompositionApi from '@vue/composition-api';
-
 import App from './App.vue';
 import router from './router';
-import store from './store';
 
 // Import UI
 import Buefy from 'buefy';
@@ -54,6 +52,7 @@ Vue.use(Buefy, {
   defaultDatepickerYearsRange: [-100, 60],
 });
 Vue.use(VueCompositionApi);
+// Vue.use(VuexCompositionApi);
 Vue.use(InputPlugin);
 
 Vue.config.productionTip = false;
@@ -78,6 +77,5 @@ Vue.component('v-icell-table', TableComponent);
 
 new Vue({
   router,
-  store,
-  render: h => h(App),
+  render: (h) => h(App),
 }).$mount('#app');

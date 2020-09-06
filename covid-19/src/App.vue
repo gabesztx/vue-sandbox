@@ -14,6 +14,7 @@
 
 <script lang="ts">
   import { ToastService } from '@/services/toast.service';
+
   export default {
     provide: {
       toastService: new ToastService(),
@@ -21,4 +22,6 @@
   };
 </script>
 
+<!--useStore().getters['count/getCount']-->
+<!--useStore().commit('count/removeCount');-->
 <!--<b-loading :is-full-page="true" :active="loading"></b-loading>-->

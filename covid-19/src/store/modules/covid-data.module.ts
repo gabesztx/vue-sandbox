@@ -3,6 +3,30 @@ import { getAllGlobalData } from '@/services/covid-data.service';
 export default {
   namespaced: true,
   state: {
+    counter: 0,
+  },
+  mutations: {
+    setCount(state) {
+      state.counter++;
+    },
+    removeCount(state) {
+      state.counter--;
+    },
+  },
+  getters: {
+    getCount(state) {
+      return state.counter;
+    },
+  },
+  actions: {},
+};
+
+/*
+import { getAllGlobalData } from '@/services/covid-data.service';
+
+export default {
+  namespaced: true,
+  state: {
     allItems: [],
     loading: false,
   },
@@ -18,9 +42,9 @@ export default {
     },
   },
   getters: {
-  /*  getItems(state) {
+  /!*  getItems(state) {
       return state.allItems;
-    },*/
+    },*!/
   },
   actions: {
     setEmptyItems({ commit }){
@@ -39,3 +63,4 @@ export default {
     },
   },
 };
+*/
