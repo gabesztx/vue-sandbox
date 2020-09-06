@@ -1,7 +1,12 @@
 <template>
   <section>
     <div class="box">
-      <h1 class="title">Covid</h1>
+      <div class="title-content">
+        <h1 class="title">Covid</h1>
+        <figure class="image is-48x48">
+          <img src="@/assets/covid-icon.png">
+        </figure>
+      </div>
       <v-icell-table
         :data="state.data"
         :columns="state.columns"

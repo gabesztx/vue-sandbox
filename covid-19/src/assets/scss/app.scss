@@ -2,7 +2,6 @@
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
-
 $pagination-focus-color: transparentize;
 .page-title {
   text-align: center;
@@ -14,10 +13,16 @@ $pagination-focus-color: transparentize;
     font-weight: 400;
   }
 }
+.title-content{
+  display: flex;
+  justify-content: space-between;
+  img{
+    margin-top: -5px;
+  }
+}
 
 .table {
   td{
-    //font-size: 14px;
     font-weight: 400;
   }
   .cell-value {}
@@ -25,21 +30,3 @@ $pagination-focus-color: transparentize;
     cursor: pointer;
   }
 }
-
-
-/*
-
-@media screen and (max-width: $desktop) {
-  .bd-lead {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
-}
-
-@media screen and (max-width: $navbar-breakpoint) {
-  .bd-lead {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-*/

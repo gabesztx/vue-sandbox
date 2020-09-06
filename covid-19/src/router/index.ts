@@ -6,7 +6,8 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/covid',
+    // path: '/covid',
+    path: '/',
     name: 'covid-table',
     beforeEnter: covidBeforeEnter,
     component: () => import('@/views/Covid/covid.vue'),
@@ -18,11 +19,11 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/*',
-    redirect: '/covid',
+    redirect: '/',
   },
   {
     path: '/',
-    redirect: '/covid',
+    redirect: '/',
   },
 ];
 

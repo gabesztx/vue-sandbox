@@ -2,7 +2,7 @@
   <b-navbar class="navbar is-light">
     <template slot="brand">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <img src="@/assets/logo-icononly.png" />
+        <img src="@/assets/covid-icon.png" />
       </b-navbar-item>
     </template>
     <template slot="start">
