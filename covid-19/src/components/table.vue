@@ -27,6 +27,7 @@
     :detailed="detailed"
     :card-layout="cardLayout"
     :scrollable="scrollable"
+    :height="height"
     @page-change="onPageChange"
     @select="onSelect"
     @check="onCheck"

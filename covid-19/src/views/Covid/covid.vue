@@ -5,11 +5,12 @@
       <v-icell-table
         :data="tableState.data"
         :columns="tableState.columns"
+        :scrollable="true"
         :sticky-header="false"
-        :paginated="false"
+        :paginated="true"
         :pagination-simple="true"
         :pagination-size="'is-small'"
-        :per-page="7"
+        :per-page="10"
         :striped="true"
         :narrowed="false"
         :mobile-cards="true"
@@ -24,9 +25,9 @@
 </template>
 
 <script lang="ts">
+  import router from '@/router';
   import { reactive } from '@vue/composition-api';
   import { getGlobalData } from '@/services/covid-19-tracking.service';
-  import router from '@/router';
 
   export default {
     setup() {
@@ -68,7 +69,6 @@
         ],
       });
       const onClick = (cell: any) => {
-        // router.push({ name: 'Detail', params: { id: 'hungary' } });
         router.push({ path: '/covid/hun' });
       };
       return {
