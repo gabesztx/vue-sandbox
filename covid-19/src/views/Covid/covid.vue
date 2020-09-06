@@ -8,7 +8,6 @@
         :scrollable="true"
         :sticky-header="false"
         :paginated="true"
-        :height="''"
         :pagination-simple="true"
         :pagination-size="'is-small'"
         :per-page="10"
@@ -28,26 +27,19 @@
 <script lang="ts">
   import router from '@/router';
   import { reactive } from '@vue/composition-api';
-  import { getGlobalData } from '@/services/covid-19-tracking.service';
-  import { createNamespacedHelpers } from 'vuex-composition-helpers';
-  const { useState, useActions } = createNamespacedHelpers('covid');
+  import { getAllData } from '@/services/covid-data.service';
 
   export default {
     setup() {
-      const { isLoading } = useState(['isLoading']);
-      const { isLoadingAction } = useActions(['isLoadingAction']);
       const state = reactive({
-        data: getGlobalData(),
+        data: getAllData(),
         columns: columns,
       });
       const onClick = (cell: any) => {
-        // isLoadingAction();
         router.push({ path: '/covid/hun' });
       };
       return {
         onClick,
-        // getIsLoading,
-        isLoading,
         state,
       };
     },
@@ -79,12 +71,18 @@
       field: 'deceasedCount',
       label: 'Elhunytak',
     },
-    /*{
+    /*
+    {
       width: 50,
       button: {
         label: 'Részletek',
         class: 'tag is-primary is-rounded',
       },
-    },*/
+    },
+    */
   ];
 </script>
+
+<!--import { createNamespacedHelpers } from 'vuex-composition-helpers';-->
+<!--const { useState, useActions } = createNamespacedHelpers('covid');-->
+<!--const { setEmptyItems } = useActions(['setEmptyItems']);-->

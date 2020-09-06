@@ -1,19 +1,19 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import { beforeEnter as covid19BeforeEnter } from '@/services/covid-19-tracking.quard';
+import { covidBeforeEnter } from '@/services/covid-data.quard';
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
     path: '/covid',
-    name: 'Covid',
-    beforeEnter: covid19BeforeEnter,
+    name: 'covid-table',
+    beforeEnter: covidBeforeEnter,
     component: () => import('@/views/Covid/covid.vue'),
   },
   {
     path: '/covid/:id',
-    name: 'Detail',
+    name: 'covid-detail',
     component: () => import('@/views/Covid/covid-detail.vue'),
   },
   {

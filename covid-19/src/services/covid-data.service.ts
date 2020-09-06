@@ -10,16 +10,15 @@ const option = {
   },
 };
 
-let globalData = [];
+export const getAllGlobalData = (): Promise<any> => {
+  const url = `https://${host}/api/covid/globalData`;
+  return http.get(url, option);
+};
 
-export const getGlobalData = () => {
+let globalData = [];
+export const getAllData = () => {
   return globalData.map((data: any) => {
     return data;
   });
 };
-export const setGlobalData = data => (globalData = data);
-
-export const getHttpGlobalData = (): Promise<any> => {
-  const url = `https://${host}/api/covid/globalData`;
-  return http.get(url, option);
-};
+export const setAllData = data => (globalData = data);

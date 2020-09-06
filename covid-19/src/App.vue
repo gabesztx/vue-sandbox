@@ -14,10 +14,11 @@
 
 <script lang="ts">
   import { ToastService } from '@/services/toast.service';
-
   export default {
     provide: {
       toastService: new ToastService(),
     },
   };
 </script>
+
+<!--<b-loading :is-full-page="true" :active="loading"></b-loading>-->
