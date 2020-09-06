@@ -32,7 +32,6 @@
 <script lang="ts">
   import router from '@/router';
   import { reactive } from '@vue/composition-api';
-  // import { getAllData } from '@/services/covid-data.service';
 
   export default {
     setup() {

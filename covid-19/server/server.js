@@ -1,7 +1,8 @@
 const path = require('path');
 const http = require('http');
-// const https = require('https');
-// const axios = require('axios');
+// const db = require('./services/json.service');
+// const covid19Tracking = require('./services/covid-19-tracking');
+
 const cors = require('cors');
 const history = require('connect-history-api-fallback');
 const bodyParser = require('body-parser');
@@ -18,9 +19,7 @@ app.use(express.static(baseURL));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-app.get('/', (req, res) => res.sendFile(`${basePath}/index.html`));
+app.get('/', (req, res) => res.sendFile(`${baseURL}/index.html`));
 
-server.listen(port, () => {
-  console.log(`Server status: running`);
-  console.log(`Server port: ${port}`);
-});
+server.listen(port, () => console.log(`status: running / port: ${port}`));
+

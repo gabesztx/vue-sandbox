@@ -1,5 +1,4 @@
-import http from 'axios';
-
+const http = require('axios');
 const host = 'covid-19-global-tracker-with-regional-data.p.rapidapi.com';
 const option = {
   headers: {
@@ -10,7 +9,11 @@ const option = {
   },
 };
 
-export const getAllGlobalData = (): Promise<any> => {
+const getAllData = () => {
   const url = `https://${host}/api/covid/globalData`;
   return http.get(url, option);
+};
+
+module.exports = {
+  getAllData: getAllData,
 };

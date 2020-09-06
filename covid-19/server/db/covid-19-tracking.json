@@ -1,0 +1,2066 @@
+[
+  {
+    "activeCasesText": "7,001,888",
+    "countryText": "World",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+96,659",
+    "newDeathsText": "+1,790",
+    "totalCasesText": "27,150,802",
+    "totalDeathsText": "884,966",
+    "totalRecoveredText": "19,263,948"
+  },
+  {
+    "activeCasesText": "2,534,772",
+    "countryText": "USA",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+3,698",
+    "newDeathsText": "+69",
+    "totalCasesText": "6,434,850",
+    "totalDeathsText": "192,887",
+    "totalRecoveredText": "3,707,191"
+  },
+  {
+    "activeCasesText": "869,623",
+    "countryText": "India",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+49,654",
+    "newDeathsText": "+441",
+    "totalCasesText": "4,160,493",
+    "totalDeathsText": "71,120",
+    "totalRecoveredText": "3,219,750"
+  },
+  {
+    "activeCasesText": "700,068",
+    "countryText": "Brazil",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,123,000",
+    "totalDeathsText": "126,230",
+    "totalRecoveredText": "3,296,702"
+  },
+  {
+    "activeCasesText": "166,736",
+    "countryText": "Russia",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+5,195",
+    "newDeathsText": "+61",
+    "totalCasesText": "1,025,505",
+    "totalDeathsText": "17,820",
+    "totalRecoveredText": "840,949"
+  },
+  {
+    "activeCasesText": "147,593",
+    "countryText": "Peru",
+    "lastUpdate": "2020-09-06 10:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "683,702",
+    "totalDeathsText": "29,687",
+    "totalRecoveredText": "506,422"
+  },
+  {
+    "activeCasesText": "129,530",
+    "countryText": "Colombia",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "658,456",
+    "totalDeathsText": "21,156",
+    "totalRecoveredText": "507,770"
+  },
+  {
+    "activeCasesText": "60,901",
+    "countryText": "South Africa",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "636,884",
+    "totalDeathsText": "14,779",
+    "totalRecoveredText": "561,204"
+  },
+  {
+    "activeCasesText": "123,329",
+    "countryText": "Mexico",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+6,319",
+    "newDeathsText": "+475",
+    "totalCasesText": "629,409",
+    "totalDeathsText": "67,326",
+    "totalRecoveredText": "438,754"
+  },
+  {
+    "activeCasesText": "N/A",
+    "countryText": "Spain",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "517,133",
+    "totalDeathsText": "29,418",
+    "totalRecoveredText": "N/A"
+  },
+  {
+    "activeCasesText": "112,867",
+    "countryText": "Argentina",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "+68",
+    "totalCasesText": "471,806",
+    "totalDeathsText": "9,807",
+    "totalRecoveredText": "349,132"
+  },
+  {
+    "activeCasesText": "15,916",
+    "countryText": "Chile",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "420,434",
+    "totalDeathsText": "11,551",
+    "totalRecoveredText": "392,967"
+  },
+  {
+    "activeCasesText": "30,465",
+    "countryText": "Iran",
+    "lastUpdate": "2020-09-05 07:34",
+    "newCasesText": "+1,992",
+    "newDeathsText": "+139",
+    "totalCasesText": "386,658",
+    "totalDeathsText": "22,293",
+    "totalRecoveredText": "333,900"
+  },
+  {
+    "activeCasesText": "N/A",
+    "countryText": "UK",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+2,988",
+    "newDeathsText": "+2",
+    "totalCasesText": "347,152",
+    "totalDeathsText": "41,551",
+    "totalRecoveredText": "N/A"
+  },
+  {
+    "activeCasesText": "99,403",
+    "countryText": "Bangladesh",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+1,592",
+    "newDeathsText": "+32",
+    "totalCasesText": "325,157",
+    "totalDeathsText": "4,479",
+    "totalRecoveredText": "221,275"
+  },
+  {
+    "activeCasesText": "19,870",
+    "countryText": "Saudi Arabia",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+756",
+    "newDeathsText": "+32",
+    "totalCasesText": "320,688",
+    "totalDeathsText": "4,081",
+    "totalRecoveredText": "296,737"
+  },
+  {
+    "activeCasesText": "199,535",
+    "countryText": "France",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "317,706",
+    "totalDeathsText": "30,724",
+    "totalRecoveredText": "87,447"
+  },
+  {
+    "activeCasesText": "6,269",
+    "countryText": "Pakistan",
+    "lastUpdate": "2020-09-06 10:38",
+    "newCasesText": "+484",
+    "newDeathsText": "+2",
+    "totalCasesText": "298,509",
+    "totalDeathsText": "6,342",
+    "totalRecoveredText": "285,898"
+  },
+  {
+    "activeCasesText": "21,516",
+    "countryText": "Turkey",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "278,228",
+    "totalDeathsText": "6,620",
+    "totalRecoveredText": "250,092"
+  },
+  {
+    "activeCasesText": "32,078",
+    "countryText": "Italy",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "+1,297",
+    "newDeathsText": "+7",
+    "totalCasesText": "277,634",
+    "totalDeathsText": "35,541",
+    "totalRecoveredText": "210,015"
+  },
+  {
+    "activeCasesText": "54,038",
+    "countryText": "Iraq",
+    "lastUpdate": "2020-09-06 09:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "256,719",
+    "totalDeathsText": "7,422",
+    "totalRecoveredText": "195,259"
+  },
+  {
+    "activeCasesText": "15,521",
+    "countryText": "Germany",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+74",
+    "newDeathsText": "",
+    "totalCasesText": "251,130",
+    "totalDeathsText": "9,401",
+    "totalRecoveredText": "226,208"
+  },
+  {
+    "activeCasesText": "48,803",
+    "countryText": "Philippines",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+2,839",
+    "newDeathsText": "+85",
+    "totalCasesText": "237,365",
+    "totalDeathsText": "3,875",
+    "totalRecoveredText": "184,687"
+  },
+  {
+    "activeCasesText": "47,509",
+    "countryText": "Indonesia",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "+3,444",
+    "newDeathsText": "+85",
+    "totalCasesText": "194,109",
+    "totalDeathsText": "8,025",
+    "totalRecoveredText": "138,575"
+  },
+  {
+    "activeCasesText": "70,821",
+    "countryText": "Ukraine",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+2,107",
+    "newDeathsText": "+35",
+    "totalCasesText": "135,894",
+    "totalDeathsText": "2,846",
+    "totalRecoveredText": "62,227"
+  },
+  {
+    "activeCasesText": "6,372",
+    "countryText": "Canada",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+158",
+    "newDeathsText": "+2",
+    "totalCasesText": "131,653",
+    "totalDeathsText": "9,145",
+    "totalRecoveredText": "116,136"
+  },
+  {
+    "activeCasesText": "26,232",
+    "countryText": "Israel",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "+413",
+    "newDeathsText": "+3",
+    "totalCasesText": "129,349",
+    "totalDeathsText": "1,010",
+    "totalRecoveredText": "102,107"
+  },
+  {
+    "activeCasesText": "45,277",
+    "countryText": "Bolivia",
+    "lastUpdate": "2020-09-05 15:35",
+    "newCasesText": "+661",
+    "newDeathsText": "+55",
+    "totalCasesText": "120,241",
+    "totalDeathsText": "5,398",
+    "totalRecoveredText": "69,566"
+  },
+  {
+    "activeCasesText": "2,894",
+    "countryText": "Qatar",
+    "lastUpdate": "2020-09-06 08:37",
+    "newCasesText": "+231",
+    "newDeathsText": "+1",
+    "totalCasesText": "120,095",
+    "totalDeathsText": "203",
+    "totalRecoveredText": "116,998"
+  },
+  {
+    "activeCasesText": "9,017",
+    "countryText": "Ecuador",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "118,045",
+    "totalDeathsText": "6,724",
+    "totalRecoveredText": "102,304"
+  },
+  {
+    "activeCasesText": "5,695",
+    "countryText": "Kazakhstan",
+    "lastUpdate": "2020-09-06 09:38",
+    "newCasesText": "+76",
+    "newDeathsText": "",
+    "totalCasesText": "106,301",
+    "totalDeathsText": "1,588",
+    "totalRecoveredText": "99,018"
+  },
+  {
+    "activeCasesText": "16,993",
+    "countryText": "Egypt",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "99,712",
+    "totalDeathsText": "5,511",
+    "totalRecoveredText": "77,208"
+  },
+  {
+    "activeCasesText": "25,035",
+    "countryText": "Dominican Republic",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "98,776",
+    "totalDeathsText": "1,840",
+    "totalRecoveredText": "71,901"
+  },
+  {
+    "activeCasesText": "25,007",
+    "countryText": "Panama",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "96,305",
+    "totalDeathsText": "2,075",
+    "totalRecoveredText": "69,223"
+  },
+  {
+    "activeCasesText": "50,814",
+    "countryText": "Romania",
+    "lastUpdate": "2020-09-05 03:34",
+    "newCasesText": "+1,150",
+    "newDeathsText": "+43",
+    "totalCasesText": "95,014",
+    "totalDeathsText": "3,893",
+    "totalRecoveredText": "40,307"
+  },
+  {
+    "activeCasesText": "8,517",
+    "countryText": "Kuwait",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+619",
+    "newDeathsText": "+4",
+    "totalCasesText": "89,582",
+    "totalDeathsText": "544",
+    "totalRecoveredText": "80,521"
+  },
+  {
+    "activeCasesText": "59,364",
+    "countryText": "Belgium",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+651",
+    "newDeathsText": "+5",
+    "totalCasesText": "87,825",
+    "totalDeathsText": "9,906",
+    "totalRecoveredText": "18,555"
+  },
+  {
+    "activeCasesText": "3,938",
+    "countryText": "Oman",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+692",
+    "newDeathsText": "+23",
+    "totalCasesText": "87,072",
+    "totalDeathsText": "728",
+    "totalRecoveredText": "82,406"
+  },
+  {
+    "activeCasesText": "186",
+    "countryText": "China",
+    "lastUpdate": "2020-09-05 23:36",
+    "newCasesText": "+10",
+    "newDeathsText": "",
+    "totalCasesText": "85,122",
+    "totalDeathsText": "4,634",
+    "totalRecoveredText": "80,302"
+  },
+  {
+    "activeCasesText": "N/A",
+    "countryText": "Sweden",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "84,985",
+    "totalDeathsText": "5,835",
+    "totalRecoveredText": "N/A"
+  },
+  {
+    "activeCasesText": "9,041",
+    "countryText": "Guatemala",
+    "lastUpdate": "2020-09-05 12:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "77,481",
+    "totalDeathsText": "2,845",
+    "totalRecoveredText": "65,595"
+  },
+  {
+    "activeCasesText": "N/A",
+    "countryText": "Netherlands",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+925",
+    "newDeathsText": "+2",
+    "totalCasesText": "74,787",
+    "totalDeathsText": "6,243",
+    "totalRecoveredText": "N/A"
+  },
+  {
+    "activeCasesText": "7,501",
+    "countryText": "UAE",
+    "lastUpdate": "2020-09-06 09:38",
+    "newCasesText": "+513",
+    "newDeathsText": "",
+    "totalCasesText": "73,984",
+    "totalDeathsText": "388",
+    "totalRecoveredText": "66,095"
+  },
+  {
+    "activeCasesText": "284",
+    "countryText": "Belarus",
+    "lastUpdate": "2020-09-05 19:35",
+    "newCasesText": "+196",
+    "newDeathsText": "+6",
+    "totalCasesText": "72,859",
+    "totalDeathsText": "711",
+    "totalRecoveredText": "71,864"
+  },
+  {
+    "activeCasesText": "8,082",
+    "countryText": "Japan",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "70,876",
+    "totalDeathsText": "1,349",
+    "totalRecoveredText": "61,445"
+  },
+  {
+    "activeCasesText": "14,448",
+    "countryText": "Poland",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+437",
+    "newDeathsText": "+7",
+    "totalCasesText": "70,824",
+    "totalDeathsText": "2,120",
+    "totalRecoveredText": "54,256"
+  },
+  {
+    "activeCasesText": "14,902",
+    "countryText": "Morocco",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "70,160",
+    "totalDeathsText": "1,329",
+    "totalRecoveredText": "53,929"
+  },
+  {
+    "activeCasesText": "49,231",
+    "countryText": "Honduras",
+    "lastUpdate": "2020-09-05 11:34",
+    "newCasesText": "+554",
+    "newDeathsText": "+22",
+    "totalCasesText": "64,352",
+    "totalDeathsText": "2,006",
+    "totalRecoveredText": "13,115"
+  },
+  {
+    "activeCasesText": "15,465",
+    "countryText": "Portugal",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "+315",
+    "newDeathsText": "+2",
+    "totalCasesText": "60,258",
+    "totalDeathsText": "1,840",
+    "totalRecoveredText": "42,953"
+  },
+  {
+    "activeCasesText": "35,793",
+    "countryText": "Ethiopia",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "57,466",
+    "totalDeathsText": "897",
+    "totalRecoveredText": "20,776"
+  },
+  {
+    "activeCasesText": "662",
+    "countryText": "Singapore",
+    "lastUpdate": "2020-09-06 07:37",
+    "newCasesText": "+40",
+    "newDeathsText": "",
+    "totalCasesText": "57,022",
+    "totalDeathsText": "27",
+    "totalRecoveredText": "56,333"
+  },
+  {
+    "activeCasesText": "10,929",
+    "countryText": "Nigeria",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "54,905",
+    "totalDeathsText": "1,054",
+    "totalRecoveredText": "42,922"
+  },
+  {
+    "activeCasesText": "3,927",
+    "countryText": "Bahrain",
+    "lastUpdate": "2020-09-05 12:34",
+    "newCasesText": "",
+    "newDeathsText": "+3",
+    "totalCasesText": "54,771",
+    "totalDeathsText": "199",
+    "totalRecoveredText": "50,645"
+  },
+  {
+    "activeCasesText": "9,739",
+    "countryText": "Venezuela",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "52,165",
+    "totalDeathsText": "420",
+    "totalRecoveredText": "42,006"
+  },
+  {
+    "activeCasesText": "28,231",
+    "countryText": "Costa Rica",
+    "lastUpdate": "2020-09-06 00:36",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "46,920",
+    "totalDeathsText": "478",
+    "totalRecoveredText": "18,211"
+  },
+  {
+    "activeCasesText": "17,027",
+    "countryText": "Nepal",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+980",
+    "newDeathsText": "+9",
+    "totalCasesText": "46,257",
+    "totalDeathsText": "289",
+    "totalRecoveredText": "28,941"
+  },
+  {
+    "activeCasesText": "12,041",
+    "countryText": "Algeria",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "46,071",
+    "totalDeathsText": "1,549",
+    "totalRecoveredText": "32,481"
+  },
+  {
+    "activeCasesText": "3,797",
+    "countryText": "Armenia",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "+134",
+    "newDeathsText": "+2",
+    "totalCasesText": "44,783",
+    "totalDeathsText": "897",
+    "totalRecoveredText": "40,089"
+  },
+  {
+    "activeCasesText": "801",
+    "countryText": "Ghana",
+    "lastUpdate": "2020-09-05 12:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "44,777",
+    "totalDeathsText": "283",
+    "totalRecoveredText": "43,693"
+  },
+  {
+    "activeCasesText": "3,517",
+    "countryText": "Kyrgyzstan",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+87",
+    "newDeathsText": "",
+    "totalCasesText": "44,403",
+    "totalDeathsText": "1,060",
+    "totalRecoveredText": "39,826"
+  },
+  {
+    "activeCasesText": "5,288",
+    "countryText": "Switzerland",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "+444",
+    "newDeathsText": "",
+    "totalCasesText": "44,401",
+    "totalDeathsText": "2,013",
+    "totalRecoveredText": "37,100"
+  },
+  {
+    "activeCasesText": "2,251",
+    "countryText": "Uzbekistan",
+    "lastUpdate": "2020-09-06 07:37",
+    "newCasesText": "+183",
+    "newDeathsText": "+2",
+    "totalCasesText": "43,476",
+    "totalDeathsText": "345",
+    "totalRecoveredText": "40,880"
+  },
+  {
+    "activeCasesText": "10,935",
+    "countryText": "Moldova",
+    "newCasesText": "+324",
+    "newDeathsText": "",
+    "totalCasesText": "39,797",
+    "totalDeathsText": "1,063",
+    "totalRecoveredText": "27,799"
+  },
+  {
+    "activeCasesText": "6,449",
+    "countryText": "Afghanistan",
+    "lastUpdate": "2020-09-05 05:34",
+    "newCasesText": "+74",
+    "newDeathsText": "+3",
+    "totalCasesText": "38,398",
+    "totalDeathsText": "1,412",
+    "totalRecoveredText": "30,537"
+  },
+  {
+    "activeCasesText": "2,076",
+    "countryText": "Azerbaijan",
+    "newCasesText": "+137",
+    "newDeathsText": "+3",
+    "totalCasesText": "37,329",
+    "totalDeathsText": "548",
+    "totalRecoveredText": "34,705"
+  },
+  {
+    "activeCasesText": "13,276",
+    "countryText": "Kenya",
+    "lastUpdate": "2020-09-06 06:37",
+    "newCasesText": "+83",
+    "newDeathsText": "+3",
+    "totalCasesText": "35,103",
+    "totalDeathsText": "597",
+    "totalRecoveredText": "21,230"
+  },
+  {
+    "activeCasesText": "544",
+    "countryText": "Serbia",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+56",
+    "newDeathsText": "+1",
+    "totalCasesText": "31,905",
+    "totalDeathsText": "724",
+    "totalRecoveredText": "30,637"
+  },
+  {
+    "activeCasesText": "4,393",
+    "countryText": "Ireland",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "29,534",
+    "totalDeathsText": "1,777",
+    "totalRecoveredText": "23,364"
+  },
+  {
+    "activeCasesText": "3,492",
+    "countryText": "Austria",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "+184",
+    "newDeathsText": "+1",
+    "totalCasesText": "29,271",
+    "totalDeathsText": "736",
+    "totalRecoveredText": "25,043"
+  },
+  {
+    "activeCasesText": "8,282",
+    "countryText": "Czechia",
+    "lastUpdate": "2020-09-06 09:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "27,752",
+    "totalDeathsText": "431",
+    "totalRecoveredText": "19,039"
+  },
+  {
+    "activeCasesText": "9,734",
+    "countryText": "El Salvador",
+    "lastUpdate": "2020-09-06 06:37",
+    "newCasesText": "+102",
+    "newDeathsText": "+7",
+    "totalCasesText": "26,308",
+    "totalDeathsText": "759",
+    "totalRecoveredText": "15,815"
+  },
+  {
+    "activeCasesText": "3,063",
+    "countryText": "Australia",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+71",
+    "newDeathsText": "+5",
+    "totalCasesText": "26,278",
+    "totalDeathsText": "753",
+    "totalRecoveredText": "22,462"
+  },
+  {
+    "activeCasesText": "9,103",
+    "countryText": "Palestine",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+552",
+    "newDeathsText": "+4",
+    "totalCasesText": "26,127",
+    "totalDeathsText": "181",
+    "totalRecoveredText": "16,843"
+  },
+  {
+    "activeCasesText": "10,649",
+    "countryText": "Paraguay",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "21,871",
+    "totalDeathsText": "412",
+    "totalRecoveredText": "10,810"
+  },
+  {
+    "activeCasesText": "6,196",
+    "countryText": "Bosnia and Herzegovina",
+    "lastUpdate": "2020-09-05 11:34",
+    "newCasesText": "+121",
+    "newDeathsText": "+4",
+    "totalCasesText": "21,560",
+    "totalDeathsText": "655",
+    "totalRecoveredText": "14,709"
+  },
+  {
+    "activeCasesText": "4,697",
+    "countryText": "S. Korea",
+    "lastUpdate": "2020-09-06 09:38",
+    "newCasesText": "+167",
+    "newDeathsText": "+1",
+    "totalCasesText": "21,177",
+    "totalDeathsText": "334",
+    "totalRecoveredText": "16,146"
+  },
+  {
+    "activeCasesText": "13,956",
+    "countryText": "Lebanon",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "20,011",
+    "totalDeathsText": "187",
+    "totalRecoveredText": "5,868"
+  },
+  {
+    "activeCasesText": "741",
+    "countryText": "Cameroon",
+    "lastUpdate": "2020-09-05 04:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "19,604",
+    "totalDeathsText": "415",
+    "totalRecoveredText": "18,448"
+  },
+  {
+    "activeCasesText": "1,030",
+    "countryText": "Ivory Coast",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "18,472",
+    "totalDeathsText": "119",
+    "totalRecoveredText": "17,323"
+  },
+  {
+    "activeCasesText": "1,496",
+    "countryText": "Denmark",
+    "lastUpdate": "2020-09-06 07:37",
+    "newCasesText": "+147",
+    "newDeathsText": "",
+    "totalCasesText": "17,883",
+    "totalDeathsText": "627",
+    "totalRecoveredText": "15,760"
+  },
+  {
+    "activeCasesText": "15,383",
+    "countryText": "Libya",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "+655",
+    "newDeathsText": "+13",
+    "totalCasesText": "17,749",
+    "totalDeathsText": "285",
+    "totalRecoveredText": "2,081"
+  },
+  {
+    "activeCasesText": "4,247",
+    "countryText": "Bulgaria",
+    "lastUpdate": "2020-09-05 07:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "17,050",
+    "totalDeathsText": "671",
+    "totalRecoveredText": "12,132"
+  },
+  {
+    "activeCasesText": "980",
+    "countryText": "Madagascar",
+    "newCasesText": "+50",
+    "newDeathsText": "+1",
+    "totalCasesText": "15,319",
+    "totalDeathsText": "200",
+    "totalRecoveredText": "14,139"
+  },
+  {
+    "activeCasesText": "2,238",
+    "countryText": "North Macedonia",
+    "newCasesText": "+92",
+    "newDeathsText": "+3",
+    "totalCasesText": "15,090",
+    "totalDeathsText": "617",
+    "totalRecoveredText": "12,235"
+  },
+  {
+    "activeCasesText": "3,775",
+    "countryText": "Senegal",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+39",
+    "newDeathsText": "",
+    "totalCasesText": "13,987",
+    "totalDeathsText": "290",
+    "totalRecoveredText": "9,922"
+  },
+  {
+    "activeCasesText": "5,850",
+    "countryText": "Sudan",
+    "lastUpdate": "2020-09-06 13:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "13,407",
+    "totalDeathsText": "832",
+    "totalRecoveredText": "6,725"
+  },
+  {
+    "activeCasesText": "807",
+    "countryText": "Zambia",
+    "newCasesText": "+67",
+    "newDeathsText": "+3",
+    "totalCasesText": "12,776",
+    "totalDeathsText": "295",
+    "totalRecoveredText": "11,674"
+  },
+  {
+    "activeCasesText": "2,758",
+    "countryText": "Croatia",
+    "lastUpdate": "2020-09-06 06:37",
+    "newCasesText": "+225",
+    "newDeathsText": "+1",
+    "totalCasesText": "11,964",
+    "totalDeathsText": "198",
+    "totalRecoveredText": "9,008"
+  },
+  {
+    "activeCasesText": "7,436",
+    "countryText": "Greece",
+    "lastUpdate": "2020-09-06 10:38",
+    "newCasesText": "+138",
+    "newDeathsText": "+4",
+    "totalCasesText": "11,524",
+    "totalDeathsText": "284",
+    "totalRecoveredText": "3,804"
+  },
+  {
+    "activeCasesText": "1,718",
+    "countryText": "Norway",
+    "lastUpdate": "2020-09-06 15:38",
+    "newCasesText": "+34",
+    "newDeathsText": "",
+    "totalCasesText": "11,330",
+    "totalDeathsText": "264",
+    "totalRecoveredText": "9,348"
+  },
+  {
+    "activeCasesText": "499",
+    "countryText": "DRC",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "10,178",
+    "totalDeathsText": "259",
+    "totalRecoveredText": "9,420"
+  },
+  {
+    "activeCasesText": "3,814",
+    "countryText": "Albania",
+    "lastUpdate": "2020-09-05 05:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "10,102",
+    "totalDeathsText": "312",
+    "totalRecoveredText": "5,976"
+  },
+  {
+    "activeCasesText": "775",
+    "countryText": "Guinea",
+    "newCasesText": "+73",
+    "newDeathsText": "",
+    "totalCasesText": "9,722",
+    "totalDeathsText": "61",
+    "totalRecoveredText": "8,886"
+  },
+  {
+    "activeCasesText": "154",
+    "countryText": "Malaysia",
+    "lastUpdate": "2020-09-06 10:38",
+    "newCasesText": "+6",
+    "newDeathsText": "",
+    "totalCasesText": "9,397",
+    "totalDeathsText": "128",
+    "totalRecoveredText": "9,115"
+  },
+  {
+    "activeCasesText": "390",
+    "countryText": "French Guiana",
+    "lastUpdate": "2020-09-05 11:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "9,322",
+    "totalDeathsText": "62",
+    "totalRecoveredText": "8,870"
+  },
+  {
+    "activeCasesText": "1,141",
+    "countryText": "Tajikistan",
+    "lastUpdate": "2020-09-05 17:35",
+    "newCasesText": "+35",
+    "newDeathsText": "",
+    "totalCasesText": "8,792",
+    "totalDeathsText": "70",
+    "totalRecoveredText": "7,581"
+  },
+  {
+    "activeCasesText": "1,124",
+    "countryText": "Gabon",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "8,601",
+    "totalDeathsText": "53",
+    "totalRecoveredText": "7,424"
+  },
+  {
+    "activeCasesText": "4,784",
+    "countryText": "Namibia",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "8,514",
+    "totalDeathsText": "87",
+    "totalRecoveredText": "3,643"
+  },
+  {
+    "activeCasesText": "2,635",
+    "countryText": "Maldives",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "8,486",
+    "totalDeathsText": "29",
+    "totalRecoveredText": "5,822"
+  },
+  {
+    "activeCasesText": "3,805",
+    "countryText": "Hungary",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+495",
+    "newDeathsText": "",
+    "totalCasesText": "8,387",
+    "totalDeathsText": "624",
+    "totalRecoveredText": "3,958"
+  },
+  {
+    "activeCasesText": "2,213",
+    "countryText": "Haiti",
+    "lastUpdate": "2020-09-05 07:34",
+    "newCasesText": "+24",
+    "newDeathsText": "+2",
+    "totalCasesText": "8,360",
+    "totalDeathsText": "214",
+    "totalRecoveredText": "5,933"
+  },
+  {
+    "activeCasesText": "605",
+    "countryText": "Finland",
+    "lastUpdate": "2020-09-06 08:37",
+    "newCasesText": "+30",
+    "newDeathsText": "",
+    "totalCasesText": "8,291",
+    "totalDeathsText": "336",
+    "totalRecoveredText": "7,350"
+  },
+  {
+    "activeCasesText": "316",
+    "countryText": "Mauritania",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "7,134",
+    "totalDeathsText": "160",
+    "totalRecoveredText": "6,658"
+  },
+  {
+    "activeCasesText": "646",
+    "countryText": "Luxembourg",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "6,896",
+    "totalDeathsText": "124",
+    "totalRecoveredText": "6,126"
+  },
+  {
+    "activeCasesText": "1,286",
+    "countryText": "Zimbabwe",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "6,837",
+    "totalDeathsText": "206",
+    "totalRecoveredText": "5,345"
+  },
+  {
+    "activeCasesText": "1,885",
+    "countryText": "Malawi",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "5,611",
+    "totalDeathsText": "175",
+    "totalRecoveredText": "3,551"
+  },
+  {
+    "activeCasesText": "1,091",
+    "countryText": "Montenegro",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "5,422",
+    "totalDeathsText": "107",
+    "totalRecoveredText": "4,224"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Djibouti",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "5,387",
+    "totalDeathsText": "60",
+    "totalRecoveredText": "5,327"
+  },
+  {
+    "activeCasesText": "476",
+    "countryText": "Equatorial Guinea",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,972",
+    "totalDeathsText": "83",
+    "totalRecoveredText": "4,413"
+  },
+  {
+    "activeCasesText": "275",
+    "countryText": "Hong Kong",
+    "lastUpdate": "2020-09-06 06:37",
+    "newCasesText": "+21",
+    "newDeathsText": "",
+    "totalCasesText": "4,879",
+    "totalDeathsText": "94",
+    "totalRecoveredText": "4,510"
+  },
+  {
+    "activeCasesText": "822",
+    "countryText": "Eswatini",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,819",
+    "totalDeathsText": "94",
+    "totalRecoveredText": "3,903"
+  },
+  {
+    "activeCasesText": "2,982",
+    "countryText": "Tunisia",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,776",
+    "totalDeathsText": "93",
+    "totalRecoveredText": "1,701"
+  },
+  {
+    "activeCasesText": "2,849",
+    "countryText": "CAR",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,729",
+    "totalDeathsText": "62",
+    "totalRecoveredText": "1,818"
+  },
+  {
+    "activeCasesText": "1,614",
+    "countryText": "Nicaragua",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,668",
+    "totalDeathsText": "141",
+    "totalRecoveredText": "2,913"
+  },
+  {
+    "activeCasesText": "2,784",
+    "countryText": "Congo",
+    "lastUpdate": "2020-09-06 00:36",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,628",
+    "totalDeathsText": "102",
+    "totalRecoveredText": "1,742"
+  },
+  {
+    "activeCasesText": "1,775",
+    "countryText": "Slovakia",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+88",
+    "newDeathsText": "",
+    "totalCasesText": "4,614",
+    "totalDeathsText": "37",
+    "totalRecoveredText": "2,802"
+  },
+  {
+    "activeCasesText": "2,132",
+    "countryText": "Rwanda",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,349",
+    "totalDeathsText": "18",
+    "totalRecoveredText": "2,199"
+  },
+  {
+    "activeCasesText": "1,736",
+    "countryText": "Mozambique",
+    "lastUpdate": "2020-09-05 00:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,341",
+    "totalDeathsText": "26",
+    "totalRecoveredText": "2,579"
+  },
+  {
+    "activeCasesText": "817",
+    "countryText": "Suriname",
+    "newCasesText": "",
+    "newDeathsText": "+1",
+    "totalCasesText": "4,320",
+    "totalDeathsText": "77",
+    "totalRecoveredText": "3,426"
+  },
+  {
+    "activeCasesText": "628",
+    "countryText": "Cuba",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,298",
+    "totalDeathsText": "100",
+    "totalRecoveredText": "3,570"
+  },
+  {
+    "activeCasesText": "622",
+    "countryText": "Cabo Verde",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "4,275",
+    "totalDeathsText": "42",
+    "totalRecoveredText": "3,611"
+  },
+  {
+    "activeCasesText": "2,062",
+    "countryText": "Uganda",
+    "lastUpdate": "2020-09-05 19:35",
+    "newCasesText": "+128",
+    "newDeathsText": "+2",
+    "totalCasesText": "3,667",
+    "totalDeathsText": "41",
+    "totalRecoveredText": "1,564"
+  },
+  {
+    "activeCasesText": "105",
+    "countryText": "Thailand",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "+6",
+    "newDeathsText": "",
+    "totalCasesText": "3,444",
+    "totalDeathsText": "58",
+    "totalRecoveredText": "3,281"
+  },
+  {
+    "activeCasesText": "370",
+    "countryText": "Mayotte",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "3,374",
+    "totalDeathsText": "40",
+    "totalRecoveredText": "2,964"
+  },
+  {
+    "activeCasesText": "569",
+    "countryText": "Somalia",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "+30",
+    "newDeathsText": "",
+    "totalCasesText": "3,362",
+    "totalDeathsText": "97",
+    "totalRecoveredText": "2,696"
+  },
+  {
+    "activeCasesText": "1,783",
+    "countryText": "Gambia",
+    "newCasesText": "+46",
+    "newDeathsText": "",
+    "totalCasesText": "3,197",
+    "totalDeathsText": "99",
+    "totalRecoveredText": "1,315"
+  },
+  {
+    "activeCasesText": "547",
+    "countryText": "Slovenia",
+    "newCasesText": "+43",
+    "newDeathsText": "",
+    "totalCasesText": "3,165",
+    "totalDeathsText": "135",
+    "totalRecoveredText": "2,483"
+  },
+  {
+    "activeCasesText": "185",
+    "countryText": "Sri Lanka",
+    "newCasesText": "+1",
+    "newDeathsText": "",
+    "totalCasesText": "3,122",
+    "totalDeathsText": "12",
+    "totalRecoveredText": "2,925"
+  },
+  {
+    "activeCasesText": "2,259",
+    "countryText": "Syria",
+    "lastUpdate": "2020-09-05 16:35",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "3,104",
+    "totalDeathsText": "130",
+    "totalRecoveredText": "715"
+  },
+  {
+    "activeCasesText": "1,043",
+    "countryText": "Lithuania",
+    "newCasesText": "+43",
+    "newDeathsText": "",
+    "totalCasesText": "3,083",
+    "totalDeathsText": "86",
+    "totalRecoveredText": "1,954"
+  },
+  {
+    "activeCasesText": "2,042",
+    "countryText": "Jamaica",
+    "newCasesText": "+60",
+    "newDeathsText": "+2",
+    "totalCasesText": "3,024",
+    "totalDeathsText": "32",
+    "totalRecoveredText": "950"
+  },
+  {
+    "activeCasesText": "1,626",
+    "countryText": "Angola",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,935",
+    "totalDeathsText": "117",
+    "totalRecoveredText": "1,192"
+  },
+  {
+    "activeCasesText": "474",
+    "countryText": "Mali",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,833",
+    "totalDeathsText": "126",
+    "totalRecoveredText": "2,233"
+  },
+  {
+    "activeCasesText": "1,206",
+    "countryText": "South Sudan",
+    "lastUpdate": "2020-09-05 14:35",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,544",
+    "totalDeathsText": "48",
+    "totalRecoveredText": "1,290"
+  },
+  {
+    "activeCasesText": "282",
+    "countryText": "Estonia",
+    "lastUpdate": "2020-09-05 16:35",
+    "newCasesText": "+25",
+    "newDeathsText": "",
+    "totalCasesText": "2,516",
+    "totalDeathsText": "64",
+    "totalRecoveredText": "2,170"
+  },
+  {
+    "activeCasesText": "1,502",
+    "countryText": "Bahamas",
+    "newCasesText": "+30",
+    "newDeathsText": "+1",
+    "totalCasesText": "2,506",
+    "totalDeathsText": "56",
+    "totalRecoveredText": "948"
+  },
+  {
+    "activeCasesText": "1,208",
+    "countryText": "Aruba",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,428",
+    "totalDeathsText": "14",
+    "totalRecoveredText": "1,206"
+  },
+  {
+    "activeCasesText": "637",
+    "countryText": "Jordan",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,353",
+    "totalDeathsText": "16",
+    "totalRecoveredText": "1,700"
+  },
+  {
+    "activeCasesText": "1,080",
+    "countryText": "Guinea-Bissau",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,245",
+    "totalDeathsText": "38",
+    "totalRecoveredText": "1,127"
+  },
+  {
+    "activeCasesText": "1,477",
+    "countryText": "Trinidad and Tobago",
+    "newCasesText": "+4",
+    "newDeathsText": "",
+    "totalCasesText": "2,234",
+    "totalDeathsText": "33",
+    "totalRecoveredText": "724"
+  },
+  {
+    "activeCasesText": "380",
+    "countryText": "Benin",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,213",
+    "totalDeathsText": "40",
+    "totalRecoveredText": "1,793"
+  },
+  {
+    "activeCasesText": "88",
+    "countryText": "Iceland",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,136",
+    "totalDeathsText": "10",
+    "totalRecoveredText": "2,038"
+  },
+  {
+    "activeCasesText": "791",
+    "countryText": "Réunion",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,115",
+    "totalDeathsText": "11",
+    "totalRecoveredText": "1,313"
+  },
+  {
+    "activeCasesText": "368",
+    "countryText": "Sierra Leone",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,041",
+    "totalDeathsText": "71",
+    "totalRecoveredText": "1,602"
+  },
+  {
+    "activeCasesText": "398",
+    "countryText": "Malta",
+    "newCasesText": "+25",
+    "newDeathsText": "",
+    "totalCasesText": "2,039",
+    "totalDeathsText": "14",
+    "totalRecoveredText": "1,627"
+  },
+  {
+    "activeCasesText": "1,501",
+    "countryText": "Botswana",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "2,002",
+    "totalDeathsText": "8",
+    "totalRecoveredText": "493"
+  },
+  {
+    "activeCasesText": "214",
+    "countryText": "Yemen",
+    "lastUpdate": "2020-09-05 16:35",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,983",
+    "totalDeathsText": "572",
+    "totalRecoveredText": "1,197"
+  },
+  {
+    "activeCasesText": "116",
+    "countryText": "New Zealand",
+    "lastUpdate": "2020-09-06 10:38",
+    "newCasesText": "+5",
+    "newDeathsText": "",
+    "totalCasesText": "1,772",
+    "totalDeathsText": "24",
+    "totalRecoveredText": "1,632"
+  },
+  {
+    "activeCasesText": "165",
+    "countryText": "Uruguay",
+    "lastUpdate": "2020-09-05 21:36",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,669",
+    "totalDeathsText": "45",
+    "totalRecoveredText": "1,459"
+  },
+  {
+    "activeCasesText": "321",
+    "countryText": "Georgia",
+    "lastUpdate": "2020-09-06 11:38",
+    "newCasesText": "+29",
+    "newDeathsText": "",
+    "totalCasesText": "1,650",
+    "totalDeathsText": "19",
+    "totalRecoveredText": "1,310"
+  },
+  {
+    "activeCasesText": "249",
+    "countryText": "Cyprus",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,507",
+    "totalDeathsText": "21",
+    "totalRecoveredText": "1,237"
+  },
+  {
+    "activeCasesText": "351",
+    "countryText": "Togo",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,477",
+    "totalDeathsText": "32",
+    "totalRecoveredText": "1,094"
+  },
+  {
+    "activeCasesText": "492",
+    "countryText": "Guyana",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,459",
+    "totalDeathsText": "46",
+    "totalRecoveredText": "921"
+  },
+  {
+    "activeCasesText": "206",
+    "countryText": "Latvia",
+    "newCasesText": "+3",
+    "newDeathsText": "",
+    "totalCasesText": "1,428",
+    "totalDeathsText": "35",
+    "totalRecoveredText": "1,187"
+  },
+  {
+    "activeCasesText": "1,026",
+    "countryText": "Myanmar",
+    "newCasesText": "+166",
+    "newDeathsText": "+1",
+    "totalCasesText": "1,419",
+    "totalDeathsText": "8",
+    "totalRecoveredText": "385"
+  },
+  {
+    "activeCasesText": "255",
+    "countryText": "Burkina Faso",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,408",
+    "totalDeathsText": "55",
+    "totalRecoveredText": "1,098"
+  },
+  {
+    "activeCasesText": "1,009",
+    "countryText": "Guadeloupe",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,363",
+    "totalDeathsText": "18",
+    "totalRecoveredText": "336"
+  },
+  {
+    "activeCasesText": "61",
+    "countryText": "Liberia",
+    "lastUpdate": "2020-09-05 10:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,306",
+    "totalDeathsText": "82",
+    "totalRecoveredText": "1,163"
+  },
+  {
+    "activeCasesText": "234",
+    "countryText": "Andorra",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,215",
+    "totalDeathsText": "53",
+    "totalRecoveredText": "928"
+  },
+  {
+    "activeCasesText": "892",
+    "countryText": "Belize",
+    "lastUpdate": "2020-09-06 00:36",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,194",
+    "totalDeathsText": "15",
+    "totalRecoveredText": "287"
+  },
+  {
+    "activeCasesText": "17",
+    "countryText": "Niger",
+    "lastUpdate": "2020-09-05 19:35",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,177",
+    "totalDeathsText": "69",
+    "totalRecoveredText": "1,091"
+  },
+  {
+    "activeCasesText": "589",
+    "countryText": "Lesotho",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,148",
+    "totalDeathsText": "31",
+    "totalRecoveredText": "528"
+  },
+  {
+    "activeCasesText": "199",
+    "countryText": "Vietnam",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,049",
+    "totalDeathsText": "35",
+    "totalRecoveredText": "815"
+  },
+  {
+    "activeCasesText": "43",
+    "countryText": "Chad",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "1,034",
+    "totalDeathsText": "77",
+    "totalRecoveredText": "914"
+  },
+  {
+    "activeCasesText": "24",
+    "countryText": "Sao Tome and Principe",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "898",
+    "totalDeathsText": "15",
+    "totalRecoveredText": "859"
+  },
+  {
+    "activeCasesText": "642",
+    "countryText": "Martinique",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "758",
+    "totalDeathsText": "18",
+    "totalRecoveredText": "98"
+  },
+  {
+    "activeCasesText": "14",
+    "countryText": "San Marino",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "716",
+    "totalDeathsText": "42",
+    "totalRecoveredText": "660"
+  },
+  {
+    "activeCasesText": "48",
+    "countryText": "Diamond Princess",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "712",
+    "totalDeathsText": "13",
+    "totalRecoveredText": "651"
+  },
+  {
+    "activeCasesText": "334",
+    "countryText": "French Polynesia",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "694",
+    "totalDeathsText": "",
+    "totalRecoveredText": "360"
+  },
+  {
+    "activeCasesText": "8",
+    "countryText": "Channel Islands",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "631",
+    "totalDeathsText": "48",
+    "totalRecoveredText": "575"
+  },
+  {
+    "activeCasesText": "329",
+    "countryText": "Turks and Caicos",
+    "newCasesText": "+7",
+    "newDeathsText": "",
+    "totalCasesText": "598",
+    "totalDeathsText": "5",
+    "totalRecoveredText": "264"
+  },
+  {
+    "activeCasesText": "190",
+    "countryText": "Sint Maarten",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "511",
+    "totalDeathsText": "19",
+    "totalRecoveredText": "302"
+  },
+  {
+    "activeCasesText": "305",
+    "countryText": "Tanzania",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "509",
+    "totalDeathsText": "21",
+    "totalRecoveredText": "183"
+  },
+  {
+    "activeCasesText": "13",
+    "countryText": "Taiwan",
+    "lastUpdate": "2020-09-06 05:37",
+    "newCasesText": "+1",
+    "newDeathsText": "",
+    "totalCasesText": "493",
+    "totalDeathsText": "7",
+    "totalRecoveredText": "473"
+  },
+  {
+    "activeCasesText": "251",
+    "countryText": "Papua New Guinea",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "488",
+    "totalDeathsText": "5",
+    "totalRecoveredText": "232"
+  },
+  {
+    "activeCasesText": "102",
+    "countryText": "Burundi",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "460",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "357"
+  },
+  {
+    "activeCasesText": "35",
+    "countryText": "Comoros",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "452",
+    "totalDeathsText": "7",
+    "totalRecoveredText": "410"
+  },
+  {
+    "activeCasesText": "34",
+    "countryText": "Faeroe Islands",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "413",
+    "totalDeathsText": "",
+    "totalRecoveredText": "379"
+  },
+  {
+    "activeCasesText": "11",
+    "countryText": "Mauritius",
+    "lastUpdate": "2020-09-06 12:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "356",
+    "totalDeathsText": "10",
+    "totalRecoveredText": "335"
+  },
+  {
+    "activeCasesText": "1",
+    "countryText": "Isle of Man",
+    "newCasesText": "+1",
+    "newDeathsText": "",
+    "totalCasesText": "337",
+    "totalDeathsText": "24",
+    "totalRecoveredText": "312"
+  },
+  {
+    "activeCasesText": "35",
+    "countryText": "Eritrea",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "330",
+    "totalDeathsText": "",
+    "totalRecoveredText": "295"
+  },
+  {
+    "activeCasesText": "42",
+    "countryText": "Gibraltar",
+    "newCasesText": "+3",
+    "newDeathsText": "",
+    "totalCasesText": "315",
+    "totalDeathsText": "",
+    "totalRecoveredText": "273"
+  },
+  {
+    "activeCasesText": "14",
+    "countryText": "Mongolia",
+    "lastUpdate": "2020-09-06 14:38",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "310",
+    "totalDeathsText": "",
+    "totalRecoveredText": "296"
+  },
+  {
+    "activeCasesText": "2",
+    "countryText": "Cambodia",
+    "lastUpdate": "2020-09-05 12:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "274",
+    "totalDeathsText": "",
+    "totalRecoveredText": "272"
+  },
+  {
+    "activeCasesText": "154",
+    "countryText": "Saint Martin",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "239",
+    "totalDeathsText": "6",
+    "totalRecoveredText": "79"
+  },
+  {
+    "activeCasesText": "78",
+    "countryText": "Bhutan",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "228",
+    "totalDeathsText": "",
+    "totalRecoveredText": "150"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Cayman Islands",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "205",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "204"
+  },
+  {
+    "activeCasesText": "17",
+    "countryText": "Barbados",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "178",
+    "totalDeathsText": "7",
+    "totalRecoveredText": "154"
+  },
+  {
+    "activeCasesText": "8",
+    "countryText": "Bermuda",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "175",
+    "totalDeathsText": "9",
+    "totalRecoveredText": "158"
+  },
+  {
+    "activeCasesText": "44",
+    "countryText": "Monaco",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "147",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "102"
+  },
+  {
+    "activeCasesText": "3",
+    "countryText": "Brunei",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "145",
+    "totalDeathsText": "3",
+    "totalRecoveredText": "139"
+  },
+  {
+    "activeCasesText": "9",
+    "countryText": "Seychelles",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "136",
+    "totalDeathsText": "",
+    "totalRecoveredText": "127"
+  },
+  {
+    "activeCasesText": "9",
+    "countryText": "Liechtenstein",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "107",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "97"
+  },
+  {
+    "activeCasesText": "1",
+    "countryText": "Antigua and Barbuda",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "95",
+    "totalDeathsText": "3",
+    "totalRecoveredText": "91"
+  },
+  {
+    "activeCasesText": "46",
+    "countryText": "Curaçao",
+    "newCasesText": "+4",
+    "newDeathsText": "",
+    "totalCasesText": "92",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "45"
+  },
+  {
+    "activeCasesText": "52",
+    "countryText": "British Virgin Islands",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "63",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "10"
+  },
+  {
+    "activeCasesText": "3",
+    "countryText": "St. Vincent Grenadines",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "61",
+    "totalDeathsText": "",
+    "totalRecoveredText": "58"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Macao",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "46",
+    "totalDeathsText": "",
+    "totalRecoveredText": "46"
+  },
+  {
+    "activeCasesText": "5",
+    "countryText": "Fiji",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "31",
+    "totalDeathsText": "2",
+    "totalRecoveredText": "24"
+  },
+  {
+    "activeCasesText": "2",
+    "countryText": "Timor-Leste",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "27",
+    "totalDeathsText": "",
+    "totalRecoveredText": "25"
+  },
+  {
+    "activeCasesText": "3",
+    "countryText": "New Caledonia",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "26",
+    "totalDeathsText": "",
+    "totalRecoveredText": "23"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Saint Lucia",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "26",
+    "totalDeathsText": "",
+    "totalRecoveredText": "26"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Grenada",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "24",
+    "totalDeathsText": "",
+    "totalRecoveredText": "24"
+  },
+  {
+    "activeCasesText": "4",
+    "countryText": "Dominica",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "22",
+    "totalDeathsText": "",
+    "totalRecoveredText": "18"
+  },
+  {
+    "activeCasesText": "1",
+    "countryText": "Laos",
+    "lastUpdate": "2020-09-06 03:37",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "22",
+    "totalDeathsText": "",
+    "totalRecoveredText": "21"
+  },
+  {
+    "activeCasesText": "11",
+    "countryText": "Caribbean Netherlands",
+    "lastUpdate": "2020-09-05 13:34",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "18",
+    "totalDeathsText": "",
+    "totalRecoveredText": "7"
+  },
+  {
+    "activeCasesText": "5",
+    "countryText": "St. Barth",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "18",
+    "totalDeathsText": "",
+    "totalRecoveredText": "13"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Saint Kitts and Nevis",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "17",
+    "totalDeathsText": "",
+    "totalRecoveredText": "17"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Greenland",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "14",
+    "totalDeathsText": "",
+    "totalRecoveredText": "14"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Montserrat",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "13",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "12"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Falkland Islands",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "13",
+    "totalDeathsText": "",
+    "totalRecoveredText": "13"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Vatican City",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "12",
+    "totalDeathsText": "",
+    "totalRecoveredText": "12"
+  },
+  {
+    "activeCasesText": "1",
+    "countryText": "Western Sahara",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "10",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "8"
+  },
+  {
+    "activeCasesText": "7",
+    "countryText": "MS Zaandam",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "9",
+    "totalDeathsText": "2",
+    "totalRecoveredText": ""
+  },
+  {
+    "activeCasesText": "1",
+    "countryText": "Saint Pierre Miquelon",
+    "newCasesText": "+1",
+    "newDeathsText": "",
+    "totalCasesText": "6",
+    "totalDeathsText": "",
+    "totalRecoveredText": "5"
+  },
+  {
+    "activeCasesText": "0",
+    "countryText": "Anguilla",
+    "newCasesText": "",
+    "newDeathsText": "",
+    "totalCasesText": "3",
+    "totalDeathsText": "",
+    "totalRecoveredText": "3"
+  },
+  {
+    "lastUpdate": "2020-09-06 15:38"
+  }
+]
