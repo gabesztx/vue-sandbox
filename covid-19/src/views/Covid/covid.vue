@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="box">
-      <h1 class="title">Covid adatok</h1>
+      <h1 class="title">Covid</h1>
       <v-icell-table
         :data="tableState.data"
         :columns="tableState.columns"

@@ -9,12 +9,12 @@ const routes: Array<RouteConfig> = [
     path: '/covid',
     name: 'Covid',
     beforeEnter: covid19BeforeEnter,
-    component: () => import('@/views/Covid-19/covid-19.vue'),
+    component: () => import('@/views/Covid/covid.vue'),
   },
   {
     path: '/covid/:id',
     name: 'Detail',
-    component: () => import('@/views/Covid-19/covid-19-detail.vue'),
+    component: () => import('@/views/Covid/covid-detail.vue'),
   },
   {
     path: '/*',
