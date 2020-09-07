@@ -9,11 +9,11 @@ const option = {
   },
 };
 
-const getAllData = () => {
+const getData = () => {
   const url = `https://${host}/api/covid/globalData`;
   return http.get(url, option);
 };
 
 module.exports = {
-  getAllData: getAllData,
+  getData: getData,
 };
