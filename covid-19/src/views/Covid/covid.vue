@@ -15,7 +15,7 @@
         :paginated="true"
         :pagination-simple="true"
         :pagination-size="'is-small'"
-        :per-page="10"
+        :per-page="5"
         :striped="true"
         :narrowed="false"
         :mobile-cards="true"
@@ -32,15 +32,16 @@
 <script lang="ts">
   import router from '@/router';
   import { reactive } from '@vue/composition-api';
+  import { globalData } from '@/services/covid-data.service';
 
   export default {
-    setup() {
+    setup(){
       const state = reactive({
-        data: [],
+        data: globalData,
         columns: columns,
       });
       const onClick = (cell: any) => {
-        router.push({ path: '/covid/hun' });
+        // router.push({ path: '/covid/hun' });
       };
       return {
         onClick,
@@ -51,30 +52,52 @@
 
   const columns = [
     {
-      field: 'regionFlagUrl',
+      field: 'flagIcon',
+      label: '',
       image: true,
       width: 50,
+
     },
     {
-      field: 'regionName',
+      field: 'countryText',
       label: 'Ország',
       sortable: false,
       searchable: false,
+
+    },
+    {
+      field: 'activeCasesText',
+      label: 'activeCasesText',
+      centered: true,
+      // sortable: false,
+    },
+    {
+      field: 'newCasesText',
+      label: 'newCasesText',
+      centered: true,
+    },
+    {
+      field: 'newDeathsText',
+      label: 'newDeathsText',
+      centered: true,
+    },
+   /* {
+      field: 'totalCasesText',
+      label: 'totalCasesText',
+    },
+    {
+      field: 'totalDeathsText',
+      label: 'totalDeathsText',
+    },
+    {
+      field: 'totalRecoveredText',
+      label: 'totalRecoveredText',
+    },*/
+    /*{
+      field: 'lastUpdate',
+      label: 'lastUpdate',
       width: 250,
-    },
-    {
-      field: 'casesCount',
-      label: 'Esetek',
-      sortable: false,
-    },
-    {
-      field: 'recoveredCount',
-      label: 'Gyógyultak',
-    },
-    {
-      field: 'deceasedCount',
-      label: 'Elhunytak',
-    },
+    },*/
     /*
     {
       width: 50,

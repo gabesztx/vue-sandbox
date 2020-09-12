@@ -756,6 +756,10 @@
     "regionFlagUrl": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Guernsey.svg/23px-Flag_of_Guernsey.svg.png"
   },
   {
+    "countryText": "Spain",
+    "regionFlagUrl": "//upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+  },
+  {
     "countryText": "Bhutan",
     "regionFlagUrl": "//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Flag_of_Bhutan.svg/23px-Flag_of_Bhutan.svg.png"
   },

@@ -6,7 +6,8 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "serv": "nodemon server/server.js"
+    "serv": "nodemon server/server.js",
+    "serv:prod": "node server/server.js"
   },
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.11",
@@ -16,6 +17,7 @@
     "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
+    "deep-diff": "^1.0.2",
     "express": "^4.17.1",
     "humps": "^2.0.1",
     "jsonfile": "^6.0.1",

@@ -50,7 +50,7 @@
       :header-class="column.headerClass"
     >
       <template v-if="column.image">
-        <img :src="props.row[column.field]" />
+        <div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />
       </template>
       <template v-else>
         <span :class="column.class">
@@ -141,7 +141,7 @@
       image: Boolean,
     },
 
-    setup(props: any, attr: any) {
+    setup(props: any, attr: any){
       const selectValue = ref(props.selected);
       const checkedRowsValue = ref(props.checkedRows);
       const onSelect = (value: any) => {
