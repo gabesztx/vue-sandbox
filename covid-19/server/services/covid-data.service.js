@@ -12,10 +12,6 @@ const refreshCovidData = () => {
     .pipe(
       take(1),
       map((data) => {
-        data.pop();
-        return data;
-      }),
-      map((data) => {
         data.forEach((items) => {
           Object.keys(items).forEach((key) => {
             let activeCasesText = items[key];
@@ -23,7 +19,6 @@ const refreshCovidData = () => {
               activeCasesText = items[key].replace(/,/g, '');
             }
             if (!activeCasesText.length || activeCasesText === 'N/A') {
-
               activeCasesText = '-';
             }
             items[key] = activeCasesText;
@@ -49,7 +44,7 @@ const getGlobalWorldData = () => {
 const getCountryData = () => {
   const country = covid19DbData();
   country.shift();
-  // country.pop();
+  country.pop();
   return country;
 };
 
