@@ -22,7 +22,7 @@ const refreshCovidData = () => {
             if (items[key].search(',') > 0) {
               activeCasesText = items[key].replace(/,/g, '');
             }
-            if(!activeCasesText.length || activeCasesText === 'N/A'){
+            if (!activeCasesText.length || activeCasesText === 'N/A') {
 
               activeCasesText = '-';
             }
@@ -49,6 +49,7 @@ const getGlobalWorldData = () => {
 const getCountryData = () => {
   const country = covid19DbData();
   country.shift();
+  // country.pop();
   return country;
 };
 

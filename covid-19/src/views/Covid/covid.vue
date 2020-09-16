@@ -62,6 +62,7 @@
       label: 'Ország',
       sortable: true,
       searchable: false,
+      width: 210,
     },
     {
       field: 'activeCasesText',
