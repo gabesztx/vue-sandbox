@@ -1,4 +1,4 @@
-import { getAllGlobalData } from '@/services/covid-data.service';
+// import { getCountrysData } from '@/services/covid-data.service';
 
 export default {
   namespaced: true,

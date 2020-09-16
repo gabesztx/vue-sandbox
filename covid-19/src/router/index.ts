@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import { covidBeforeEnter } from '@/services/covid-data.quard';
+import { countryBeforeEnter } from '@/services/covid-country-data.quard';
+// import { wordBeforeEnter } from '@/services/covid-world-data.quard';
 
 Vue.use(VueRouter);
 
@@ -9,8 +10,8 @@ const routes: Array<RouteConfig> = [
     // path: '/covid',
     path: '/',
     name: 'covid-table',
-    beforeEnter: covidBeforeEnter,
-    component: () => import('@/views/Covid/covid.vue'),
+    beforeEnter: countryBeforeEnter,
+    component: () => import('@/views/Covid/covid.vue'), // TODO: rename country
   },
   {
     path: '/covid/:id',

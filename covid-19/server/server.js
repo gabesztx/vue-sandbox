@@ -26,10 +26,15 @@ app.get('/', (req, res) => {
   return res.sendFile(`${basePath}/index.html`);
 });
 
-app.get('/covid', (req, res) => {
-  return res.send(covidDataService.covid19Db);
+app.get('/country', (req, res) => {
+  res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+  return res.send(covidDataService.getCountryData());
+});
+
+app.get('/world', (req, res) => {
+  return res.send(covidDataService.getGlobalWorldData());
 });
 
 server.listen(port, () => console.log(`status: running / port: ${port}`));
-// const diff = require('deep-diff');
+
 covidDataService.refreshCovidData();

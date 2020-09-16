@@ -17,26 +17,45 @@ const $getFiles = combineLatest($flags, $covid, (a, b) => {
 // TODO: refactorálni és láncolni
 
 const mergeFlags = () => {
-  $getFiles
-    .pipe(
-      take(1),
-    )
-    .subscribe((res) => {
-      const flags = res[0];
-      const data = res[1];
-      const findCountry = (country) => {
-        return flags.find((el) => el.countryText === country);
-      };
+  Promise.all([
+    jsonService.readFile(countryFlags),
+    jsonService.readFile(covid19tracking),
+  ]).then((res) => {
+    const flags = res[0];
+    const data = res[1];
+    const findCountry = (country) => {
+      return flags.find((el) => el.countryText === country);
+    };
 
-      const mergeFlagsData = data.map((item) => {
-        const foundFlag = findCountry(item.countryText);
-        item['flagIcon'] = foundFlag ? foundFlag.regionFlagUrl : '-';
-        return item;
-      });
-      jsonService.writeFile(covid19tracking, mergeFlagsData).then(() => {
-        console.log('DB DONE');
-      });
+    const mergeFlagsData = data.map((item) => {
+      const foundFlag = findCountry(item.countryText);
+      item['flagIcon'] = foundFlag ? foundFlag.regionFlagUrl : '-';
+      return item;
     });
+    jsonService.writeFile(covid19tracking, mergeFlagsData).then(() => {
+      console.log('DB DONE');
+    });
+  });
+  /*  $getFiles
+      .pipe(
+        take(1),
+      )
+      .subscribe((res) => {
+        const flags = res[0];
+        const data = res[1];
+        const findCountry = (country) => {
+          return flags.find((el) => el.countryText === country);
+        };
+
+        const mergeFlagsData = data.map((item) => {
+          const foundFlag = findCountry(item.countryText);
+          item['flagIcon'] = foundFlag ? foundFlag.regionFlagUrl : '-';
+          return item;
+        });
+        jsonService.writeFile(covid19tracking, mergeFlagsData).then(() => {
+          console.log('DB DONE');
+        });
+      });*/
 
 };
 

@@ -11,7 +11,29 @@ const refreshCovidData = () => {
     .$getApi()
     .pipe(
       take(1),
+      map((data) => {
+        data.pop();
+        return data;
+      }),
+      map((data) => {
+        data.forEach((items) => {
+          Object.keys(items).forEach((key) => {
+            let activeCasesText = items[key];
+            if (items[key].search(',') > 0) {
+              activeCasesText = items[key].replace(/,/g, '');
+            }
+            if(!activeCasesText.length || activeCasesText === 'N/A'){
+
+              activeCasesText = '-';
+            }
+            items[key] = activeCasesText;
+
+          });
+        });
+        return data;
+      }),
     )
+
     .subscribe((res) => {
       // TODO: rxjs refacrtor
       writeFile(path.join(__dirname, '../db/covid19.db.json'), res).then(() => {
@@ -20,17 +42,22 @@ const refreshCovidData = () => {
     });
 };
 
-module.exports = {
-  refreshCovidData: refreshCovidData,
-  covid19Db: covid19Db,
+const getGlobalWorldData = () => {
+  return covid19DbData()[0];
 };
 
-/*
-map((data) => {
-  let newData = [];
-  data.forEach((item, key) => {
-    newData[key] = item;
-  });
-  return newData;
-}),
-*/
+const getCountryData = () => {
+  const country = covid19DbData();
+  country.shift();
+  return country;
+};
+
+const covid19DbData = () => {
+  return JSON.parse(JSON.stringify(covid19Db));
+};
+
+module.exports = {
+  refreshCovidData: refreshCovidData,
+  getCountryData: getCountryData,
+  getGlobalWorldData: getGlobalWorldData,
+};

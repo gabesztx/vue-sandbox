@@ -48,6 +48,7 @@
       :subheading="column.subheading"
       :cell-class="column.cellClass"
       :header-class="column.headerClass"
+      :custom-sort="column.customSort"
     >
       <template v-if="column.image">
         <div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />

@@ -1,12 +1,22 @@
 import http from 'axios';
 
-export let globalData = [];
+export let countryData = [];
+export let worldData = [];
 
-export const getAllGlobalData = (): Promise<any> => {
-  const url = `http://192.168.1.8:5000/covid`;
+export const getCountryData = (): Promise<any> => {
+  const url = `http://localhost:5000/country`;
   return http.get(url);
 };
 
-export const setGlobalData = (data) => {
-  globalData = data;
+export const getWorldData = (): Promise<any> => {
+  const url = `http://localhost:5000/world`;
+  return http.get(url);
+};
+
+export const setCountryData = (data) => {
+  countryData = data;
+};
+
+export const setWorldData = (data) => {
+  worldData = data;
 };

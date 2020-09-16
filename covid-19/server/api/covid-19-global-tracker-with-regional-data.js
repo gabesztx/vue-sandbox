@@ -10,7 +10,7 @@ const option = {
 };
 
 const getData = () => {
-  const url = `https://${host}/api/covid/globalData`;
+  const url = `https://${host}/api/covid/regional`;
   return http.get(url, option);
 };
 

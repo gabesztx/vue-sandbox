@@ -15,7 +15,7 @@
         :paginated="true"
         :pagination-simple="true"
         :pagination-size="'is-small'"
-        :per-page="5"
+        :per-page="7"
         :striped="true"
         :narrowed="false"
         :mobile-cards="true"
@@ -32,12 +32,12 @@
 <script lang="ts">
   import router from '@/router';
   import { reactive } from '@vue/composition-api';
-  import { globalData } from '@/services/covid-data.service';
+  import { countryData } from '@/services/covid-data.service';
 
   export default {
     setup(){
       const state = reactive({
-        data: globalData,
+        data: countryData,
         columns: columns,
       });
       const onClick = (cell: any) => {
@@ -56,56 +56,57 @@
       label: '',
       image: true,
       width: 50,
-
     },
     {
       field: 'countryText',
       label: 'Ország',
-      sortable: false,
+      sortable: true,
       searchable: false,
-
     },
     {
       field: 'activeCasesText',
-      label: 'activeCasesText',
-      centered: true,
-      // sortable: false,
+      label: 'Aktív fertőzöttek',
+      sortable: true,
+      customSort: (a, b, isAsc) => {
+        // TODO: refactor és kiszervezés
+        const AObj = a.activeCasesText === '-' ? -2 : Number(a.activeCasesText);
+        const BObj = b.activeCasesText === '-' ? -2 : Number(b.activeCasesText);
+        if (isAsc) {
+          return BObj - AObj;
+        } else {
+          return AObj - BObj;
+        }
+      },
     },
     {
       field: 'newCasesText',
-      label: 'newCasesText',
-      centered: true,
+      label: 'Napi új fertőzött',
+      sortable: true,
+      customSort: (a, b, isAsc) => {
+        // TODO: refactor és kiszervezés
+        const AObj = a.newCasesText === '-' ? -1 : Number(a.newCasesText.substring(1));
+        const BObj = b.newCasesText === '-' ? -1 : Number(b.newCasesText.substring(1));
+        if (!isAsc) {
+          return BObj - AObj;
+        } else {
+          return AObj - BObj;
+        }
+      },
     },
     {
       field: 'newDeathsText',
-      label: 'newDeathsText',
-      centered: true,
-    },
-   /* {
-      field: 'totalCasesText',
-      label: 'totalCasesText',
-    },
-    {
-      field: 'totalDeathsText',
-      label: 'totalDeathsText',
-    },
-    {
-      field: 'totalRecoveredText',
-      label: 'totalRecoveredText',
-    },*/
-    /*{
-      field: 'lastUpdate',
-      label: 'lastUpdate',
-      width: 250,
-    },*/
-    /*
-    {
-      width: 50,
-      button: {
-        label: 'Részletek',
-        class: 'tag is-primary is-rounded',
+      label: 'Napi új elhunyt',
+      sortable: true,
+      customSort: (a, b, isAsc) => {
+        // TODO: refactor és kiszervezés
+        const AObj = a.newDeathsText === '-' ? -1 : Number(a.newDeathsText.substring(1));
+        const BObj = b.newDeathsText === '-' ? -1 : Number(b.newDeathsText.substring(1));
+        if (!isAsc) {
+          return BObj - AObj;
+        } else {
+          return AObj - BObj;
+        }
       },
     },
-    */
   ];
 </script>
