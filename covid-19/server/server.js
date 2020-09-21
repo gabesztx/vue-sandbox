@@ -29,6 +29,7 @@ app.get('/', (req, res) => {
 app.get('/country', (req, res) => {
   // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
   return res.send(covidDataService.getCountryData());
+  // return res.send(covidDataService.getCountryData());
 });
 
 app.get('/world', (req, res) => {

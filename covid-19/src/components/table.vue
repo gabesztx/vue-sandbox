@@ -33,6 +33,7 @@
     @check="onCheck"
     @click="onRowClick"
   >
+
     <b-table-column
       v-slot="props"
       v-for="(column, index) in columns"
@@ -51,7 +52,10 @@
       :custom-sort="column.customSort"
     >
       <template v-if="column.image">
-        <div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />
+        <div class="img-content">
+          <img class="img-flag" v-bind:src="props.row[column.field]">
+        </div>
+        <!--<div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />-->
       </template>
       <template v-else>
         <span :class="column.class">
@@ -66,6 +70,8 @@
         ></b-button>
       </template>
     </b-table-column>
+
+
   </b-table>
 </template>
 
@@ -77,7 +83,6 @@
     props: {
       data: Array,
       columns: Array,
-
       bordered: Boolean,
       striped: Boolean,
       narrowed: Boolean,

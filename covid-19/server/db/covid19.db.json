@@ -1,1242 +1,1240 @@
 [
   {
-    "activeCasesText": "7281664",
+    "activeCasesText": "7448218",
     "countryText": "World",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+140936",
-    "newDeathsText": "+3002",
-    "totalCasesText": "29859075",
-    "totalDeathsText": "941489",
-    "totalRecoveredText": "21635922",
-    "flagIcon": "-"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+166893",
+    "newDeathsText": "+2641",
+    "totalCasesText": "31405983",
+    "totalDeathsText": "967505",
+    "totalRecoveredText": "22990260"
   },
   {
-    "activeCasesText": "2527483",
+    "activeCasesText": "2543389",
     "countryText": "USA",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+10532",
-    "newDeathsText": "+491",
-    "totalCasesText": "6798679",
-    "totalDeathsText": "200688",
-    "totalRecoveredText": "4070508",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+15079",
+    "newDeathsText": "+141",
+    "totalCasesText": "7019847",
+    "totalDeathsText": "204259",
+    "totalRecoveredText": "4272199",
+    "countryCode": "http://localhost:5000/static/flags/us.svg"
   },
   {
-    "activeCasesText": "1002193",
+    "activeCasesText": "976485",
     "countryText": "India",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+61899",
-    "newDeathsText": "+578",
-    "totalCasesText": "5079933",
-    "totalDeathsText": "82669",
-    "totalRecoveredText": "3995071",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/23px-Flag_of_India.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+71961",
+    "newDeathsText": "+1034",
+    "totalCasesText": "5557573",
+    "totalDeathsText": "88943",
+    "totalRecoveredText": "4492145",
+    "countryCode": "http://localhost:5000/static/flags/in.svg"
   },
   {
-    "activeCasesText": "580515",
+    "activeCasesText": "558926",
     "countryText": "Brazil",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+561",
-    "newDeathsText": "+10",
-    "totalCasesText": "4384860",
-    "totalDeathsText": "133217",
-    "totalRecoveredText": "3671128",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+2521",
+    "newDeathsText": "+102",
+    "totalCasesText": "4547150",
+    "totalDeathsText": "136997",
+    "totalRecoveredText": "3851227",
+    "countryCode": "http://localhost:5000/static/flags/br.svg"
   },
   {
-    "activeCasesText": "170488",
+    "activeCasesText": "178133",
     "countryText": "Russia",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+5670",
-    "newDeathsText": "+132",
-    "totalCasesText": "1079519",
-    "totalDeathsText": "18917",
-    "totalRecoveredText": "890114",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/23px-Flag_of_Russia.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+6196",
+    "newDeathsText": "+71",
+    "totalCasesText": "1109595",
+    "totalDeathsText": "19489",
+    "totalRecoveredText": "911973",
+    "countryCode": "http://localhost:5000/static/flags/ru.svg"
   },
   {
-    "activeCasesText": "126340",
+    "activeCasesText": "122271",
     "countryText": "Peru",
-    "lastUpdate": "2020-09-15 22:40",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "738020",
-    "totalDeathsText": "30927",
-    "totalRecoveredText": "580753",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/23px-Flag_of_Peru.svg.png"
+    "totalCasesText": "768895",
+    "totalDeathsText": "31369",
+    "totalRecoveredText": "615255",
+    "countryCode": "http://localhost:5000/static/flags/pe.svg"
   },
   {
-    "activeCasesText": "97324",
+    "activeCasesText": "107669",
     "countryText": "Colombia",
-    "lastUpdate": "2020-09-15 14:39",
+    "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "728590",
-    "totalDeathsText": "23288",
-    "totalRecoveredText": "607978",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/23px-Flag_of_Colombia.svg.png"
+    "totalCasesText": "765076",
+    "totalDeathsText": "24208",
+    "totalRecoveredText": "633199",
+    "countryCode": "http://localhost:5000/static/flags/co.svg"
   },
   {
-    "activeCasesText": "123741",
+    "activeCasesText": "124868",
     "countryText": "Mexico",
-    "lastUpdate": "2020-09-16 01:41",
-    "newCasesText": "+4771",
-    "newDeathsText": "+629",
-    "totalCasesText": "676487",
-    "totalDeathsText": "71678",
-    "totalRecoveredText": "481068",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
-  },
-  {
-    "activeCasesText": "52754",
-    "countryText": "South Africa",
-    "lastUpdate": "2020-09-16 06:42",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "651521",
-    "totalDeathsText": "15641",
-    "totalRecoveredText": "583126",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/23px-Flag_of_South_Africa.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+3542",
+    "newDeathsText": "+235",
+    "totalCasesText": "697663",
+    "totalDeathsText": "73493",
+    "totalRecoveredText": "499302",
+    "countryCode": "http://localhost:5000/static/flags/mx.svg"
   },
   {
     "activeCasesText": "-",
     "countryText": "Spain",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+11193",
-    "newDeathsText": "+239",
-    "totalCasesText": "614360",
-    "totalDeathsText": "30243",
+    "newCasesText": "+2957",
+    "newDeathsText": "+56",
+    "totalCasesText": "671468",
+    "totalDeathsText": "30663",
     "totalRecoveredText": "-",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+    "countryCode": "http://localhost:5000/static/flags/es.svg"
   },
   {
-    "activeCasesText": "117165",
+    "activeCasesText": "55187",
+    "countryText": "South Africa",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "661211",
+    "totalDeathsText": "15953",
+    "totalRecoveredText": "590071",
+    "countryCode": "http://localhost:5000/static/flags/za.svg"
+  },
+  {
+    "activeCasesText": "130081",
     "countryText": "Argentina",
-    "lastUpdate": "2020-09-15 17:39",
-    "newCasesText": "-",
-    "newDeathsText": "+58",
-    "totalCasesText": "577338",
-    "totalDeathsText": "11910",
-    "totalRecoveredText": "448263",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/23px-Flag_of_Argentina.svg.png"
-  },
-  {
-    "activeCasesText": "15999",
-    "countryText": "Chile",
+    "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "437983",
-    "totalDeathsText": "12040",
-    "totalRecoveredText": "409944",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/23px-Flag_of_Chile.svg.png"
+    "totalCasesText": "631365",
+    "totalDeathsText": "13053",
+    "totalRecoveredText": "488231",
+    "countryCode": "http://localhost:5000/static/flags/ar.svg"
   },
   {
-    "activeCasesText": "34683",
-    "countryText": "Iran",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+2981",
-    "newDeathsText": "+179",
-    "totalCasesText": "410334",
-    "totalDeathsText": "23632",
-    "totalRecoveredText": "352019",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/23px-Flag_of_Iran.svg.png"
-  },
-  {
-    "activeCasesText": "274214",
+    "activeCasesText": "335149",
     "countryText": "France",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "395104",
-    "totalDeathsText": "30999",
-    "totalRecoveredText": "89891",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/23px-Flag_of_France.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+5298",
+    "newDeathsText": "+53",
+    "totalCasesText": "458061",
+    "totalDeathsText": "31338",
+    "totalRecoveredText": "91574",
+    "countryCode": "http://localhost:5000/static/flags/fr.svg"
+  },
+  {
+    "activeCasesText": "14059",
+    "countryText": "Chile",
+    "newCasesText": "+1194",
+    "newDeathsText": "+12",
+    "totalCasesText": "447468",
+    "totalDeathsText": "12298",
+    "totalRecoveredText": "421111",
+    "countryCode": "http://localhost:5000/static/flags/cl.svg"
+  },
+  {
+    "activeCasesText": "39480",
+    "countryText": "Iran",
+    "newCasesText": "+3341",
+    "newDeathsText": "+177",
+    "totalCasesText": "425481",
+    "totalDeathsText": "24478",
+    "totalRecoveredText": "361523",
+    "countryCode": "http://localhost:5000/static/flags/ir.svg"
   },
   {
     "activeCasesText": "-",
     "countryText": "UK",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+3991",
-    "newDeathsText": "+20",
-    "totalCasesText": "378219",
-    "totalDeathsText": "41684",
+    "lastUpdate": "2020-09-21 16:46",
+    "newCasesText": "+4368",
+    "newDeathsText": "+11",
+    "totalCasesText": "398625",
+    "totalDeathsText": "41788",
     "totalRecoveredText": "-",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/23px-Flag_of_the_United_Kingdom.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/gb.svg"
   },
   {
-    "activeCasesText": "89879",
+    "activeCasesText": "86925",
     "countryText": "Bangladesh",
-    "lastUpdate": "2020-09-16 14:43",
-    "newCasesText": "+1615",
-    "newDeathsText": "+21",
-    "totalCasesText": "342671",
-    "totalDeathsText": "4823",
-    "totalRecoveredText": "247969",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/23px-Flag_of_Bangladesh.svg.png"
+    "lastUpdate": "2020-09-21 16:46",
+    "newCasesText": "+1705",
+    "newDeathsText": "+40",
+    "totalCasesText": "350621",
+    "totalDeathsText": "4979",
+    "totalRecoveredText": "258717",
+    "countryCode": "http://localhost:5000/static/flags/bd.svg"
   },
   {
-    "activeCasesText": "17178",
+    "activeCasesText": "14235",
     "countryText": "Saudi Arabia",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+621",
-    "newDeathsText": "+31",
-    "totalCasesText": "327551",
-    "totalDeathsText": "4369",
-    "totalRecoveredText": "306004",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/23px-Flag_of_Saudi_Arabia.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+492",
+    "newDeathsText": "+27",
+    "totalCasesText": "330246",
+    "totalDeathsText": "4512",
+    "totalRecoveredText": "311499",
+    "countryCode": "http://localhost:5000/static/flags/sa.svg"
   },
   {
-    "activeCasesText": "5936",
-    "countryText": "Pakistan",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "+665",
-    "newDeathsText": "+4",
-    "totalCasesText": "303089",
-    "totalDeathsText": "6393",
-    "totalRecoveredText": "290760",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/23px-Flag_of_Pakistan.svg.png"
-  },
-  {
-    "activeCasesText": "57190",
+    "activeCasesText": "56156",
     "countryText": "Iraq",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "298702",
-    "totalDeathsText": "8166",
-    "totalRecoveredText": "233346",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/23px-Flag_of_Iraq.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+3821",
+    "newDeathsText": "+70",
+    "totalCasesText": "322856",
+    "totalDeathsText": "8625",
+    "totalRecoveredText": "258075",
+    "countryCode": "http://localhost:5000/static/flags/iq.svg"
   },
   {
-    "activeCasesText": "26174",
+    "activeCasesText": "7015",
+    "countryText": "Pakistan",
+    "newCasesText": "+633",
+    "newDeathsText": "+4",
+    "totalCasesText": "306304",
+    "totalDeathsText": "6420",
+    "totalRecoveredText": "292869",
+    "countryCode": "http://localhost:5000/static/flags/pk.svg"
+  },
+  {
+    "activeCasesText": "28601",
     "countryText": "Turkey",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "294620",
-    "totalDeathsText": "7186",
-    "totalRecoveredText": "261260",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/23px-Flag_of_Turkey.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+1743",
+    "newDeathsText": "+68",
+    "totalCasesText": "304610",
+    "totalDeathsText": "7574",
+    "totalRecoveredText": "268435",
+    "countryCode": "http://localhost:5000/static/flags/tr.svg"
   },
   {
-    "activeCasesText": "40532",
+    "activeCasesText": "45079",
     "countryText": "Italy",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+1452",
-    "newDeathsText": "+12",
-    "totalCasesText": "291442",
-    "totalDeathsText": "35645",
-    "totalRecoveredText": "215265",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/23px-Flag_of_Italy.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+1350",
+    "newDeathsText": "+17",
+    "totalCasesText": "299506",
+    "totalDeathsText": "35724",
+    "totalRecoveredText": "218703",
+    "countryCode": "http://localhost:5000/static/flags/it.svg"
   },
   {
-    "activeCasesText": "60344",
+    "activeCasesText": "54958",
     "countryText": "Philippines",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+3550",
-    "newDeathsText": "+69",
-    "totalCasesText": "272934",
-    "totalDeathsText": "4732",
-    "totalRecoveredText": "207858",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/23px-Flag_of_the_Philippines.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+3475",
+    "newDeathsText": "+15",
+    "totalCasesText": "290190",
+    "totalDeathsText": "4999",
+    "totalRecoveredText": "230233",
+    "countryCode": "http://localhost:5000/static/flags/ph.svg"
   },
   {
-    "activeCasesText": "17994",
+    "activeCasesText": "21520",
     "countryText": "Germany",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+1697",
-    "newDeathsText": "+2",
-    "totalCasesText": "266541",
-    "totalDeathsText": "9447",
-    "totalRecoveredText": "239100",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+1520",
+    "newDeathsText": "+7",
+    "totalCasesText": "274997",
+    "totalDeathsText": "9477",
+    "totalRecoveredText": "244000",
+    "countryCode": "http://localhost:5000/static/flags/de.svg"
   },
   {
-    "activeCasesText": "55792",
+    "activeCasesText": "58378",
     "countryText": "Indonesia",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+3963",
-    "newDeathsText": "+135",
-    "totalCasesText": "228993",
-    "totalDeathsText": "9100",
-    "totalRecoveredText": "164101",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/23px-Flag_of_Indonesia.svg.png"
+    "newCasesText": "+4176",
+    "newDeathsText": "+124",
+    "totalCasesText": "248852",
+    "totalDeathsText": "9677",
+    "totalRecoveredText": "180797",
+    "countryCode": "http://localhost:5000/static/flags/id.svg"
   },
   {
-    "activeCasesText": "42862",
+    "activeCasesText": "52263",
     "countryText": "Israel",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+2392",
-    "newDeathsText": "-",
-    "totalCasesText": "166794",
-    "totalDeathsText": "1147",
-    "totalRecoveredText": "122785",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/21px-Flag_of_Israel.svg.png"
+    "newCasesText": "+2135",
+    "newDeathsText": "+16",
+    "totalCasesText": "190037",
+    "totalDeathsText": "1272",
+    "totalRecoveredText": "136502",
+    "countryCode": "http://localhost:5000/static/flags/il.svg"
   },
   {
-    "activeCasesText": "86996",
+    "activeCasesText": "96586",
     "countryText": "Ukraine",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "+2958",
-    "newDeathsText": "+76",
-    "totalCasesText": "162660",
-    "totalDeathsText": "3340",
-    "totalRecoveredText": "72324",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/23px-Flag_of_Ukraine.svg.png"
+    "newCasesText": "+2675",
+    "newDeathsText": "+26",
+    "totalCasesText": "178353",
+    "totalDeathsText": "3583",
+    "totalRecoveredText": "78184",
+    "countryCode": "http://localhost:5000/static/flags/ua.svg"
   },
   {
-    "activeCasesText": "8234",
+    "activeCasesText": "10248",
     "countryText": "Canada",
-    "lastUpdate": "2020-09-16 03:41",
-    "newCasesText": "+618",
-    "newDeathsText": "+5",
-    "totalCasesText": "139421",
-    "totalDeathsText": "9193",
-    "totalRecoveredText": "121994",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/23px-Flag_of_Canada_%28Pantone%29.svg.png"
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+1037",
+    "newDeathsText": "+6",
+    "totalCasesText": "144686",
+    "totalDeathsText": "9223",
+    "totalRecoveredText": "125215",
+    "countryCode": "http://localhost:5000/static/flags/ca.svg"
   },
   {
-    "activeCasesText": "34623",
+    "activeCasesText": "33442",
     "countryText": "Bolivia",
-    "newCasesText": "+667",
-    "newDeathsText": "+53",
-    "totalCasesText": "128286",
-    "totalDeathsText": "7447",
-    "totalRecoveredText": "86216",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Bolivia.svg/22px-Flag_of_Bolivia.svg.png"
+    "newCasesText": "+206",
+    "newDeathsText": "+31",
+    "totalCasesText": "130676",
+    "totalDeathsText": "7617",
+    "totalRecoveredText": "89617",
+    "countryCode": "http://localhost:5000/static/flags/bo.svg"
   },
   {
-    "activeCasesText": "2841",
-    "countryText": "Qatar",
-    "lastUpdate": "2020-09-16 05:41",
-    "newCasesText": "+235",
-    "newDeathsText": "-",
-    "totalCasesText": "122449",
-    "totalDeathsText": "208",
-    "totalRecoveredText": "119400",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/23px-Flag_of_Qatar.svg.png"
-  },
-  {
-    "activeCasesText": "11527",
+    "activeCasesText": "12764",
     "countryText": "Ecuador",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "119553",
-    "totalDeathsText": "10963",
-    "totalRecoveredText": "97063",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/23px-Flag_of_Ecuador.svg.png"
+    "newCasesText": "+292",
+    "newDeathsText": "+5",
+    "totalCasesText": "126711",
+    "totalDeathsText": "11095",
+    "totalRecoveredText": "102852",
+    "countryCode": "http://localhost:5000/static/flags/ec.svg"
   },
   {
-    "activeCasesText": "59482",
+    "activeCasesText": "2853",
+    "countryText": "Qatar",
+    "newCasesText": "+228",
+    "newDeathsText": "+1",
+    "totalCasesText": "123604",
+    "totalDeathsText": "211",
+    "totalRecoveredText": "120540",
+    "countryCode": "http://localhost:5000/static/flags/qa.svg"
+  },
+  {
+    "activeCasesText": "18482",
     "countryText": "Romania",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+1713",
-    "newDeathsText": "+49",
-    "totalCasesText": "107011",
-    "totalDeathsText": "4285",
-    "totalRecoveredText": "43244",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/23px-Flag_of_Romania.svg.png"
+    "newCasesText": "+808",
+    "newDeathsText": "+23",
+    "totalCasesText": "113589",
+    "totalDeathsText": "4458",
+    "totalRecoveredText": "90649",
+    "countryCode": "http://localhost:5000/static/flags/ro.svg"
   },
   {
-    "activeCasesText": "4046",
-    "countryText": "Kazakhstan",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+64",
-    "newDeathsText": "-",
-    "totalCasesText": "106984",
-    "totalDeathsText": "1671",
-    "totalRecoveredText": "101267",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/23px-Flag_of_Kazakhstan.svg.png"
-  },
-  {
-    "activeCasesText": "24418",
+    "activeCasesText": "24455",
     "countryText": "Dominican Republic",
-    "lastUpdate": "2020-09-16 00:40",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "104803",
-    "totalDeathsText": "1998",
-    "totalRecoveredText": "78387",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_the_Dominican_Republic.svg/23px-Flag_of_the_Dominican_Republic.svg.png"
+    "newCasesText": "+494",
+    "newDeathsText": "+7",
+    "totalCasesText": "108783",
+    "totalDeathsText": "2054",
+    "totalRecoveredText": "82274",
+    "countryCode": "http://localhost:5000/static/flags/do.svg"
   },
   {
-    "activeCasesText": "25053",
+    "activeCasesText": "3695",
+    "countryText": "Kazakhstan",
+    "lastUpdate": "2020-09-21 16:46",
+    "newCasesText": "+45",
+    "newDeathsText": "-",
+    "totalCasesText": "107307",
+    "totalDeathsText": "1671",
+    "totalRecoveredText": "101941",
+    "countryCode": "http://localhost:5000/static/flags/kz.svg"
+  },
+  {
+    "activeCasesText": "22581",
     "countryText": "Panama",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "102832",
-    "totalDeathsText": "2187",
-    "totalRecoveredText": "75592",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/23px-Flag_of_Panama.svg.png"
+    "totalCasesText": "106203",
+    "totalDeathsText": "2257",
+    "totalRecoveredText": "81365",
+    "countryCode": "http://localhost:5000/static/flags/pa.svg"
   },
   {
-    "activeCasesText": "9916",
-    "countryText": "Egypt",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "101340",
-    "totalDeathsText": "5679",
-    "totalRecoveredText": "85745",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/23px-Flag_of_Egypt.svg.png"
-  },
-  {
-    "activeCasesText": "9241",
-    "countryText": "Kuwait",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+698",
-    "newDeathsText": "+3",
-    "totalCasesText": "96999",
-    "totalDeathsText": "571",
-    "totalRecoveredText": "87187",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/23px-Flag_of_Kuwait.svg.png"
-  },
-  {
-    "activeCasesText": "66076",
-    "countryText": "Belgium",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+489",
-    "newDeathsText": "+3",
-    "totalCasesText": "94795",
-    "totalDeathsText": "9930",
-    "totalRecoveredText": "18789",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/23px-Flag_of_Belgium_%28civil%29.svg.png"
-  },
-  {
-    "activeCasesText": "6028",
-    "countryText": "Oman",
-    "lastUpdate": "2020-09-16 10:42",
-    "newCasesText": "+536",
-    "newDeathsText": "+8",
-    "totalCasesText": "91196",
-    "totalDeathsText": "805",
-    "totalRecoveredText": "84363",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/23px-Flag_of_Oman.svg.png"
-  },
-  {
-    "activeCasesText": "17629",
+    "activeCasesText": "17106",
     "countryText": "Morocco",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "90324",
-    "totalDeathsText": "1648",
-    "totalRecoveredText": "71047",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/23px-Flag_of_Morocco.svg.png"
+    "newCasesText": "+1376",
+    "newDeathsText": "+25",
+    "totalCasesText": "103119",
+    "totalDeathsText": "1855",
+    "totalRecoveredText": "84158",
+    "countryCode": "http://localhost:5000/static/flags/ma.svg"
   },
   {
-    "activeCasesText": "-",
-    "countryText": "Sweden",
-    "lastUpdate": "2020-09-16 16:43",
+    "activeCasesText": "73382",
+    "countryText": "Belgium",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+1547",
+    "newDeathsText": "+4",
+    "totalCasesText": "102295",
+    "totalDeathsText": "9948",
+    "totalRecoveredText": "18965",
+    "countryCode": "http://localhost:5000/static/flags/be.svg"
+  },
+  {
+    "activeCasesText": "6713",
+    "countryText": "Egypt",
+    "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "-",
-    "newDeathsText": "+5",
-    "totalCasesText": "87575",
-    "totalDeathsText": "5860",
-    "totalRecoveredText": "-",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/23px-Flag_of_Sweden.svg.png"
+    "newDeathsText": "-",
+    "totalCasesText": "102015",
+    "totalDeathsText": "5770",
+    "totalRecoveredText": "89532",
+    "countryCode": "http://localhost:5000/static/flags/eg.svg"
+  },
+  {
+    "activeCasesText": "8449",
+    "countryText": "Kuwait",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+530",
+    "newDeathsText": "+1",
+    "totalCasesText": "99964",
+    "totalDeathsText": "585",
+    "totalRecoveredText": "90930",
+    "countryCode": "http://localhost:5000/static/flags/kw.svg"
   },
   {
     "activeCasesText": "-",
     "countryText": "Netherlands",
-    "lastUpdate": "2020-09-16 14:43",
-    "newCasesText": "+1542",
+    "lastUpdate": "2020-09-21 16:46",
+    "newCasesText": "+2217",
     "newDeathsText": "+2",
-    "totalCasesText": "86320",
-    "totalDeathsText": "6260",
+    "totalCasesText": "95995",
+    "totalDeathsText": "6281",
     "totalRecoveredText": "-",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/23px-Flag_of_the_Netherlands.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/nl.svg"
   },
   {
-    "activeCasesText": "143",
+    "activeCasesText": "7417",
+    "countryText": "Oman",
+    "newCasesText": "+576",
+    "newDeathsText": "+7",
+    "totalCasesText": "94051",
+    "totalDeathsText": "853",
+    "totalRecoveredText": "85781",
+    "countryCode": "http://localhost:5000/static/flags/om.svg"
+  },
+  {
+    "activeCasesText": "-",
+    "countryText": "Sweden",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "88237",
+    "totalDeathsText": "5865",
+    "totalRecoveredText": "-",
+    "countryCode": "http://localhost:5000/static/flags/se.svg"
+  },
+  {
+    "activeCasesText": "7385",
+    "countryText": "Guatemala",
+    "newCasesText": "+237",
+    "newDeathsText": "+5",
+    "totalCasesText": "85681",
+    "totalDeathsText": "3124",
+    "totalRecoveredText": "75172",
+    "countryCode": "http://localhost:5000/static/flags/gt.svg"
+  },
+  {
+    "activeCasesText": "10104",
+    "countryText": "UAE",
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+679",
+    "newDeathsText": "+1",
+    "totalCasesText": "85595",
+    "totalDeathsText": "405",
+    "totalRecoveredText": "75086",
+    "countryCode": "http://localhost:5000/static/flags/ae.svg"
+  },
+  {
+    "activeCasesText": "173",
     "countryText": "China",
-    "lastUpdate": "2020-09-16 13:43",
     "newCasesText": "+12",
     "newDeathsText": "-",
-    "totalCasesText": "85214",
+    "totalCasesText": "85291",
     "totalDeathsText": "4634",
-    "totalRecoveredText": "80437",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png"
+    "totalRecoveredText": "80484",
+    "countryCode": "http://localhost:5000/static/flags/cn.svg"
   },
   {
-    "activeCasesText": "7717",
-    "countryText": "Guatemala",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "82684",
-    "totalDeathsText": "2984",
-    "totalRecoveredText": "71983",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Guatemala.svg/23px-Flag_of_Guatemala.svg.png"
-  },
-  {
-    "activeCasesText": "9924",
-    "countryText": "UAE",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+842",
-    "newDeathsText": "+1",
-    "totalCasesText": "81782",
-    "totalDeathsText": "402",
-    "totalRecoveredText": "71456",
-    "flagIcon": "-"
-  },
-  {
-    "activeCasesText": "6676",
-    "countryText": "Japan",
-    "lastUpdate": "2020-09-16 07:42",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "75958",
-    "totalDeathsText": "1451",
-    "totalRecoveredText": "67831",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/23px-Flag_of_Japan.svg.png"
-  },
-  {
-    "activeCasesText": "11387",
+    "activeCasesText": "13086",
     "countryText": "Poland",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+600",
-    "newDeathsText": "+10",
-    "totalCasesText": "75734",
-    "totalDeathsText": "2237",
-    "totalRecoveredText": "62110",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/23px-Flag_of_Poland.svg.png"
-  },
-  {
-    "activeCasesText": "1186",
-    "countryText": "Belarus",
-    "lastUpdate": "2020-09-15 13:38",
-    "newCasesText": "+211",
-    "newDeathsText": "+6",
-    "totalCasesText": "74763",
-    "totalDeathsText": "767",
-    "totalRecoveredText": "72810",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/23px-Flag_of_Belarus.svg.png"
-  },
-  {
-    "activeCasesText": "48046",
-    "countryText": "Honduras",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "68620",
-    "totalDeathsText": "2087",
-    "totalRecoveredText": "18487",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Honduras_%282008_Olympics%29.svg/23px-Flag_of_Honduras_%282008_Olympics%29.svg.png"
-  },
-  {
-    "activeCasesText": "19220",
-    "countryText": "Portugal",
-    "lastUpdate": "2020-09-15 14:39",
-    "newCasesText": "+605",
-    "newDeathsText": "+3",
-    "totalCasesText": "65626",
-    "totalDeathsText": "1878",
-    "totalRecoveredText": "44528",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/23px-Flag_of_Portugal.svg.png"
-  },
-  {
-    "activeCasesText": "38463",
-    "countryText": "Ethiopia",
-    "lastUpdate": "2020-09-15 09:38",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "65486",
-    "totalDeathsText": "1035",
-    "totalRecoveredText": "25988",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/23px-Flag_of_Ethiopia.svg.png"
-  },
-  {
-    "activeCasesText": "11792",
-    "countryText": "Venezuela",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "62655",
-    "totalDeathsText": "502",
-    "totalRecoveredText": "50361",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/23px-Flag_of_Venezuela.svg.png"
-  },
-  {
-    "activeCasesText": "6596",
-    "countryText": "Bahrain",
-    "lastUpdate": "2020-09-16 06:42",
-    "newCasesText": "-",
-    "newDeathsText": "+3",
-    "totalCasesText": "61643",
-    "totalDeathsText": "216",
-    "totalRecoveredText": "54831",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Bahrain.svg/23px-Flag_of_Bahrain.svg.png"
-  },
-  {
-    "activeCasesText": "16242",
-    "countryText": "Nepal",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+1539",
-    "newDeathsText": "+8",
-    "totalCasesText": "58327",
-    "totalDeathsText": "379",
-    "totalRecoveredText": "41706",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Nepal.svg/14px-Flag_of_Nepal.svg.png"
-  },
-  {
-    "activeCasesText": "35968",
-    "countryText": "Costa Rica",
-    "lastUpdate": "2020-09-16 09:42",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "58137",
-    "totalDeathsText": "633",
-    "totalRecoveredText": "21536",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/23px-Flag_of_Costa_Rica.svg.png"
-  },
-  {
-    "activeCasesText": "603",
-    "countryText": "Singapore",
-    "lastUpdate": "2020-09-16 08:42",
-    "newCasesText": "+26",
-    "newDeathsText": "-",
-    "totalCasesText": "57514",
-    "totalDeathsText": "27",
-    "totalRecoveredText": "56884",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/23px-Flag_of_Singapore.svg.png"
-  },
-  {
-    "activeCasesText": "10960",
-    "countryText": "Nigeria",
-    "lastUpdate": "2020-09-15 18:39",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "56478",
-    "totalDeathsText": "1088",
-    "totalRecoveredText": "44430",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/23px-Flag_of_Nigeria.svg.png"
-  },
-  {
-    "activeCasesText": "3186",
-    "countryText": "Uzbekistan",
-    "lastUpdate": "2020-09-16 11:42",
-    "newCasesText": "+586",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+748",
     "newDeathsText": "+5",
-    "totalCasesText": "49015",
-    "totalDeathsText": "407",
-    "totalRecoveredText": "45422",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/23px-Flag_of_Uzbekistan.svg.png"
+    "totalCasesText": "79988",
+    "totalDeathsText": "2298",
+    "totalRecoveredText": "64604",
+    "countryCode": "http://localhost:5000/static/flags/pl.svg"
   },
   {
-    "activeCasesText": "12804",
-    "countryText": "Algeria",
-    "lastUpdate": "2020-09-16 01:41",
-    "newCasesText": "+232",
-    "newDeathsText": "+13",
-    "totalCasesText": "48966",
-    "totalDeathsText": "1645",
-    "totalRecoveredText": "34517",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/23px-Flag_of_Algeria.svg.png"
+    "activeCasesText": "6127",
+    "countryText": "Japan",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "78657",
+    "totalDeathsText": "1500",
+    "totalRecoveredText": "71030",
+    "countryCode": "http://localhost:5000/static/flags/jp.svg"
   },
   {
-    "activeCasesText": "6326",
+    "activeCasesText": "1812",
+    "countryText": "Belarus",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+224",
+    "newDeathsText": "+5",
+    "totalCasesText": "75898",
+    "totalDeathsText": "785",
+    "totalRecoveredText": "73301",
+    "countryCode": "http://localhost:5000/static/flags/by.svg"
+  },
+  {
+    "activeCasesText": "47367",
+    "countryText": "Honduras",
+    "newCasesText": "+473",
+    "newDeathsText": "+18",
+    "totalCasesText": "71616",
+    "totalDeathsText": "2184",
+    "totalRecoveredText": "22065",
+    "countryCode": "http://localhost:5000/static/flags/hn.svg"
+  },
+  {
+    "activeCasesText": "39967",
+    "countryText": "Ethiopia",
+    "newCasesText": "+889",
+    "newDeathsText": "+12",
+    "totalCasesText": "69709",
+    "totalDeathsText": "1108",
+    "totalRecoveredText": "28634",
+    "countryCode": "http://localhost:5000/static/flags/et.svg"
+  },
+  {
+    "activeCasesText": "21544",
+    "countryText": "Portugal",
+    "newCasesText": "+623",
+    "newDeathsText": "+8",
+    "totalCasesText": "69200",
+    "totalDeathsText": "1920",
+    "totalRecoveredText": "45736",
+    "countryCode": "http://localhost:5000/static/flags/pt.svg"
+  },
+  {
+    "activeCasesText": "10013",
+    "countryText": "Venezuela",
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "66656",
+    "totalDeathsText": "547",
+    "totalRecoveredText": "56096",
+    "countryCode": "http://localhost:5000/static/flags/ve.svg"
+  },
+  {
+    "activeCasesText": "17611",
+    "countryText": "Nepal",
+    "newCasesText": "+1154",
+    "newDeathsText": "+16",
+    "totalCasesText": "65276",
+    "totalDeathsText": "427",
+    "totalRecoveredText": "47238",
+    "countryCode": "http://localhost:5000/static/flags/np.svg"
+  },
+  {
+    "activeCasesText": "6866",
+    "countryText": "Bahrain",
+    "newCasesText": "-",
+    "newDeathsText": "+2",
+    "totalCasesText": "65039",
+    "totalDeathsText": "223",
+    "totalRecoveredText": "57950",
+    "countryCode": "http://localhost:5000/static/flags/bh.svg"
+  },
+  {
+    "activeCasesText": "39454",
+    "countryText": "Costa Rica",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "63712",
+    "totalDeathsText": "706",
+    "totalRecoveredText": "23552",
+    "countryCode": "http://localhost:5000/static/flags/cr.svg"
+  },
+  {
+    "activeCasesText": "338",
+    "countryText": "Singapore",
+    "newCasesText": "+30",
+    "newDeathsText": "-",
+    "totalCasesText": "57606",
+    "totalDeathsText": "27",
+    "totalRecoveredText": "57241",
+    "countryCode": "http://localhost:5000/static/flags/sg.svg"
+  },
+  {
+    "activeCasesText": "7575",
+    "countryText": "Nigeria",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "57242",
+    "totalDeathsText": "1098",
+    "totalRecoveredText": "48569",
+    "countryCode": "http://localhost:5000/static/flags/ng.svg"
+  },
+  {
+    "activeCasesText": "3264",
+    "countryText": "Uzbekistan",
+    "newCasesText": "+430",
+    "newDeathsText": "+4",
+    "totalCasesText": "52070",
+    "totalDeathsText": "437",
+    "totalRecoveredText": "48369",
+    "countryCode": "http://localhost:5000/static/flags/uz.svg"
+  },
+  {
+    "activeCasesText": "7828",
     "countryText": "Switzerland",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "+514",
-    "newDeathsText": "+11",
-    "totalCasesText": "48265",
-    "totalDeathsText": "2039",
-    "totalRecoveredText": "39900",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/15px-Flag_of_Switzerland.svg.png"
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+1095",
+    "newDeathsText": "+5",
+    "totalCasesText": "50378",
+    "totalDeathsText": "2050",
+    "totalRecoveredText": "40500",
+    "countryCode": "http://localhost:5000/static/flags/ch.svg"
   },
   {
-    "activeCasesText": "3384",
+    "activeCasesText": "24214",
+    "countryText": "Czechia",
+    "lastUpdate": "2020-09-21 16:46",
+    "newCasesText": "+781",
+    "newDeathsText": "+18",
+    "totalCasesText": "50071",
+    "totalDeathsText": "521",
+    "totalRecoveredText": "25336",
+    "countryCode": "http://localhost:5000/static/flags/cz.svg"
+  },
+  {
+    "activeCasesText": "13164",
+    "countryText": "Algeria",
+    "newCasesText": "+197",
+    "newDeathsText": "+7",
+    "totalCasesText": "50023",
+    "totalDeathsText": "1679",
+    "totalRecoveredText": "35180",
+    "countryCode": "http://localhost:5000/static/flags/dz.svg"
+  },
+  {
+    "activeCasesText": "3979",
     "countryText": "Armenia",
-    "lastUpdate": "2020-09-15 19:39",
-    "newCasesText": "+257",
-    "newDeathsText": "+3",
-    "totalCasesText": "46376",
-    "totalDeathsText": "923",
-    "totalRecoveredText": "42069",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_Armenia.svg/23px-Flag_of_Armenia.svg.png"
+    "newCasesText": "+121",
+    "newDeathsText": "+6",
+    "totalCasesText": "47552",
+    "totalDeathsText": "936",
+    "totalRecoveredText": "42637",
+    "countryCode": "http://localhost:5000/static/flags/am.svg"
   },
   {
-    "activeCasesText": "564",
+    "activeCasesText": "10567",
+    "countryText": "Moldova",
+    "newCasesText": "+200",
+    "newDeathsText": "+8",
+    "totalCasesText": "46796",
+    "totalDeathsText": "1211",
+    "totalRecoveredText": "35018",
+    "countryCode": "http://localhost:5000/static/flags/md.svg"
+  },
+  {
+    "activeCasesText": "554",
     "countryText": "Ghana",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "45655",
-    "totalDeathsText": "294",
-    "totalRecoveredText": "44797",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/23px-Flag_of_Ghana.svg.png"
+    "totalCasesText": "46004",
+    "totalDeathsText": "297",
+    "totalRecoveredText": "45153",
+    "countryCode": "http://localhost:5000/static/flags/gh.svg"
   },
   {
-    "activeCasesText": "2799",
+    "activeCasesText": "2726",
     "countryText": "Kyrgyzstan",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+73",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+55",
     "newDeathsText": "-",
-    "totalCasesText": "45072",
+    "totalCasesText": "45471",
     "totalDeathsText": "1063",
-    "totalRecoveredText": "41210",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/23px-Flag_of_Kyrgyzstan.svg.png"
+    "totalRecoveredText": "41682",
+    "countryCode": "http://localhost:5000/static/flags/kg.svg"
   },
   {
-    "activeCasesText": "10470",
-    "countryText": "Moldova",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+627",
-    "newDeathsText": "+16",
-    "totalCasesText": "44361",
-    "totalDeathsText": "1159",
-    "totalRecoveredText": "32732",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/23px-Flag_of_Moldova.svg.png"
-  },
-  {
-    "activeCasesText": "16809",
-    "countryText": "Czechia",
-    "lastUpdate": "2020-09-16 04:41",
-    "newCasesText": "+1290",
-    "newDeathsText": "+5",
-    "totalCasesText": "40186",
-    "totalDeathsText": "481",
-    "totalRecoveredText": "22896",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"
-  },
-  {
-    "activeCasesText": "4916",
-    "countryText": "Afghanistan",
-    "newCasesText": "+40",
-    "newDeathsText": "+10",
-    "totalCasesText": "38855",
-    "totalDeathsText": "1436",
-    "totalRecoveredText": "32503",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Afghanistan.svg/23px-Flag_of_Afghanistan.svg.png"
-  },
-  {
-    "activeCasesText": "1940",
+    "activeCasesText": "1868",
     "countryText": "Azerbaijan",
-    "lastUpdate": "2020-09-15 12:38",
-    "newCasesText": "+141",
+    "newCasesText": "+92",
+    "newDeathsText": "+1",
+    "totalCasesText": "39280",
+    "totalDeathsText": "576",
+    "totalRecoveredText": "36836",
+    "countryCode": "http://localhost:5000/static/flags/az.svg"
+  },
+  {
+    "activeCasesText": "5054",
+    "countryText": "Afghanistan",
+    "newCasesText": "+30",
     "newDeathsText": "+3",
-    "totalCasesText": "38658",
-    "totalDeathsText": "569",
-    "totalRecoveredText": "36149",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Azerbaijan.svg/23px-Flag_of_Azerbaijan.svg.png"
+    "totalCasesText": "39074",
+    "totalDeathsText": "1444",
+    "totalRecoveredText": "32576",
+    "countryCode": "http://localhost:5000/static/flags/af.svg"
   },
   {
-    "activeCasesText": "12303",
-    "countryText": "Kenya",
-    "lastUpdate": "2020-09-16 08:42",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "36301",
-    "totalDeathsText": "634",
-    "totalRecoveredText": "23364",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/23px-Flag_of_Kenya.svg.png"
-  },
-  {
-    "activeCasesText": "6660",
+    "activeCasesText": "8375",
     "countryText": "Austria",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "+768",
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+563",
     "newDeathsText": "+1",
-    "totalCasesText": "35073",
-    "totalDeathsText": "758",
-    "totalRecoveredText": "27655",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/23px-Flag_of_Austria.svg.png"
+    "totalCasesText": "38658",
+    "totalDeathsText": "767",
+    "totalRecoveredText": "29516",
+    "countryCode": "http://localhost:5000/static/flags/at.svg"
   },
   {
-    "activeCasesText": "10554",
+    "activeCasesText": "12480",
+    "countryText": "Kenya",
+    "newCasesText": "+98",
+    "newDeathsText": "+2",
+    "totalCasesText": "37079",
+    "totalDeathsText": "650",
+    "totalRecoveredText": "23949",
+    "countryCode": "http://localhost:5000/static/flags/ke.svg"
+  },
+  {
+    "activeCasesText": "11458",
     "countryText": "Palestine",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+756",
-    "newDeathsText": "+14",
-    "totalCasesText": "33006",
-    "totalDeathsText": "243",
-    "totalRecoveredText": "22209",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/23px-Flag_of_Palestine.svg.png"
+    "lastUpdate": "2020-09-21 15:46",
+    "newCasesText": "+465",
+    "newDeathsText": "+3",
+    "totalCasesText": "36151",
+    "totalDeathsText": "265",
+    "totalRecoveredText": "24428",
+    "countryCode": "http://localhost:5000/static/flags/ps.svg"
   },
   {
-    "activeCasesText": "466",
-    "countryText": "Serbia",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+102",
-    "newDeathsText": "+1",
-    "totalCasesText": "32613",
-    "totalDeathsText": "736",
-    "totalRecoveredText": "31411",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/23px-Flag_of_Serbia.svg.png"
-  },
-  {
-    "activeCasesText": "6398",
-    "countryText": "Ireland",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "31549",
-    "totalDeathsText": "1787",
-    "totalRecoveredText": "23364",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/23px-Flag_of_Ireland.svg.png"
-  },
-  {
-    "activeCasesText": "13485",
+    "activeCasesText": "14744",
     "countryText": "Paraguay",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "29298",
-    "totalDeathsText": "552",
-    "totalRecoveredText": "15261",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Paraguay.svg/23px-Flag_of_Paraguay.svg.png"
+    "totalCasesText": "33520",
+    "totalDeathsText": "659",
+    "totalRecoveredText": "18117",
+    "countryCode": "http://localhost:5000/static/flags/py.svg"
   },
   {
-    "activeCasesText": "6407",
-    "countryText": "El Salvador",
-    "newCasesText": "+75",
-    "newDeathsText": "+4",
-    "totalCasesText": "27163",
-    "totalDeathsText": "796",
-    "totalRecoveredText": "19960",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_El_Salvador.svg/23px-Flag_of_El_Salvador.svg.png"
+    "activeCasesText": "7965",
+    "countryText": "Ireland",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+188",
+    "newDeathsText": "-",
+    "totalCasesText": "33121",
+    "totalDeathsText": "1792",
+    "totalRecoveredText": "23364",
+    "countryCode": "http://localhost:5000/static/flags/ie.svg"
   },
   {
-    "activeCasesText": "2229",
-    "countryText": "Australia",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+40",
-    "newDeathsText": "+8",
-    "totalCasesText": "26779",
-    "totalDeathsText": "824",
-    "totalRecoveredText": "23726",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/23px-Flag_of_Australia_%28converted%29.svg.png"
+    "activeCasesText": "659",
+    "countryText": "Serbia",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+30",
+    "newDeathsText": "+2",
+    "totalCasesText": "32938",
+    "totalDeathsText": "743",
+    "totalRecoveredText": "31536",
+    "countryCode": "http://localhost:5000/static/flags/rs.svg"
   },
   {
-    "activeCasesText": "15981",
+    "activeCasesText": "17173",
     "countryText": "Lebanon",
-    "lastUpdate": "2020-09-16 14:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "25449",
-    "totalDeathsText": "252",
-    "totalRecoveredText": "9216",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/23px-Flag_of_Lebanon.svg.png"
+    "lastUpdate": "2020-09-21 15:46",
+    "newCasesText": "+684",
+    "newDeathsText": "+10",
+    "totalCasesText": "29987",
+    "totalDeathsText": "307",
+    "totalRecoveredText": "12507",
+    "countryCode": "http://localhost:5000/static/flags/lb.svg"
   },
   {
-    "activeCasesText": "11044",
+    "activeCasesText": "12962",
     "countryText": "Libya",
-    "lastUpdate": "2020-09-15 22:40",
-    "newCasesText": "+792",
-    "newDeathsText": "+11",
-    "totalCasesText": "24936",
-    "totalDeathsText": "394",
-    "totalRecoveredText": "13498",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Libya.svg/23px-Flag_of_Libya.svg.png"
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+847",
+    "newDeathsText": "+16",
+    "totalCasesText": "28796",
+    "totalDeathsText": "450",
+    "totalRecoveredText": "15384",
+    "countryCode": "http://localhost:5000/static/flags/ly.svg"
   },
   {
-    "activeCasesText": "6485",
+    "activeCasesText": "5204",
+    "countryText": "El Salvador",
+    "newCasesText": "+245",
+    "newDeathsText": "+1",
+    "totalCasesText": "27798",
+    "totalDeathsText": "812",
+    "totalRecoveredText": "21782",
+    "countryCode": "http://localhost:5000/static/flags/sv.svg"
+  },
+  {
+    "activeCasesText": "1998",
+    "countryText": "Australia",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+14",
+    "newDeathsText": "+2",
+    "totalCasesText": "26912",
+    "totalDeathsText": "851",
+    "totalRecoveredText": "24063",
+    "countryCode": "http://localhost:5000/static/flags/au.svg"
+  },
+  {
+    "activeCasesText": "6642",
     "countryText": "Bosnia and Herzegovina",
-    "lastUpdate": "2020-09-16 11:42",
-    "newCasesText": "+282",
-    "newDeathsText": "+11",
-    "totalCasesText": "24211",
-    "totalDeathsText": "736",
-    "totalRecoveredText": "16990",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/23px-Flag_of_Bosnia_and_Herzegovina.svg.png"
+    "newCasesText": "+93",
+    "newDeathsText": "+7",
+    "totalCasesText": "25521",
+    "totalDeathsText": "770",
+    "totalRecoveredText": "18109",
+    "countryCode": "http://localhost:5000/static/flags/ba.svg"
   },
   {
-    "activeCasesText": "2827",
-    "countryText": "S. Korea",
-    "lastUpdate": "2020-09-16 11:42",
-    "newCasesText": "+113",
-    "newDeathsText": "-",
-    "totalCasesText": "22504",
-    "totalDeathsText": "367",
-    "totalRecoveredText": "19310",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
-  },
-  {
-    "activeCasesText": "3381",
+    "activeCasesText": "4945",
     "countryText": "Denmark",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "20571",
-    "totalDeathsText": "633",
-    "totalRecoveredText": "16557",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/20px-Flag_of_Denmark.svg.png"
+    "newCasesText": "+418",
+    "newDeathsText": "+2",
+    "totalCasesText": "23323",
+    "totalDeathsText": "640",
+    "totalRecoveredText": "17738",
+    "countryCode": "http://localhost:5000/static/flags/dk.svg"
   },
   {
-    "activeCasesText": "1019",
+    "activeCasesText": "2412",
+    "countryText": "S. Korea",
+    "newCasesText": "+70",
+    "newDeathsText": "+2",
+    "totalCasesText": "23045",
+    "totalDeathsText": "385",
+    "totalRecoveredText": "20248",
+    "countryCode": "http://localhost:5000/static/flags/kr.svg"
+  },
+  {
+    "activeCasesText": "1058",
     "countryText": "Cameroon",
-    "lastUpdate": "2020-09-15 14:39",
-    "newCasesText": "-",
+    "newCasesText": "+167",
     "newDeathsText": "-",
-    "totalCasesText": "20271",
-    "totalDeathsText": "415",
-    "totalRecoveredText": "18837",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Cameroon.svg/23px-Flag_of_Cameroon.svg.png"
+    "totalCasesText": "20598",
+    "totalDeathsText": "416",
+    "totalRecoveredText": "19124",
+    "countryCode": "http://localhost:5000/static/flags/cm.svg"
   },
   {
-    "activeCasesText": "752",
+    "activeCasesText": "740",
     "countryText": "Ivory Coast",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "19100",
+    "totalCasesText": "19320",
     "totalDeathsText": "120",
-    "totalRecoveredText": "18228",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/23px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png"
+    "totalRecoveredText": "18460"
   },
   {
-    "activeCasesText": "4423",
+    "activeCasesText": "13779",
+    "countryText": "Hungary",
+    "newCasesText": "+876",
+    "newDeathsText": "+3",
+    "totalCasesText": "18866",
+    "totalDeathsText": "686",
+    "totalRecoveredText": "4401",
+    "countryCode": "http://localhost:5000/static/flags/hu.svg"
+  },
+  {
+    "activeCasesText": "4522",
     "countryText": "Bulgaria",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "18216",
-    "totalDeathsText": "736",
-    "totalRecoveredText": "13057",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/23px-Flag_of_Bulgaria.svg.png"
+    "totalCasesText": "18863",
+    "totalDeathsText": "761",
+    "totalRecoveredText": "13580",
+    "countryCode": "http://localhost:5000/static/flags/bg.svg"
   },
   {
-    "activeCasesText": "1870",
+    "activeCasesText": "2131",
     "countryText": "North Macedonia",
-    "newCasesText": "+163",
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+45",
     "newDeathsText": "+7",
-    "totalCasesText": "16088",
-    "totalDeathsText": "668",
-    "totalRecoveredText": "13550",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_North_Macedonia.svg/23px-Flag_of_North_Macedonia.svg.png"
+    "totalCasesText": "16780",
+    "totalDeathsText": "700",
+    "totalRecoveredText": "13949",
+    "countryCode": "http://localhost:5000/static/flags/mk.svg"
   },
   {
-    "activeCasesText": "1174",
+    "activeCasesText": "1166",
     "countryText": "Madagascar",
-    "newCasesText": "+68",
-    "newDeathsText": "+1",
-    "totalCasesText": "15871",
-    "totalDeathsText": "215",
-    "totalRecoveredText": "14482",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Madagascar.svg/23px-Flag_of_Madagascar.svg.png"
-  },
-  {
-    "activeCasesText": "3513",
-    "countryText": "Senegal",
-    "lastUpdate": "2020-09-15 18:39",
-    "newCasesText": "+39",
-    "newDeathsText": "+1",
-    "totalCasesText": "14568",
-    "totalDeathsText": "299",
-    "totalRecoveredText": "10756",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/23px-Flag_of_Senegal.svg.png"
-  },
-  {
-    "activeCasesText": "9653",
-    "countryText": "Hungary",
-    "lastUpdate": "2020-09-15 19:39",
-    "newCasesText": "+581",
-    "newDeathsText": "+8",
-    "totalCasesText": "14460",
-    "totalDeathsText": "654",
-    "totalRecoveredText": "4153",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/23px-Flag_of_Hungary.svg.png"
-  },
-  {
-    "activeCasesText": "9921",
-    "countryText": "Greece",
-    "lastUpdate": "2020-09-15 08:37",
-    "newCasesText": "+311",
-    "newDeathsText": "+3",
-    "totalCasesText": "14041",
-    "totalDeathsText": "316",
-    "totalRecoveredText": "3804",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/23px-Flag_of_Greece.svg.png"
-  },
-  {
-    "activeCasesText": "2103",
-    "countryText": "Croatia",
-    "lastUpdate": "2020-09-15 07:37",
-    "newCasesText": "+280",
-    "newDeathsText": "+6",
-    "totalCasesText": "14029",
-    "totalDeathsText": "236",
-    "totalRecoveredText": "11690",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/23px-Flag_of_Croatia.svg.png"
-  },
-  {
-    "activeCasesText": "692",
-    "countryText": "Zambia",
-    "lastUpdate": "2020-09-16 05:41",
-    "newCasesText": "+68",
+    "newCasesText": "+20",
     "newDeathsText": "+2",
-    "totalCasesText": "13887",
-    "totalDeathsText": "326",
-    "totalRecoveredText": "12869",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Zambia.svg/23px-Flag_of_Zambia.svg.png"
+    "totalCasesText": "16073",
+    "totalDeathsText": "225",
+    "totalRecoveredText": "14682",
+    "countryCode": "http://localhost:5000/static/flags/mg.svg"
   },
   {
-    "activeCasesText": "5940",
+    "activeCasesText": "5262",
+    "countryText": "Greece",
+    "newCasesText": "+453",
+    "newDeathsText": "+6",
+    "totalCasesText": "15595",
+    "totalDeathsText": "344",
+    "totalRecoveredText": "9989",
+    "countryCode": "http://localhost:5000/static/flags/gr.svg"
+  },
+  {
+    "activeCasesText": "2002",
+    "countryText": "Croatia",
+    "newCasesText": "+70",
+    "newDeathsText": "+5",
+    "totalCasesText": "14992",
+    "totalDeathsText": "253",
+    "totalRecoveredText": "12737",
+    "countryCode": "http://localhost:5000/static/flags/hr.svg"
+  },
+  {
+    "activeCasesText": "2978",
+    "countryText": "Senegal",
+    "newCasesText": "+24",
+    "newDeathsText": "-",
+    "totalCasesText": "14738",
+    "totalDeathsText": "302",
+    "totalRecoveredText": "11458",
+    "countryCode": "http://localhost:5000/static/flags/sn.svg"
+  },
+  {
+    "activeCasesText": "480",
+    "countryText": "Zambia",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+44",
+    "newDeathsText": "-",
+    "totalCasesText": "14175",
+    "totalDeathsText": "330",
+    "totalRecoveredText": "13365",
+    "countryCode": "http://localhost:5000/static/flags/zm.svg"
+  },
+  {
+    "activeCasesText": "5959",
     "countryText": "Sudan",
-    "lastUpdate": "2020-09-16 01:41",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "13535",
+    "totalCasesText": "13555",
     "totalDeathsText": "836",
-    "totalRecoveredText": "6759",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Sudan.svg/23px-Flag_of_Sudan.svg.png"
+    "totalRecoveredText": "6760",
+    "countryCode": "http://localhost:5000/static/flags/sd.svg"
   },
   {
-    "activeCasesText": "1795",
+    "activeCasesText": "2316",
     "countryText": "Norway",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "+38",
+    "newCasesText": "+57",
     "newDeathsText": "-",
-    "totalCasesText": "12431",
-    "totalDeathsText": "265",
-    "totalRecoveredText": "10371",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/21px-Flag_of_Norway.svg.png"
-  },
-  {
-    "activeCasesText": "4740",
-    "countryText": "Albania",
-    "newCasesText": "+144",
-    "newDeathsText": "+3",
-    "totalCasesText": "11816",
-    "totalDeathsText": "343",
-    "totalRecoveredText": "6733",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/21px-Flag_of_Albania.svg.png"
-  },
-  {
-    "activeCasesText": "320",
-    "countryText": "DRC",
-    "newCasesText": "+13",
-    "newDeathsText": "-",
-    "totalCasesText": "10414",
+    "totalCasesText": "12954",
     "totalDeathsText": "267",
-    "totalRecoveredText": "9827",
-    "flagIcon": "-"
+    "totalRecoveredText": "10371",
+    "countryCode": "http://localhost:5000/static/flags/no.svg"
   },
   {
-    "activeCasesText": "604",
+    "activeCasesText": "5176",
+    "countryText": "Albania",
+    "newCasesText": "+150",
+    "newDeathsText": "+2",
+    "totalCasesText": "12535",
+    "totalDeathsText": "364",
+    "totalRecoveredText": "6995",
+    "countryCode": "http://localhost:5000/static/flags/al.svg"
+  },
+  {
+    "activeCasesText": "8187",
+    "countryText": "Tunisia",
+    "newCasesText": "+996",
+    "newDeathsText": "+4",
+    "totalCasesText": "10732",
+    "totalDeathsText": "159",
+    "totalRecoveredText": "2386",
+    "countryCode": "http://localhost:5000/static/flags/tn.svg"
+  },
+  {
+    "activeCasesText": "2301",
+    "countryText": "Namibia",
+    "newCasesText": "+149",
+    "newDeathsText": "+1",
+    "totalCasesText": "10526",
+    "totalDeathsText": "113",
+    "totalRecoveredText": "8112",
+    "countryCode": "http://localhost:5000/static/flags/na.svg"
+  },
+  {
+    "activeCasesText": "296",
+    "countryText": "DRC",
+    "newCasesText": "+4",
+    "newDeathsText": "-",
+    "totalCasesText": "10519",
+    "totalDeathsText": "271",
+    "totalRecoveredText": "9952",
+    "countryCode": "http://localhost:5000/static/flags/cd.svg"
+  },
+  {
+    "activeCasesText": "569",
     "countryText": "Guinea",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "10111",
-    "totalDeathsText": "63",
-    "totalRecoveredText": "9444",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Flag_of_Guinea.svg/23px-Flag_of_Guinea.svg.png"
-  },
-  {
-    "activeCasesText": "668",
-    "countryText": "Malaysia",
-    "lastUpdate": "2020-09-16 11:42",
-    "newCasesText": "+62",
-    "newDeathsText": "-",
-    "totalCasesText": "10031",
-    "totalDeathsText": "128",
-    "totalRecoveredText": "9235",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/23px-Flag_of_Malaysia.svg.png"
-  },
-  {
-    "activeCasesText": "2354",
-    "countryText": "Namibia",
-    "newCasesText": "+63",
-    "newDeathsText": "+2",
-    "totalCasesText": "9964",
-    "totalDeathsText": "108",
-    "totalRecoveredText": "7502",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Namibia.svg/23px-Flag_of_Namibia.svg.png"
-  },
-  {
-    "activeCasesText": "312",
-    "countryText": "French Guiana",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "9578",
+    "totalCasesText": "10325",
     "totalDeathsText": "64",
-    "totalRecoveredText": "9202",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+    "totalRecoveredText": "9692",
+    "countryCode": "http://localhost:5000/static/flags/gn.svg"
   },
   {
-    "activeCasesText": "1566",
-    "countryText": "Maldives",
-    "newCasesText": "-",
+    "activeCasesText": "751",
+    "countryText": "Malaysia",
+    "newCasesText": "+57",
     "newDeathsText": "-",
-    "totalCasesText": "9328",
-    "totalDeathsText": "33",
-    "totalRecoveredText": "7729",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/23px-Flag_of_Maldives.svg.png"
+    "totalCasesText": "10276",
+    "totalDeathsText": "130",
+    "totalRecoveredText": "9395",
+    "countryCode": "http://localhost:5000/static/flags/my.svg"
   },
   {
-    "activeCasesText": "1157",
+    "activeCasesText": "1346",
+    "countryText": "Maldives",
+    "newCasesText": "+46",
+    "newDeathsText": "+1",
+    "totalCasesText": "9770",
+    "totalDeathsText": "34",
+    "totalRecoveredText": "8390",
+    "countryCode": "http://localhost:5000/static/flags/mv.svg"
+  },
+  {
+    "activeCasesText": "274",
+    "countryText": "French Guiana",
+    "newCasesText": "+20",
+    "newDeathsText": "-",
+    "totalCasesText": "9712",
+    "totalDeathsText": "65",
+    "totalRecoveredText": "9373",
+    "countryCode": "http://localhost:5000/static/flags/gf.svg"
+  },
+  {
+    "activeCasesText": "1163",
     "countryText": "Tajikistan",
-    "lastUpdate": "2020-09-16 04:41",
     "newCasesText": "+42",
     "newDeathsText": "-",
-    "totalCasesText": "9171",
+    "totalCasesText": "9388",
     "totalDeathsText": "73",
-    "totalRecoveredText": "7941",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Tajikistan.svg/23px-Flag_of_Tajikistan.svg.png"
+    "totalRecoveredText": "8152",
+    "countryCode": "http://localhost:5000/static/flags/tj.svg"
   },
   {
-    "activeCasesText": "711",
+    "activeCasesText": "1005",
     "countryText": "Finland",
-    "lastUpdate": "2020-09-15 10:38",
-    "newCasesText": "+25",
-    "newDeathsText": "-",
-    "totalCasesText": "8750",
-    "totalDeathsText": "339",
+    "newCasesText": "+66",
+    "newDeathsText": "+2",
+    "totalCasesText": "9046",
+    "totalDeathsText": "341",
     "totalRecoveredText": "7700",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/23px-Flag_of_Finland.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/fi.svg"
   },
   {
-    "activeCasesText": "816",
+    "activeCasesText": "3279",
+    "countryText": "Montenegro",
+    "newCasesText": "+230",
+    "newDeathsText": "+2",
+    "totalCasesText": "8842",
+    "totalDeathsText": "138",
+    "totalRecoveredText": "5425",
+    "countryCode": "http://localhost:5000/static/flags/me.svg"
+  },
+  {
+    "activeCasesText": "795",
     "countryText": "Gabon",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "8654",
+    "totalCasesText": "8696",
     "totalDeathsText": "53",
-    "totalRecoveredText": "7785",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/04/Flag_of_Gabon.svg/20px-Flag_of_Gabon.svg.png"
+    "totalRecoveredText": "7848",
+    "countryCode": "http://localhost:5000/static/flags/ga.svg"
   },
   {
-    "activeCasesText": "2129",
+    "activeCasesText": "1921",
     "countryText": "Haiti",
-    "lastUpdate": "2020-09-15 19:39",
-    "newCasesText": "-",
+    "newCasesText": "+5",
     "newDeathsText": "-",
-    "totalCasesText": "8530",
-    "totalDeathsText": "220",
-    "totalRecoveredText": "6181",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/23px-Flag_of_Haiti.svg.png"
+    "totalCasesText": "8624",
+    "totalDeathsText": "221",
+    "totalRecoveredText": "6482",
+    "countryCode": "http://localhost:5000/static/flags/ht.svg"
   },
   {
-    "activeCasesText": "5238",
-    "countryText": "Tunisia",
-    "lastUpdate": "2020-09-15 22:40",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "7623",
-    "totalDeathsText": "123",
-    "totalRecoveredText": "2262",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/23px-Flag_of_Tunisia.svg.png"
-  },
-  {
-    "activeCasesText": "1569",
-    "countryText": "Zimbabwe",
-    "lastUpdate": "2020-09-15 20:40",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "7576",
-    "totalDeathsText": "224",
-    "totalRecoveredText": "5783",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/23px-Flag_of_Zimbabwe.svg.png"
-  },
-  {
-    "activeCasesText": "319",
-    "countryText": "Mauritania",
-    "lastUpdate": "2020-09-15 08:37",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "7319",
-    "totalDeathsText": "161",
-    "totalRecoveredText": "6839",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Mauritania.svg/23px-Flag_of_Mauritania.svg.png"
-  },
-  {
-    "activeCasesText": "599",
+    "activeCasesText": "953",
     "countryText": "Luxembourg",
-    "newCasesText": "-",
+    "newCasesText": "+9",
     "newDeathsText": "-",
-    "totalCasesText": "7284",
+    "totalCasesText": "7916",
     "totalDeathsText": "124",
-    "totalRecoveredText": "6561",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Luxembourg.svg/23px-Flag_of_Luxembourg.svg.png"
+    "totalRecoveredText": "6839",
+    "countryCode": "http://localhost:5000/static/flags/lu.svg"
   },
   {
-    "activeCasesText": "2246",
-    "countryText": "Montenegro",
+    "activeCasesText": "1534",
+    "countryText": "Zimbabwe",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "7061",
-    "totalDeathsText": "123",
-    "totalRecoveredText": "4692",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Montenegro.svg/23px-Flag_of_Montenegro.svg.png"
+    "totalCasesText": "7683",
+    "totalDeathsText": "225",
+    "totalRecoveredText": "5924",
+    "countryCode": "http://localhost:5000/static/flags/zw.svg"
   },
   {
-    "activeCasesText": "2602",
-    "countryText": "Slovakia",
-    "lastUpdate": "2020-09-16 07:42",
-    "newCasesText": "+92",
+    "activeCasesText": "256",
+    "countryText": "Mauritania",
+    "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "5860",
-    "totalDeathsText": "38",
-    "totalRecoveredText": "3220",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/23px-Flag_of_Slovakia.svg.png"
+    "totalCasesText": "7368",
+    "totalDeathsText": "161",
+    "totalRecoveredText": "6951",
+    "countryCode": "http://localhost:5000/static/flags/mr.svg"
   },
   {
-    "activeCasesText": "2495",
+    "activeCasesText": "3130",
     "countryText": "Mozambique",
-    "lastUpdate": "2020-09-15 15:39",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "5713",
-    "totalDeathsText": "37",
-    "totalRecoveredText": "3181",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Mozambique.svg/23px-Flag_of_Mozambique.svg.png"
+    "newCasesText": "+141",
+    "newDeathsText": "+1",
+    "totalCasesText": "6912",
+    "totalDeathsText": "44",
+    "totalRecoveredText": "3738",
+    "countryCode": "http://localhost:5000/static/flags/mz.svg"
   },
   {
-    "activeCasesText": "1761",
-    "countryText": "Malawi",
-    "lastUpdate": "2020-09-16 10:42",
-    "newCasesText": "-",
+    "activeCasesText": "3146",
+    "countryText": "Slovakia",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+79",
     "newDeathsText": "-",
-    "totalCasesText": "5701",
-    "totalDeathsText": "178",
-    "totalRecoveredText": "3762",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Flag_of_Malawi.svg/23px-Flag_of_Malawi.svg.png"
+    "totalCasesText": "6756",
+    "totalDeathsText": "39",
+    "totalRecoveredText": "3571",
+    "countryCode": "http://localhost:5000/static/flags/sk.svg"
   },
   {
-    "activeCasesText": "4",
-    "countryText": "Djibouti",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "5396",
-    "totalDeathsText": "61",
-    "totalRecoveredText": "5331",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Flag_of_Djibouti.svg/23px-Flag_of_Djibouti.svg.png"
-  },
-  {
-    "activeCasesText": "2802",
+    "activeCasesText": "3674",
     "countryText": "Uganda",
-    "lastUpdate": "2020-09-16 11:42",
-    "newCasesText": "+143",
-    "newDeathsText": "+2",
-    "totalCasesText": "5266",
-    "totalDeathsText": "60",
-    "totalRecoveredText": "2404",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/23px-Flag_of_Uganda.svg.png"
+    "newCasesText": "+181",
+    "newDeathsText": "-",
+    "totalCasesText": "6468",
+    "totalDeathsText": "63",
+    "totalRecoveredText": "2731",
+    "countryCode": "http://localhost:5000/static/flags/ug.svg"
   },
   {
-    "activeCasesText": "626",
+    "activeCasesText": "4608",
+    "countryText": "Myanmar",
+    "newCasesText": "+610",
+    "newDeathsText": "+6",
+    "totalCasesText": "6151",
+    "totalDeathsText": "98",
+    "totalRecoveredText": "1445",
+    "countryCode": "http://localhost:5000/static/flags/mm.svg"
+  },
+  {
+    "activeCasesText": "1501",
+    "countryText": "Malawi",
+    "newCasesText": "+2",
+    "newDeathsText": "-",
+    "totalCasesText": "5733",
+    "totalDeathsText": "179",
+    "totalRecoveredText": "4053",
+    "countryCode": "http://localhost:5000/static/flags/mw.svg"
+  },
+  {
+    "activeCasesText": "7",
+    "countryText": "Djibouti",
+    "newCasesText": "+1",
+    "newDeathsText": "-",
+    "totalCasesText": "5404",
+    "totalDeathsText": "61",
+    "totalRecoveredText": "5336",
+    "countryCode": "http://localhost:5000/static/flags/dj.svg"
+  },
+  {
+    "activeCasesText": "541",
     "countryText": "Eswatini",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "5128",
-    "totalDeathsText": "101",
-    "totalRecoveredText": "4401",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Eswatini.svg/23px-Flag_of_Eswatini.svg.png"
+    "totalCasesText": "5269",
+    "totalDeathsText": "104",
+    "totalRecoveredText": "4624",
+    "countryCode": "http://localhost:5000/static/flags/sz.svg"
   },
   {
-    "activeCasesText": "421",
+    "activeCasesText": "607",
+    "countryText": "Cabo Verde",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "5257",
+    "totalDeathsText": "51",
+    "totalRecoveredText": "4599"
+  },
+  {
+    "activeCasesText": "3666",
+    "countryText": "Jamaica",
+    "newCasesText": "+155",
+    "newDeathsText": "+3",
+    "totalCasesText": "5143",
+    "totalDeathsText": "70",
+    "totalRecoveredText": "1407",
+    "countryCode": "http://localhost:5000/static/flags/jm.svg"
+  },
+  {
+    "activeCasesText": "563",
+    "countryText": "Cuba",
+    "newCasesText": "+50",
+    "newDeathsText": "+1",
+    "totalCasesText": "5141",
+    "totalDeathsText": "116",
+    "totalRecoveredText": "4462",
+    "countryCode": "http://localhost:5000/static/flags/cu.svg"
+  },
+  {
+    "activeCasesText": "219",
+    "countryText": "Hong Kong",
+    "newCasesText": "+6",
+    "newDeathsText": "-",
+    "totalCasesText": "5039",
+    "totalDeathsText": "103",
+    "totalRecoveredText": "4717",
+    "countryCode": "http://localhost:5000/static/flags/hk.svg"
+  },
+  {
+    "activeCasesText": "1026",
+    "countryText": "Congo",
+    "newCasesText": "+16",
+    "newDeathsText": "-",
+    "totalCasesText": "5002",
+    "totalDeathsText": "89",
+    "totalRecoveredText": "3887",
+    "countryCode": "http://localhost:5000/static/flags/cg.svg"
+  },
+  {
+    "activeCasesText": "410",
     "countryText": "Equatorial Guinea",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "5000",
+    "totalCasesText": "5002",
     "totalDeathsText": "83",
-    "totalRecoveredText": "4496",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Equatorial_Guinea.svg/23px-Flag_of_Equatorial_Guinea.svg.png"
-  },
-  {
-    "activeCasesText": "220",
-    "countryText": "Hong Kong",
-    "newCasesText": "+9",
-    "newDeathsText": "-",
-    "totalCasesText": "4985",
-    "totalDeathsText": "102",
-    "totalRecoveredText": "4663",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/22px-Flag_of_Hong_Kong.svg.png"
+    "totalRecoveredText": "4509",
+    "countryCode": "http://localhost:5000/static/flags/gq.svg"
   },
   {
     "activeCasesText": "1901",
@@ -1246,485 +1244,439 @@
     "totalCasesText": "4961",
     "totalDeathsText": "147",
     "totalRecoveredText": "2913",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Nicaragua.svg/23px-Flag_of_Nicaragua.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/ni.svg"
   },
   {
-    "activeCasesText": "959",
-    "countryText": "Congo",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "4934",
-    "totalDeathsText": "88",
-    "totalRecoveredText": "3887",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/23px-Flag_of_the_Republic_of_the_Congo.svg.png"
-  },
-  {
-    "activeCasesText": "564",
-    "countryText": "Cabo Verde",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "4904",
-    "totalDeathsText": "46",
-    "totalRecoveredText": "4294",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"
-  },
-  {
-    "activeCasesText": "576",
-    "countryText": "Cuba",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "4803",
-    "totalDeathsText": "108",
-    "totalRecoveredText": "4119",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/23px-Flag_of_Cuba.svg.png"
-  },
-  {
-    "activeCasesText": "2882",
+    "activeCasesText": "2894",
     "countryText": "CAR",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "4772",
+    "totalCasesText": "4786",
     "totalDeathsText": "62",
-    "totalRecoveredText": "1828",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg"
+    "totalRecoveredText": "1830"
   },
   {
-    "activeCasesText": "534",
+    "activeCasesText": "1905",
+    "countryText": "Jordan",
+    "lastUpdate": "2020-09-21 15:46",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "4779",
+    "totalDeathsText": "30",
+    "totalRecoveredText": "2844",
+    "countryCode": "http://localhost:5000/static/flags/jo.svg"
+  },
+  {
+    "activeCasesText": "138",
     "countryText": "Suriname",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "4625",
-    "totalDeathsText": "95",
-    "totalRecoveredText": "3996",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/23px-Flag_of_Suriname.svg.png"
+    "totalCasesText": "4723",
+    "totalDeathsText": "97",
+    "totalRecoveredText": "4488",
+    "countryCode": "http://localhost:5000/static/flags/sr.svg"
   },
   {
-    "activeCasesText": "1835",
+    "activeCasesText": "1724",
     "countryText": "Rwanda",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "4624",
-    "totalDeathsText": "22",
-    "totalRecoveredText": "2767",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Rwanda.svg/23px-Flag_of_Rwanda.svg.png"
-  },
-  {
-    "activeCasesText": "2938",
-    "countryText": "Jamaica",
-    "newCasesText": "+122",
-    "newDeathsText": "-",
-    "totalCasesText": "4164",
-    "totalDeathsText": "46",
-    "totalRecoveredText": "1180",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/23px-Flag_of_Jamaica.svg.png"
-  },
-  {
-    "activeCasesText": "975",
-    "countryText": "Slovenia",
-    "lastUpdate": "2020-09-15 09:38",
-    "newCasesText": "+123",
-    "newDeathsText": "-",
-    "totalCasesText": "3954",
-    "totalDeathsText": "135",
-    "totalRecoveredText": "2844",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Slovenia.svg/23px-Flag_of_Slovenia.svg.png"
-  },
-  {
-    "activeCasesText": "1477",
-    "countryText": "Jordan",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+175",
-    "newDeathsText": "-",
-    "totalCasesText": "3852",
+    "totalCasesText": "4711",
     "totalDeathsText": "26",
-    "totalRecoveredText": "2349",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/23px-Flag_of_Jordan.svg.png"
+    "totalRecoveredText": "2961",
+    "countryCode": "http://localhost:5000/static/flags/rw.svg"
   },
   {
-    "activeCasesText": "2765",
-    "countryText": "Myanmar",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "+134",
-    "newDeathsText": "+4",
-    "totalCasesText": "3636",
-    "totalDeathsText": "39",
-    "totalRecoveredText": "832",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/23px-Flag_of_Myanmar.svg.png"
-  },
-  {
-    "activeCasesText": "2583",
-    "countryText": "Syria",
-    "lastUpdate": "2020-09-15 13:38",
-    "newCasesText": "-",
+    "activeCasesText": "1280",
+    "countryText": "Slovenia",
+    "newCasesText": "+50",
     "newDeathsText": "-",
-    "totalCasesText": "3614",
-    "totalDeathsText": "160",
-    "totalRecoveredText": "871",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/53/Flag_of_Syria.svg/23px-Flag_of_Syria.svg.png"
+    "totalCasesText": "4470",
+    "totalDeathsText": "142",
+    "totalRecoveredText": "3048",
+    "countryCode": "http://localhost:5000/static/flags/si.svg"
   },
   {
-    "activeCasesText": "2098",
+    "activeCasesText": "2394",
     "countryText": "Angola",
-    "lastUpdate": "2020-09-15 19:39",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "3569",
-    "totalDeathsText": "139",
-    "totalRecoveredText": "1332",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/23px-Flag_of_Angola.svg.png"
+    "totalCasesText": "3991",
+    "totalDeathsText": "152",
+    "totalRecoveredText": "1445",
+    "countryCode": "http://localhost:5000/static/flags/ao.svg"
   },
   {
-    "activeCasesText": "116",
-    "countryText": "Thailand",
-    "lastUpdate": "2020-09-16 16:43",
-    "newCasesText": "+10",
-    "newDeathsText": "-",
-    "totalCasesText": "3490",
-    "totalDeathsText": "58",
-    "totalRecoveredText": "3316",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/23px-Flag_of_Thailand.svg.png"
-  },
-  {
-    "activeCasesText": "1230",
-    "countryText": "Lithuania",
-    "lastUpdate": "2020-09-15 07:37",
-    "newCasesText": "+45",
-    "newDeathsText": "-",
-    "totalCasesText": "3442",
-    "totalDeathsText": "87",
-    "totalRecoveredText": "2125",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Lithuania.svg/23px-Flag_of_Lithuania.svg.png"
-  },
-  {
-    "activeCasesText": "1586",
-    "countryText": "Gambia",
-    "lastUpdate": "2020-09-15 17:39",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "3428",
-    "totalDeathsText": "105",
-    "totalRecoveredText": "1737",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg"
-  },
-  {
-    "activeCasesText": "480",
-    "countryText": "Somalia",
-    "lastUpdate": "2020-09-16 12:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "3390",
-    "totalDeathsText": "98",
-    "totalRecoveredText": "2812",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Somalia.svg/23px-Flag_of_Somalia.svg.png"
-  },
-  {
-    "activeCasesText": "370",
-    "countryText": "Mayotte",
-    "lastUpdate": "2020-09-15 13:38",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "3374",
-    "totalDeathsText": "40",
-    "totalRecoveredText": "2964",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Mayotte_%28local%29.svg"
-  },
-  {
-    "activeCasesText": "2426",
+    "activeCasesText": "2063",
     "countryText": "Trinidad and Tobago",
-    "lastUpdate": "2020-09-15 15:39",
-    "newCasesText": "+70",
-    "newDeathsText": "+1",
-    "totalCasesText": "3293",
-    "totalDeathsText": "57",
-    "totalRecoveredText": "810",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/23px-Flag_of_Trinidad_and_Tobago.svg.png"
+    "newCasesText": "+29",
+    "newDeathsText": "-",
+    "totalCasesText": "3930",
+    "totalDeathsText": "65",
+    "totalRecoveredText": "1802",
+    "countryCode": "http://localhost:5000/static/flags/tt.svg"
   },
   {
-    "activeCasesText": "237",
-    "countryText": "Sri Lanka",
-    "lastUpdate": "2020-09-16 15:43",
+    "activeCasesText": "1528",
+    "countryText": "Lithuania",
+    "newCasesText": "+70",
+    "newDeathsText": "-",
+    "totalCasesText": "3814",
+    "totalDeathsText": "87",
+    "totalRecoveredText": "2199",
+    "countryCode": "http://localhost:5000/static/flags/lt.svg"
+  },
+  {
+    "activeCasesText": "2682",
+    "countryText": "Syria",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "3271",
-    "totalDeathsText": "13",
-    "totalRecoveredText": "3021",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/23px-Flag_of_Sri_Lanka.svg.png"
+    "totalCasesText": "3800",
+    "totalDeathsText": "172",
+    "totalRecoveredText": "946"
   },
   {
-    "activeCasesText": "1520",
+    "activeCasesText": "2141",
+    "countryText": "Georgia",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "+193",
+    "newDeathsText": "+1",
+    "totalCasesText": "3695",
+    "totalDeathsText": "20",
+    "totalRecoveredText": "1534",
+    "countryCode": "http://localhost:5000/static/flags/ge.svg"
+  },
+  {
+    "activeCasesText": "1289",
     "countryText": "Aruba",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "3152",
-    "totalDeathsText": "22",
-    "totalRecoveredText": "1610",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Aruba.svg/23px-Flag_of_Aruba.svg.png"
+    "totalCasesText": "3551",
+    "totalDeathsText": "23",
+    "totalRecoveredText": "2239",
+    "countryCode": "http://localhost:5000/static/flags/aw.svg"
   },
   {
-    "activeCasesText": "2219",
+    "activeCasesText": "537",
+    "countryText": "Mayotte",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "3541",
+    "totalDeathsText": "40",
+    "totalRecoveredText": "2964",
+    "countryCode": "http://localhost:5000/static/flags/yt.svg"
+  },
+  {
+    "activeCasesText": "1426",
+    "countryText": "Gambia",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "3526",
+    "totalDeathsText": "108",
+    "totalRecoveredText": "1992",
+    "countryCode": "http://localhost:5000/static/flags/gm.svg"
+  },
+  {
+    "activeCasesText": "105",
+    "countryText": "Thailand",
+    "lastUpdate": "2020-09-21 18:47",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "3506",
+    "totalDeathsText": "59",
+    "totalRecoveredText": "3342",
+    "countryCode": "http://localhost:5000/static/flags/th.svg"
+  },
+  {
+    "activeCasesText": "490",
+    "countryText": "Somalia",
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+23",
+    "newDeathsText": "-",
+    "totalCasesText": "3465",
+    "totalDeathsText": "98",
+    "totalRecoveredText": "2877",
+    "countryCode": "http://localhost:5000/static/flags/so.svg"
+  },
+  {
+    "activeCasesText": "2563",
     "countryText": "Guadeloupe",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "3080",
-    "totalDeathsText": "24",
+    "totalCasesText": "3426",
+    "totalDeathsText": "26",
     "totalRecoveredText": "837",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Guadeloupe_%28local%29_variant.svg"
+    "countryCode": "http://localhost:5000/static/flags/gp.svg"
   },
   {
-    "activeCasesText": "1481",
-    "countryText": "Bahamas",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "3032",
-    "totalDeathsText": "69",
-    "totalRecoveredText": "1482",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_the_Bahamas.svg/23px-Flag_of_the_Bahamas.svg.png"
-  },
-  {
-    "activeCasesText": "1674",
+    "activeCasesText": "918",
     "countryText": "Réunion",
-    "newCasesText": "+100",
+    "newCasesText": "+73",
     "newDeathsText": "-",
-    "totalCasesText": "3002",
+    "totalCasesText": "3415",
     "totalDeathsText": "15",
-    "totalRecoveredText": "1313",
-    "flagIcon": "-"
+    "totalRecoveredText": "2482"
   },
   {
-    "activeCasesText": "527",
+    "activeCasesText": "1607",
+    "countryText": "Bahamas",
+    "newCasesText": "+55",
+    "newDeathsText": "-",
+    "totalCasesText": "3370",
+    "totalDeathsText": "74",
+    "totalRecoveredText": "1689",
+    "countryCode": "http://localhost:5000/static/flags/bs.svg"
+  },
+  {
+    "activeCasesText": "186",
+    "countryText": "Sri Lanka",
+    "newCasesText": "+12",
+    "newDeathsText": "-",
+    "totalCasesText": "3299",
+    "totalDeathsText": "13",
+    "totalRecoveredText": "3100",
+    "countryCode": "http://localhost:5000/static/flags/lk.svg"
+  },
+  {
+    "activeCasesText": "513",
     "countryText": "Mali",
-    "newCasesText": "+26",
-    "newDeathsText": "-",
-    "totalCasesText": "2966",
-    "totalDeathsText": "128",
-    "totalRecoveredText": "2311",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Mali.svg/23px-Flag_of_Mali.svg.png"
-  },
-  {
-    "activeCasesText": "1327",
-    "countryText": "Georgia",
-    "lastUpdate": "2020-09-16 13:43",
-    "newCasesText": "+196",
-    "newDeathsText": "-",
-    "totalCasesText": "2758",
-    "totalDeathsText": "19",
-    "totalRecoveredText": "1412",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/23px-Flag_of_Georgia.svg.png"
-  },
-  {
-    "activeCasesText": "374",
-    "countryText": "Estonia",
-    "newCasesText": "+36",
-    "newDeathsText": "-",
-    "totalCasesText": "2756",
-    "totalDeathsText": "64",
-    "totalRecoveredText": "2318",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/23px-Flag_of_Estonia.svg.png"
-  },
-  {
-    "activeCasesText": "1253",
-    "countryText": "South Sudan",
-    "lastUpdate": "2020-09-16 05:41",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "2592",
+    "totalCasesText": "3013",
+    "totalDeathsText": "128",
+    "totalRecoveredText": "2372",
+    "countryCode": "http://localhost:5000/static/flags/ml.svg"
+  },
+  {
+    "activeCasesText": "498",
+    "countryText": "Estonia",
+    "newCasesText": "+17",
+    "newDeathsText": "-",
+    "totalCasesText": "2941",
+    "totalDeathsText": "64",
+    "totalRecoveredText": "2379",
+    "countryCode": "http://localhost:5000/static/flags/ee.svg"
+  },
+  {
+    "activeCasesText": "674",
+    "countryText": "Malta",
+    "newCasesText": "+45",
+    "newDeathsText": "+3",
+    "totalCasesText": "2776",
+    "totalDeathsText": "23",
+    "totalRecoveredText": "2079",
+    "countryCode": "http://localhost:5000/static/flags/mt.svg"
+  },
+  {
+    "activeCasesText": "1310",
+    "countryText": "South Sudan",
+    "newCasesText": "+7",
+    "newDeathsText": "-",
+    "totalCasesText": "2649",
     "totalDeathsText": "49",
     "totalRecoveredText": "1290",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_South_Sudan.svg/23px-Flag_of_South_Sudan.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/ss.svg"
   },
   {
-    "activeCasesText": "591",
-    "countryText": "Malta",
-    "newCasesText": "+106",
-    "newDeathsText": "-",
-    "totalCasesText": "2560",
-    "totalDeathsText": "16",
-    "totalRecoveredText": "1953",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Malta.svg/23px-Flag_of_Malta.svg.png"
-  },
-  {
-    "activeCasesText": "1877",
+    "activeCasesText": "1930",
     "countryText": "Botswana",
-    "lastUpdate": "2020-09-15 06:37",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "2463",
-    "totalDeathsText": "11",
-    "totalRecoveredText": "575",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_Botswana.svg/23px-Flag_of_Botswana.svg.png"
+    "totalCasesText": "2567",
+    "totalDeathsText": "13",
+    "totalRecoveredText": "624",
+    "countryCode": "http://localhost:5000/static/flags/bw.svg"
   },
   {
-    "activeCasesText": "1109",
+    "activeCasesText": "242",
+    "countryText": "Iceland",
+    "newCasesText": "+31",
+    "newDeathsText": "-",
+    "totalCasesText": "2377",
+    "totalDeathsText": "10",
+    "totalRecoveredText": "2125",
+    "countryCode": "http://localhost:5000/static/flags/is.svg"
+  },
+  {
+    "activeCasesText": "1137",
     "countryText": "Guinea-Bissau",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "2275",
+    "totalCasesText": "2303",
     "totalDeathsText": "39",
     "totalRecoveredText": "1127",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Guinea-Bissau.svg/23px-Flag_of_Guinea-Bissau.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/gw.svg"
   },
   {
-    "activeCasesText": "285",
+    "activeCasesText": "300",
     "countryText": "Benin",
-    "newCasesText": "-",
+    "newCasesText": "+14",
     "newDeathsText": "-",
-    "totalCasesText": "2267",
+    "totalCasesText": "2294",
     "totalDeathsText": "40",
-    "totalRecoveredText": "1942",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/23px-Flag_of_Benin.svg.png"
+    "totalRecoveredText": "1954",
+    "countryCode": "http://localhost:5000/static/flags/bj.svg"
   },
   {
-    "activeCasesText": "75",
-    "countryText": "Iceland",
-    "newCasesText": "+15",
-    "newDeathsText": "-",
-    "totalCasesText": "2189",
-    "totalDeathsText": "10",
-    "totalRecoveredText": "2104",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/21px-Flag_of_Iceland.svg.png"
-  },
-  {
-    "activeCasesText": "414",
-    "countryText": "Sierra Leone",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "2126",
-    "totalDeathsText": "72",
-    "totalRecoveredText": "1640",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Flag_of_Sierra_Leone.svg/23px-Flag_of_Sierra_Leone.svg.png"
-  },
-  {
-    "activeCasesText": "214",
-    "countryText": "Yemen",
-    "lastUpdate": "2020-09-16 15:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "2016",
-    "totalDeathsText": "583",
-    "totalRecoveredText": "1219",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Yemen.svg/23px-Flag_of_Yemen.svg.png"
-  },
-  {
-    "activeCasesText": "598",
+    "activeCasesText": "866",
     "countryText": "Guyana",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1958",
-    "totalDeathsText": "58",
-    "totalRecoveredText": "1302",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/23px-Flag_of_Guyana.svg.png"
+    "totalCasesText": "2269",
+    "totalDeathsText": "64",
+    "totalRecoveredText": "1339",
+    "countryCode": "http://localhost:5000/static/flags/gy.svg"
   },
   {
-    "activeCasesText": "237",
+    "activeCasesText": "446",
+    "countryText": "Sierra Leone",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "2168",
+    "totalDeathsText": "72",
+    "totalRecoveredText": "1650",
+    "countryCode": "http://localhost:5000/static/flags/sl.svg"
+  },
+  {
+    "activeCasesText": "213",
+    "countryText": "Yemen",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "2026",
+    "totalDeathsText": "586",
+    "totalRecoveredText": "1227",
+    "countryCode": "http://localhost:5000/static/flags/ye.svg"
+  },
+  {
+    "activeCasesText": "250",
     "countryText": "Uruguay",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1827",
-    "totalDeathsText": "45",
-    "totalRecoveredText": "1545",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/23px-Flag_of_Uruguay.svg.png"
+    "totalCasesText": "1917",
+    "totalDeathsText": "46",
+    "totalRecoveredText": "1621",
+    "countryCode": "http://localhost:5000/static/flags/uy.svg"
   },
   {
-    "activeCasesText": "79",
-    "countryText": "New Zealand",
-    "lastUpdate": "2020-09-16 14:43",
-    "newCasesText": "+1",
-    "newDeathsText": "+1",
-    "totalCasesText": "1802",
-    "totalDeathsText": "25",
-    "totalRecoveredText": "1698",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/23px-Flag_of_New_Zealand.svg.png"
-  },
-  {
-    "activeCasesText": "536",
+    "activeCasesText": "603",
     "countryText": "Burkina Faso",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1733",
+    "totalCasesText": "1846",
     "totalDeathsText": "56",
-    "totalRecoveredText": "1141",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Burkina_Faso.svg/23px-Flag_of_Burkina_Faso.svg.png"
+    "totalRecoveredText": "1187",
+    "countryCode": "http://localhost:5000/static/flags/bf.svg"
   },
   {
-    "activeCasesText": "336",
+    "activeCasesText": "62",
+    "countryText": "New Zealand",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "1815",
+    "totalDeathsText": "25",
+    "totalRecoveredText": "1728",
+    "countryCode": "http://localhost:5000/static/flags/nz.svg"
+  },
+  {
+    "activeCasesText": "429",
+    "countryText": "Andorra",
+    "lastUpdate": "2020-09-21 17:46",
+    "newCasesText": "+117",
+    "newDeathsText": "-",
+    "totalCasesText": "1681",
+    "totalDeathsText": "53",
+    "totalRecoveredText": "1199",
+    "countryCode": "http://localhost:5000/static/flags/ad.svg"
+  },
+  {
+    "activeCasesText": "356",
     "countryText": "Togo",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1595",
-    "totalDeathsText": "40",
-    "totalRecoveredText": "1219",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Flag_of_Togo.svg/23px-Flag_of_Togo.svg.png"
+    "totalCasesText": "1666",
+    "totalDeathsText": "41",
+    "totalRecoveredText": "1269",
+    "countryCode": "http://localhost:5000/static/flags/tg.svg"
   },
   {
-    "activeCasesText": "236",
-    "countryText": "Cyprus",
-    "lastUpdate": "2020-09-16 14:43",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "1540",
-    "totalDeathsText": "22",
-    "totalRecoveredText": "1282",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Cyprus.svg/23px-Flag_of_Cyprus.svg.png"
-  },
-  {
-    "activeCasesText": "846",
+    "activeCasesText": "688",
     "countryText": "Belize",
-    "newCasesText": "+27",
-    "newDeathsText": "-",
-    "totalCasesText": "1528",
-    "totalDeathsText": "19",
-    "totalRecoveredText": "663",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flag_of_Belize.svg/23px-Flag_of_Belize.svg.png"
+    "newCasesText": "+21",
+    "newDeathsText": "+1",
+    "totalCasesText": "1627",
+    "totalDeathsText": "21",
+    "totalRecoveredText": "918",
+    "countryCode": "http://localhost:5000/static/flags/bz.svg"
   },
   {
-    "activeCasesText": "203",
+    "activeCasesText": "212",
+    "countryText": "Cyprus",
+    "newCasesText": "+3",
+    "newDeathsText": "-",
+    "totalCasesText": "1603",
+    "totalDeathsText": "22",
+    "totalRecoveredText": "1369",
+    "countryCode": "http://localhost:5000/static/flags/cy.svg"
+  },
+  {
+    "activeCasesText": "242",
     "countryText": "Latvia",
-    "newCasesText": "+4",
+    "newCasesText": "+1",
     "newDeathsText": "-",
-    "totalCasesText": "1486",
-    "totalDeathsText": "35",
+    "totalCasesText": "1526",
+    "totalDeathsText": "36",
     "totalRecoveredText": "1248",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/23px-Flag_of_Latvia.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/lv.svg"
   },
   {
-    "activeCasesText": "440",
-    "countryText": "Andorra",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "1438",
-    "totalDeathsText": "53",
-    "totalRecoveredText": "945",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/22px-Flag_of_Andorra.svg.png"
-  },
-  {
-    "activeCasesText": "31",
-    "countryText": "Liberia",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "1327",
-    "totalDeathsText": "82",
-    "totalRecoveredText": "1214",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Flag_of_Liberia.svg/23px-Flag_of_Liberia.svg.png"
-  },
-  {
-    "activeCasesText": "607",
+    "activeCasesText": "637",
     "countryText": "Lesotho",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1327",
+    "totalCasesText": "1424",
     "totalDeathsText": "33",
-    "totalRecoveredText": "687",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Lesotho.svg/23px-Flag_of_Lesotho.svg.png"
+    "totalRecoveredText": "754",
+    "countryCode": "http://localhost:5000/static/flags/ls.svg"
   },
   {
-    "activeCasesText": "9",
+    "activeCasesText": "36",
+    "countryText": "Liberia",
+    "newCasesText": "+1",
+    "newDeathsText": "-",
+    "totalCasesText": "1336",
+    "totalDeathsText": "82",
+    "totalRecoveredText": "1218",
+    "countryCode": "http://localhost:5000/static/flags/lr.svg"
+  },
+  {
+    "activeCasesText": "241",
+    "countryText": "French Polynesia",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "1271",
+    "totalDeathsText": "2",
+    "totalRecoveredText": "1028",
+    "countryCode": "http://localhost:5000/static/flags/pf.svg"
+  },
+  {
+    "activeCasesText": "15",
     "countryText": "Niger",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1182",
+    "totalCasesText": "1188",
     "totalDeathsText": "69",
     "totalRecoveredText": "1104",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flag_of_Niger.svg/18px-Flag_of_Niger.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/ne.svg"
+  },
+  {
+    "activeCasesText": "103",
+    "countryText": "Chad",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "1151",
+    "totalDeathsText": "81",
+    "totalRecoveredText": "967",
+    "countryCode": "http://localhost:5000/static/flags/td.svg"
   },
   {
     "activeCasesText": "1006",
@@ -1734,60 +1686,38 @@
     "totalCasesText": "1122",
     "totalDeathsText": "18",
     "totalRecoveredText": "98",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+    "countryCode": "http://localhost:5000/static/flags/mq.svg"
   },
   {
-    "activeCasesText": "425",
-    "countryText": "French Polynesia",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "1099",
-    "totalDeathsText": "2",
-    "totalRecoveredText": "672",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_French_Polynesia.svg/23px-Flag_of_French_Polynesia.svg.png"
-  },
-  {
-    "activeCasesText": "62",
-    "countryText": "Chad",
-    "lastUpdate": "2020-09-15 22:40",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "1087",
-    "totalDeathsText": "81",
-    "totalRecoveredText": "944",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Flag_of_Chad.svg/23px-Flag_of_Chad.svg.png"
-  },
-  {
-    "activeCasesText": "92",
+    "activeCasesText": "86",
     "countryText": "Vietnam",
-    "lastUpdate": "2020-09-16 16:43",
+    "lastUpdate": "2020-09-21 17:46",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "1063",
+    "totalCasesText": "1068",
     "totalDeathsText": "35",
-    "totalRecoveredText": "936",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/23px-Flag_of_Vietnam.svg.png"
+    "totalRecoveredText": "947",
+    "countryCode": "http://localhost:5000/static/flags/vn.svg"
   },
   {
-    "activeCasesText": "21",
+    "activeCasesText": "15",
     "countryText": "Sao Tome and Principe",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "907",
+    "totalCasesText": "908",
     "totalDeathsText": "15",
-    "totalRecoveredText": "871",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg"
+    "totalRecoveredText": "878",
+    "countryCode": "http://localhost:5000/static/flags/st.svg"
   },
   {
-    "activeCasesText": "18",
+    "activeCasesText": "12",
     "countryText": "San Marino",
-    "lastUpdate": "2020-09-15 23:40",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "723",
     "totalDeathsText": "42",
-    "totalRecoveredText": "663",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_San_Marino.svg/20px-Flag_of_San_Marino.svg.png"
+    "totalRecoveredText": "669",
+    "countryCode": "http://localhost:5000/static/flags/sm.svg"
   },
   {
     "activeCasesText": "48",
@@ -1796,112 +1726,105 @@
     "newDeathsText": "-",
     "totalCasesText": "712",
     "totalDeathsText": "13",
-    "totalRecoveredText": "651",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cruise_ship_side_view.svg/23px-Cruise_ship_side_view.svg.png"
+    "totalRecoveredText": "651"
   },
   {
-    "activeCasesText": "88",
+    "activeCasesText": "91",
     "countryText": "Turks and Caicos",
-    "newCasesText": "+2",
-    "newDeathsText": "-",
-    "totalCasesText": "650",
-    "totalDeathsText": "5",
-    "totalRecoveredText": "557",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"
-  },
-  {
-    "activeCasesText": "16",
-    "countryText": "Channel Islands",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "639",
-    "totalDeathsText": "48",
-    "totalRecoveredText": "575",
-    "flagIcon": "-"
+    "totalCasesText": "668",
+    "totalDeathsText": "5",
+    "totalRecoveredText": "572",
+    "countryCode": "http://localhost:5000/static/flags/tc.svg"
   },
   {
-    "activeCasesText": "62",
+    "activeCasesText": "29",
+    "countryText": "Channel Islands",
+    "newCasesText": "+8",
+    "newDeathsText": "-",
+    "totalCasesText": "652",
+    "totalDeathsText": "48",
+    "totalRecoveredText": "575"
+  },
+  {
+    "activeCasesText": "76",
     "countryText": "Sint Maarten",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "549",
-    "totalDeathsText": "19",
-    "totalRecoveredText": "468",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Sint_Maarten.svg/23px-Flag_of_Sint_Maarten.svg.png"
+    "totalCasesText": "584",
+    "totalDeathsText": "20",
+    "totalRecoveredText": "488",
+    "countryCode": "http://localhost:5000/static/flags/sx.svg"
   },
   {
-    "activeCasesText": "273",
+    "activeCasesText": "278",
     "countryText": "Papua New Guinea",
-    "lastUpdate": "2020-09-15 05:37",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "511",
-    "totalDeathsText": "6",
+    "totalCasesText": "517",
+    "totalDeathsText": "7",
     "totalRecoveredText": "232",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Papua_New_Guinea.svg/20px-Flag_of_Papua_New_Guinea.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/pg.svg"
   },
   {
     "activeCasesText": "305",
     "countryText": "Tanzania",
-    "lastUpdate": "2020-09-16 02:41",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "509",
     "totalDeathsText": "21",
     "totalRecoveredText": "183",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg"
+    "countryCode": "http://localhost:5000/static/flags/tz.svg"
   },
   {
-    "activeCasesText": "16",
+    "activeCasesText": "23",
     "countryText": "Taiwan",
-    "lastUpdate": "2020-09-16 15:43",
+    "newCasesText": "+2",
+    "newDeathsText": "-",
+    "totalCasesText": "509",
+    "totalDeathsText": "7",
+    "totalRecoveredText": "479",
+    "countryCode": "http://localhost:5000/static/flags/tw.svg"
+  },
+  {
+    "activeCasesText": "11",
+    "countryText": "Burundi",
     "newCasesText": "+1",
     "newDeathsText": "-",
-    "totalCasesText": "500",
-    "totalDeathsText": "7",
-    "totalRecoveredText": "477",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/23px-Flag_of_the_Republic_of_China.svg.png"
-  },
-  {
-    "activeCasesText": "97",
-    "countryText": "Burundi",
-    "lastUpdate": "2020-09-16 08:42",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "472",
+    "totalCasesText": "474",
     "totalDeathsText": "1",
-    "totalRecoveredText": "374",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_Burundi.svg/23px-Flag_of_Burundi.svg.png"
+    "totalRecoveredText": "462",
+    "countryCode": "http://localhost:5000/static/flags/bi.svg"
   },
   {
-    "activeCasesText": "14",
+    "activeCasesText": "13",
     "countryText": "Comoros",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "467",
+    "totalCasesText": "470",
     "totalDeathsText": "7",
-    "totalRecoveredText": "446",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/94/Flag_of_the_Comoros.svg/23px-Flag_of_the_Comoros.svg.png"
+    "totalRecoveredText": "450",
+    "countryCode": "http://localhost:5000/static/flags/km.svg"
   },
   {
-    "activeCasesText": "16",
+    "activeCasesText": "24",
     "countryText": "Faeroe Islands",
-    "newCasesText": "-",
+    "newCasesText": "+3",
     "newDeathsText": "-",
-    "totalCasesText": "428",
+    "totalCasesText": "437",
     "totalDeathsText": "-",
-    "totalRecoveredText": "412",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg"
+    "totalRecoveredText": "413"
   },
   {
-    "activeCasesText": "17",
+    "activeCasesText": "18",
     "countryText": "Mauritius",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "365",
+    "totalCasesText": "366",
     "totalDeathsText": "10",
     "totalRecoveredText": "338",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Mauritius.svg/23px-Flag_of_Mauritius.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/mu.svg"
   },
   {
     "activeCasesText": "59",
@@ -1911,27 +1834,27 @@
     "totalCasesText": "364",
     "totalDeathsText": "-",
     "totalRecoveredText": "305",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_Eritrea.svg/23px-Flag_of_Eritrea.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/er.svg"
   },
   {
-    "activeCasesText": "31",
+    "activeCasesText": "27",
     "countryText": "Gibraltar",
-    "newCasesText": "+6",
-    "newDeathsText": "-",
-    "totalCasesText": "340",
-    "totalDeathsText": "-",
-    "totalRecoveredText": "309",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Flag_of_Gibraltar.svg/23px-Flag_of_Gibraltar.svg.png"
-  },
-  {
-    "activeCasesText": "3",
-    "countryText": "Isle of Man",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "339",
+    "totalCasesText": "350",
+    "totalDeathsText": "-",
+    "totalRecoveredText": "323",
+    "countryCode": "http://localhost:5000/static/flags/gi.svg"
+  },
+  {
+    "activeCasesText": "4",
+    "countryText": "Isle of Man",
+    "newCasesText": "+1",
+    "newDeathsText": "-",
+    "totalCasesText": "340",
     "totalDeathsText": "24",
     "totalRecoveredText": "312",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_the_Isle_of_Man.svg/23px-Flag_of_the_Isle_of_Man.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/im.svg"
   },
   {
     "activeCasesText": "118",
@@ -1941,17 +1864,27 @@
     "totalCasesText": "330",
     "totalDeathsText": "6",
     "totalRecoveredText": "206",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg"
+    "countryCode": "http://localhost:5000/static/flags/mf.svg"
   },
   {
     "activeCasesText": "10",
     "countryText": "Mongolia",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "311",
+    "totalCasesText": "312",
     "totalDeathsText": "-",
-    "totalRecoveredText": "301",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Mongolia.svg/23px-Flag_of_Mongolia.svg.png"
+    "totalRecoveredText": "302",
+    "countryCode": "http://localhost:5000/static/flags/mn.svg"
+  },
+  {
+    "activeCasesText": "179",
+    "countryText": "Curaçao",
+    "newCasesText": "+14",
+    "newDeathsText": "-",
+    "totalCasesText": "282",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "102",
+    "countryCode": "http://localhost:5000/static/flags/cw.svg"
   },
   {
     "activeCasesText": "1",
@@ -1961,128 +1894,117 @@
     "totalCasesText": "275",
     "totalDeathsText": "-",
     "totalRecoveredText": "274",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/23px-Flag_of_Cambodia.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/kh.svg"
   },
   {
-    "activeCasesText": "71",
+    "activeCasesText": "69",
     "countryText": "Bhutan",
-    "newCasesText": "-",
+    "newCasesText": "+2",
     "newDeathsText": "-",
-    "totalCasesText": "246",
+    "totalCasesText": "261",
     "totalDeathsText": "-",
-    "totalRecoveredText": "175",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Flag_of_Bhutan.svg/23px-Flag_of_Bhutan.svg.png"
-  },
-  {
-    "activeCasesText": "3",
-    "countryText": "Cayman Islands",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "208",
-    "totalDeathsText": "1",
-    "totalRecoveredText": "204",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_the_Cayman_Islands.svg/23px-Flag_of_the_Cayman_Islands.svg.png"
-  },
-  {
-    "activeCasesText": "8",
-    "countryText": "Barbados",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "184",
-    "totalDeathsText": "7",
-    "totalRecoveredText": "169",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/23px-Flag_of_Barbados.svg.png"
-  },
-  {
-    "activeCasesText": "44",
-    "countryText": "Monaco",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "178",
-    "totalDeathsText": "1",
-    "totalRecoveredText": "133",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/19px-Flag_of_Monaco.svg.png"
+    "totalRecoveredText": "192",
+    "countryCode": "http://localhost:5000/static/flags/bt.svg"
   },
   {
     "activeCasesText": "4",
+    "countryText": "Cayman Islands",
+    "newCasesText": "+1",
+    "newDeathsText": "-",
+    "totalCasesText": "209",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "204",
+    "countryCode": "http://localhost:5000/static/flags/ky.svg"
+  },
+  {
+    "activeCasesText": "39",
+    "countryText": "Monaco",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "193",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "153",
+    "countryCode": "http://localhost:5000/static/flags/mc.svg"
+  },
+  {
+    "activeCasesText": "9",
+    "countryText": "Barbados",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "189",
+    "totalDeathsText": "7",
+    "totalRecoveredText": "173",
+    "countryCode": "http://localhost:5000/static/flags/bb.svg"
+  },
+  {
+    "activeCasesText": "5",
     "countryText": "Bermuda",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "177",
+    "totalCasesText": "180",
     "totalDeathsText": "9",
-    "totalRecoveredText": "164",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bermuda.svg/23px-Flag_of_Bermuda.svg.png"
+    "totalRecoveredText": "166",
+    "countryCode": "http://localhost:5000/static/flags/bm.svg"
   },
   {
-    "activeCasesText": "107",
-    "countryText": "Curaçao",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "169",
-    "totalDeathsText": "1",
-    "totalRecoveredText": "61",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_Cura%C3%A7ao.svg/23px-Flag_of_Cura%C3%A7ao.svg.png"
-  },
-  {
-    "activeCasesText": "3",
+    "activeCasesText": "0",
     "countryText": "Brunei",
-    "lastUpdate": "2020-09-15 11:38",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "145",
     "totalDeathsText": "3",
-    "totalRecoveredText": "139",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/23px-Flag_of_Brunei.svg.png"
+    "totalRecoveredText": "142",
+    "countryCode": "http://localhost:5000/static/flags/bn.svg"
   },
   {
-    "activeCasesText": "4",
+    "activeCasesText": "7",
     "countryText": "Seychelles",
-    "newCasesText": "-",
+    "newCasesText": "+2",
     "newDeathsText": "-",
-    "totalCasesText": "140",
+    "totalCasesText": "143",
     "totalDeathsText": "-",
     "totalRecoveredText": "136",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Seychelles.svg/23px-Flag_of_Seychelles.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/sc.svg"
   },
   {
-    "activeCasesText": "5",
+    "activeCasesText": "3",
     "countryText": "Liechtenstein",
-    "newCasesText": "-",
+    "newCasesText": "+1",
     "newDeathsText": "-",
-    "totalCasesText": "111",
+    "totalCasesText": "114",
     "totalDeathsText": "1",
-    "totalRecoveredText": "105",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Liechtenstein.svg/23px-Flag_of_Liechtenstein.svg.png"
+    "totalRecoveredText": "110",
+    "countryCode": "http://localhost:5000/static/flags/li.svg"
   },
   {
     "activeCasesText": "1",
     "countryText": "Antigua and Barbuda",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "95",
+    "totalCasesText": "96",
     "totalDeathsText": "3",
-    "totalRecoveredText": "91",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/23px-Flag_of_Antigua_and_Barbuda.svg.png"
+    "totalRecoveredText": "92",
+    "countryCode": "http://localhost:5000/static/flags/ag.svg"
   },
   {
-    "activeCasesText": "28",
+    "activeCasesText": "20",
     "countryText": "British Virgin Islands",
     "newCasesText": "-",
     "newDeathsText": "-",
-    "totalCasesText": "66",
+    "totalCasesText": "69",
     "totalDeathsText": "1",
-    "totalRecoveredText": "37",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_the_British_Virgin_Islands.svg/23px-Flag_of_the_British_Virgin_Islands.svg.png"
+    "totalRecoveredText": "48",
+    "countryCode": "http://localhost:5000/static/flags/vg.svg"
   },
   {
-    "activeCasesText": "2",
+    "activeCasesText": "0",
     "countryText": "St. Vincent Grenadines",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "64",
     "totalDeathsText": "-",
-    "totalRecoveredText": "62",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"
+    "totalRecoveredText": "64",
+    "countryCode": "http://localhost:5000/static/flags/vc.svg"
   },
   {
     "activeCasesText": "0",
@@ -2092,28 +2014,26 @@
     "totalCasesText": "46",
     "totalDeathsText": "-",
     "totalRecoveredText": "46",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg"
+    "countryCode": "http://localhost:5000/static/flags/mo.svg"
   },
   {
-    "activeCasesText": "6",
+    "activeCasesText": "18",
+    "countryText": "Caribbean Netherlands",
+    "newCasesText": "-",
+    "newDeathsText": "-",
+    "totalCasesText": "36",
+    "totalDeathsText": "1",
+    "totalRecoveredText": "17"
+  },
+  {
+    "activeCasesText": "4",
     "countryText": "Fiji",
-    "lastUpdate": "2020-09-16 14:43",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "32",
     "totalDeathsText": "2",
-    "totalRecoveredText": "24",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Fiji.svg/23px-Flag_of_Fiji.svg.png"
-  },
-  {
-    "activeCasesText": "10",
-    "countryText": "Caribbean Netherlands",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "28",
-    "totalDeathsText": "1",
-    "totalRecoveredText": "17",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/23px-Flag_of_the_Netherlands.svg.png"
+    "totalRecoveredText": "26",
+    "countryCode": "http://localhost:5000/static/flags/fj.svg"
   },
   {
     "activeCasesText": "1",
@@ -2123,7 +2043,7 @@
     "totalCasesText": "27",
     "totalDeathsText": "-",
     "totalRecoveredText": "26",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Saint_Lucia.svg/23px-Flag_of_Saint_Lucia.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/lc.svg"
   },
   {
     "activeCasesText": "1",
@@ -2133,7 +2053,7 @@
     "totalCasesText": "27",
     "totalDeathsText": "-",
     "totalRecoveredText": "26",
-    "flagIcon": "-"
+    "countryCode": "http://localhost:5000/static/flags/tl.svg"
   },
   {
     "activeCasesText": "0",
@@ -2143,18 +2063,17 @@
     "totalCasesText": "26",
     "totalDeathsText": "-",
     "totalRecoveredText": "26",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_FLNKS.svg/23px-Flag_of_FLNKS.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/nc.svg"
   },
   {
     "activeCasesText": "6",
     "countryText": "Dominica",
-    "lastUpdate": "2020-09-15 19:39",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "24",
     "totalDeathsText": "-",
     "totalRecoveredText": "18",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Dominica.svg/23px-Flag_of_Dominica.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/dm.svg"
   },
   {
     "activeCasesText": "0",
@@ -2164,18 +2083,16 @@
     "totalCasesText": "24",
     "totalDeathsText": "-",
     "totalRecoveredText": "24",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/23px-Flag_of_Grenada.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/gd.svg"
   },
   {
     "activeCasesText": "1",
     "countryText": "Laos",
-    "lastUpdate": "2020-09-16 15:43",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "23",
     "totalDeathsText": "-",
-    "totalRecoveredText": "22",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Laos.svg/23px-Flag_of_Laos.svg.png"
+    "totalRecoveredText": "22"
   },
   {
     "activeCasesText": "7",
@@ -2185,17 +2102,17 @@
     "totalCasesText": "23",
     "totalDeathsText": "-",
     "totalRecoveredText": "16",
-    "flagIcon": "-"
+    "countryCode": "http://localhost:5000/static/flags/bl.svg"
   },
   {
-    "activeCasesText": "0",
+    "activeCasesText": "2",
     "countryText": "Saint Kitts and Nevis",
-    "newCasesText": "-",
+    "newCasesText": "+2",
     "newDeathsText": "-",
-    "totalCasesText": "17",
+    "totalCasesText": "19",
     "totalDeathsText": "-",
     "totalRecoveredText": "17",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg/23px-Flag_of_Saint_Kitts_and_Nevis.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/kn.svg"
   },
   {
     "activeCasesText": "0",
@@ -2205,7 +2122,7 @@
     "totalCasesText": "14",
     "totalDeathsText": "-",
     "totalRecoveredText": "14",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/23px-Flag_of_Greenland.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/gl.svg"
   },
   {
     "activeCasesText": "0",
@@ -2215,7 +2132,7 @@
     "totalCasesText": "13",
     "totalDeathsText": "1",
     "totalRecoveredText": "12",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Montserrat.svg/23px-Flag_of_Montserrat.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/ms.svg"
   },
   {
     "activeCasesText": "0",
@@ -2225,7 +2142,7 @@
     "totalCasesText": "13",
     "totalDeathsText": "-",
     "totalRecoveredText": "13",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg"
+    "countryCode": "http://localhost:5000/static/flags/fk.svg"
   },
   {
     "activeCasesText": "0",
@@ -2235,7 +2152,7 @@
     "totalCasesText": "12",
     "totalDeathsText": "-",
     "totalRecoveredText": "12",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Vatican_City.svg/15px-Flag_of_the_Vatican_City.svg.png"
+    "countryCode": "http://localhost:5000/static/flags/va.svg"
   },
   {
     "activeCasesText": "6",
@@ -2245,7 +2162,7 @@
     "totalCasesText": "11",
     "totalDeathsText": "-",
     "totalRecoveredText": "5",
-    "flagIcon": "-"
+    "countryCode": "http://localhost:5000/static/flags/pm.svg"
   },
   {
     "activeCasesText": "1",
@@ -2255,32 +2172,25 @@
     "totalCasesText": "10",
     "totalDeathsText": "1",
     "totalRecoveredText": "8",
-    "flagIcon": "-"
+    "countryCode": "http://localhost:5000/static/flags/eh.svg"
   },
   {
     "activeCasesText": "7",
     "countryText": "MS Zaandam",
-    "lastUpdate": "2020-09-16 04:41",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "9",
     "totalDeathsText": "2",
-    "totalRecoveredText": "-",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cruise_ship_side_view.svg/23px-Cruise_ship_side_view.svg.png"
+    "totalRecoveredText": "-"
   },
   {
     "activeCasesText": "0",
     "countryText": "Anguilla",
-    "lastUpdate": "2020-09-15 14:39",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "3",
     "totalDeathsText": "-",
     "totalRecoveredText": "3",
-    "flagIcon": "//upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg"
-  },
-  {
-    "lastUpdate": "2020-09-16 16:43",
-    "flagIcon": "-"
+    "countryCode": "http://localhost:5000/static/flags/ai.svg"
   }
 ]
