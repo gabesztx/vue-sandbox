@@ -102,31 +102,57 @@ table.table td .image, table.table th .image {
   }
 }
 
-.title-content {
+/*.title-content {
   display: flex;
   justify-content: space-between;
 
   img {
     margin-top: -5px;
   }
+}*/
+
+/* box */
+.box{
+  border-radius: 10px;
+  .title-content{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(24,28,33,.08);
+    .title{
+      font-size: 25px;
+      font-weight: 400;
+
+    }
+
+  }
 }
 
 /* Cards */
-.card {}
+.card {
+  border-radius: 6px;
+  .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(24, 28, 33, .06);
+  }
+
+  .card-content {
+    padding: 0;
+  }
+}
 
 /* Table */
 .b-table {
+  padding-top: 5px;
   thead {
     th {
       &:hover {
       }
     }
   }
-  .table{
-    .table-wrapper:not(:last-child) {
+  .table-wrapper:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
-      //margin-bottom: 0;
-    }
+  .table {
   }
 
   .th-wrap {

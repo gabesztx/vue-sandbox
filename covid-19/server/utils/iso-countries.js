@@ -203,7 +203,7 @@ module.exports = {
   "SZ": "Eswatini",
   "SE": "Sweden",
   "CH": "Switzerland",
-  "SY": "Syrian Arab Republic",
+  "SY": "Syria",
   "TW": "Taiwan",
   "TJ": "Tajikistan",
   "TZ": "Tanzania",

@@ -1,60 +1,52 @@
 <template>
-  <section class="section is-main-section">
-    <div class="card has-table has-mobile-sort-spaced">
-      <div class="">
-        <v-icell-table
-          :data="table.data"
-          :bordered="table.bordered"
-          :columns="table.columns"
-          :scrollable="table.scrollable"
-          :sticky-header="table.stickyHeader"
-          :paginated="table.paginated"
-          :pagination-simple="table.paginationSimple"
-          :pagination-size="table.paginationSize"
-          :per-page="table.perPage"
-          :striped="table.striped"
-          :narrowed="table.narrowed"
-          :mobile-cards="table.mobileCards"
-          :hoverable="table.hoverable"
-          :show-detail-icon="table.showDetailIcon"
-          :sort-icon-size="table.sortIconSize"
-          :sort-icon="table.sortIcon"
-          @rowClick="onClick"
-        ></v-icell-table>
-      </div>
-    </div>
-
-
-    <!--   <v-icell-input
-     :label="searchInput.label"
-     :place-holder="searchInput.placeHolder"
-     :rounded="searchInput.rounded"
-     :size="searchInput.size"
-     :loading="searchInput.loading"
-     :style-type="searchInput.styleType"
-     :expanded="searchInput.expanded"
-     :icon="searchInput.icon"
-     :icon-right="searchInput.iconRight"
-     :type="searchInput.type"
-     :custom-class="searchInput.customClass"
-     :classes="searchInput.classes"
-     @input="onInput"
-   ></v-icell-input>-->
-  </section>
-
-  <!--  <section class="columns">
-      <div class="column is-12">
-        <div class="box">
-          <div class="title-content">
-            <figure class="image is-48x48">
-              <img src="@/assets/covid-icon.png">
-            </figure>
-          </div>
+    <section class="container section">
+      <div class="box">
+        <div class="title-content">
+          <div class="title">Országok</div>
+        </div>
+        <div class="">
+          <v-icell-table
+            :data="table.data"
+            :bordered="table.bordered"
+            :columns="table.columns"
+            :scrollable="table.scrollable"
+            :sticky-header="table.stickyHeader"
+            :paginated="table.paginated"
+            :pagination-simple="table.paginationSimple"
+            :pagination-size="table.paginationSize"
+            :per-page="table.perPage"
+            :striped="table.striped"
+            :narrowed="table.narrowed"
+            :mobile-cards="table.mobileCards"
+            :hoverable="table.hoverable"
+            :show-detail-icon="table.showDetailIcon"
+            :sort-icon-size="table.sortIconSize"
+            :sort-icon="table.sortIcon"
+            @rowClick="onClick"
+          ></v-icell-table>
         </div>
       </div>
-    </section>-->
+
+
+    </section>
 </template>
 
+
+<!--   <v-icell-input
+ :label="searchInput.label"
+ :place-holder="searchInput.placeHolder"
+ :rounded="searchInput.rounded"
+ :size="searchInput.size"
+ :loading="searchInput.loading"
+ :style-type="searchInput.styleType"
+ :expanded="searchInput.expanded"
+ :icon="searchInput.icon"
+ :icon-right="searchInput.iconRight"
+ :type="searchInput.type"
+ :custom-class="searchInput.customClass"
+ :classes="searchInput.classes"
+ @input="onInput"
+></v-icell-input>-->
 <script lang="ts">
   import router from '@/router';
   import { reactive } from '@vue/composition-api';
@@ -126,12 +118,11 @@
       field: 'countryCode',
       label: '',
       image: true,
-      width: 55,
-      meta: 'hello',
+      width: 50,
     },
     {
       field: 'countryText',
-      label: 'Ország',
+      label: 'Név',
       sortable: true,
       searchable: false,
       width: 210,
@@ -180,36 +171,6 @@
       },
     },
   ];
-  /*{
-  const columns = [
-      field: 'flagIcon',
-      label: '',
-      image: true,
-      width: 50,
-    },
-    {
-      field: 'country',
-      label: 'Ország',
-      sortable: true,
-      width: 210,
-    },
-    {
-      field: 'newConfirmed',
-      label: 'Napi esetek száma',
-      sortable: true,
-    },
-    {
-      field: 'newRecovered',
-      label: 'Napi gyógyultak száma',
-      sortable: true,
-    },
-    {
-      field: 'newDeaths',
-      label: 'Napi elhunytak száma',
-      sortable: true,
-    },
-  ];
-  */
 
 </script>
 

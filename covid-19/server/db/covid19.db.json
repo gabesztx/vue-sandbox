@@ -1,51 +1,51 @@
 [
   {
-    "activeCasesText": "7448218",
+    "activeCasesText": "7455000",
     "countryText": "World",
-    "lastUpdate": "2020-09-21 18:47",
-    "newCasesText": "+166893",
-    "newDeathsText": "+2641",
-    "totalCasesText": "31405983",
-    "totalDeathsText": "967505",
-    "totalRecoveredText": "22990260"
+    "lastUpdate": "2020-09-21 21:48",
+    "newCasesText": "+200637",
+    "newDeathsText": "+3141",
+    "totalCasesText": "31440914",
+    "totalDeathsText": "968026",
+    "totalRecoveredText": "23017888"
   },
   {
-    "activeCasesText": "2543389",
+    "activeCasesText": "2540955",
     "countryText": "USA",
-    "lastUpdate": "2020-09-21 18:47",
-    "newCasesText": "+15079",
-    "newDeathsText": "+141",
-    "totalCasesText": "7019847",
-    "totalDeathsText": "204259",
-    "totalRecoveredText": "4272199",
+    "lastUpdate": "2020-09-21 21:48",
+    "newCasesText": "+31149",
+    "newDeathsText": "+268",
+    "totalCasesText": "7035917",
+    "totalDeathsText": "204386",
+    "totalRecoveredText": "4290576",
     "countryCode": "http://localhost:5000/static/flags/us.svg"
   },
   {
-    "activeCasesText": "976485",
+    "activeCasesText": "976420",
     "countryText": "India",
-    "lastUpdate": "2020-09-21 18:47",
-    "newCasesText": "+71961",
-    "newDeathsText": "+1034",
-    "totalCasesText": "5557573",
-    "totalDeathsText": "88943",
-    "totalRecoveredText": "4492145",
+    "lastUpdate": "2020-09-21 21:48",
+    "newCasesText": "+74493",
+    "newDeathsText": "+1056",
+    "totalCasesText": "5560105",
+    "totalDeathsText": "88965",
+    "totalRecoveredText": "4494720",
     "countryCode": "http://localhost:5000/static/flags/in.svg"
   },
   {
-    "activeCasesText": "558926",
+    "activeCasesText": "569569",
     "countryText": "Brazil",
-    "lastUpdate": "2020-09-21 18:47",
-    "newCasesText": "+2521",
-    "newDeathsText": "+102",
-    "totalCasesText": "4547150",
-    "totalDeathsText": "136997",
+    "lastUpdate": "2020-09-21 20:47",
+    "newCasesText": "+13439",
+    "newDeathsText": "+377",
+    "totalCasesText": "4558068",
+    "totalDeathsText": "137272",
     "totalRecoveredText": "3851227",
     "countryCode": "http://localhost:5000/static/flags/br.svg"
   },
   {
     "activeCasesText": "178133",
     "countryText": "Russia",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+6196",
     "newDeathsText": "+71",
     "totalCasesText": "1109595",
@@ -66,7 +66,7 @@
   {
     "activeCasesText": "107669",
     "countryText": "Colombia",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "765076",
@@ -77,7 +77,7 @@
   {
     "activeCasesText": "124868",
     "countryText": "Mexico",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+3542",
     "newDeathsText": "+235",
     "totalCasesText": "697663",
@@ -88,6 +88,7 @@
   {
     "activeCasesText": "-",
     "countryText": "Spain",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+2957",
     "newDeathsText": "+56",
     "totalCasesText": "671468",
@@ -96,13 +97,13 @@
     "countryCode": "http://localhost:5000/static/flags/es.svg"
   },
   {
-    "activeCasesText": "55187",
+    "activeCasesText": "54736",
     "countryText": "South Africa",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "661211",
-    "totalDeathsText": "15953",
-    "totalRecoveredText": "590071",
+    "newCasesText": "+725",
+    "newDeathsText": "+39",
+    "totalCasesText": "661936",
+    "totalDeathsText": "15992",
+    "totalRecoveredText": "591208",
     "countryCode": "http://localhost:5000/static/flags/za.svg"
   },
   {
@@ -117,14 +118,14 @@
     "countryCode": "http://localhost:5000/static/flags/ar.svg"
   },
   {
-    "activeCasesText": "335149",
+    "activeCasesText": "333715",
     "countryText": "France",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+5298",
     "newDeathsText": "+53",
     "totalCasesText": "458061",
     "totalDeathsText": "31338",
-    "totalRecoveredText": "91574",
+    "totalRecoveredText": "93008",
     "countryCode": "http://localhost:5000/static/flags/fr.svg"
   },
   {
@@ -150,7 +151,7 @@
   {
     "activeCasesText": "-",
     "countryText": "UK",
-    "lastUpdate": "2020-09-21 16:46",
+    "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "+4368",
     "newDeathsText": "+11",
     "totalCasesText": "398625",
@@ -172,7 +173,7 @@
   {
     "activeCasesText": "14235",
     "countryText": "Saudi Arabia",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+492",
     "newDeathsText": "+27",
     "totalCasesText": "330246",
@@ -194,6 +195,7 @@
   {
     "activeCasesText": "7015",
     "countryText": "Pakistan",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+633",
     "newDeathsText": "+4",
     "totalCasesText": "306304",
@@ -204,7 +206,7 @@
   {
     "activeCasesText": "28601",
     "countryText": "Turkey",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+1743",
     "newDeathsText": "+68",
     "totalCasesText": "304610",
@@ -215,7 +217,7 @@
   {
     "activeCasesText": "45079",
     "countryText": "Italy",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+1350",
     "newDeathsText": "+17",
     "totalCasesText": "299506",
@@ -226,7 +228,7 @@
   {
     "activeCasesText": "54958",
     "countryText": "Philippines",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+3475",
     "newDeathsText": "+15",
     "totalCasesText": "290190",
@@ -235,13 +237,13 @@
     "countryCode": "http://localhost:5000/static/flags/ph.svg"
   },
   {
-    "activeCasesText": "21520",
+    "activeCasesText": "22067",
     "countryText": "Germany",
-    "lastUpdate": "2020-09-21 18:47",
-    "newCasesText": "+1520",
-    "newDeathsText": "+7",
-    "totalCasesText": "274997",
-    "totalDeathsText": "9477",
+    "lastUpdate": "2020-09-21 21:48",
+    "newCasesText": "+2071",
+    "newDeathsText": "+11",
+    "totalCasesText": "275548",
+    "totalDeathsText": "9481",
     "totalRecoveredText": "244000",
     "countryCode": "http://localhost:5000/static/flags/de.svg"
   },
@@ -256,13 +258,13 @@
     "countryCode": "http://localhost:5000/static/flags/id.svg"
   },
   {
-    "activeCasesText": "52263",
+    "activeCasesText": "52876",
     "countryText": "Israel",
-    "newCasesText": "+2135",
-    "newDeathsText": "+16",
-    "totalCasesText": "190037",
-    "totalDeathsText": "1272",
-    "totalRecoveredText": "136502",
+    "newCasesText": "+3027",
+    "newDeathsText": "+17",
+    "totalCasesText": "190929",
+    "totalDeathsText": "1273",
+    "totalRecoveredText": "136780",
     "countryCode": "http://localhost:5000/static/flags/il.svg"
   },
   {
@@ -278,7 +280,7 @@
   {
     "activeCasesText": "10248",
     "countryText": "Canada",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+1037",
     "newDeathsText": "+6",
     "totalCasesText": "144686",
@@ -360,6 +362,7 @@
   {
     "activeCasesText": "17106",
     "countryText": "Morocco",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+1376",
     "newDeathsText": "+25",
     "totalCasesText": "103119",
@@ -381,7 +384,7 @@
   {
     "activeCasesText": "6713",
     "countryText": "Egypt",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:47",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "102015",
@@ -392,7 +395,7 @@
   {
     "activeCasesText": "8449",
     "countryText": "Kuwait",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+530",
     "newDeathsText": "+1",
     "totalCasesText": "99964",
@@ -414,6 +417,7 @@
   {
     "activeCasesText": "7417",
     "countryText": "Oman",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+576",
     "newDeathsText": "+7",
     "totalCasesText": "94051",
@@ -444,7 +448,7 @@
   {
     "activeCasesText": "10104",
     "countryText": "UAE",
-    "lastUpdate": "2020-09-21 17:46",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+679",
     "newDeathsText": "+1",
     "totalCasesText": "85595",
@@ -455,6 +459,7 @@
   {
     "activeCasesText": "173",
     "countryText": "China",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+12",
     "newDeathsText": "-",
     "totalCasesText": "85291",
@@ -465,7 +470,7 @@
   {
     "activeCasesText": "13086",
     "countryText": "Poland",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+748",
     "newDeathsText": "+5",
     "totalCasesText": "79988",
@@ -507,6 +512,7 @@
   {
     "activeCasesText": "39967",
     "countryText": "Ethiopia",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+889",
     "newDeathsText": "+12",
     "totalCasesText": "69709",
@@ -527,13 +533,34 @@
   {
     "activeCasesText": "10013",
     "countryText": "Venezuela",
-    "lastUpdate": "2020-09-21 17:46",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "66656",
     "totalDeathsText": "547",
     "totalRecoveredText": "56096",
     "countryCode": "http://localhost:5000/static/flags/ve.svg"
+  },
+  {
+    "activeCasesText": "6902",
+    "countryText": "Bahrain",
+    "newCasesText": "+713",
+    "newDeathsText": "+3",
+    "totalCasesText": "65752",
+    "totalDeathsText": "224",
+    "totalRecoveredText": "58626",
+    "countryCode": "http://localhost:5000/static/flags/bh.svg"
+  },
+  {
+    "activeCasesText": "39730",
+    "countryText": "Costa Rica",
+    "lastUpdate": "2020-09-21 20:47",
+    "newCasesText": "+703",
+    "newDeathsText": "+18",
+    "totalCasesText": "65602",
+    "totalDeathsText": "745",
+    "totalRecoveredText": "25127",
+    "countryCode": "http://localhost:5000/static/flags/cr.svg"
   },
   {
     "activeCasesText": "17611",
@@ -546,28 +573,9 @@
     "countryCode": "http://localhost:5000/static/flags/np.svg"
   },
   {
-    "activeCasesText": "6866",
-    "countryText": "Bahrain",
-    "newCasesText": "-",
-    "newDeathsText": "+2",
-    "totalCasesText": "65039",
-    "totalDeathsText": "223",
-    "totalRecoveredText": "57950",
-    "countryCode": "http://localhost:5000/static/flags/bh.svg"
-  },
-  {
-    "activeCasesText": "39454",
-    "countryText": "Costa Rica",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "63712",
-    "totalDeathsText": "706",
-    "totalRecoveredText": "23552",
-    "countryCode": "http://localhost:5000/static/flags/cr.svg"
-  },
-  {
     "activeCasesText": "338",
     "countryText": "Singapore",
+    "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "+30",
     "newDeathsText": "-",
     "totalCasesText": "57606",
@@ -620,6 +628,7 @@
   {
     "activeCasesText": "13164",
     "countryText": "Algeria",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+197",
     "newDeathsText": "+7",
     "totalCasesText": "50023",
@@ -648,19 +657,19 @@
     "countryCode": "http://localhost:5000/static/flags/md.svg"
   },
   {
-    "activeCasesText": "554",
+    "activeCasesText": "507",
     "countryText": "Ghana",
-    "newCasesText": "-",
+    "newCasesText": "+58",
     "newDeathsText": "-",
-    "totalCasesText": "46004",
+    "totalCasesText": "46062",
     "totalDeathsText": "297",
-    "totalRecoveredText": "45153",
+    "totalRecoveredText": "45258",
     "countryCode": "http://localhost:5000/static/flags/gh.svg"
   },
   {
     "activeCasesText": "2726",
     "countryText": "Kyrgyzstan",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+55",
     "newDeathsText": "-",
     "totalCasesText": "45471",
@@ -671,6 +680,7 @@
   {
     "activeCasesText": "1868",
     "countryText": "Azerbaijan",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+92",
     "newDeathsText": "+1",
     "totalCasesText": "39280",
@@ -691,7 +701,7 @@
   {
     "activeCasesText": "8375",
     "countryText": "Austria",
-    "lastUpdate": "2020-09-21 17:46",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "+563",
     "newDeathsText": "+1",
     "totalCasesText": "38658",
@@ -733,7 +743,7 @@
   {
     "activeCasesText": "7965",
     "countryText": "Ireland",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+188",
     "newDeathsText": "-",
     "totalCasesText": "33121",
@@ -744,7 +754,7 @@
   {
     "activeCasesText": "659",
     "countryText": "Serbia",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+30",
     "newDeathsText": "+2",
     "totalCasesText": "32938",
@@ -755,7 +765,7 @@
   {
     "activeCasesText": "17173",
     "countryText": "Lebanon",
-    "lastUpdate": "2020-09-21 15:46",
+    "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "+684",
     "newDeathsText": "+10",
     "totalCasesText": "29987",
@@ -766,7 +776,7 @@
   {
     "activeCasesText": "12962",
     "countryText": "Libya",
-    "lastUpdate": "2020-09-21 17:46",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+847",
     "newDeathsText": "+16",
     "totalCasesText": "28796",
@@ -787,7 +797,7 @@
   {
     "activeCasesText": "1998",
     "countryText": "Australia",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 21:48",
     "newCasesText": "+14",
     "newDeathsText": "+2",
     "totalCasesText": "26912",
@@ -808,6 +818,7 @@
   {
     "activeCasesText": "4945",
     "countryText": "Denmark",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+418",
     "newDeathsText": "+2",
     "totalCasesText": "23323",
@@ -836,13 +847,23 @@
     "countryCode": "http://localhost:5000/static/flags/cm.svg"
   },
   {
-    "activeCasesText": "740",
+    "activeCasesText": "577",
     "countryText": "Ivory Coast",
-    "newCasesText": "-",
+    "newCasesText": "+7",
     "newDeathsText": "-",
-    "totalCasesText": "19320",
+    "totalCasesText": "19327",
     "totalDeathsText": "120",
-    "totalRecoveredText": "18460"
+    "totalRecoveredText": "18630"
+  },
+  {
+    "activeCasesText": "4522",
+    "countryText": "Bulgaria",
+    "newCasesText": "+151",
+    "newDeathsText": "+4",
+    "totalCasesText": "19014",
+    "totalDeathsText": "765",
+    "totalRecoveredText": "13727",
+    "countryCode": "http://localhost:5000/static/flags/bg.svg"
   },
   {
     "activeCasesText": "13779",
@@ -853,16 +874,6 @@
     "totalDeathsText": "686",
     "totalRecoveredText": "4401",
     "countryCode": "http://localhost:5000/static/flags/hu.svg"
-  },
-  {
-    "activeCasesText": "4522",
-    "countryText": "Bulgaria",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "18863",
-    "totalDeathsText": "761",
-    "totalRecoveredText": "13580",
-    "countryCode": "http://localhost:5000/static/flags/bg.svg"
   },
   {
     "activeCasesText": "2131",
@@ -916,14 +927,14 @@
     "countryCode": "http://localhost:5000/static/flags/sn.svg"
   },
   {
-    "activeCasesText": "480",
+    "activeCasesText": "215",
     "countryText": "Zambia",
     "lastUpdate": "2020-09-21 18:47",
     "newCasesText": "+44",
-    "newDeathsText": "-",
+    "newDeathsText": "+1",
     "totalCasesText": "14175",
-    "totalDeathsText": "330",
-    "totalRecoveredText": "13365",
+    "totalDeathsText": "331",
+    "totalRecoveredText": "13629",
     "countryCode": "http://localhost:5000/static/flags/zm.svg"
   },
   {
@@ -987,13 +998,13 @@
     "countryCode": "http://localhost:5000/static/flags/cd.svg"
   },
   {
-    "activeCasesText": "569",
+    "activeCasesText": "522",
     "countryText": "Guinea",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "10325",
-    "totalDeathsText": "64",
-    "totalRecoveredText": "9692",
+    "newCasesText": "+19",
+    "newDeathsText": "+1",
+    "totalCasesText": "10344",
+    "totalDeathsText": "65",
+    "totalRecoveredText": "9757",
     "countryCode": "http://localhost:5000/static/flags/gn.svg"
   },
   {
@@ -1079,6 +1090,7 @@
   {
     "activeCasesText": "953",
     "countryText": "Luxembourg",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+9",
     "newDeathsText": "-",
     "totalCasesText": "7916",
@@ -1119,7 +1131,7 @@
   {
     "activeCasesText": "3146",
     "countryText": "Slovakia",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+79",
     "newDeathsText": "-",
     "totalCasesText": "6756",
@@ -1168,23 +1180,24 @@
     "countryCode": "http://localhost:5000/static/flags/dj.svg"
   },
   {
-    "activeCasesText": "541",
+    "activeCasesText": "531",
     "countryText": "Eswatini",
-    "newCasesText": "-",
+    "lastUpdate": "2020-09-21 20:47",
+    "newCasesText": "+13",
     "newDeathsText": "-",
-    "totalCasesText": "5269",
+    "totalCasesText": "5282",
     "totalDeathsText": "104",
-    "totalRecoveredText": "4624",
+    "totalRecoveredText": "4647",
     "countryCode": "http://localhost:5000/static/flags/sz.svg"
   },
   {
-    "activeCasesText": "607",
+    "activeCasesText": "555",
     "countryText": "Cabo Verde",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "5257",
-    "totalDeathsText": "51",
-    "totalRecoveredText": "4599"
+    "newCasesText": "+24",
+    "newDeathsText": "+1",
+    "totalCasesText": "5281",
+    "totalDeathsText": "52",
+    "totalRecoveredText": "4674"
   },
   {
     "activeCasesText": "3666",
@@ -1205,6 +1218,17 @@
     "totalDeathsText": "116",
     "totalRecoveredText": "4462",
     "countryCode": "http://localhost:5000/static/flags/cu.svg"
+  },
+  {
+    "activeCasesText": "1486",
+    "countryText": "Jordan",
+    "lastUpdate": "2020-09-21 20:47",
+    "newCasesText": "+266",
+    "newDeathsText": "+2",
+    "totalCasesText": "5045",
+    "totalDeathsText": "32",
+    "totalRecoveredText": "3527",
+    "countryCode": "http://localhost:5000/static/flags/jo.svg"
   },
   {
     "activeCasesText": "219",
@@ -1249,22 +1273,12 @@
   {
     "activeCasesText": "2894",
     "countryText": "CAR",
+    "lastUpdate": "2020-09-21 15:46",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "4786",
     "totalDeathsText": "62",
     "totalRecoveredText": "1830"
-  },
-  {
-    "activeCasesText": "1905",
-    "countryText": "Jordan",
-    "lastUpdate": "2020-09-21 15:46",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "4779",
-    "totalDeathsText": "30",
-    "totalRecoveredText": "2844",
-    "countryCode": "http://localhost:5000/static/flags/jo.svg"
   },
   {
     "activeCasesText": "138",
@@ -1277,13 +1291,13 @@
     "countryCode": "http://localhost:5000/static/flags/sr.svg"
   },
   {
-    "activeCasesText": "1724",
+    "activeCasesText": "1722",
     "countryText": "Rwanda",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "4711",
-    "totalDeathsText": "26",
-    "totalRecoveredText": "2961",
+    "newCasesText": "+11",
+    "newDeathsText": "+1",
+    "totalCasesText": "4722",
+    "totalDeathsText": "27",
+    "totalRecoveredText": "2973",
     "countryCode": "http://localhost:5000/static/flags/rw.svg"
   },
   {
@@ -1317,6 +1331,16 @@
     "countryCode": "http://localhost:5000/static/flags/tt.svg"
   },
   {
+    "activeCasesText": "2695",
+    "countryText": "Syria",
+    "newCasesText": "+33",
+    "newDeathsText": "+3",
+    "totalCasesText": "3833",
+    "totalDeathsText": "175",
+    "totalRecoveredText": "963",
+    "countryCode": "http://localhost:5000/static/flags/sy.svg"
+  },
+  {
     "activeCasesText": "1528",
     "countryText": "Lithuania",
     "newCasesText": "+70",
@@ -1325,15 +1349,6 @@
     "totalDeathsText": "87",
     "totalRecoveredText": "2199",
     "countryCode": "http://localhost:5000/static/flags/lt.svg"
-  },
-  {
-    "activeCasesText": "2682",
-    "countryText": "Syria",
-    "newCasesText": "-",
-    "newDeathsText": "-",
-    "totalCasesText": "3800",
-    "totalDeathsText": "172",
-    "totalRecoveredText": "946"
   },
   {
     "activeCasesText": "2141",
@@ -1379,7 +1394,7 @@
   {
     "activeCasesText": "105",
     "countryText": "Thailand",
-    "lastUpdate": "2020-09-21 18:47",
+    "lastUpdate": "2020-09-21 20:47",
     "newCasesText": "-",
     "newDeathsText": "-",
     "totalCasesText": "3506",
@@ -1390,7 +1405,7 @@
   {
     "activeCasesText": "490",
     "countryText": "Somalia",
-    "lastUpdate": "2020-09-21 17:46",
+    "lastUpdate": "2020-09-21 19:47",
     "newCasesText": "+23",
     "newDeathsText": "-",
     "totalCasesText": "3465",
@@ -1538,13 +1553,13 @@
     "countryCode": "http://localhost:5000/static/flags/sl.svg"
   },
   {
-    "activeCasesText": "213",
+    "activeCasesText": "207",
     "countryText": "Yemen",
-    "newCasesText": "-",
+    "newCasesText": "+2",
     "newDeathsText": "-",
-    "totalCasesText": "2026",
+    "totalCasesText": "2028",
     "totalDeathsText": "586",
-    "totalRecoveredText": "1227",
+    "totalRecoveredText": "1235",
     "countryCode": "http://localhost:5000/static/flags/ye.svg"
   },
   {
@@ -1558,13 +1573,13 @@
     "countryCode": "http://localhost:5000/static/flags/uy.svg"
   },
   {
-    "activeCasesText": "603",
+    "activeCasesText": "651",
     "countryText": "Burkina Faso",
-    "newCasesText": "-",
+    "newCasesText": "+50",
     "newDeathsText": "-",
-    "totalCasesText": "1846",
+    "totalCasesText": "1896",
     "totalDeathsText": "56",
-    "totalRecoveredText": "1187",
+    "totalRecoveredText": "1189",
     "countryCode": "http://localhost:5000/static/flags/bf.svg"
   },
   {
@@ -1589,13 +1604,13 @@
     "countryCode": "http://localhost:5000/static/flags/ad.svg"
   },
   {
-    "activeCasesText": "356",
+    "activeCasesText": "354",
     "countryText": "Togo",
-    "newCasesText": "-",
+    "newCasesText": "+3",
     "newDeathsText": "-",
-    "totalCasesText": "1666",
+    "totalCasesText": "1669",
     "totalDeathsText": "41",
-    "totalRecoveredText": "1269",
+    "totalRecoveredText": "1274",
     "countryCode": "http://localhost:5000/static/flags/tg.svg"
   },
   {
@@ -1659,21 +1674,21 @@
     "countryCode": "http://localhost:5000/static/flags/pf.svg"
   },
   {
-    "activeCasesText": "15",
+    "activeCasesText": "16",
     "countryText": "Niger",
-    "newCasesText": "-",
+    "newCasesText": "+1",
     "newDeathsText": "-",
-    "totalCasesText": "1188",
+    "totalCasesText": "1189",
     "totalDeathsText": "69",
     "totalRecoveredText": "1104",
     "countryCode": "http://localhost:5000/static/flags/ne.svg"
   },
   {
-    "activeCasesText": "103",
+    "activeCasesText": "105",
     "countryText": "Chad",
-    "newCasesText": "-",
+    "newCasesText": "+2",
     "newDeathsText": "-",
-    "totalCasesText": "1151",
+    "totalCasesText": "1153",
     "totalDeathsText": "81",
     "totalRecoveredText": "967",
     "countryCode": "http://localhost:5000/static/flags/td.svg"
