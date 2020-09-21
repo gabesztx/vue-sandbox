@@ -33,7 +33,6 @@
     @check="onCheck"
     @click="onRowClick"
   >
-
     <b-table-column
       v-slot="props"
       v-for="(column, index) in columns"
@@ -51,26 +50,29 @@
       :header-class="column.headerClass"
       :custom-sort="column.customSort"
     >
-      <template v-if="column.image">
-        <div class="img-content">
-          <img class="img-flag" v-bind:src="props.row[column.field]">
-        </div>
-        <!--<div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />-->
-      </template>
-      <template v-else>
-        <span :class="column.class">
-          {{ props.row[column.field] }}
-        </span>
-      </template>
-      <template v-if="column.button">
-        <b-button
-          :class="column.button.class"
-          :label="column.button.label"
-          v-on:click="onCellClick(props.row)"
-        ></b-button>
-      </template>
-    </b-table-column>
+  <!--<div :class="`table-column-content ${getNewCasesClass(props.row[column.field], column.field)}`">-->
+      <div :class="`table-column-content`">
+        <template v-if="!column.image && !column.button">
+          <span :class="`cell-value`">{{ props.row[column.field] }}</span>
+        </template>
 
+        <template v-if="column.button">
+          <b-button
+            :class="column.button.class"
+            :label="column.button.label"
+            v-on:click="onCellClick(props.row)"
+          ></b-button>
+        </template>
+
+        <template v-if="column.image">
+          <div class="img-content">
+            <img class="img-flag" v-bind:src="props.row[column.field]">
+          </div>
+        </template>
+      </div>
+
+
+    </b-table-column>
 
   </b-table>
 </template>
@@ -167,6 +169,21 @@
       const onPageChange = (page: number) => {
         attr.emit('pageChange', page);
       };
+
+      const getNewCasesClass = (value, field) => {
+        if ('newCasesText' === field) {
+          const num = Number(value.substring(1));
+          if (num < 400 && num > 200) {
+            return 'primary';
+          }
+          if (num < 800 && num > 400) {
+            return 'warning';
+          }
+          if (num > 400) {
+            return 'danger';
+          }
+        }
+      };
       return {
         onSelect,
         onCheck,
@@ -175,8 +192,23 @@
         onCellClick,
         selectValue,
         checkedRowsValue,
+        getNewCasesClass,
       };
     },
   };
 </script>
 <style scoped></style>
+<!--<div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />-->
+<!--
+<b-table-column :field="columns[0].field" v-slot="props" :width="columns[0].width">
+<div class="img-content">
+  <img class="img-flag" v-bind:src="props.row.countryCode">
+</div>
+</b-table-column>
+<b-table-column
+  :field="columns[1].field"
+  :label="columns[1].label"
+  v-slot="props"
+>
+{{ props.row.countryText }}
+</b-table-column>-->

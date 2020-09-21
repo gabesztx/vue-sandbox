@@ -74,11 +74,12 @@
         data: countryData,
         scrollable: true,
         stickyHeader: false,
-        paginated: true,
+        paginated: false,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 10,
+        perPage: 7,
         striped: true,
+        // striped: false,
         narrowed: false,
         mobileCards: true,
         hoverable: false,
@@ -126,6 +127,7 @@
       sortable: true,
       searchable: false,
       width: 210,
+
     },
     {
       field: 'activeCasesText',
