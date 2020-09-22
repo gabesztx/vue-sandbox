@@ -36,6 +36,8 @@ app.get('/country', (req, res) => {
   return res.send(covidDataService.getCovid19CountryDB());
 });
 
-server.listen(port, () => console.log(`status: running / port: ${port}`));
-covidDataService.refreshCovidData();
+// server.listen(port, () => console.log(`status: running / port: ${port}`));
+server.listen(port, () => {});
+
+covidDataService.transformCovidDbData();
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
