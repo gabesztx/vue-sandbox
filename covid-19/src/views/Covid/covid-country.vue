@@ -1,60 +1,120 @@
 <template>
-  <section class="section">
-    <div class="container">
-      <div class="box">
-        <div class="title-content">
-          <div class="title-label">
-            <div class="title">Országok</div>
-          </div>
-          <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+  <div class="country-content">
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="box">
+            <div class="title-content">
+              <div class="title-label">
+                <div class="title">Országok</div>
+              </div>
+              <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
             <i class="mdi mdi-cog"></i>
           </span>
-        </div>
-        <b-collapse :open="isOpenSetting">
-          <div class="settings-content">
-            <v-icell-input
-              :label="searchInput.label"
-              :place-holder="searchInput.placeHolder"
-              :rounded="searchInput.rounded"
-              :size="searchInput.size"
-              :loading="searchInput.loading"
-              :style-type="searchInput.styleType"
-              :expanded="searchInput.expanded"
-              :icon="searchInput.icon"
-              :icon-right="searchInput.iconRight"
-              :type="searchInput.type"
-              :custom-class="searchInput.customClass"
-              :classes="searchInput.classes"
-              @input="onInput"
-            ></v-icell-input>
-          </div>
-        </b-collapse>
+            </div>
+            <b-collapse :open="isOpenSetting">
+              <div class="settings-content">
+                <v-icell-input
+                  :label="searchInput.label"
+                  :place-holder="searchInput.placeHolder"
+                  :rounded="searchInput.rounded"
+                  :size="searchInput.size"
+                  :loading="searchInput.loading"
+                  :style-type="searchInput.styleType"
+                  :expanded="searchInput.expanded"
+                  :icon="searchInput.icon"
+                  :icon-right="searchInput.iconRight"
+                  :type="searchInput.type"
+                  :custom-class="searchInput.customClass"
+                  :classes="searchInput.classes"
+                  @input="onInput"
+                ></v-icell-input>
+              </div>
+            </b-collapse>
 
-        <div class="table-content">
-          <v-icell-table
-            :data="table.data"
-            :bordered="table.bordered"
-            :columns="table.columns"
-            :scrollable="table.scrollable"
-            :sticky-header="table.stickyHeader"
-            :paginated="table.paginated"
-            :pagination-simple="table.paginationSimple"
-            :pagination-size="table.paginationSize"
-            :per-page="table.perPage"
-            :striped="table.striped"
-            :narrowed="table.narrowed"
-            :mobile-cards="table.mobileCards"
-            :hoverable="table.hoverable"
-            :show-detail-icon="table.showDetailIcon"
-            :sort-icon-size="table.sortIconSize"
-            :sort-icon="table.sortIcon"
-            :height="table.height"
-            @rowClick="onClick"
-          ></v-icell-table>
+            <div class="table-content">
+              <v-icell-table
+                :data="table.data"
+                :bordered="table.bordered"
+                :columns="table.columns"
+                :scrollable="table.scrollable"
+                :sticky-header="table.stickyHeader"
+                :paginated="table.paginated"
+                :pagination-simple="table.paginationSimple"
+                :pagination-size="table.paginationSize"
+                :per-page="table.perPage"
+                :striped="table.striped"
+                :narrowed="table.narrowed"
+                :mobile-cards="table.mobileCards"
+                :hoverable="table.hoverable"
+                :show-detail-icon="table.showDetailIcon"
+                :sort-icon-size="table.sortIconSize"
+                :sort-icon="table.sortIcon"
+                :height="table.height"
+                @rowClick="onClick"
+              ></v-icell-table>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!--<section class="section">
+      <div class="container">
+        <div class="box">
+          <div class="title-content">
+            <div class="title-label">
+              <div class="title">Országok</div>
+            </div>
+            <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+            <i class="mdi mdi-cog"></i>
+          </span>
+          </div>
+          <b-collapse :open="isOpenSetting">
+            <div class="settings-content">
+              <v-icell-input
+                :label="searchInput.label"
+                :place-holder="searchInput.placeHolder"
+                :rounded="searchInput.rounded"
+                :size="searchInput.size"
+                :loading="searchInput.loading"
+                :style-type="searchInput.styleType"
+                :expanded="searchInput.expanded"
+                :icon="searchInput.icon"
+                :icon-right="searchInput.iconRight"
+                :type="searchInput.type"
+                :custom-class="searchInput.customClass"
+                :classes="searchInput.classes"
+                @input="onInput"
+              ></v-icell-input>
+            </div>
+          </b-collapse>
+
+          <div class="table-content">
+            <v-icell-table
+              :data="table.data"
+              :bordered="table.bordered"
+              :columns="table.columns"
+              :scrollable="table.scrollable"
+              :sticky-header="table.stickyHeader"
+              :paginated="table.paginated"
+              :pagination-simple="table.paginationSimple"
+              :pagination-size="table.paginationSize"
+              :per-page="table.perPage"
+              :striped="table.striped"
+              :narrowed="table.narrowed"
+              :mobile-cards="table.mobileCards"
+              :hoverable="table.hoverable"
+              :show-detail-icon="table.showDetailIcon"
+              :sort-icon-size="table.sortIconSize"
+              :sort-icon="table.sortIcon"
+              :height="table.height"
+              @rowClick="onClick"
+            ></v-icell-table>
+          </div>
+        </div>
+      </div>
+    </section>-->
+  </div>
 </template>
 <script lang="ts">
   import router from '@/router';
@@ -117,7 +177,7 @@
         });
       };
       const onClick = (cell: any) => {
-        // router.push({ path: '/covid/hun' });
+        router.push({ path: '/' });
       };
       return {
         onClick,

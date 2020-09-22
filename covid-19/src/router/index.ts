@@ -7,14 +7,14 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/world',
-    name: 'covid-world',
+    path: '/',
+    name: 'world',
     beforeEnter: worldBeforeEnter,
     component: () => import('@/views/Covid/covid-world.vue'),
   },
   {
     path: '/country',
-    name: 'covid-country',
+    name: 'country',
     beforeEnter: countryBeforeEnter,
     component: () => import('@/views/Covid/covid-country.vue'),
   },
@@ -25,11 +25,11 @@ const routes: Array<RouteConfig> = [
   },*/
   {
     path: '/*',
-    redirect: '/world',
+    redirect: '/country',
   },
   {
     path: '/',
-    redirect: '/world',
+    redirect: '/country',
   },
 ];
 

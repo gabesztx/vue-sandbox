@@ -49,7 +49,8 @@ $table-head-cell-border-width: 1;
 @import "~buefy/src/scss/buefy";
 
 html {
-  background-color: rgb(244, 244, 244);
+  //background-color: rgb(233, 238, 241);
+  background-color: rgb(243, 243, 243);
   //background-color: rgb(255, 255, 255);
 }
 
@@ -64,26 +65,6 @@ table.table td .image, table.table th .image {
   height: 1.5rem;
 }
 */
-
-.title-content {
-  display: flex;
-  justify-content: space-between;
-  //margin: 0 -20px;
-  //padding: 0 20px 15px 20px;
-  padding-bottom: 15px;
-
-  .title {
-    font-size: 25px;
-    font-weight: 400;
-  }
-
-  span {
-    cursor: pointer;
-  }
-
-  //border-bottom: 1px solid rgba(24, 28, 33, .06);
-}
-
 
 .settings-content {
   display: flex;
@@ -129,51 +110,76 @@ table.table td .image, table.table th .image {
   }
 }
 
-.page-title {
-  text-align: center;
-  font-weight: 400;
-}
-
-.main-content {
-  .title {
-    font-weight: 400;
+.home-content {
+  .title-content{
+    //text-align: center;
+    padding-bottom: 25px;
+    .title{
+      font-size: 35px;
+      font-weight: 600;
+    }
+  }
+  .card {
+    border-radius: 10px;
+    .video-js{
+      width: 100%;
+    }
   }
 }
 
 
-/* box */
-.box {
-  border-radius: 24px;
-  //box-shadow: 3px 6px 15px -4px rgba(0, 0, 0, 0.35);
+.country-content {
+  .title-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    .title {
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    span {
+      cursor: pointer;
+    }
+
+    //border-bottom: 1px solid rgba(24, 28, 33, .06);
+  }
+  .box {
+    border-radius: 24px;
+    //box-shadow: 3px 6px 15px -4px rgba(0, 0, 0, 0.35);
+  }
+  /* Cards */
+  .card {
+    border-radius: 10px;
+
+    .card-header {
+      box-shadow: none;
+      border-bottom: 1px solid rgba(24, 28, 33, .06);
+    }
+
+    .card-content {
+      padding: 0;
+    }
+  }
 }
 
-/* Cards */
-.card {
-  border-radius: 10px;
 
-  .card-header {
-    box-shadow: none;
-    border-bottom: 1px solid rgba(24, 28, 33, .06);
-  }
-
-  .card-content {
-    padding: 0;
-  }
-}
 
 /* table content */
 .table-content {
-  .is-empty{
+  .is-empty {
     .no-found-content {
       //padding-top: 20px;
       display: flex;
       flex-direction: column;
-      justify-content:center;
+      justify-content: center;
       align-items: center;
-      .no-found-icon{
+
+      .no-found-icon {
         font-size: 48px;
       }
-      .no-found-text{
+
+      .no-found-text {
         font-weight: 500;
         font-size: 18px;
       }

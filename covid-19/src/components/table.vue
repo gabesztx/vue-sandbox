@@ -14,7 +14,7 @@
     :checked-rows="checkedRows ? checkedRowsValue : []"
     :is-row-checkable="isRowCheckable"
     :header-checkable="headerCheckable"
-    :paginated="data.length ? true : false"
+    :paginated="!!data.length ? true : false"
     :pagination-simple="paginationSimple"
     :pagination-position="paginationPosition"
     :pagination-size="paginationSize"
