@@ -3,6 +3,7 @@ const { map } = require('rxjs/operators');
 const { transformObjectKeys } = require('../utils/helpers');
 const http = require('../services/http.service');
 const host = 'covid-19-tracking.p.rapidapi.com';
+
 const url = `https://${host}/v1`;
 const option = {
   headers: {

@@ -1,18 +1,28 @@
 const { from } = require('rxjs');
 const { map } = require('rxjs/operators');
-const { transformObjectKeys } = require('../utils/helpers');
 const http = require('../services/http.service');
-const host = 'api.covid19api.com/summary';
+const host = 'covid-19-data.p.rapidapi.com/country/code';
 const url = `https://${host}`;
-const option = {};
 
-const $getApi = () => from(http.get(url, option)).pipe(
-  map(value => transformObjectKeys(value.data)));
-
-module.exports = {
-  $getApi: $getApi,
+const $getLatestCountryDataByCode = (countryCode) => {
+  const option = {
+    headers: {
+      'content-type': 'application/octet-stream',
+      'x-rapidapi-host': host,
+      'x-rapidapi-key': '65bb882af8msh78eb85b5f8ffeefp1821cdjsn66610ff72d14',
+      useQueryString: true,
+    },
+    params: {
+      format: 'json',
+      code: countryCode,
+    },
+  };
+  return from(http.get(url, option)).pipe(map((value) => value.data));
 };
 
+module.exports = {
+  $getLatestCountryDataByCode: $getLatestCountryDataByCode,
+};
 
 // 'https://api.covid19api.com/live/country/south-africa/status/confirmed'
 

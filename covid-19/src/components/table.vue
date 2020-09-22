@@ -14,7 +14,7 @@
     :checked-rows="checkedRows ? checkedRowsValue : []"
     :is-row-checkable="isRowCheckable"
     :header-checkable="headerCheckable"
-    :paginated="!!data.length ? true : false"
+    :paginated="paginated"
     :pagination-simple="paginationSimple"
     :pagination-position="paginationPosition"
     :pagination-size="paginationSize"
@@ -28,6 +28,7 @@
     :card-layout="cardLayout"
     :scrollable="scrollable"
     :height="height"
+    :row-class="rowClass"
     @page-change="onPageChange"
     @select="onSelect"
     @check="onCheck"
@@ -50,27 +51,26 @@
       :cell-class="column.cellClass"
       :header-class="column.headerClass"
       :custom-sort="column.customSort"
+      :custom-key="column.customKey"
     >
       <!--<div :class="`table-column-content ${getNewCasesClass(props.row[column.field], column.field)}`">-->
-      <div :class="`table-column-content`">
-        <template v-if="!column.image && !column.button">
-          <span :class="`cell-value`">{{ props.row[column.field] }}</span>
-        </template>
+      <template v-if="!column.image && !column.button">
+        <span :class="`cell-value`">{{ props.row[column.field] }}</span>
+      </template>
 
-        <template v-if="column.button">
-          <b-button
-            :class="column.button.class"
-            :label="column.button.label"
-            v-on:click="onCellClick(props.row)"
-          ></b-button>
-        </template>
+      <template v-if="column.button">
+        <b-button
+          :class="column.button.class"
+          :label="column.button.label"
+          v-on:click="onCellClick(props.row)"
+        ></b-button>
+      </template>
 
-        <template v-if="column.image">
-          <div class="img-content">
-            <img class="img-flag" v-bind:src="props.row[column.field]">
-          </div>
-        </template>
-      </div>
+      <template v-if="column.image">
+        <div class="img-content">
+          <img class="img-flag" v-bind:src="`${column.meta.url}${props.row[column.field]}.svg`">
+        </div>
+      </template>
     </b-table-column>
 
     <!-- No Found -->
@@ -158,6 +158,7 @@
       cellClass: String,
       id: [String, Number],
       image: Boolean,
+      classObject: Function,
     },
 
     setup(props: any, attr: any){
@@ -180,21 +181,6 @@
       const onPageChange = (page: number) => {
         attr.emit('pageChange', page);
       };
-
-      const getNewCasesClass = (value, field) => {
-        if ('newCasesText' === field) {
-          const num = Number(value.substring(1));
-          if (num < 400 && num > 200) {
-            return 'primary';
-          }
-          if (num < 800 && num > 400) {
-            return 'warning';
-          }
-          if (num > 400) {
-            return 'danger';
-          }
-        }
-      };
       return {
         onSelect,
         onCheck,
@@ -203,7 +189,6 @@
         onCellClick,
         selectValue,
         checkedRowsValue,
-        getNewCasesClass,
       };
     },
   };

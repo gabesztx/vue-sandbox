@@ -1,6 +1,5 @@
 const path = require('path');
 const isoCountries = require('../utils/iso-countries');
-// const countries = require('i18n-iso-countries');
 
 const transformNoData = (data) => {
   data.forEach((item) => {
@@ -20,14 +19,24 @@ const transformRemoveComma = (data) => {
   });
   return data;
 };
+const transformRemoveAdds = (data) => {
+  data.forEach((item) => {
+    Object.keys(item).forEach((key) => {
+      if (item[key][0] === '+') {
+        item[key] = item[key].substring(1);
+      }
+    });
+  });
+  return data;
+};
 
-// console.log('countries', );
 const transformCountryCode = (data) => {
   data.forEach((item) => {
     const countryItem = item.countryText;
     Object.keys(isoCountries).forEach((code) => {
       if (countryItem === isoCountries[code]) {
-        const flag = 'http://localhost:5000/static/flags/' + code.toLocaleLowerCase() + '.svg';
+        // const flag = `http://localhost:5000/static/flags/${code.toLocaleLowerCase()}.svg`;
+        const flag = code.toLocaleLowerCase();
         item.countryCode = flag;
       }
     });
@@ -42,4 +51,5 @@ module.exports = {
   transformCountryCode: transformCountryCode,
   transformNoData: transformNoData,
   transformRemoveComma: transformRemoveComma,
+  transformRemoveAdds: transformRemoveAdds,
 };

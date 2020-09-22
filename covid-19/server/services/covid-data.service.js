@@ -3,28 +3,37 @@ const { from, of } = require('rxjs');
 const { map, take } = require('rxjs/operators');
 const { writeFile } = require('./jsonfile.service');
 const covid19Db = require('../db/covid19.db.json');
-const covid19TrackingApi = require('../api/covid-19-tracking.p');
-const { transformRemoveComma, transformNoData, transformCountryCode } = require('./data-transform.service');
+const { $getApi } = require('../api/covid-19-tracking.p');
+const { $getLatestCountryDataByCode } = require('../api/covid-19-data.p.rapidapi');
+const { transformRemoveComma, transformNoData, transformCountryCode, transformRemoveAdds } = require('./data-transform.service');
 
 const refreshCovidData = () => {
-  covid19TrackingApi
-    .$getApi()
-    .pipe(
-      take(1),
-      map((data) => {
-        data.pop();
-        return data;
-      }),
-      map((data) => transformNoData(data)),
-      map((data) => transformRemoveComma(data)),
-      map((data) => transformCountryCode(data)),
-    )
+  $getApi().pipe(
+    take(1),
+    map((data) => {
+      data.pop();
+      return data;
+    }),
+    map((data) => transformNoData(data)),
+    map((data) => transformRemoveComma(data)),
+    map((data) => transformCountryCode(data)),
+    map((data) => transformRemoveAdds(data)),
+  )
     .subscribe((res) => {
       writeFile(path.join(__dirname, '../db/covid19.db.json'), res).then(() => {
-        console.log('DONE');
+        console.log('Data Done');
         // mergeFlags();
       });
     });
+
+
+  /*$getLatestCountryDataByCode('it')
+    .pipe(
+      take(1),
+    )
+    .subscribe((res) => {
+      console.log('OK', res);
+    });*/
 };
 
 
