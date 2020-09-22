@@ -14,7 +14,7 @@
     :checked-rows="checkedRows ? checkedRowsValue : []"
     :is-row-checkable="isRowCheckable"
     :header-checkable="headerCheckable"
-    :paginated="paginated"
+    :paginated="data.length ? true : false"
     :pagination-simple="paginationSimple"
     :pagination-position="paginationPosition"
     :pagination-size="paginationSize"
@@ -33,6 +33,7 @@
     @check="onCheck"
     @click="onRowClick"
   >
+    <!--REFACTOR paginated -->
     <b-table-column
       v-slot="props"
       v-for="(column, index) in columns"
@@ -50,7 +51,7 @@
       :header-class="column.headerClass"
       :custom-sort="column.customSort"
     >
-  <!--<div :class="`table-column-content ${getNewCasesClass(props.row[column.field], column.field)}`">-->
+      <!--<div :class="`table-column-content ${getNewCasesClass(props.row[column.field], column.field)}`">-->
       <div :class="`table-column-content`">
         <template v-if="!column.image && !column.button">
           <span :class="`cell-value`">{{ props.row[column.field] }}</span>
@@ -70,9 +71,19 @@
           </div>
         </template>
       </div>
-
-
     </b-table-column>
+
+    <!-- No Found -->
+    <template slot="empty">
+      <div class="no-found-content">
+        <div class="no-found-icon has-text-grey">
+          <span class="icon is-large">
+          <i class="mdi mdi-emoticon-sad mdi-48px" />
+          </span>
+        </div>
+        <div class="no-found-text">Nincs találat!</div>
+      </div>
+    </template>
 
   </b-table>
 </template>

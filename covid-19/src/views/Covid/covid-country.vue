@@ -30,7 +30,6 @@
           </div>
         </b-collapse>
 
-
         <div class="table-content">
           <v-icell-table
             :data="table.data"
@@ -49,13 +48,12 @@
             :show-detail-icon="table.showDetailIcon"
             :sort-icon-size="table.sortIconSize"
             :sort-icon="table.sortIcon"
+            :height="table.height"
             @rowClick="onClick"
           ></v-icell-table>
         </div>
       </div>
     </div>
-
-
   </section>
 </template>
 <script lang="ts">
@@ -100,6 +98,7 @@
         showDetailIcon: false,
         sortIconSize: 'is-small',
         bordered: false,
+        // height: 500,
         sortIcon: 'arrow-up', // 'menu-up',
         // striped: false,
       });
