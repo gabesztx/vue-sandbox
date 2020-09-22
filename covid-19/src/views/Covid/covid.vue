@@ -72,13 +72,12 @@
       const searchInput = reactive({
         rounded: false,
         loading: false,
-        label: '',
         placeHolder: 'Keresés..',
         size: 'is-small',
         classes: 'searchInputContent',
         customClass: 'searchInput',
-        // iconRight: 'magnify',
         icon: 'magnify',
+        // iconRight: 'magnify',
         // expanded: true,
         // styleType: 'is-light',
       });
@@ -91,16 +90,16 @@
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 10,
+        perPage: 8,
         striped: true,
-        // striped: false,
         narrowed: false,
         mobileCards: true,
         hoverable: false,
         showDetailIcon: false,
         sortIconSize: 'is-small',
-        sortIcon: 'arrow-up', // 'menu-up',
         bordered: false,
+        sortIcon: 'arrow-up', // 'menu-up',
+        // striped: false,
       });
 
       const onInput = (event: InputEvent, value: any) => {
