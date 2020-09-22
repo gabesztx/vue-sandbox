@@ -1,6 +1,7 @@
 <template>
   <div class="home-content">
-    <section class="hero is-small">
+    Word total
+<!--    <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
           <div class="card">
@@ -9,7 +10,7 @@
                 <h1 class="title" v-on:click="onClick">Covid 19</h1>
               </div>
             </div>
-            <!--<div class="card-image">
+            &lt;!&ndash;<div class="card-image">
               <video
                 id="my-player"
                 class="video-js"
@@ -28,14 +29,14 @@
                   </a>
                 </p>
               </video>
-            </div>-->
+            </div>&ndash;&gt;
             <div class="card-content">
                <b-button label="Start"></b-button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!--   <section class="section">
          <div class="container">

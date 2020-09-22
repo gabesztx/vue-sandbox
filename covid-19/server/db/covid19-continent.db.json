@@ -1,0 +1,170 @@
+[
+  {
+    "continent": "All",
+    "country": "All",
+    "population": null,
+    "cases": {
+      "new": "201641",
+      "active": 7438080,
+      "critical": 62031,
+      "recovered": 23270019,
+      "1M_pop": "4064",
+      "total": 31680904
+    },
+    "deaths": {
+      "new": "3791",
+      "1M_pop": "124.8",
+      "total": 972805
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  },
+  {
+    "continent": "North America",
+    "country": "North America",
+    "population": null,
+    "cases": {
+      "new": "28308",
+      "active": 2842772,
+      "critical": 17618,
+      "recovered": 5286711,
+      "1M_pop": null,
+      "total": 8429647
+    },
+    "deaths": {
+      "new": "912",
+      "1M_pop": null,
+      "total": 300164
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  },
+  {
+    "continent": "Europe",
+    "country": "Europe",
+    "population": null,
+    "cases": {
+      "new": "48835",
+      "active": 1904921,
+      "critical": 7481,
+      "recovered": 2411299,
+      "1M_pop": null,
+      "total": 4533647
+    },
+    "deaths": {
+      "new": "759",
+      "1M_pop": null,
+      "total": 217427
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  },
+  {
+    "continent": "Asia",
+    "country": "Asia",
+    "population": null,
+    "cases": {
+      "new": "109280",
+      "active": 1497137,
+      "critical": 19841,
+      "recovered": 8004265,
+      "1M_pop": null,
+      "total": 9681953
+    },
+    "deaths": {
+      "new": "1709",
+      "1M_pop": null,
+      "total": 180551
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  },
+  {
+    "continent": "South America",
+    "country": "South America",
+    "population": null,
+    "cases": {
+      "new": "8337",
+      "active": 970240,
+      "critical": 15666,
+      "recovered": 6367607,
+      "1M_pop": null,
+      "total": 7577250
+    },
+    "deaths": {
+      "new": "186",
+      "1M_pop": null,
+      "total": 239403
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  },
+  {
+    "continent": "Oceania",
+    "country": "Oceania",
+    "population": null,
+    "cases": {
+      "new": "153",
+      "active": 2433,
+      "critical": 19,
+      "recovered": 27403,
+      "1M_pop": null,
+      "total": 30726
+    },
+    "deaths": {
+      "new": "3",
+      "1M_pop": null,
+      "total": 890
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  },
+  {
+    "continent": "Africa",
+    "country": "Africa",
+    "population": null,
+    "cases": {
+      "new": "6728",
+      "active": 220522,
+      "critical": 1402,
+      "recovered": 1172083,
+      "1M_pop": null,
+      "total": 1426960
+    },
+    "deaths": {
+      "new": "222",
+      "1M_pop": null,
+      "total": 34355
+    },
+    "tests": {
+      "1M_pop": null,
+      "total": null
+    },
+    "day": "2020-09-22",
+    "time": "2020-09-22T20:45:06+00:00"
+  }
+]

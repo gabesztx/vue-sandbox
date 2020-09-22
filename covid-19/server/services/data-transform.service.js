@@ -21,18 +21,33 @@ const transformRemoveComma = (data) => {
 };
 const transformRemoveAdds = (data) => {
   data.forEach((item) => {
-    Object.keys(item).forEach((key) => {
-      if (item[key][0] === '+') {
-        item[key] = item[key].substring(1);
-      }
-    });
+    // eslint-disable-next-line no-prototype-builtins
+    if (item.hasOwnProperty('cases') && item.cases.new && item.cases.new[0] === '+') {
+      item.cases.new = item.cases.new.substring(1);
+    }
+    // eslint-disable-next-line no-prototype-builtins
+    if (item.hasOwnProperty('deaths') && item.deaths.new && item.deaths.new[0] === '+') {
+      item.deaths.new = item.deaths.new.substring(1);
+    }
+  });
+  return data;
+};
+
+const transformRemoveHyphen = (data) => {
+  data.forEach((item) => {
+    if (item.country && item.country.search('-') > 0) {
+      item.country = item.country.replace(/-/g, ' ');
+    }
+    if (item.continent && item.continent.search('-') > 0) {
+      item.continent = item.continent.replace(/-/g, ' ');
+    }
   });
   return data;
 };
 
 const transformCountryCode = (data) => {
   data.forEach((item) => {
-    const countryItem = item.countryText;
+    const countryItem = item.country;
     Object.keys(isoCountries).forEach((code) => {
       if (countryItem === isoCountries[code]) {
         // const flag = `http://localhost:5000/static/flags/${code.toLocaleLowerCase()}.svg`;
@@ -40,16 +55,28 @@ const transformCountryCode = (data) => {
         item.countryCode = flag;
       }
     });
-    if (!item.countryCode) {
-      // console.log('item', item);
-    }
   });
   return data;
+};
+
+const separateContinentData = (data) => {
+  let continentData = [];
+  let countryData = [];
+  data.forEach(item => {
+    if (item.country === item.continent) {
+      continentData.push(item);
+    } else {
+      countryData.push(item);
+    }
+  });
+  return [countryData, continentData];
 };
 
 module.exports = {
   transformCountryCode: transformCountryCode,
   transformNoData: transformNoData,
   transformRemoveComma: transformRemoveComma,
+  transformRemoveHyphen: transformRemoveHyphen,
   transformRemoveAdds: transformRemoveAdds,
+  separateContinentData: separateContinentData,
 };

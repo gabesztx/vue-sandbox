@@ -6,7 +6,7 @@
           <div class="box">
             <div class="title-content">
               <div class="title-label">
-                <img class="table-icon" src="@/assets/covid-icon.png">
+                <img class="table-icon" src="@/assets/covid-icon.png" />
                 <span class="table-title">Covid-19</span>
               </div>
               <div class="settings-icon">
@@ -71,13 +71,13 @@
   import { countryData } from '@/services/covid-data.service';
 
   export default {
-    data(){
+    data() {
       return {
         isOpenSetting: false,
       };
     },
 
-    setup(){
+    setup() {
       const searchInput = reactive({
         rounded: false,
         loading: false,
@@ -96,7 +96,7 @@
         data: countryData,
         scrollable: true,
         stickyHeader: false,
-        paginated: true,
+        paginated: false,
         paginationSimple: true,
         paginationSize: 'is-small',
         perPage: 10,
@@ -160,8 +160,7 @@
       },
     },
     {
-      field: 'countryText',
-      customKey: 'jo?',
+      field: 'country',
       label: 'Ország',
       sortable: true,
       searchable: false,
@@ -211,54 +210,4 @@
       },
     },
   ];
-
 </script>
-
-
-<!--<template>
-  <section class="columns">
-    <div class="column is-12">
-      <div class="box">
-        <div class="title-content">
-          <figure class="image is-48x48">
-            <img src="@/assets/covid-icon.png">
-          </figure>
-          <v-icell-input
-            :label="searchInput.label"
-            :place-holder="searchInput.placeHolder"
-            :rounded="searchInput.rounded"
-            :size="searchInput.size"
-            :loading="searchInput.loading"
-            :style-type="searchInput.styleType"
-            :expanded="searchInput.expanded"
-            :icon="searchInput.icon"
-            :icon-right="searchInput.iconRight"
-            :type="searchInput.type"
-            :custom-class="searchInput.customClass"
-            :classes="searchInput.classes"
-            @input="onInput"
-          ></v-icell-input>
-        </div>
-
-        <v-icell-table
-          :data="table.data"
-          :columns="table.columns"
-          :scrollable="table.scrollable"
-          :sticky-header="table.stickyHeader"
-          :paginated="table.paginated"
-          :pagination-simple="table.paginationSimple"
-          :pagination-size="table.paginationSize"
-          :per-page="table.perPage"
-          :striped="table.striped"
-          :narrowed="table.narrowed"
-          :mobile-cards="table.mobileCards"
-          :hoverable="table.hoverable"
-          :show-detail-icon="table.showDetailIcon"
-          :sort-icon-size="table.sortIconSize"
-          :sort-icon="table.sortIcon"
-          @rowClick="onClick"
-        ></v-icell-table>
-      </div>
-    </div>
-  </section>
-</template>-->

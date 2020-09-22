@@ -26,11 +26,14 @@ app.get('/', (req, res) => {
   return res.sendFile(`${basePath}/index.html`);
 });
 
+app.get('/continent', (req, res) => {
+  return res.send(covidDataService.getCovid19ContinentDB());
+});
 app.get('/world', (req, res) => {
-  return res.send(covidDataService.getWorldData());
+  return res.send(covidDataService.getCovid19ContinentDB()[0]);
 });
 app.get('/country', (req, res) => {
-  return res.send(covidDataService.getCountryData());
+  return res.send(covidDataService.getCovid19CountryDB());
 });
 
 server.listen(port, () => console.log(`status: running / port: ${port}`));

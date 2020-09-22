@@ -67,7 +67,7 @@
       </template>
 
       <template v-if="column.image">
-        <div class="img-content">
+        <div class="img-content" v-if="props.row[column.field]">
           <img class="img-flag" v-bind:src="`${column.meta.url}${props.row[column.field]}.svg`">
         </div>
       </template>
@@ -157,7 +157,7 @@
       subheading: [String, Number],
       cellClass: String,
       id: [String, Number],
-      image: Boolean,
+      isImage: Boolean,
       classObject: Function,
     },
 
