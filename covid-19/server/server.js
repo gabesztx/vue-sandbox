@@ -26,16 +26,13 @@ app.get('/', (req, res) => {
   return res.sendFile(`${basePath}/index.html`);
 });
 
-app.get('/country', (req, res) => {
-  // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
-  return res.send(covidDataService.getCountryData());
-  // return res.send(covidDataService.getCountryData());
-});
-
 app.get('/world', (req, res) => {
-  return res.send(covidDataService.getGlobalWorldData());
+  return res.send(covidDataService.getWorldData());
+});
+app.get('/country', (req, res) => {
+  return res.send(covidDataService.getCountryData());
 });
 
 server.listen(port, () => console.log(`status: running / port: ${port}`));
-
 covidDataService.refreshCovidData();
+// res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');

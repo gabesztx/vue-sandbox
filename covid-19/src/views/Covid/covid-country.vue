@@ -1,55 +1,57 @@
 <template>
-  <section class="container section">
-    <div class="box">
-      <div class="title-content">
-        <div class="title-label">
-          <div class="title">Országok</div>
-        </div>
-        <span class="tag" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <div class="title-content">
+          <div class="title-label">
+            <div class="title">Országok</div>
+          </div>
+          <span class="tag" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
             <i class="mdi mdi-cog"></i>
           </span>
-      </div>
-      <b-collapse :open="isOpenSetting">
-        <div class="settings-content">
-          <v-icell-input
-            :label="searchInput.label"
-            :place-holder="searchInput.placeHolder"
-            :rounded="searchInput.rounded"
-            :size="searchInput.size"
-            :loading="searchInput.loading"
-            :style-type="searchInput.styleType"
-            :expanded="searchInput.expanded"
-            :icon="searchInput.icon"
-            :icon-right="searchInput.iconRight"
-            :type="searchInput.type"
-            :custom-class="searchInput.customClass"
-            :classes="searchInput.classes"
-            @input="onInput"
-          ></v-icell-input>
         </div>
-      </b-collapse>
+        <b-collapse :open="isOpenSetting">
+          <div class="settings-content">
+            <v-icell-input
+              :label="searchInput.label"
+              :place-holder="searchInput.placeHolder"
+              :rounded="searchInput.rounded"
+              :size="searchInput.size"
+              :loading="searchInput.loading"
+              :style-type="searchInput.styleType"
+              :expanded="searchInput.expanded"
+              :icon="searchInput.icon"
+              :icon-right="searchInput.iconRight"
+              :type="searchInput.type"
+              :custom-class="searchInput.customClass"
+              :classes="searchInput.classes"
+              @input="onInput"
+            ></v-icell-input>
+          </div>
+        </b-collapse>
 
 
-      <div class="table-content">
-        <v-icell-table
-          :data="table.data"
-          :bordered="table.bordered"
-          :columns="table.columns"
-          :scrollable="table.scrollable"
-          :sticky-header="table.stickyHeader"
-          :paginated="table.paginated"
-          :pagination-simple="table.paginationSimple"
-          :pagination-size="table.paginationSize"
-          :per-page="table.perPage"
-          :striped="table.striped"
-          :narrowed="table.narrowed"
-          :mobile-cards="table.mobileCards"
-          :hoverable="table.hoverable"
-          :show-detail-icon="table.showDetailIcon"
-          :sort-icon-size="table.sortIconSize"
-          :sort-icon="table.sortIcon"
-          @rowClick="onClick"
-        ></v-icell-table>
+        <div class="table-content">
+          <v-icell-table
+            :data="table.data"
+            :bordered="table.bordered"
+            :columns="table.columns"
+            :scrollable="table.scrollable"
+            :sticky-header="table.stickyHeader"
+            :paginated="table.paginated"
+            :pagination-simple="table.paginationSimple"
+            :pagination-size="table.paginationSize"
+            :per-page="table.perPage"
+            :striped="table.striped"
+            :narrowed="table.narrowed"
+            :mobile-cards="table.mobileCards"
+            :hoverable="table.hoverable"
+            :show-detail-icon="table.showDetailIcon"
+            :sort-icon-size="table.sortIconSize"
+            :sort-icon="table.sortIcon"
+            @rowClick="onClick"
+          ></v-icell-table>
+        </div>
       </div>
     </div>
 
@@ -90,7 +92,7 @@
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 8,
+        perPage: 10,
         striped: true,
         narrowed: false,
         mobileCards: true,

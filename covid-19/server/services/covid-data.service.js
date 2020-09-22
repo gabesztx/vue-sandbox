@@ -27,23 +27,23 @@ const refreshCovidData = () => {
     });
 };
 
-const getGlobalWorldData = () => {
+
+const covid19DbData = () => {
+  return JSON.parse(JSON.stringify(covid19Db));
+};
+
+const getWorldData = () => {
   return covid19DbData()[0];
 };
 
 const getCountryData = () => {
   const covid19Db = covid19DbData();
   covid19Db.shift();
-  covid19Db.pop();
   return covid19Db;
-};
-
-const covid19DbData = () => {
-  return JSON.parse(JSON.stringify(covid19Db));
 };
 
 module.exports = {
   refreshCovidData: refreshCovidData,
   getCountryData: getCountryData,
-  getGlobalWorldData: getGlobalWorldData,
+  getWorldData: getWorldData,
 };
