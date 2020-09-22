@@ -111,31 +111,46 @@ table.table td .image, table.table th .image {
 }
 
 .home-content {
-  .title-content{
+  .title-content {
     //text-align: center;
     padding-bottom: 25px;
-    .title{
+
+    .title {
       font-size: 35px;
       font-weight: 600;
     }
   }
+
   .card {
     border-radius: 10px;
-    .video-js{
+
+    .video-js {
       width: 100%;
     }
   }
 }
-
 
 .country-content {
   .title-content {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    .title {
-      font-size: 25px;
-      font-weight: 400;
+
+    .title-label {
+      display: flex;
+      align-items: center;
+
+      .table-title {
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      .table-icon {
+        margin-right: 5px;
+        width: 32px;
+      }
+
+
     }
 
     span {
@@ -144,10 +159,12 @@ table.table td .image, table.table th .image {
 
     //border-bottom: 1px solid rgba(24, 28, 33, .06);
   }
+
   .box {
     border-radius: 24px;
     //box-shadow: 3px 6px 15px -4px rgba(0, 0, 0, 0.35);
   }
+
   /* Cards */
   .card {
     border-radius: 10px;
@@ -161,8 +178,8 @@ table.table td .image, table.table th .image {
       padding: 0;
     }
   }
-}
 
+}
 
 
 /* table content */

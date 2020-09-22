@@ -6,11 +6,14 @@
           <div class="box">
             <div class="title-content">
               <div class="title-label">
-                <div class="title">Országok</div>
+                <img class="table-icon" src="@/assets/covid-icon.png">
+                <span class="table-title">Covid-19</span>
               </div>
-              <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
-            <i class="mdi mdi-cog"></i>
-          </span>
+              <div class="settings-icon">
+                <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+                  <i class="mdi mdi-cog" />
+                </span>
+              </div>
             </div>
             <b-collapse :open="isOpenSetting">
               <div class="settings-content">
@@ -132,7 +135,7 @@
       const searchInput = reactive({
         rounded: false,
         loading: false,
-        placeHolder: 'Keresés..',
+        placeHolder: 'Keresés...',
         size: 'is-small',
         classes: 'searchInputContent',
         customClass: 'searchInput',
@@ -158,7 +161,6 @@
         showDetailIcon: false,
         sortIconSize: 'is-small',
         bordered: false,
-        // height: 500,
         sortIcon: 'arrow-up', // 'menu-up',
         // striped: false,
       });
@@ -177,7 +179,7 @@
         });
       };
       const onClick = (cell: any) => {
-        router.push({ path: '/' });
+        // router.push({ path: '/' });
       };
       return {
         onClick,
@@ -197,7 +199,7 @@
     },
     {
       field: 'countryText',
-      label: 'Név',
+      label: 'Ország',
       sortable: true,
       searchable: false,
       width: 210,

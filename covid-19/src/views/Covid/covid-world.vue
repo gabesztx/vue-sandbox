@@ -1,11 +1,9 @@
 <template>
   <div class="home-content">
-    <section class="hero is-small is-mobile">
+    <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
-
           <div class="card">
-
             <div class="card-header">
               <div class="card-header-title">
                 <h1 class="title" v-on:click="onClick">Covid 19</h1>
@@ -38,6 +36,7 @@
         </div>
       </div>
     </section>
+
     <!--   <section class="section">
          <div class="container">
            <div class="title-content">
