@@ -6,7 +6,7 @@
           <div class="title-label">
             <div class="title">Országok</div>
           </div>
-          <span class="tag" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+          <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
             <i class="mdi mdi-cog"></i>
           </span>
         </div>
