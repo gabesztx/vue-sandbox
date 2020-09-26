@@ -1,21 +1,36 @@
 <template>
-  <div class="app-content">
-    <!--  <section class="hero is-light is-small is-fullheight">-->
-    <!--  <section class="hero is-light is-small is-fullheight"></section>-->
-    <router-view />
-  <!--  <div class="main-content">
-      <div class="container">
-      </div>
-    </div>-->
+  <div class="main-content">
+    <router-view :pagePos="pagePos" />
   </div>
 </template>
 
 <script lang="ts">
-  import { ToastService } from '@/services/toast.service';
+  import router from '@/router';
+  import { ref } from '@vue/composition-api';
+  import { NavigationGuardNext, Route } from 'vue-router';
 
   export default {
-    provide: {
-      toastService: new ToastService(),
+    setup() {
+      const pagePos = ref(0);
+      router.afterEach((to: Route, from: Route) => {
+        // console.log('afterEach');
+        pagePos.value = to.meta.slide;
+      });
+
+      /*
+      router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
+        // console.log('beforeEach');
+        next();
+      });
+      router.beforeResolve((to: Route, from: Route, next: NavigationGuardNext) => {
+        // console.log('beforeEach');
+        next();
+      });
+      */
+
+      return {
+        pagePos,
+      };
     },
   };
 </script>

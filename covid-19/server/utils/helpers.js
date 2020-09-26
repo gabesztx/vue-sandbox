@@ -1,7 +1,7 @@
 const humps = require('humps');
 
-const transformObjectKeys = (obj) => humps.camelizeKeys(obj);
+const transformCamelizeKeys = (obj) => humps.camelizeKeys(obj);
 
 module.exports = {
-  transformObjectKeys: transformObjectKeys,
+  transformCamelizeKeys: transformCamelizeKeys,
 };

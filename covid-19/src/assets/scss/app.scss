@@ -47,6 +47,7 @@ $colors: (
 $table-head-cell-border-width: 1;
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+@import "./transition-animation";
 
 html {
   //background-color: rgb(233, 238, 241);
@@ -56,15 +57,59 @@ html {
 
 body {
   font-family: 'Nunito Sans', sans-serif; // 200;300;400;600
+
 }
 
-/*
+.main-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+
+  .pages {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    transition: transform 1s;
+    transform: translate3d(0, 0, 0);
+    .page {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .page-content{
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-child(1) {
+        background-color: #00b89c;
+      }
+
+      &:nth-child(2) {
+        left: 100%;
+        background-color: whitesmoke;
+      }
+    }
+  }
+
+  /* &.home{
+     background-color: olivedrab;
+   }
+   &.country{
+     background-color: orange;
+
+   }*/
+}
+
 
 table.table td .image, table.table th .image {
   width: 1.5rem;
   height: 1.5rem;
 }
-*/
 
 .settings-content {
   display: flex;
@@ -77,10 +122,6 @@ table.table td .image, table.table th .image {
 
 }
 
-/* Section */
-.section {
-  //background-color: #fff;
-}
 
 /* Search Input */
 .searchInputContent {
@@ -110,77 +151,6 @@ table.table td .image, table.table th .image {
   }
 }
 
-.home-content {
-  .title-content {
-    //text-align: center;
-    padding-bottom: 25px;
-
-    .title {
-      font-size: 35px;
-      font-weight: 600;
-    }
-  }
-
-  .card {
-    border-radius: 10px;
-
-    .video-js {
-      width: 100%;
-    }
-  }
-}
-
-.country-content {
-  .title-content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-
-    .title-label {
-      display: flex;
-      align-items: center;
-
-      .table-title {
-        font-size: 26px;
-        font-weight: 600;
-      }
-
-      .table-icon {
-        margin-right: 5px;
-        width: 32px;
-      }
-
-
-    }
-
-    span {
-      cursor: pointer;
-    }
-
-    //border-bottom: 1px solid rgba(24, 28, 33, .06);
-  }
-
-  .box {
-    border-radius: 24px;
-    //box-shadow: 3px 6px 15px -4px rgba(0, 0, 0, 0.35);
-  }
-
-  /* Cards */
-  .card {
-    border-radius: 10px;
-
-    .card-header {
-      box-shadow: none;
-      border-bottom: 1px solid rgba(24, 28, 33, .06);
-    }
-
-    .card-content {
-      padding: 0;
-    }
-  }
-
-}
-
 
 /* table content */
 .table-content {
@@ -202,13 +172,73 @@ table.table td .image, table.table th .image {
       }
     }
   }
+}
 
+/* Cards */
+.box {
+  transition: all 0.5s ease-out;
+  border-radius: 24px;
+  //box-shadow: 3px 6px 15px -4px rgba(0, 0, 0, 0.35);
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+
+  .card-header {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(24, 28, 33, .06);
+  }
+
+  .card-content {
+    padding: 0;
+  }
+}
+
+.title-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+
+  .title-label {
+    display: flex;
+    align-items: center;
+
+    .table-title {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .table-icon {
+      margin-right: 5px;
+      width: 38px;
+    }
+
+
+  }
+
+  .settings-icon {
+    span {
+      font-size: 18px;
+      //width: 18px;
+      //height: 18px;
+      cursor: pointer;
+    }
+  }
+
+  //border-bottom: 1px solid rgba(24, 28, 33, .06);
 }
 
 
 /* Table */
 .b-table {
-  //padding-top: 5px;
+  .table th .th-wrap .icon {
+    margin-left: 5px;
+  }
+
+  .table th {
+    vertical-align: middle;
+  }
 
   .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
     //background-color: rgba(247, 247, 247, .8);
@@ -257,13 +287,16 @@ table.table td .image, table.table th .image {
   }
 
   .img-content {
+    width: 25px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    //width: 100%;
     height: 100%;
 
+
     .img-flag {
-      width: 95%;
+      //border-radius: 1px;
+      width: 98%;
     }
   }
 

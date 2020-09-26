@@ -8,28 +8,30 @@ Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    name: 'world',
-    beforeEnter: worldBeforeEnter,
-    component: () => import('@/views/Covid/covid-world.vue'),
+    // name: 'home',
+    component: () => import('@/views/Covid/Home.vue'),
+    // beforeEnter: worldBeforeEnter,
   },
   {
     path: '/country',
-    name: 'country',
+    // name: 'country',
+    meta: { slide: 0 },
+    component: () => import('@/views/Covid/Page.vue'),
     beforeEnter: countryBeforeEnter,
-    component: () => import('@/views/Covid/covid-country.vue'),
   },
-/*  {
+  {
     path: '/country/:id',
-    name: 'covid-detail',
-    component: () => import('@/views/Covid/covid-country-detail.vue'),
-  },*/
+    // name: 'country-detail',
+    meta: { slide: 1 },
+    component: () => import('@/views/Covid/Page.vue'),
+  },
   {
     path: '/*',
-    redirect: '/country',
+    redirect: '/',
   },
   {
     path: '/',
-    redirect: '/country',
+    redirect: '/',
   },
 ];
 

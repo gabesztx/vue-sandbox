@@ -62,7 +62,7 @@ const transformCountryCode = (data) => {
 const separateContinentData = (data) => {
   let continentData = [];
   let countryData = [];
-  data.forEach(item => {
+  data.forEach((item) => {
     if (item.country === item.continent) {
       continentData.push(item);
     } else {
@@ -72,11 +72,31 @@ const separateContinentData = (data) => {
   return [countryData, continentData];
 };
 
+const transformMergeObject = (items) => {
+  let data = items;
+  data.forEach((item) => {
+    const population = item.population;
+    item.population = population !== null ? population : '-';
+    Object.keys(item).forEach((key) => {
+      const obj = item[key];
+      if (item[key] instanceof Object) {
+        Object.keys(obj).forEach((prop) => {
+          item[`${key}_${prop}`] = obj[prop] !== null ? Number(obj[prop]) : '-';
+        });
+        delete item[key];
+      }
+    });
+  });
+
+  return data;
+};
+
 module.exports = {
   transformCountryCode: transformCountryCode,
   transformNoData: transformNoData,
   transformRemoveComma: transformRemoveComma,
   transformRemoveHyphen: transformRemoveHyphen,
   transformRemoveAdds: transformRemoveAdds,
+  transformMergeObject: transformMergeObject,
   separateContinentData: separateContinentData,
 };
