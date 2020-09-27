@@ -69,10 +69,16 @@
       <!--<template v-slot:header>
         {{ column.label }}
       </template>-->
-      <template>
-        {{ props.row[column.field] }}
-      </template>
+
       <!-- tbody -->
+      <template>
+        <div class="cell-content">
+          <!--<b-icon class="" icon="virus-outline" type="" custom-size="" size=""></b-icon>-->
+          <span class="call-value">
+            {{ props.row[column.field] }}
+          </span>
+        </div>
+      </template>
       <!--<template v-slot="props">
         <b-button
           v-if="column.button"

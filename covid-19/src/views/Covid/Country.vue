@@ -20,9 +20,11 @@
           </div>-->
           <div class="card-content">
             <div class="title-content">
-              <div class="title">
-<!--                <img class="table-icon" src="@/assets/covid-icon.png" />-->
-                <span class="table-title">COVID-19</span>
+
+              <div class="table-title">
+                <b-icon class="table-icon" icon="virus-outline" type="" custom-size="fa-2x" size=""></b-icon>
+                <span class="table-label">COVID-19</span>
+                <!--<img class="table-icon" src="@/assets/covid-icon.png" />-->
               </div>
               <div class="settings-icon">
                 <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
@@ -120,7 +122,7 @@
         paginationSize: 'is-small',
         perPage: 10,
         subheading: 10,
-        striped: false,
+        striped: true,
         narrowed: false,
         mobileCards: true,
         hoverable: false,
@@ -128,7 +130,6 @@
         sortIconSize: 'is-small',
         bordered: false,
         sortIcon: 'menu-up', //'arrow-up'
-        // striped: false,
       });
 
       const onInput = (event: InputEvent, value: any) => {

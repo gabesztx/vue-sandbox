@@ -13,11 +13,10 @@ export const columns = [
     label: 'Ország',
     sortable: true,
     searchable: false,
-    width: 120,
-    headerClass:'customHead',
     cellClass:'customCell',
+    // width: 120,
+    // headerClass:'customHead',
     // centered:true,
-    // headerIcon: 'fas fa-map-marker-alt',
   },
 
   {
