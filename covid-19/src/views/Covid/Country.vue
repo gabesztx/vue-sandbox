@@ -5,17 +5,25 @@
     <section class="header-content hero is-small">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Koronavírus esetek</h1>
-          <h3 class="subtitle">Országszerte</h3>
+          <h1 class="title is-4">Koronavírus esetek</h1>
+          <h3 class="subtitle is-6">
+            <span>Országszerte</span>
+          </h3>
         </div>
       </div>
     </section>
     <section class="body-content section">
       <div class="container">
         <div class="card">
+          <!--<div class="card-header">
+            <div class="card-header-title">Covid-19</div>
+          </div>-->
           <div class="card-content">
+            <!--            <h1 class="title">Covid-19</h1>-->
+            <!--<h3 class="subtitle">COVID-19</h3>-->
+
             <div class="title-content">
-              <div class="title-label">
+              <div class="title">
                 <img class="table-icon" src="@/assets/covid-icon.png" />
                 <span class="table-title">COVID-19</span>
               </div>
@@ -25,6 +33,7 @@
                 </span>
               </div>
             </div>
+
             <div class="table-content">
               <v-icell-table
                 :data="table.data"

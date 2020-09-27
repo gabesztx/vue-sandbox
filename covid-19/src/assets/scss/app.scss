@@ -156,12 +156,13 @@ table.table td .image, table.table th .image {
 /* table content */
 .country {
   .header-content {
-    .title{
+    .title {
       display: flex;
       align-items: center;
+
       .table-icon {
         margin-left: 10px;
-        width: 30px;
+        width: 28px;
       }
     }
   }
@@ -174,53 +175,57 @@ table.table td .image, table.table th .image {
       border-radius: 6px;
       border: 1px solid rgba(24, 28, 33, .06);
 
-      .title-content {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 15px;
+      .card-content {
+        padding: 1rem 1.5rem;
 
-        .title-label {
+        .title-content {
           display: flex;
-          align-items: center;
-
-          .table-title {
-            font-size: 20px;
-            font-weight: 600;
-          }
-
-          .table-icon {
-            margin-right: 5px;
-            width: 30px;
-          }
-
-        }
-
-        .settings-icon {
-          span {
-            font-size: 18px;
-            //width: 18px;
-            //height: 18px;
-            cursor: pointer;
-          }
-        }
-      }
-
-      .table-content {
-        .is-empty {
-          .no-found-content {
-            //padding-top: 20px;
+          justify-content: space-between;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          .title {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-
-            .no-found-icon {
-              font-size: 48px;
+            margin-bottom: 0;
+            .table-title {
+              font-size: 18px;
+              font-weight: 600;
             }
 
-            .no-found-text {
-              font-weight: 500;
+            .table-icon {
+              margin-right: 5px;
+              width: 28px;
+            }
+
+          }
+
+          .settings-icon {
+            span {
               font-size: 18px;
+              //width: 18px;
+              //height: 18px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .table-content {
+          .is-empty {
+            .no-found-content {
+              //padding-top: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .no-found-icon {
+                font-size: 48px;
+              }
+
+              .no-found-text {
+                font-weight: 500;
+                font-size: 18px;
+              }
             }
           }
         }
@@ -228,7 +233,6 @@ table.table td .image, table.table th .image {
     }
   }
 }
-
 
 
 /* Table */
@@ -276,11 +280,11 @@ table.table td .image, table.table th .image {
 
   .table-wrapper:not(:last-child) {
     //border-bottom: 1px solid rgba(24, 28, 33, .06);
-    margin-bottom: 0;
+    //margin-bottom: 0;
   }
 
   .top.level {
-    padding-top: 20px;
+    //padding-top: 20px;
   }
 
   .th-wrap {
@@ -297,7 +301,7 @@ table.table td .image, table.table th .image {
 
     .img-flag {
       //border-radius: 1px;
-      width: 98%;
+      width: 100%;
     }
   }
 
