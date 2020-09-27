@@ -10,39 +10,21 @@ export const columns = [
   },
   {
     field: 'country',
-    label: 'Ország',
+    label: 'Hely',
     sortable: true,
     searchable: false,
     width: 170,
   },
-  {
-    field: 'casesTotal',
-    label: 'Totál esetek',
-    sortable: true,
-    customSort: (a, b, isAsc) => {
-      const AObj = a.casesTotal == '-' ? -1 : Number(a.casesTotal);
-      const BObj = b.casesTotal == '-' ? -1 : Number(b.casesTotal);
-      return !isAsc ? BObj - AObj : AObj - BObj;
-    },
-  },
+
   {
     field: 'casesActive',
     label: 'Aktív esetek',
     sortable: true,
   },
-  {
-    field: 'cases1MPop',
-    label: 'Total esetek / 1M fő',
-    sortable: true,
-    customSort: (a, b, isAsc) => {
-      const AObj = a.cases1MPop == '-' ? -1 : Number(a.cases1MPop);
-      const BObj = b.cases1MPop == '-' ? -1 : Number(b.cases1MPop);
-      return !isAsc ? BObj - AObj : AObj - BObj;
-    },
-  },
+
   {
     field: 'casesNew',
-    label: 'Napi esetek',
+    label: 'Napi új esetek',
     sortable: true,
     // width: 200,
     customSort: (a, b, isAsc) => {
@@ -53,7 +35,7 @@ export const columns = [
   },
   {
     field: 'deathsNew',
-    label: 'Napi elhunytak',
+    label: 'Napi új elhunytak',
     sortable: true,
     // width: 200,
     customSort: (a, b, isAsc) => {
@@ -74,7 +56,27 @@ export const columns = [
       return !isAsc ? BObj - AObj : AObj - BObj;
     },
   },
-  {
+  /*  {
+  field: 'casesTotal',
+  label: 'Totál esetek',
+  sortable: true,
+  customSort: (a, b, isAsc) => {
+    const AObj = a.casesTotal == '-' ? -1 : Number(a.casesTotal);
+    const BObj = b.casesTotal == '-' ? -1 : Number(b.casesTotal);
+    return !isAsc ? BObj - AObj : AObj - BObj;
+  },
+},*/
+  /*{
+    field: 'cases1MPop',
+    label: 'Total esetek / 1M fő',
+    sortable: true,
+    customSort: (a, b, isAsc) => {
+      const AObj = a.cases1MPop == '-' ? -1 : Number(a.cases1MPop);
+      const BObj = b.cases1MPop == '-' ? -1 : Number(b.cases1MPop);
+      return !isAsc ? BObj - AObj : AObj - BObj;
+    },
+  },*/
+  /*{
     field: 'testsTotal',
     label: 'Mintavételek száma',
     sortable: true,
@@ -84,7 +86,7 @@ export const columns = [
       const BObj = b.testsTotal === '-' ? -1 : Number(b.testsTotal);
       return !isAsc ? BObj - AObj : AObj - BObj;
     },
-  },
+  },*/
   /*    {
         field: 'tests1MPop',
         label: 'Tesztek / 1M fő',
@@ -113,7 +115,7 @@ export const columns = [
           }
         },
       },*/
-  {
+  /*{
     field: 'population',
     label: 'Lakosok száma',
     sortable: true,
@@ -127,5 +129,5 @@ export const columns = [
         return AObj - BObj;
       }
     },
-  },
+  },*/
 ];

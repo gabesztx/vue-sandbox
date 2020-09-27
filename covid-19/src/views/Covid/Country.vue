@@ -1,19 +1,59 @@
 <template>
   <div class="page-content country">
-<!--    <button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
-    <div class="box">
-      <div class="title-content">
-        <div class="title-label">
-          <img class="table-icon" src="@/assets/covid-icon.png" />
-          <span class="table-title">Covid-19</span>
-        </div>
-        <div class="settings-icon">
-          <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
-            <i class="mdi mdi-cog" />
-          </span>
+    <!--<button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
+    <!--<div class="box">-->
+    <section class="header-content hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Koronavírus esetek</h1>
+          <h3 class="subtitle">Országszerte</h3>
         </div>
       </div>
-      <b-collapse :open="isOpenSetting">
+    </section>
+    <section class="body-content section">
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <div class="title-content">
+              <div class="title-label">
+                <img class="table-icon" src="@/assets/covid-icon.png" />
+                <span class="table-title">COVID-19</span>
+              </div>
+              <div class="settings-icon">
+                <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+                  <i class="mdi mdi-cog" />
+                </span>
+              </div>
+            </div>
+            <div class="table-content">
+              <v-icell-table
+                :data="table.data"
+                :bordered="table.bordered"
+                :columns="table.columns"
+                :scrollable="table.scrollable"
+                :sticky-header="table.stickyHeader"
+                :paginated="table.paginated"
+                :pagination-simple="table.paginationSimple"
+                :pagination-size="table.paginationSize"
+                :per-page="table.perPage"
+                :striped="table.striped"
+                :narrowed="table.narrowed"
+                :mobile-cards="table.mobileCards"
+                :hoverable="table.hoverable"
+                :show-detail-icon="table.showDetailIcon"
+                :sort-icon-size="table.sortIconSize"
+                :sort-icon="table.sortIcon"
+                :height="table.height"
+                :row-class="onRowClass"
+                :class-object="onClassObject"
+                @rowClick="onClick"
+              ></v-icell-table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<b-collapse :open="isOpenSetting">
         <div class="settings-content">
           <v-icell-input
             :label="searchInput.label"
@@ -31,33 +71,10 @@
             @input="onInput"
           ></v-icell-input>
         </div>
-      </b-collapse>
+      </b-collapse>-->
 
-      <div class="table-content">
-        <v-icell-table
-          :data="table.data"
-          :bordered="table.bordered"
-          :columns="table.columns"
-          :scrollable="table.scrollable"
-          :sticky-header="table.stickyHeader"
-          :paginated="table.paginated"
-          :pagination-simple="table.paginationSimple"
-          :pagination-size="table.paginationSize"
-          :per-page="table.perPage"
-          :striped="table.striped"
-          :narrowed="table.narrowed"
-          :mobile-cards="table.mobileCards"
-          :hoverable="table.hoverable"
-          :show-detail-icon="table.showDetailIcon"
-          :sort-icon-size="table.sortIconSize"
-          :sort-icon="table.sortIcon"
-          :height="table.height"
-          :row-class="onRowClass"
-          :class-object="onClassObject"
-          @rowClick="onClick"
-        ></v-icell-table>
-      </div>
-    </div>
+      <!--      </div>-->
+    </section>
   </div>
 </template>
 <script lang="ts">
@@ -123,7 +140,7 @@
       };
       const onClick = (routerLink: string) => {
         // router.push({ path: '/' });
-        router.push({ path: routerLink });
+        // router.push({ path: routerLink });
         // router.push({ path: `/country/${params}` });
       };
       const onRowClass = (row, index) => {
