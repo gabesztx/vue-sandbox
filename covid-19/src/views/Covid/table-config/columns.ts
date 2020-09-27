@@ -1,5 +1,5 @@
 export const columns = [
-  {
+  /*{
     field: 'countryCode',
     label: '',
     image: true,
@@ -7,25 +7,33 @@ export const columns = [
     meta: {
       url: `http://localhost:5000/static/flags/`,
     },
-  },
+  },*/
   {
     field: 'country',
-    label: 'Hely',
+    label: 'Ország',
     sortable: true,
     searchable: false,
-    width: 170,
+    width: 120,
+    headerClass:'customHead',
+    cellClass:'customCell',
+    // centered:true,
+    // headerIcon: 'fas fa-map-marker-alt',
   },
 
   {
     field: 'casesActive',
     label: 'Aktív esetek',
     sortable: true,
+    cellClass:'customCell',
+    // centered: true,
+    // width: 130,
   },
 
   {
     field: 'casesNew',
     label: 'Napi új esetek',
     sortable: true,
+    cellClass:'customCell',
     // width: 200,
     customSort: (a, b, isAsc) => {
       const AObj = a.casesNew == '-' ? -1 : Number(a.casesNew);
@@ -37,6 +45,7 @@ export const columns = [
     field: 'deathsNew',
     label: 'Napi új elhunytak',
     sortable: true,
+    cellClass:'customCell',
     // width: 200,
     customSort: (a, b, isAsc) => {
       // TODO: refactor és kiszervezés
@@ -49,6 +58,7 @@ export const columns = [
     field: 'casesCritical',
     label: 'Kritikus esetek',
     sortable: true,
+    cellClass:'customCell',
     customSort: (a, b, isAsc) => {
       // TODO: refactor és kiszervezés
       const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);

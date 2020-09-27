@@ -35,12 +35,24 @@
     @click="onRowClick"
   >
     <!--REFACTOR paginated -->
+    <!-- No Found -->
+    <template slot="empty">
+      <div class="no-found-content">
+        <div class="no-found-icon has-text-grey">
+          <span class="icon is-large">
+            <i class="mdi mdi-emoticon-sad mdi-48px" />
+          </span>
+        </div>
+        <div class="no-found-text">Nincs találat!</div>
+      </div>
+    </template>
+
     <b-table-column
-      v-slot="props"
       v-for="(column, index) in columns"
+      v-slot="props"
       :key="index"
-      :field="column.field"
       :label="column.label"
+      :field="column.field"
       :meta="column.meta"
       :searchable="column.searchable"
       :sortable="column.sortable"
@@ -53,38 +65,31 @@
       :custom-sort="column.customSort"
       :custom-key="column.customKey"
     >
-      <!--<div :class="`table-column-content ${getNewCasesClass(props.row[column.field], column.field)}`">-->
-      <template v-if="!column.image && !column.button">
-        <span :class="`cell-value`">{{ props.row[column.field] }}</span>
+      <!-- thead -->
+      <!--<template v-slot:header>
+        {{ column.label }}
+      </template>-->
+      <template>
+        {{ props.row[column.field] }}
       </template>
-
-      <template v-if="column.button">
+      <!-- tbody -->
+      <!--<template v-slot="props">
         <b-button
+          v-if="column.button"
           :class="column.button.class"
           :label="column.button.label"
           v-on:click="onCellClick(props.row)"
         ></b-button>
-      </template>
-
-      <template v-if="column.image">
-        <div class="img-content" v-if="props.row[column.field]">
-          <img class="img-flag" v-bind:src="`${column.meta.url}${props.row[column.field]}.svg`">
+        &lt;!&ndash;<i class="fas fa-map-marker-alt"></i>&ndash;&gt;
+        <div v-if="!column.image && !column.button" :class="`cell-value`">
+          {{ props.row[column.field] }}
         </div>
-      </template>
+
+        <div class="img-content" v-if="column.image && props.row[column.field]">
+          <img class="img-flag" v-bind:src="`${column.meta.url}${props.row[column.field]}.svg`" />
+        </div>
+      </template>-->
     </b-table-column>
-
-    <!-- No Found -->
-    <template slot="empty">
-      <div class="no-found-content">
-        <div class="no-found-icon has-text-grey">
-          <span class="icon is-large">
-          <i class="mdi mdi-emoticon-sad mdi-48px" />
-          </span>
-        </div>
-        <div class="no-found-text">Nincs találat!</div>
-      </div>
-    </template>
-
   </b-table>
 </template>
 
@@ -161,7 +166,7 @@
       classObject: Function,
     },
 
-    setup(props: any, attr: any){
+    setup(props: any, attr: any) {
       const selectValue = ref(props.selected);
       const checkedRowsValue = ref(props.checkedRows);
       const onSelect = (value: any) => {

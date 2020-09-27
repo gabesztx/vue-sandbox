@@ -62,7 +62,6 @@ Vue.component('ValidationProvider', ValidationProvider);
 Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('ValidationObserver', ValidationObserver);
 
-
 // Entry Components
 // Vue.component('v-icell-input', InputComponent);
 // Vue.component('v-icell-select', SelectComponent);

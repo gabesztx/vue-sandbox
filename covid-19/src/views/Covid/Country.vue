@@ -5,8 +5,8 @@
     <section class="header-content hero is-small">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-4">Koronavírus esetek</h1>
-          <h3 class="subtitle is-6">
+          <h1 class="title">Koronavírus</h1>
+          <h3 class="subtitle">
             <span>Országszerte</span>
           </h3>
         </div>
@@ -19,12 +19,9 @@
             <div class="card-header-title">Covid-19</div>
           </div>-->
           <div class="card-content">
-            <!--            <h1 class="title">Covid-19</h1>-->
-            <!--<h3 class="subtitle">COVID-19</h3>-->
-
             <div class="title-content">
               <div class="title">
-                <img class="table-icon" src="@/assets/covid-icon.png" />
+<!--                <img class="table-icon" src="@/assets/covid-icon.png" />-->
                 <span class="table-title">COVID-19</span>
               </div>
               <div class="settings-icon">
@@ -37,8 +34,8 @@
             <div class="table-content">
               <v-icell-table
                 :data="table.data"
-                :bordered="table.bordered"
                 :columns="table.columns"
+                :bordered="table.bordered"
                 :scrollable="table.scrollable"
                 :sticky-header="table.stickyHeader"
                 :paginated="table.paginated"
@@ -122,15 +119,15 @@
         paginationSimple: true,
         paginationSize: 'is-small',
         perPage: 10,
-        striped: true,
+        subheading: 10,
+        striped: false,
         narrowed: false,
         mobileCards: true,
         hoverable: false,
         showDetailIcon: false,
         sortIconSize: 'is-small',
         bordered: false,
-        // sortIcon: 'arrow-up', // 'menu-up',
-        sortIcon: 'menu-up',
+        sortIcon: 'menu-up', //'arrow-up'
         // striped: false,
       });
 

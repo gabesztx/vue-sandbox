@@ -159,11 +159,10 @@ table.table td .image, table.table th .image {
     .title {
       display: flex;
       align-items: center;
-
-      .table-icon {
+      /*.table-icon {
         margin-left: 10px;
         width: 28px;
-      }
+      }*/
     }
   }
 
@@ -183,33 +182,34 @@ table.table td .image, table.table th .image {
           justify-content: space-between;
           padding-top: 5px;
           padding-bottom: 10px;
+
           .title {
             display: flex;
             align-items: center;
             margin-bottom: 0;
             .table-title {
               font-size: 18px;
-              font-weight: 600;
+              //font-weight: 500;
             }
 
-            .table-icon {
+            /*.table-icon {
               margin-right: 5px;
               width: 28px;
-            }
+            }*/
 
           }
 
-          .settings-icon {
-            span {
-              font-size: 18px;
-              //width: 18px;
-              //height: 18px;
-              cursor: pointer;
-            }
-          }
+          /*  .settings-icon {
+              span {
+                font-size: 18px;
+                //width: 18px;
+                //height: 18px;
+                cursor: pointer;
+              }
+            }*/
         }
 
-        .table-content {
+   /*     .table-content {
           .is-empty {
             .no-found-content {
               //padding-top: 20px;
@@ -228,7 +228,7 @@ table.table td .image, table.table th .image {
               }
             }
           }
-        }
+        }*/
       }
     }
   }
@@ -237,72 +237,30 @@ table.table td .image, table.table th .image {
 
 /* Table */
 .b-table {
-  .table th .th-wrap .icon {
-    margin-left: 5px;
-  }
+  .table {
 
-  .table th {
-    vertical-align: middle;
-  }
+    thead {
+      th {
+        //font-weight: 700;
+        //font-size: 20px;
 
-  .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
-    //background-color: rgba(247, 247, 247, .8);
-    //background-color: #00d1b2;
-    //background-color: rgba(0,209,178, 0.1);
-    //background-color: rgba(0,209,178, 0.1);
-  }
-
-  .table-column-content {
-    &.primary {
-      background-color: #00d1b2;
-      color: #fff;
-    }
-
-    &.warning {
-      background-color: #ffdd57;
-      color: #fff;
-    }
-
-    &.danger {
-      background-color: #f14668;
-      color: #fff;
-    }
-
-    //.cell-value {}
-  }
-
-  thead {
-    th {
-      &:hover {
       }
     }
-  }
+    .customHead {
+      //font-weight: 500;
 
-  .table-wrapper:not(:last-child) {
-    //border-bottom: 1px solid rgba(24, 28, 33, .06);
-    //margin-bottom: 0;
-  }
-
-  .top.level {
-    //padding-top: 20px;
-  }
-
-  .th-wrap {
-    font-weight: 700;
-  }
-
-  .img-content {
-    width: 25px;
-    display: flex;
-    justify-content: center;
-    //width: 100%;
-    height: 100%;
-
-
-    .img-flag {
-      //border-radius: 1px;
-      width: 100%;
     }
+
+    .customCell {
+      //font-weight: 400;
+      font-size: 15px;
+      //color: rgb(63, 92, 113);
+      //opacity: 0.3;
+      //font-size: 14px;
+      //font-weight: 600;
+      //font-size: 15px;
+    }
+
   }
 
   td {
