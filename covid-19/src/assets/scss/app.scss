@@ -161,9 +161,10 @@ body {
 
   .body-content {
     padding-top: 0;
+
     .card {
-      border-radius: 10px;
-      border: 1px solid rgba(24, 28, 33, .06);
+      border-radius: 6px;
+      border: 1px solid rgba(24, 28, 33, .07);
 
       .card-content {
         padding: 1rem 1.5rem;
@@ -171,8 +172,8 @@ body {
         .title-content {
           display: flex;
           justify-content: space-between;
-          padding-top: 5px;
-          padding-bottom: 10px;
+          padding-top: 10px;
+          padding-bottom: 15px;
 
           .table-title {
             display: flex;
@@ -181,6 +182,7 @@ body {
             .table-icon {
               margin-right: 10px;
             }
+
             .table-label {
               //font-size: 20px;
               font-weight: 600;
@@ -199,26 +201,26 @@ body {
             }*/
         }
 
-   /*     .table-content {
-          .is-empty {
-            .no-found-content {
-              //padding-top: 20px;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
+        /*     .table-content {
+               .is-empty {
+                 .no-found-content {
+                   //padding-top: 20px;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
 
-              .no-found-icon {
-                font-size: 48px;
-              }
+                   .no-found-icon {
+                     font-size: 48px;
+                   }
 
-              .no-found-text {
-                font-weight: 500;
-                font-size: 18px;
-              }
-            }
-          }
-        }*/
+                   .no-found-text {
+                     font-weight: 500;
+                     font-size: 18px;
+                   }
+                 }
+               }
+             }*/
       }
     }
   }
@@ -230,29 +232,32 @@ body {
   .table {
     //color: #363636;
     td {
-      //vertical-align: middle;
+      vertical-align: middle;
     }
-
-    thead {
-      th {
-        font-weight: 700;
-
+    .customBgImage {
+      padding: 6px 4px;
+      .cell-content {
+        margin: auto;
+        width: 25px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
       }
     }
-    .customHead {
-      //font-weight: 500;
 
+    .customHead {
+      //opacity: 0.3;
+      //font-weight: 700;
+      //padding-bottom: 2px;
     }
 
     .customCell {
-      font-size: 15px;
-      font-weight: 500;
+      font-weight: 400;
+      font-size: 14.5px;
       //color: rgb(63, 92, 113);
       //opacity: 0.3;
       //font-weight: 600;
     }
-
   }
-
-
 }

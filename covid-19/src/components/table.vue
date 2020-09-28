@@ -71,13 +71,17 @@
       </template>-->
 
       <!-- tbody -->
-      <template>
-        <div class="cell-content">
-          <!--<b-icon class="" icon="virus-outline" type="" custom-size="" size=""></b-icon>-->
-          <span class="call-value">
-            {{ props.row[column.field] }}
-          </span>
-        </div>
+      <template v-if="column.backgroundImage && props.row[column.field]">
+        <div
+          class="cell-content"
+          :style="{ backgroundImage: `url(${column.meta.url}${props.row[column.field]}.svg)` }"
+        ></div>
+      </template>
+      <template v-else>
+        <!--<b-icon class="" icon="virus-outline" type="" custom-size="" size=""></b-icon>-->
+        <span class="call-value">
+          {{ props.row[column.field] }}
+        </span>
       </template>
       <!--<template v-slot="props">
         <b-button
