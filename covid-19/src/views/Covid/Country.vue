@@ -1,7 +1,7 @@
 <template>
   <div class="page-content country">
     <!--<button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
-    <!--<div class="box">-->
+    <!--<div class="box"> -->
     <section class="header-content hero is-small">
       <div class="hero-body">
         <div class="container">
