@@ -105,8 +105,20 @@ const transformMergeObject = (items) => {
 
   return data;
 };
-// const countries = require('i18n-iso-countries');
-// console.log(countries.alpha3ToAlpha2('USA'));
+
+const deleteNoCountryData = (items) => {
+  const noCountryData = ['Channel Islands', 'Diamond Princess', 'MS Zaandam', 'Caribbean Netherlands', 'MS Zaandam ', 'Diamond Princess '];
+  let countryData = [];
+  items.forEach((item) => {
+    const country = item.country;
+    const isFind = noCountryData.find((item) => country === item);
+    if (!isFind) {
+      countryData.push(item);
+    }
+  });
+
+  return countryData;
+};
 
 module.exports = {
   getCountryCode: getCountryCode,
@@ -117,4 +129,5 @@ module.exports = {
   transformRemoveAdds: transformRemoveAdds,
   transformMergeObject: transformMergeObject,
   separateContinentData: separateContinentData,
+  deleteNoCountryData: deleteNoCountryData,
 };

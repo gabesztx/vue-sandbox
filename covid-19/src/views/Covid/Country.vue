@@ -115,7 +115,7 @@
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 12,
+        perPage: 10,
         subheading: 10,
         striped: true,
         narrowed: false,
@@ -172,9 +172,14 @@
       field: 'country',
       label: 'Ország',
       sortable: true,
-      searchable: false,
       width: 200,
       headerClass: 'customHead',
+      customSort: (a, b, isAsc) => {
+        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
+        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
+      // searchable: false,
     },
     {
       field: 'casesNew',

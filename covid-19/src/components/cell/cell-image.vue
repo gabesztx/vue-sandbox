@@ -1,9 +1,9 @@
 <template>
-  <div class="cell-image" :style="{ backgroundImage: imagePath}" v-if="value"></div>
+  <div class="cell-image" :style="{ backgroundImage: getImagePath}" v-if="value"></div>
 </template>
 
 <script>
-  import { ref } from '@vue/composition-api';
+  import { computed } from '@vue/composition-api';
 
   export default {
     props: {
@@ -12,12 +12,11 @@
       value: String,
     },
     setup(props) {
-      const imagePath = ref(`url(${props.column.path}${props.value}.svg)`);
+      const getImagePath = computed(() => `url(${props.column.path}${props.value}.svg)`);
       return {
-        imagePath,
+        getImagePath,
       };
     },
-
   };
 </script>
 

@@ -10,6 +10,7 @@ const {
   getCountryName,
   transformRemoveAdds,
   separateContinentData,
+  deleteNoCountryData,
   transformMergeObject,
 } = require('./data-transform.service');
 
@@ -35,12 +36,14 @@ const transformCovidDbData = () => {
       map((data) => transformRemoveAdds(data)),
       map((data) => transformMergeObject(data)),
       map((data) => transformCamelizeKeys(data)),
+      map((data) => deleteNoCountryData(data)),
       map((data) => separateContinentData(data)),
       switchMap((items) => writeCovidDataInFile$(items))
     )
     .subscribe((res) => {
       console.log('DB Data Done!');
-      // writeFile(path.join(__dirname, '../db/covid19-country.db.json'), res).then(() => {});
+      // writeFile(path.join(__dirname, '../db/covid19-country.db.json'), res).then(() => {
+      // });
     });
 };
 
