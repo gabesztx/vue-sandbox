@@ -1,4 +1,5 @@
 const path = require('path');
+const isoCountriesSchema = require('../utils/iso-countries_schema');
 const isoCountries = require('../utils/iso-countries');
 
 const transformNoData = (data) => {
@@ -45,19 +46,32 @@ const transformRemoveHyphen = (data) => {
   return data;
 };
 
-const transformCountryCode = (data) => {
+const getCountryCode = (data) => {
   data.forEach((item) => {
     const countryItem = item.country;
-    Object.keys(isoCountries).forEach((code) => {
-      if (countryItem === isoCountries[code]) {
+    Object.keys(isoCountriesSchema).forEach((code) => {
+      if (countryItem === isoCountriesSchema[code]) {
         // const flag = `http://localhost:5000/static/flags/${code.toLocaleLowerCase()}.svg`;
-        const flag = code.toLocaleLowerCase();
+        // const flag = code.toLocaleLowerCase();
+        const flag = code;
         item.countryCode = flag;
       }
     });
   });
   return data;
 };
+
+const getCountryName = (data) => {
+  data.forEach((item) => {
+    const countryCode = item.countryCode;
+    // eslint-disable-next-line no-prototype-builtins,no-empty
+    if (isoCountries.hasOwnProperty(countryCode)) {
+      item.country = isoCountries[countryCode];
+    }
+  });
+  return data;
+};
+
 
 const separateContinentData = (data) => {
   let continentData = [];
@@ -90,9 +104,12 @@ const transformMergeObject = (items) => {
 
   return data;
 };
+// const countries = require('i18n-iso-countries');
+// console.log(countries.alpha3ToAlpha2('USA'));
 
 module.exports = {
-  transformCountryCode: transformCountryCode,
+  getCountryCode: getCountryCode,
+  getCountryName: getCountryName,
   transformNoData: transformNoData,
   transformRemoveComma: transformRemoveComma,
   transformRemoveHyphen: transformRemoveHyphen,

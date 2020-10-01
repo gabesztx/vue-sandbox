@@ -5,8 +5,9 @@ const { writeFile } = require('./jsonfile.service');
 const { $getStatistics } = require('../api/covid-193.p.rapidapi');
 const { transformCamelizeKeys } = require('../utils/helpers');
 const {
-  transformCountryCode,
   transformRemoveHyphen,
+  getCountryCode,
+  getCountryName,
   transformRemoveAdds,
   separateContinentData,
   transformMergeObject,
@@ -20,7 +21,7 @@ const writeCovidDataInFile$ = (items) => {
     Promise.all([
       writeFile(path.join(__dirname, '../db/covid19-country.db.json'), items[0]),
       writeFile(path.join(__dirname, '../db/covid19-continent.db.json'), items[1]),
-    ])
+    ]),
   );
 };
 
@@ -29,7 +30,8 @@ const transformCovidDbData = () => {
     .pipe(
       take(1),
       map((data) => transformRemoveHyphen(data)),
-      map((data) => transformCountryCode(data)),
+      map((data) => getCountryCode(data)),
+      map((data) => getCountryName(data)),
       map((data) => transformRemoveAdds(data)),
       map((data) => transformMergeObject(data)),
       map((data) => transformCamelizeKeys(data)),
