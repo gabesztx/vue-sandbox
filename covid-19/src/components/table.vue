@@ -29,6 +29,7 @@
     :scrollable="scrollable"
     :height="height"
     :row-class="rowClass"
+    :filters-event="filtersEvent"
     @page-change="onPageChange"
     @select="onSelect"
     @check="onCheck"
@@ -71,34 +72,19 @@
       </template>-->
 
       <!-- tbody -->
-      <template v-if="column.backgroundImage && props.row[column.field]">
-        <div
-          class="cell-content"
-          :style="{ backgroundImage: `url(${column.meta.url}${props.row[column.field]}.svg)` }"
-        ></div>
-      </template>
-      <template v-else>
-        <!--<b-icon class="" icon="virus-outline" type="" custom-size="" size=""></b-icon>-->
-        <span class="call-value">
+      <div class="cell-content">
+        <template v-if="column.component">
+          <component
+            v-bind:is="column.component"
+            :column="column"
+            :row="props.row"
+            :value="props.row[column.field]">
+          </component>
+        </template>
+        <template v-else>
           {{ props.row[column.field] }}
-        </span>
-      </template>
-      <!--<template v-slot="props">
-        <b-button
-          v-if="column.button"
-          :class="column.button.class"
-          :label="column.button.label"
-          v-on:click="onCellClick(props.row)"
-        ></b-button>
-        &lt;!&ndash;<i class="fas fa-map-marker-alt"></i>&ndash;&gt;
-        <div v-if="!column.image && !column.button" :class="`cell-value`">
-          {{ props.row[column.field] }}
-        </div>
-
-        <div class="img-content" v-if="column.image && props.row[column.field]">
-          <img class="img-flag" v-bind:src="`${column.meta.url}${props.row[column.field]}.svg`" />
-        </div>
-      </template>-->
+        </template>
+      </div>
     </b-table-column>
   </b-table>
 </template>
@@ -173,10 +159,10 @@
       cellClass: String,
       id: [String, Number],
       isImage: Boolean,
-      classObject: Function,
+      // updateCell: Function,
     },
 
-    setup(props: any, attr: any) {
+    setup(props: any, attr: any){
       const selectValue = ref(props.selected);
       const checkedRowsValue = ref(props.checkedRows);
       const onSelect = (value: any) => {
@@ -196,12 +182,17 @@
       const onPageChange = (page: number) => {
         attr.emit('pageChange', page);
       };
+
+      const onUpdateCell = (cell, row) => {
+        attr.emit('updateCell', cell, row);
+      };
       return {
         onSelect,
         onCheck,
         onPageChange,
         onRowClick,
         onCellClick,
+        onUpdateCell,
         selectValue,
         checkedRowsValue,
       };

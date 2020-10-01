@@ -1,15 +1,15 @@
+
 export const columns = [
   {
     field: 'countryCode',
     label: '',
     width: 50,
     cellClass: 'customBgImage',
-    backgroundImage: true,
-    // centered: true,
-    // headerClass:'custom',
     meta: {
       url: `http://localhost:5000/static/flags/`,
     },
+    // headerClass:'custom',
+    // centered: true,
   },
   {
     field: 'country',
@@ -17,8 +17,8 @@ export const columns = [
     sortable: true,
     searchable: false,
     cellClass: 'customCell',
-    // width: 120,
     headerClass: 'customHead',
+    // width: 120,
     // centered:true,
   },
   {

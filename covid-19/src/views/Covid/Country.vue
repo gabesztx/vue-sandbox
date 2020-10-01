@@ -1,7 +1,7 @@
 <template>
   <div class="page-content country">
     <!--<button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
-    <!--<div class="box"> -->
+    <!--<div class="box">-->
     <section class="header-content hero is-small">
       <div class="hero-body">
         <div class="container">
@@ -15,16 +15,11 @@
     <section class="body-content section">
       <div class="container">
         <div class="card">
-          <!--<div class="card-header">
-            <div class="card-header-title">Covid-19</div>
-          </div>-->
           <div class="card-content">
             <div class="title-content">
-
               <div class="table-title">
                 <b-icon class="table-icon" icon="virus-outline" type="" custom-size="fa-2x" size=""></b-icon>
                 <span class="table-label">COVID-19</span>
-                <!--<img class="table-icon" src="@/assets/covid-icon.png" />-->
               </div>
               <div class="settings-icon">
                 <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
@@ -52,10 +47,11 @@
                 :sort-icon-size="table.sortIconSize"
                 :sort-icon="table.sortIcon"
                 :height="table.height"
+                :filters-event="''"
                 :row-class="onRowClass"
-                :class-object="onClassObject"
                 @rowClick="onClick"
               ></v-icell-table>
+
             </div>
           </div>
         </div>
@@ -80,25 +76,24 @@
           ></v-icell-input>
         </div>
       </b-collapse>-->
-
-      <!--      </div>-->
+      <!-- </div>-->
     </section>
   </div>
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { reactive } from '@vue/composition-api';
+  // import { columns } from '@/views/Covid/table-config/columns';
   import { countryData } from '@/services/covid-data.service';
-  import { columns } from '@/views/Covid/table-config/columns';
+  import { reactive } from '@vue/composition-api';
 
   export default {
-    data() {
+    data(){
       return {
         isOpenSetting: false,
       };
     },
 
-    setup() {
+    setup(){
       const searchInput = reactive({
         rounded: false,
         loading: false,
@@ -120,7 +115,7 @@
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 10,
+        perPage: 12,
         subheading: 10,
         striped: true,
         narrowed: false,
@@ -151,24 +146,86 @@
         // router.push({ path: `/country/${params}` });
       };
       const onRowClass = (row, index) => {
-        if (index === 1) {
+        // console.log('onRowClass', row, ' - ', index);
+        /*if (index === 1) {
           return 'is-anyad-selected-apadat'; // első sorra  ráteszi a classt
-        }
-      };
-      const onClassObject = (row, value) => {
-        if (value === '-') {
-          row.newCasesText = 'nincs adat';
-          // console.log('obj', row);
-        }
+        }*/
       };
       return {
         onClick,
         onInput,
         onRowClass,
-        onClassObject,
         table,
         searchInput,
       };
     },
   };
+  const columns = [
+    {
+      field: 'countryCode',
+      label: '',
+      width: 30,
+      component: 'cell-image',
+      path: `http://localhost:5000/static/flags/`,
+    },
+    {
+      field: 'country',
+      label: 'Ország',
+      sortable: true,
+      searchable: false,
+      width: 200,
+      headerClass: 'customHead',
+    },
+    {
+      field: 'casesNew',
+      label: 'Napi új esetek',
+      sortable: true,
+      centered: true,
+      component: 'cell-base',
+      headerClass: 'customHead',
+      customValue: v => v === 'N/A' ? 'Nincs adat' : '+' + v,
+      customClass: v => v === 'N/A' ? 'is-no-data' : '',
+      customSort: (a, b, isAsc) => {
+        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
+        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
+    },
+    {
+      field: 'deathsNew',
+      label: 'Napi új elhunytak',
+      sortable: true,
+      centered: true,
+      component: 'cell-base',
+      headerClass: 'customHead',
+      customValue: v => v === 'N/A' ? 'Nincs adat' : '+' + v,
+      customClass: v => v === 'N/A' ? 'is-no-data' : '',
+      customSort: (a, b, isAsc) => {
+        const AObj = a.deathsNew === 'N/A' ? -1 : Number(a.deathsNew);
+        const BObj = b.deathsNew === 'N/A' ? -1 : Number(b.deathsNew);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
+    },
+    {
+      field: 'casesActive',
+      label: 'Aktív esetek',
+      sortable: true,
+      centered: true,
+      headerClass: 'customHead',
+    },
+    {
+      field: 'casesCritical',
+      label: 'Kritikus esetek',
+      sortable: true,
+      centered: true,
+      headerClass: 'customHead',
+      customSort: (a, b, isAsc) => {
+        // TODO: refactor és kiszervezés
+        const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);
+        const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
+    },
+  ];
+
 </script>

@@ -5,7 +5,8 @@ import router from './router';
 
 // Import UI
 import Buefy from 'buefy';
-
+// Import Filters
+import { noData } from '@/filters/table.filter';
 // Import Style
 import './assets/scss/app.scss';
 
@@ -23,7 +24,8 @@ import TableComponent from '@/components/table.vue';
 import PageComponent from '@/views/Covid/Page.vue';
 import CountryComponent from '@/views/Covid/Country.vue';
 import CountryDetailComponent from '@/views/Covid/CountryDetail.vue';
-
+import CellBase from '@/components/cell/cell-base.vue';
+import CellImage from '@/components/cell/cell-image.vue';
 // Validation
 import { ValidationProvider, ValidationObserver } from 'vee-validate';
 import { required, length } from 'vee-validate/dist/rules';
@@ -31,6 +33,7 @@ import { extend } from 'vee-validate';
 
 // extend('required', required);
 // extend('length', length);
+Vue.filter('nodata', noData);
 
 Vue.use(Buefy, {
   defaultDayNames: ['V', 'H', 'K', 'Sze', 'Cs', 'P', 'Szo'],
@@ -74,6 +77,10 @@ Vue.component('v-icell-table', TableComponent);
 Vue.component('v-page', PageComponent);
 Vue.component('v-page-country', CountryComponent);
 Vue.component('v-page-country-detail', CountryDetailComponent);
+
+// Dynamic Cell Components
+Vue.component('cell-base', CellBase);
+Vue.component('cell-image', CellImage);
 
 new Vue({
   router,

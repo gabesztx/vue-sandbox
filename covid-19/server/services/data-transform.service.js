@@ -53,8 +53,8 @@ const getCountryCode = (data) => {
       if (countryItem === isoCountriesSchema[code]) {
         // const flag = `http://localhost:5000/static/flags/${code.toLocaleLowerCase()}.svg`;
         // const flag = code.toLocaleLowerCase();
-        const flag = code;
-        item.countryCode = flag;
+        // item.countryCode = code.toLowerCase();
+        item.countryCode = code.toLowerCase();
       }
     });
   });
@@ -63,7 +63,7 @@ const getCountryCode = (data) => {
 
 const getCountryName = (data) => {
   data.forEach((item) => {
-    const countryCode = item.countryCode;
+    const countryCode = item.countryCode ? item.countryCode.toUpperCase() : null;
     // eslint-disable-next-line no-prototype-builtins,no-empty
     if (isoCountries.hasOwnProperty(countryCode)) {
       item.country = isoCountries[countryCode];
@@ -90,12 +90,13 @@ const transformMergeObject = (items) => {
   let data = items;
   data.forEach((item) => {
     const population = item.population;
-    item.population = population !== null ? population : '-';
+    item.population = population === null ? 'N/A' : population;
     Object.keys(item).forEach((key) => {
       const obj = item[key];
       if (item[key] instanceof Object) {
         Object.keys(obj).forEach((prop) => {
-          item[`${key}_${prop}`] = obj[prop] !== null ? Number(obj[prop]) : '-';
+          // console.log('---', obj[prop]);
+          item[`${key}_${prop}`] = obj[prop] === null ? 'N/A' : Number(obj[prop]);
         });
         delete item[key];
       }
