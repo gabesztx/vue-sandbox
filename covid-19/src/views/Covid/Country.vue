@@ -16,16 +16,66 @@
       <div class="container">
         <div class="card">
           <div class="card-content">
-            <div class="title-content">
-              <div class="table-title">
+
+            <div class="header-content">
+              <v-icell-input
+                v-if="true"
+                class="input-content"
+                :label="searchInput.label"
+                :place-holder="searchInput.placeHolder"
+                :rounded="searchInput.rounded"
+                :size="searchInput.size"
+                :loading="searchInput.loading"
+                :style-type="searchInput.styleType"
+                :expanded="searchInput.expanded"
+                :icon="searchInput.icon"
+                :icon-right="searchInput.iconRight"
+                :type="searchInput.type"
+                :custom-class="searchInput.customClass"
+                :classes="searchInput.classes"
+                @input="onInput"
+                @focus="onFocus()"
+                @blur="onBlur()"
+              ></v-icell-input>
+              <!--<div class="table-title">
                 <b-icon class="table-icon" icon="virus-outline" type="" custom-size="fa-2x" size=""></b-icon>
                 <span class="table-label">COVID-19</span>
-              </div>
-              <div class="settings-icon">
-                <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
-                  <i class="mdi mdi-cog" />
-                </span>
-              </div>
+              </div>-->
+              <!-- <div class="settings-icon">
+                 <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+                   <i class="mdi mdi-cog" />
+                 </span>
+               </div>-->
+
+              <!--                  custom-size="fa-2x"-->
+              <!--<div class="search-content">
+                <div class="icon-content">
+                  <span class="tag">
+                    <i class="fas fa-search"></i>
+                  </span>
+                  &lt;!&ndash;<b-icon class="" icon="magnify" type=""  size=""></b-icon>&ndash;&gt;
+                </div>
+
+                <v-icell-input
+                  v-if="true"
+                  class="input-content"
+                  :label="searchInput.label"
+                  :place-holder="searchInput.placeHolder"
+                  :rounded="searchInput.rounded"
+                  :size="searchInput.size"
+                  :loading="searchInput.loading"
+                  :style-type="searchInput.styleType"
+                  :expanded="searchInput.expanded"
+                  :icon="searchInput.icon"
+                  :icon-right="searchInput.iconRight"
+                  :type="searchInput.type"
+                  :custom-class="searchInput.customClass"
+                  :classes="searchInput.classes"
+                  @input="onInput"
+                  @focus="onFocus()"
+                  @blur="onBlur()"
+                ></v-icell-input>
+              </div>-->
             </div>
 
             <div class="table-content">
@@ -56,27 +106,6 @@
           </div>
         </div>
       </div>
-
-      <!--<b-collapse :open="isOpenSetting">
-        <div class="settings-content">
-          <v-icell-input
-            :label="searchInput.label"
-            :place-holder="searchInput.placeHolder"
-            :rounded="searchInput.rounded"
-            :size="searchInput.size"
-            :loading="searchInput.loading"
-            :style-type="searchInput.styleType"
-            :expanded="searchInput.expanded"
-            :icon="searchInput.icon"
-            :icon-right="searchInput.iconRight"
-            :type="searchInput.type"
-            :custom-class="searchInput.customClass"
-            :classes="searchInput.classes"
-            @input="onInput"
-          ></v-icell-input>
-        </div>
-      </b-collapse>-->
-      <!-- </div>-->
     </section>
   </div>
 </template>
@@ -95,16 +124,16 @@
 
     setup(){
       const searchInput = reactive({
-        rounded: false,
         loading: false,
         placeHolder: 'Keresés...',
-        size: 'is-small',
-        classes: 'searchInputContent',
         customClass: 'searchInput',
         icon: 'magnify',
+        // rounded: true,
+        // classes: 'searchInputContent',
         // iconRight: 'magnify',
         // expanded: true,
-        // styleType: 'is-light',
+        size: 'is-small',
+        // styleType: 'is-primary',
       });
 
       const table = reactive({
@@ -140,6 +169,12 @@
           return isFind;
         });
       };
+      const onFocus = () => {
+        searchInput.customClass = 'searchInput active-focus';
+      };
+      const onBlur = () => {
+        searchInput.customClass = 'searchInput';
+      };
       const onClick = (routerLink: string) => {
         // router.push({ path: '/' });
         // router.push({ path: routerLink });
@@ -155,6 +190,8 @@
         onClick,
         onInput,
         onRowClass,
+        onFocus,
+        onBlur,
         table,
         searchInput,
       };

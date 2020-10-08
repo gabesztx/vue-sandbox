@@ -20,3 +20,6 @@ export const setCountryData = (data) => {
 export const setWorldData = (data) => {
   worldData = data;
 };
+
+
+// conxt valamiService = new ValamiService()

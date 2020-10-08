@@ -25,6 +25,8 @@
           :icon-pack="iconPack"
           @icon-click="onIconClick"
           @input.native="onInput($event)"
+          @focus="onFocus()"
+          @blur="onBlur()"
         />
       </b-field>
     </ValidationProvider>
@@ -80,10 +82,18 @@
       const onIconClick = () => {
         attr.emit('icon-click');
       };
+      const onFocus = () => {
+        attr.emit('focus');
+      };
+      const onBlur = () => {
+        attr.emit('blur');
+      };
       return {
         isRequired,
         onInput,
         onIconClick,
+        onFocus,
+        onBlur,
         model,
       };
     },
