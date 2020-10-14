@@ -8,7 +8,7 @@ const store = new Vuex.Store({
     covidData: CovidDataModule,
   },
 });
-export const useStore = () => store
+export const useStore = () => store;
 
 // const { useState } = createNamespacedHelpers('covid');
 // export const states = {

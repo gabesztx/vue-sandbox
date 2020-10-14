@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content">
+  <div class="page-main-content">
     <div class="pages" v-bind:style="{ transform: `translate3d(${slidePos}, 0, 0)` }">
       <div class="page">
         <v-page-country></v-page-country>
@@ -11,21 +11,21 @@
   </div>
 </template>
 <script lang="ts">
-  import router from '@/router';
-  import { computed } from '@vue/composition-api';
+import router from '@/router';
+import { computed } from '@vue/composition-api';
 
-  export default {
-    props: {
-      pagePos: Number,
-    },
-    setup(props) {
-      const slidePos = computed(() => `${props.pagePos * -100}%`);
-      const onClick = (url) => {
-        router.push({ path: url });
-        // router.replace(url);
-      };
+export default {
+  props: {
+    pagePos: Number,
+  },
+  setup(props) {
+    const slidePos = computed(() => `${props.pagePos * -100}%`);
+    const onClick = url => {
+      router.push({ path: url });
+      // router.replace(url);
+    };
 
-      /*  const stopWatch = watch(
+    /*  const stopWatch = watch(
           () => props.pagePos,
           (newVal) => {
             console.log('change: ', newVal);
@@ -36,14 +36,14 @@
           // stopWatch();
         });*/
 
-      return {
-        slidePos,
-        onClick,
-      };
-    },
-  };
+    return {
+      slidePos,
+      onClick,
+    };
+  },
+};
 
-  /*methods: {
+/*methods: {
    // --------
    // ENTERING
    // --------

@@ -1,26 +1,31 @@
+<!--<button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
 <template>
   <div class="page-content country">
-    <!--<button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
-    <!--<div class="box">-->
+    <!--Header Content-->
     <section class="header-content hero is-small">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Koronavírus</h1>
-          <h3 class="subtitle">
-            <span>Országszerte</span>
+          <h1 class="title">Országonként</h1>
+          <h3 class="subtitle is-6">
+            <span>COVID-19</span>
           </h3>
         </div>
       </div>
     </section>
+
+    <!--Body Content-->
     <section class="body-content section">
       <div class="container">
         <div class="card">
           <div class="card-content">
-
+            <!-- Header Content-->
             <div class="header-content">
+              <!-- <div class="title-content">
+                 <b-icon class="table-icon" icon="virus-outline" type="" custom-size="fa-2x" size=""></b-icon>
+                 <div class="table-label">Covid 19</div>
+               </div>-->
               <v-icell-input
-                v-if="true"
-                class="input-content"
+                class="search-content"
                 :label="searchInput.label"
                 :place-holder="searchInput.placeHolder"
                 :rounded="searchInput.rounded"
@@ -37,47 +42,35 @@
                 @focus="onFocus()"
                 @blur="onBlur()"
               ></v-icell-input>
-              <!--<div class="table-title">
-                <b-icon class="table-icon" icon="virus-outline" type="" custom-size="fa-2x" size=""></b-icon>
-                <span class="table-label">COVID-19</span>
-              </div>-->
-              <!-- <div class="settings-icon">
-                 <span class="" @click="isOpenSetting = !isOpenSetting" :class="isOpenSetting ? 'active' : ''">
-                   <i class="mdi mdi-cog" />
-                 </span>
-               </div>-->
-
-              <!--                  custom-size="fa-2x"-->
-              <!--<div class="search-content">
-                <div class="icon-content">
-                  <span class="tag">
-                    <i class="fas fa-search"></i>
-                  </span>
-                  &lt;!&ndash;<b-icon class="" icon="magnify" type=""  size=""></b-icon>&ndash;&gt;
+              <div class="settings-icon">
+                <div
+                  class="icon-content"
+                  @click="isOpenSetting = !isOpenSetting"
+                  :class="isOpenSetting ? 'active' : ''"
+                >
+                  <div class="icon-setting mdi mdi-cog"></div>
                 </div>
-
-                <v-icell-input
-                  v-if="true"
-                  class="input-content"
-                  :label="searchInput.label"
-                  :place-holder="searchInput.placeHolder"
-                  :rounded="searchInput.rounded"
-                  :size="searchInput.size"
-                  :loading="searchInput.loading"
-                  :style-type="searchInput.styleType"
-                  :expanded="searchInput.expanded"
-                  :icon="searchInput.icon"
-                  :icon-right="searchInput.iconRight"
-                  :type="searchInput.type"
-                  :custom-class="searchInput.customClass"
-                  :classes="searchInput.classes"
-                  @input="onInput"
-                  @focus="onFocus()"
-                  @blur="onBlur()"
-                ></v-icell-input>
-              </div>-->
+              </div>
             </div>
 
+            <!-- Settings Content-->
+            <div class="settings-content" v-if="isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+              <div class="settings-item-content">
+                <div class="settings-item">
+                  <b-button :label="'Első oldal'" :size="'is-small'" @click="table.currentPage = 1"></b-button>
+                </div>
+
+                <div class="settings-item">
+                  <b-select v-model="table.perPage" :size="'is-small'">
+                    <template v-for="(num, index) in settings.numberInput.perPageNumber">
+                      <option :key="index" :label="`${num} sor`" :value="num"></option>
+                    </template>
+                  </b-select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table Content-->
             <div class="table-content">
               <v-icell-table
                 :data="table.data"
@@ -90,6 +83,7 @@
                 :pagination-size="table.paginationSize"
                 :per-page="table.perPage"
                 :striped="table.striped"
+                :current-page="table.currentPage"
                 :narrowed="table.narrowed"
                 :mobile-cards="table.mobileCards"
                 :hoverable="table.hoverable"
@@ -100,8 +94,8 @@
                 :filters-event="''"
                 :row-class="onRowClass"
                 @rowClick="onClick"
+                @pageChange="onPageChange"
               ></v-icell-table>
-
             </div>
           </div>
         </div>
@@ -110,164 +104,196 @@
   </div>
 </template>
 <script lang="ts">
-  import router from '@/router';
-  // import { columns } from '@/views/Covid/table-config/columns';
-  import { countryData } from '@/services/covid-data.service';
-  import { reactive } from '@vue/composition-api';
+import router from '@/router';
+// import { columns } from '@/views/Covid/table-config/columns';
+import { countryData } from '@/services/covid-data.service';
+import { reactive } from '@vue/composition-api';
 
-  export default {
-    data(){
-      return {
-        isOpenSetting: false,
-      };
-    },
+export default {
+  data() {
+    return {
+      isOpenSetting: false,
+    };
+  },
 
-    setup(){
-      const searchInput = reactive({
-        loading: false,
-        placeHolder: 'Keresés...',
-        customClass: 'searchInput',
-        icon: 'magnify',
-        // rounded: true,
-        // classes: 'searchInputContent',
-        // iconRight: 'magnify',
-        // expanded: true,
+  setup() {
+    const searchInput = reactive({
+      // rounded: true,
+      loading: false,
+      placeHolder: 'Keresés...',
+      customClass: 'searchInput',
+      icon: 'magnify',
+      size: 'is-small',
+      // iconRight: 'magnify',
+    });
+
+    const perPage = 10;
+    const table = reactive({
+      columns: columns,
+      data: countryData,
+      scrollable: false,
+      stickyHeader: false,
+      paginated: true,
+      paginationSimple: true,
+      paginationSize: 'is-small',
+      perPage: perPage,
+      subheading: 10,
+      striped: true,
+      currentPage: 1,
+      narrowed: false,
+      mobileCards: true,
+      hoverable: false,
+      showDetailIcon: false,
+      sortIconSize: 'is-small',
+      bordered: false,
+      sortIcon: 'menu-up', //'arrow-up'
+    });
+
+    const settings = reactive({
+      numberInput: {
+        controlsPosition: 'compact',
+        perPageNumber: 15,
         size: 'is-small',
-        // styleType: 'is-primary',
-      });
+        // type: 'is-warning',
+        controlRounded: true,
+        editable: false,
+        min: 1,
+        max: 15,
+      },
+    });
 
-      const table = reactive({
-        columns: columns,
-        data: countryData,
-        scrollable: false,
-        stickyHeader: false,
-        paginated: true,
-        paginationSimple: true,
-        paginationSize: 'is-small',
-        perPage: 10,
-        subheading: 10,
-        striped: true,
-        narrowed: false,
-        mobileCards: true,
-        hoverable: false,
-        showDetailIcon: false,
-        sortIconSize: 'is-small',
-        bordered: false,
-        sortIcon: 'menu-up', //'arrow-up'
-      });
-
-      const onInput = (event: InputEvent, value: any) => {
-        // TODO: refactor, kiszervezés, speciális karakterek hiba kezelése
-        table.data = countryData.filter((item) => {
-          let isFind = false;
-          Object.values(item).forEach((val: any) => {
-            const isMatch = new RegExp(value, 'i').test(val);
-            if (isMatch) {
-              isFind = true;
-            }
-          });
-          return isFind;
+    const onInput = (event: InputEvent, value: any) => {
+      // TODO: refactor, kiszervezés, speciális karakterek hiba kezelése
+      table.data = countryData.filter(item => {
+        let isFind = false;
+        Object.values(item).forEach((val: any) => {
+          const isMatch = new RegExp(value, 'i').test(val);
+          if (isMatch) {
+            isFind = true;
+          }
         });
-      };
-      const onFocus = () => {
-        searchInput.customClass = 'searchInput active-focus';
-      };
-      const onBlur = () => {
-        searchInput.customClass = 'searchInput';
-      };
-      const onClick = (routerLink: string) => {
-        // router.push({ path: '/' });
-        // router.push({ path: routerLink });
-        // router.push({ path: `/country/${params}` });
-      };
-      const onRowClass = (row, index) => {
-        // console.log('onRowClass', row, ' - ', index);
-        /*if (index === 1) {
+        return isFind;
+      });
+    };
+    const onPageChange = (page: number) => {
+      table.currentPage = page;
+    };
+
+    const onFocus = () => {
+      searchInput.customClass = 'searchInput active-focus';
+    };
+    const onBlur = () => {
+      searchInput.customClass = 'searchInput';
+    };
+    const onClick = (routerLink: string) => {
+      // router.push({ path: '/' });
+      // router.push({ path: routerLink });
+      // router.push({ path: `/country/${params}` });
+    };
+    const onRowClass = (row, index) => {
+      // console.log('onRowClass', row, ' - ', index);
+      /*if (index === 1) {
           return 'is-anyad-selected-apadat'; // első sorra  ráteszi a classt
         }*/
-      };
-      return {
-        onClick,
-        onInput,
-        onRowClass,
-        onFocus,
-        onBlur,
-        table,
-        searchInput,
-      };
+    };
+    return {
+      onClick,
+      onInput,
+      onRowClass,
+      onFocus,
+      onBlur,
+      onPageChange,
+      table,
+      searchInput,
+      settings,
+    };
+  },
+};
+const columns = [
+  {
+    field: 'countryCode',
+    label: '',
+    width: 30,
+    component: 'cell-image',
+    path: `http://localhost:5000/static/flags/`,
+  },
+  {
+    // searchable: false,
+    field: 'country',
+    label: 'Ország',
+    sortable: true,
+    width: 180,
+    headerClass: 'customHead',
+    customSort: (a, b, isAsc) => {
+      const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
+      const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
+      return !isAsc ? BObj - AObj : AObj - BObj;
     },
-  };
-  const columns = [
-    {
-      field: 'countryCode',
-      label: '',
-      width: 30,
-      component: 'cell-image',
-      path: `http://localhost:5000/static/flags/`,
+  },
+  {
+    field: 'casesNew',
+    label: 'Napi új esetek',
+    sortable: true,
+    centered: true,
+    component: 'cell-base',
+    headerClass: 'customHead',
+    visible: true,
+    customValue: v => (v === 'N/A' ? 'Nincs adat' : '+' + v),
+    customClass: v => (v === 'N/A' ? 'is-no-data' : ''),
+    customSort: (a, b, isAsc) => {
+      const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
+      const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
+      return !isAsc ? BObj - AObj : AObj - BObj;
     },
-    {
-      field: 'country',
-      label: 'Ország',
-      sortable: true,
-      width: 200,
-      headerClass: 'customHead',
-      customSort: (a, b, isAsc) => {
-        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
-        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-      // searchable: false,
+  },
+  {
+    field: 'deathsNew',
+    label: 'Napi új elhunytak',
+    sortable: true,
+    centered: true,
+    component: 'cell-base',
+    headerClass: 'customHead',
+    visible: true,
+    customValue: v => (v === 'N/A' ? 'Nincs adat' : '+' + v),
+    customClass: v => (v === 'N/A' ? 'is-no-data' : ''),
+    customSort: (a, b, isAsc) => {
+      const AObj = a.deathsNew === 'N/A' ? -1 : Number(a.deathsNew);
+      const BObj = b.deathsNew === 'N/A' ? -1 : Number(b.deathsNew);
+      return !isAsc ? BObj - AObj : AObj - BObj;
     },
-    {
-      field: 'casesNew',
-      label: 'Napi új esetek',
-      sortable: true,
-      centered: true,
-      component: 'cell-base',
-      headerClass: 'customHead',
-      customValue: v => v === 'N/A' ? 'Nincs adat' : '+' + v,
-      customClass: v => v === 'N/A' ? 'is-no-data' : '',
-      customSort: (a, b, isAsc) => {
-        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
-        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
+  },
+  {
+    field: 'casesActive',
+    label: 'Aktív esetek',
+    sortable: true,
+    centered: true,
+    headerClass: 'customHead',
+    visible: true,
+  },
+  {
+    field: 'casesCritical',
+    label: 'Kritikus esetek',
+    sortable: true,
+    centered: true,
+    headerClass: 'customHead',
+    visible: true,
+    customSort: (a, b, isAsc) => {
+      // TODO: refactor és kiszervezés
+      const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);
+      const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
+      return !isAsc ? BObj - AObj : AObj - BObj;
     },
-    {
-      field: 'deathsNew',
-      label: 'Napi új elhunytak',
-      sortable: true,
-      centered: true,
-      component: 'cell-base',
-      headerClass: 'customHead',
-      customValue: v => v === 'N/A' ? 'Nincs adat' : '+' + v,
-      customClass: v => v === 'N/A' ? 'is-no-data' : '',
-      customSort: (a, b, isAsc) => {
-        const AObj = a.deathsNew === 'N/A' ? -1 : Number(a.deathsNew);
-        const BObj = b.deathsNew === 'N/A' ? -1 : Number(b.deathsNew);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-    },
-    {
-      field: 'casesActive',
-      label: 'Aktív esetek',
-      sortable: true,
-      centered: true,
-      headerClass: 'customHead',
-    },
-    {
-      field: 'casesCritical',
-      label: 'Kritikus esetek',
-      sortable: true,
-      centered: true,
-      headerClass: 'customHead',
-      customSort: (a, b, isAsc) => {
-        // TODO: refactor és kiszervezés
-        const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);
-        const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-    },
-  ];
-
+  },
+];
 </script>
+
+<!-- <b-numberinput
+            v-model="table.perPage"
+            :controls-position="settings.numberInput.controlsPosition"
+            :controls-rounded="settings.numberInput.controlRounded"
+            :size="settings.numberInput.size"
+            :type="settings.numberInput.type"
+            :min="settings.numberInput.min"
+            :max="settings.numberInput.max"
+            :editable="settings.numberInput.editable"
+          ></b-numberinput>-->
