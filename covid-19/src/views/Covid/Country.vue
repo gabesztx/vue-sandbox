@@ -104,187 +104,187 @@
   </div>
 </template>
 <script lang="ts">
-import router from '@/router';
-// import { columns } from '@/views/Covid/table-config/columns';
-import { countryData } from '@/services/covid-data.service';
-import { reactive } from '@vue/composition-api';
+  import router from '@/router';
+  // import { columns } from '@/views/Covid/table-config/columns';
+  import { countryData } from '@/services/covid-data.service';
+  import { reactive } from '@vue/composition-api';
 
-export default {
-  data() {
-    return {
-      isOpenSetting: false,
-    };
-  },
+  export default {
+    data() {
+      return {
+        isOpenSetting: false,
+      };
+    },
 
-  setup() {
-    const searchInput = reactive({
-      // rounded: true,
-      loading: false,
-      placeHolder: 'Keresés...',
-      customClass: 'searchInput',
-      icon: 'magnify',
-      size: 'is-small',
-      // iconRight: 'magnify',
-    });
-
-    const perPage = 10;
-    const table = reactive({
-      columns: columns,
-      data: countryData,
-      scrollable: false,
-      stickyHeader: false,
-      paginated: true,
-      paginationSimple: true,
-      paginationSize: 'is-small',
-      perPage: perPage,
-      subheading: 10,
-      striped: true,
-      currentPage: 1,
-      narrowed: false,
-      mobileCards: true,
-      hoverable: false,
-      showDetailIcon: false,
-      sortIconSize: 'is-small',
-      bordered: false,
-      sortIcon: 'menu-up', //'arrow-up'
-    });
-
-    const settings = reactive({
-      numberInput: {
-        controlsPosition: 'compact',
-        perPageNumber: 15,
+    setup() {
+      const searchInput = reactive({
+        // rounded: true,
+        loading: false,
+        placeHolder: 'Keresés...',
+        customClass: 'searchInput',
+        icon: 'magnify',
         size: 'is-small',
-        // type: 'is-warning',
-        controlRounded: true,
-        editable: false,
-        min: 1,
-        max: 15,
-      },
-    });
-
-    const onInput = (event: InputEvent, value: any) => {
-      // TODO: refactor, kiszervezés, speciális karakterek hiba kezelése
-      table.data = countryData.filter(item => {
-        let isFind = false;
-        Object.values(item).forEach((val: any) => {
-          const isMatch = new RegExp(value, 'i').test(val);
-          if (isMatch) {
-            isFind = true;
-          }
-        });
-        return isFind;
+        // iconRight: 'magnify',
       });
-    };
-    const onPageChange = (page: number) => {
-      table.currentPage = page;
-    };
 
-    const onFocus = () => {
-      searchInput.customClass = 'searchInput active-focus';
-    };
-    const onBlur = () => {
-      searchInput.customClass = 'searchInput';
-    };
-    const onClick = (routerLink: string) => {
-      // router.push({ path: '/' });
-      // router.push({ path: routerLink });
-      // router.push({ path: `/country/${params}` });
-    };
-    const onRowClass = (row, index) => {
-      // console.log('onRowClass', row, ' - ', index);
-      /*if (index === 1) {
+      const perPage = 10;
+      const table = reactive({
+        columns: columns,
+        data: countryData,
+        scrollable: false,
+        stickyHeader: false,
+        paginated: true,
+        paginationSimple: true,
+        paginationSize: 'is-small',
+        perPage: perPage,
+        subheading: 10,
+        striped: true,
+        currentPage: 1,
+        narrowed: false,
+        mobileCards: true,
+        hoverable: false,
+        showDetailIcon: false,
+        sortIconSize: 'is-small',
+        bordered: false,
+        sortIcon: 'menu-up', //'arrow-up'
+      });
+
+      const settings = reactive({
+        numberInput: {
+          controlsPosition: 'compact',
+          perPageNumber: 15,
+          size: 'is-small',
+          // type: 'is-warning',
+          controlRounded: true,
+          editable: false,
+          min: 1,
+          max: 15,
+        },
+      });
+
+      const onInput = (event: InputEvent, value: any) => {
+        // TODO: refactor, kiszervezés, speciális karakterek hiba kezelése
+        table.data = countryData.filter((item) => {
+          let isFind = false;
+          Object.values(item).forEach((val: any) => {
+            const isMatch = new RegExp(value, 'i').test(val);
+            if (isMatch) {
+              isFind = true;
+            }
+          });
+          return isFind;
+        });
+      };
+      const onPageChange = (page: number) => {
+        table.currentPage = page;
+      };
+
+      const onFocus = () => {
+        searchInput.customClass = 'searchInput active-focus';
+      };
+      const onBlur = () => {
+        searchInput.customClass = 'searchInput';
+      };
+      const onClick = (routerLink: string) => {
+        // router.push({ path: '/' });
+        // router.push({ path: routerLink });
+        // router.push({ path: `/country/${params}` });
+      };
+      const onRowClass = (row, index) => {
+        // console.log('onRowClass', row, ' - ', index);
+        /*if (index === 1) {
           return 'is-anyad-selected-apadat'; // első sorra  ráteszi a classt
         }*/
-    };
-    return {
-      onClick,
-      onInput,
-      onRowClass,
-      onFocus,
-      onBlur,
-      onPageChange,
-      table,
-      searchInput,
-      settings,
-    };
-  },
-};
-const columns = [
-  {
-    field: 'countryCode',
-    label: '',
-    width: 30,
-    component: 'cell-image',
-    path: `http://localhost:5000/static/flags/`,
-  },
-  {
-    // searchable: false,
-    field: 'country',
-    label: 'Ország',
-    sortable: true,
-    width: 180,
-    headerClass: 'customHead',
-    customSort: (a, b, isAsc) => {
-      const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
-      const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
-      return !isAsc ? BObj - AObj : AObj - BObj;
+      };
+      return {
+        onClick,
+        onInput,
+        onRowClass,
+        onFocus,
+        onBlur,
+        onPageChange,
+        table,
+        searchInput,
+        settings,
+      };
     },
-  },
-  {
-    field: 'casesNew',
-    label: 'Napi új esetek',
-    sortable: true,
-    centered: true,
-    component: 'cell-base',
-    headerClass: 'customHead',
-    visible: true,
-    customValue: v => (v === 'N/A' ? 'Nincs adat' : '+' + v),
-    customClass: v => (v === 'N/A' ? 'is-no-data' : ''),
-    customSort: (a, b, isAsc) => {
-      const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
-      const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
-      return !isAsc ? BObj - AObj : AObj - BObj;
+  };
+  const columns = [
+    {
+      field: 'countryCode',
+      label: '',
+      width: 30,
+      component: 'cell-image',
+      path: `http://localhost:5000/static/flags/`,
     },
-  },
-  {
-    field: 'deathsNew',
-    label: 'Napi új elhunytak',
-    sortable: true,
-    centered: true,
-    component: 'cell-base',
-    headerClass: 'customHead',
-    visible: true,
-    customValue: v => (v === 'N/A' ? 'Nincs adat' : '+' + v),
-    customClass: v => (v === 'N/A' ? 'is-no-data' : ''),
-    customSort: (a, b, isAsc) => {
-      const AObj = a.deathsNew === 'N/A' ? -1 : Number(a.deathsNew);
-      const BObj = b.deathsNew === 'N/A' ? -1 : Number(b.deathsNew);
-      return !isAsc ? BObj - AObj : AObj - BObj;
+    {
+      // searchable: false,
+      field: 'country',
+      label: 'Ország',
+      sortable: true,
+      width: 180,
+      headerClass: 'customHead',
+      customSort: (a, b, isAsc) => {
+        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
+        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
     },
-  },
-  {
-    field: 'casesActive',
-    label: 'Aktív esetek',
-    sortable: true,
-    centered: true,
-    headerClass: 'customHead',
-    visible: true,
-  },
-  {
-    field: 'casesCritical',
-    label: 'Kritikus esetek',
-    sortable: true,
-    centered: true,
-    headerClass: 'customHead',
-    visible: true,
-    customSort: (a, b, isAsc) => {
-      // TODO: refactor és kiszervezés
-      const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);
-      const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
-      return !isAsc ? BObj - AObj : AObj - BObj;
+    {
+      field: 'casesNew',
+      label: 'Napi új esetek',
+      sortable: true,
+      centered: true,
+      component: 'cell-base',
+      headerClass: 'customHead',
+      visible: true,
+      customValue: (v) => (v === 'N/A' ? 'Nincs adat' : '+' + v),
+      customClass: (v) => (v === 'N/A' ? 'is-no-data' : ''),
+      customSort: (a, b, isAsc) => {
+        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
+        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
     },
-  },
-];
+    {
+      field: 'deathsNew',
+      label: 'Napi új elhunytak',
+      sortable: true,
+      centered: true,
+      component: 'cell-base',
+      headerClass: 'customHead',
+      visible: true,
+      customValue: (v) => (v === 'N/A' ? 'Nincs adat' : '+' + v),
+      customClass: (v) => (v === 'N/A' ? 'is-no-data' : ''),
+      customSort: (a, b, isAsc) => {
+        const AObj = a.deathsNew === 'N/A' ? -1 : Number(a.deathsNew);
+        const BObj = b.deathsNew === 'N/A' ? -1 : Number(b.deathsNew);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
+    },
+    {
+      field: 'casesActive',
+      label: 'Aktív esetek',
+      sortable: true,
+      centered: true,
+      headerClass: 'customHead',
+      visible: true,
+    },
+    {
+      field: 'casesCritical',
+      label: 'Kritikus esetek',
+      sortable: true,
+      centered: true,
+      headerClass: 'customHead',
+      visible: true,
+      customSort: (a, b, isAsc) => {
+        // TODO: refactor és kiszervezés
+        const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);
+        const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
+        return !isAsc ? BObj - AObj : AObj - BObj;
+      },
+    },
+  ];
 </script>
 
 <!-- <b-numberinput

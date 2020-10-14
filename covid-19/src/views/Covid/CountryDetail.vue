@@ -37,17 +37,17 @@
   </div>
 </template>
 <script lang="ts">
-import router from '@/router';
+  import router from '@/router';
 
-export default {
-  setup() {
-    const onClick = () => {
-      router.push({ path: '/country' });
-    };
+  export default {
+    setup() {
+      const onClick = () => {
+        router.push({ path: '/country' });
+      };
 
-    return {
-      onClick,
-    };
-  },
-};
+      return {
+        onClick,
+      };
+    },
+  };
 </script>

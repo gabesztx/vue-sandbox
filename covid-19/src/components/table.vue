@@ -90,114 +90,114 @@
 </template>
 
 <script lang="ts">
-import { ref } from '@vue/composition-api';
+  import { ref } from '@vue/composition-api';
 
-export default {
-  name: 'v-table',
-  props: {
-    data: Array,
-    columns: Array,
-    bordered: Boolean,
-    striped: Boolean,
-    narrowed: Boolean,
-    hoverable: Boolean,
-    loading: Boolean,
-    focusable: Boolean,
+  export default {
+    name: 'v-table',
+    props: {
+      data: Array,
+      columns: Array,
+      bordered: Boolean,
+      striped: Boolean,
+      narrowed: Boolean,
+      hoverable: Boolean,
+      loading: Boolean,
+      focusable: Boolean,
 
-    /* Checkbox */
-    detailed: Boolean,
-    checkable: Boolean,
-    checkboxPosition: String,
-    checkedRows: Array,
-    isRowCheckable: Function,
-    headerCheckable: Boolean,
-    customIsChecked: Function,
+      /* Checkbox */
+      detailed: Boolean,
+      checkable: Boolean,
+      checkboxPosition: String,
+      checkedRows: Array,
+      isRowCheckable: Function,
+      headerCheckable: Boolean,
+      customIsChecked: Function,
 
-    /* Select */
-    selected: Object,
-    isRowSelectable: Function,
+      /* Select */
+      selected: Object,
+      isRowSelectable: Function,
 
-    mobileCards: Boolean,
-    cardLayout: Boolean,
-    defaultSort: [String, Array],
-    defaultSortDirection: String,
-    sortIcon: String,
-    sortIconSize: String,
-    sortMultiple: Boolean,
-    sortMultipleData: Array,
-    sortMultipleKey: String,
-    paginated: Boolean,
-    currentPage: Number,
-    perPage: [Number, String],
-    showDetailIcon: Boolean,
-    paginationSimple: Boolean,
-    paginationSize: String,
-    paginationPosition: String,
-    backendSorting: Boolean,
-    backendFiltering: Boolean,
-    rowClass: Function,
-    openedDetailed: Array,
-    hasDetailedVisible: Function,
-    detailKey: String,
-    customDetailRow: Boolean,
-    backendPagination: Boolean,
-    total: [Number, String],
-    iconPack: String,
-    mobileSortPlaceholder: String,
-    customRowKey: String,
-    draggable: Boolean,
-    scrollable: Boolean,
-    ariaNextLabel: String,
-    ariaPreviousLabel: String,
-    ariaPageLabel: String,
-    ariaCurrentLabel: String,
-    stickyHeader: Boolean,
-    height: [Number, String],
-    filtersEvent: String,
-    centered: Boolean,
-    subheading: [String, Number],
-    cellClass: String,
-    id: [String, Number],
-    isImage: Boolean,
-    // updateCell: Function,
-  },
+      mobileCards: Boolean,
+      cardLayout: Boolean,
+      defaultSort: [String, Array],
+      defaultSortDirection: String,
+      sortIcon: String,
+      sortIconSize: String,
+      sortMultiple: Boolean,
+      sortMultipleData: Array,
+      sortMultipleKey: String,
+      paginated: Boolean,
+      currentPage: Number,
+      perPage: [Number, String],
+      showDetailIcon: Boolean,
+      paginationSimple: Boolean,
+      paginationSize: String,
+      paginationPosition: String,
+      backendSorting: Boolean,
+      backendFiltering: Boolean,
+      rowClass: Function,
+      openedDetailed: Array,
+      hasDetailedVisible: Function,
+      detailKey: String,
+      customDetailRow: Boolean,
+      backendPagination: Boolean,
+      total: [Number, String],
+      iconPack: String,
+      mobileSortPlaceholder: String,
+      customRowKey: String,
+      draggable: Boolean,
+      scrollable: Boolean,
+      ariaNextLabel: String,
+      ariaPreviousLabel: String,
+      ariaPageLabel: String,
+      ariaCurrentLabel: String,
+      stickyHeader: Boolean,
+      height: [Number, String],
+      filtersEvent: String,
+      centered: Boolean,
+      subheading: [String, Number],
+      cellClass: String,
+      id: [String, Number],
+      isImage: Boolean,
+      // updateCell: Function,
+    },
 
-  setup(props: any, attr: any) {
-    const selectValue = ref(props.selected);
-    const checkedRowsValue = ref(props.checkedRows);
-    const onSelect = (value: any) => {
-      selectValue.value = value;
-      attr.emit('onSelectChange', value);
-    };
-    const onRowClick = (value: any) => {
-      attr.emit('rowClick', value);
-    };
-    const onCellClick = (value: any) => {
-      attr.emit('cellClick', value);
-    };
-    const onCheck = (value: any) => {
-      checkedRowsValue.value = value;
-      attr.emit('onCheckedChange', value);
-    };
-    const onPageChange = (page: number) => {
-      attr.emit('pageChange', page);
-    };
+    setup(props: any, attr: any) {
+      const selectValue = ref(props.selected);
+      const checkedRowsValue = ref(props.checkedRows);
+      const onSelect = (value: any) => {
+        selectValue.value = value;
+        attr.emit('onSelectChange', value);
+      };
+      const onRowClick = (value: any) => {
+        attr.emit('rowClick', value);
+      };
+      const onCellClick = (value: any) => {
+        attr.emit('cellClick', value);
+      };
+      const onCheck = (value: any) => {
+        checkedRowsValue.value = value;
+        attr.emit('onCheckedChange', value);
+      };
+      const onPageChange = (page: number) => {
+        attr.emit('pageChange', page);
+      };
 
-    const onUpdateCell = (cell, row) => {
-      attr.emit('updateCell', cell, row);
-    };
-    return {
-      onSelect,
-      onCheck,
-      onPageChange,
-      onRowClick,
-      onCellClick,
-      onUpdateCell,
-      selectValue,
-      checkedRowsValue,
-    };
-  },
-};
+      const onUpdateCell = (cell, row) => {
+        attr.emit('updateCell', cell, row);
+      };
+      return {
+        onSelect,
+        onCheck,
+        onPageChange,
+        onRowClick,
+        onCellClick,
+        onUpdateCell,
+        selectValue,
+        checkedRowsValue,
+      };
+    },
+  };
 </script>
 <style scoped></style>
 <!--<div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />-->

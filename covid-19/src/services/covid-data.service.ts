@@ -13,11 +13,11 @@ export const getWorldData = (): Promise<any> => {
   return http.get(url);
 };
 
-export const setCountryData = data => {
+export const setCountryData = (data) => {
   countryData = data;
 };
 
-export const setWorldData = data => {
+export const setWorldData = (data) => {
   worldData = data;
 };
 

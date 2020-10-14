@@ -11,21 +11,21 @@
   </div>
 </template>
 <script lang="ts">
-import router from '@/router';
-import { computed } from '@vue/composition-api';
+  import router from '@/router';
+  import { computed } from '@vue/composition-api';
 
-export default {
-  props: {
-    pagePos: Number,
-  },
-  setup(props) {
-    const slidePos = computed(() => `${props.pagePos * -100}%`);
-    const onClick = url => {
-      router.push({ path: url });
-      // router.replace(url);
-    };
+  export default {
+    props: {
+      pagePos: Number,
+    },
+    setup(props) {
+      const slidePos = computed(() => `${props.pagePos * -100}%`);
+      const onClick = (url) => {
+        router.push({ path: url });
+        // router.replace(url);
+      };
 
-    /*  const stopWatch = watch(
+      /*  const stopWatch = watch(
           () => props.pagePos,
           (newVal) => {
             console.log('change: ', newVal);
@@ -36,14 +36,14 @@ export default {
           // stopWatch();
         });*/
 
-    return {
-      slidePos,
-      onClick,
-    };
-  },
-};
+      return {
+        slidePos,
+        onClick,
+      };
+    },
+  };
 
-/*methods: {
+  /*methods: {
    // --------
    // ENTERING
    // --------

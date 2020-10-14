@@ -11,7 +11,6 @@
 
   export default {
     setup() {
-      
       const pagePos = ref(0);
       router.afterEach((to: Route, from: Route) => {
         // console.log('afterEach');
