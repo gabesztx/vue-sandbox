@@ -50,7 +50,9 @@ $table-head-cell-border-width: 1;
 @import './transition-animation';
 
 html {
-  background-color: rgb(243, 243, 243);
+  background-color: #f8f8f8;
+  //background-color: rgb(243, 243, 243);
+
   //background-color: rgb(255, 255, 255);
 }
 
@@ -96,20 +98,17 @@ body {
 $icon-dimension: 18px;
 $setting-anim-duration: 0.25s;
 $table-padding: 20px;
-
 .countryDetail {
   background-color: #f8f8f8;
-  .hero {
-    //background-color: #d9d9d9;
-    //background-image: url("../detail-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
   .country-flag {
     width: 100px;
     border-radius: 5px;
+  }
+  .box-header-content{
+    padding-bottom: 20px;
+  }
+  .box-body-content{
+
   }
 
   /*.country-flag {
