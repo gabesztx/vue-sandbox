@@ -100,15 +100,35 @@ $setting-anim-duration: 0.25s;
 $table-padding: 20px;
 .countryDetail {
   background-color: #f8f8f8;
-  .country-flag {
-    width: 100px;
-    border-radius: 5px;
-  }
-  .box-header-content{
-    padding-bottom: 20px;
-  }
-  .box-body-content{
-
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  .detail-content {
+    border: 1px solid rgba(219, 219, 219, 0.3);
+    box-shadow: none;
+    .header-content {
+      .country-flag {
+        width: 100px;
+        border-radius: 5px;
+      }
+    }
+    .body-content {
+      .card-item-content{
+        display: flex;
+        //justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .box{
+          flex-grow: 4;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          //margin-left:
+          //margin-right: 15px;
+          //margin-right: 100px;
+          //flex-grow: 1;
+        }
+      }
+    }
   }
 
   /*.country-flag {
