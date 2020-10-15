@@ -13,10 +13,6 @@
                 <div class="">Hello World</div>
                 <div class="">What is up?</div>
               </div>
-<!--              <div class="box">
-                <p class="">Hello World</p>
-                <p class="">What is up?</p>
-              </div>
               <div class="box">
                 <p class="">Hello World</p>
                 <p class="">What is up?</p>
@@ -32,7 +28,11 @@
               <div class="box">
                 <p class="">Hello World</p>
                 <p class="">What is up?</p>
-              </div>-->
+              </div>
+              <div class="box">
+                <p class="">Hello World</p>
+                <p class="">What is up?</p>
+              </div>
 
               <!--<div class="card">
                 <div class="card-content">
