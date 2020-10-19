@@ -5,15 +5,17 @@
         <div class="box detail-content">
           <div class="header-content">
             <img class="country-flag" src="http://localhost:5000/static/flags/ci.svg" />
-            <div class="title">United States</div>
+            <div class="title">{{$t('country')}}</div>
           </div>
           <div class="body-content">
             <div class="card-item-content">
+
               <div class="box">
                 <div class="">Hello World</div>
                 <div class="">What is up?</div>
               </div>
-              <div class="box">
+
+              <!--<div class="box">
                 <p class="">Hello World</p>
                 <p class="">What is up?</p>
               </div>
@@ -32,7 +34,7 @@
               <div class="box">
                 <p class="">Hello World</p>
                 <p class="">What is up?</p>
-              </div>
+              </div>-->
 
               <!--<div class="card">
                 <div class="card-content">
@@ -81,7 +83,7 @@
   import router from '@/router';
 
   export default {
-    setup(){
+    setup() {
       const onClick = () => {
         router.push({ path: '/country' });
       };

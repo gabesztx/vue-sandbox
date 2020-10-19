@@ -95,6 +95,20 @@ body {
   }
 }
 
+$detail-icon-button: 20px;
+.detail-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //width: $detail-icon-button;
+  //height: $detail-icon-button;
+  //padding: 3px;
+  //background-color: #00c4a7;
+  i{
+    font-size: 18px;
+  }
+}
+
 $icon-dimension: 18px;
 $setting-anim-duration: 0.25s;
 $table-padding: 20px;
@@ -106,19 +120,22 @@ $table-padding: 20px;
   .detail-content {
     border: 1px solid rgba(219, 219, 219, 0.3);
     box-shadow: none;
+
     .header-content {
       .country-flag {
         width: 100px;
         border-radius: 5px;
       }
     }
+
     .body-content {
-      .card-item-content{
+      .card-item-content {
         display: flex;
         //justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
-        .box{
+
+        .box {
           //flex-grow: 5;
           border-radius: 0;
           margin: 15px;

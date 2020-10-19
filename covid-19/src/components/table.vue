@@ -79,6 +79,7 @@
             :column="column"
             :row="props.row"
             :value="props.row[column.field]"
+            @componentCellEmit="onComponentCellEmit"
           ></component>
         </template>
         <template v-else>
@@ -186,6 +187,9 @@
       const onUpdateCell = (cell, row) => {
         attr.emit('updateCell', cell, row);
       };
+      const onComponentCellEmit = (value) => {
+        attr.emit('componentCellEmit', value);
+      };
       return {
         onSelect,
         onCheck,
@@ -193,6 +197,7 @@
         onRowClick,
         onCellClick,
         onUpdateCell,
+        onComponentCellEmit,
         selectValue,
         checkedRowsValue,
       };

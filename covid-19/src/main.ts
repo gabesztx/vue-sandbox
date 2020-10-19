@@ -26,10 +26,12 @@ import CountryComponent from '@/views/Covid/Country.vue';
 import CountryDetailComponent from '@/views/Covid/CountryDetail.vue';
 import CellBase from '@/components/cell/cell-base.vue';
 import CellImage from '@/components/cell/cell-image.vue';
+import CellButton from '@/components/cell/cell-button.vue';
 // Validation
 import { ValidationProvider, ValidationObserver } from 'vee-validate';
 import { required, length } from 'vee-validate/dist/rules';
 import { extend } from 'vee-validate';
+import i18n from './i18n';
 
 // extend('required', required);
 // extend('length', length);
@@ -81,8 +83,10 @@ Vue.component('v-page-country-detail', CountryDetailComponent);
 // Dynamic Cell Components
 Vue.component('cell-base', CellBase);
 Vue.component('cell-image', CellImage);
+Vue.component('cell-button', CellButton);
 
 new Vue({
   router,
+  i18n,
   render: (h) => h(App),
 }).$mount('#app');

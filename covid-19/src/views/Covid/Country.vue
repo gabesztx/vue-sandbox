@@ -95,6 +95,7 @@
                 :row-class="onRowClass"
                 @rowClick="onClick"
                 @pageChange="onPageChange"
+                @componentCellEmit="onComponentCellEmit"
               ></v-icell-table>
             </div>
           </div>
@@ -110,13 +111,13 @@
   import { reactive } from '@vue/composition-api';
 
   export default {
-    data() {
+    data(){
       return {
         isOpenSetting: false,
       };
     },
 
-    setup() {
+    setup(){
       const searchInput = reactive({
         // rounded: true,
         loading: false,
@@ -175,6 +176,9 @@
           return isFind;
         });
       };
+      const onComponentCellEmit = (value) => {
+        console.log('componentCellEmit', value);
+      };
       const onPageChange = (page: number) => {
         table.currentPage = page;
       };
@@ -203,6 +207,7 @@
         onFocus,
         onBlur,
         onPageChange,
+        onComponentCellEmit,
         table,
         searchInput,
         settings,
@@ -283,6 +288,12 @@
         const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
         return !isAsc ? BObj - AObj : AObj - BObj;
       },
+    },
+    {
+      field: '',
+      label: '',
+      width: 30,
+      component: 'cell-button',
     },
   ];
 </script>

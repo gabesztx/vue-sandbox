@@ -1,0 +1,18 @@
+{
+  "continent": "Valami",
+  "country": "Ország",
+  "population": "Lakosság száma",
+  "day": "Nap",
+  "time": "2020-10-15T21:45:06+00:00",
+  "casesNew": "Napi új esetek",
+  "deathsNew": "Napi új elhunytak",
+  "casesActive": "Aktív esetek",
+  "casesCritical": "Kritikus esetek",
+  "casesRecovered": "Gyógyúltak",
+  "cases1MPop": "Egymillió főre jutó esetek",
+  "tests1MPop": "Egymillió főre jutó tesztek",
+  "deaths1MPop": "Egymillió főre jutó elhunytak",
+  "casesTotal": "Összes eset",
+  "deathsTotal": "Elhunytak",
+  "testsTotal": "Összes teszt"
+}
