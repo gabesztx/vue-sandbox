@@ -293,7 +293,8 @@
       field: '',
       label: '',
       width: 30,
-      component: 'cell-button',
+      // component: 'cell-button',
+      component: 'cell-icon',
     },
   ];
 </script>

@@ -163,32 +163,32 @@
       // updateCell: Function,
     },
 
-    setup(props: any, attr: any) {
+    setup(props: any, { emit }) {
       const selectValue = ref(props.selected);
       const checkedRowsValue = ref(props.checkedRows);
       const onSelect = (value: any) => {
         selectValue.value = value;
-        attr.emit('onSelectChange', value);
+        emit('onSelectChange', value);
       };
       const onRowClick = (value: any) => {
-        attr.emit('rowClick', value);
+        emit('rowClick', value);
       };
       const onCellClick = (value: any) => {
-        attr.emit('cellClick', value);
+        emit('cellClick', value);
       };
       const onCheck = (value: any) => {
         checkedRowsValue.value = value;
-        attr.emit('onCheckedChange', value);
+        emit('onCheckedChange', value);
       };
       const onPageChange = (page: number) => {
-        attr.emit('pageChange', page);
+        emit('pageChange', page);
       };
 
       const onUpdateCell = (cell, row) => {
-        attr.emit('updateCell', cell, row);
+        emit('updateCell', cell, row);
       };
       const onComponentCellEmit = (value) => {
-        attr.emit('componentCellEmit', value);
+        emit('componentCellEmit', value);
       };
       return {
         onSelect,

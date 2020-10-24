@@ -27,6 +27,7 @@ import CountryDetailComponent from '@/views/Covid/CountryDetail.vue';
 import CellBase from '@/components/cell/cell-base.vue';
 import CellImage from '@/components/cell/cell-image.vue';
 import CellButton from '@/components/cell/cell-button.vue';
+import CellIcon from '@/components/cell/cell-icon.vue';
 // Validation
 import { ValidationProvider, ValidationObserver } from 'vee-validate';
 import { required, length } from 'vee-validate/dist/rules';
@@ -84,6 +85,7 @@ Vue.component('v-page-country-detail', CountryDetailComponent);
 Vue.component('cell-base', CellBase);
 Vue.component('cell-image', CellImage);
 Vue.component('cell-button', CellButton);
+Vue.component('cell-icon', CellIcon);
 
 new Vue({
   router,
