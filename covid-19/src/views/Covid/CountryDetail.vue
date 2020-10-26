@@ -1,27 +1,21 @@
+<!--<div class="title">{{ $t('country') }}</div>-->
 <template>
   <div class="page-content countryDetail">
     <section class="header-content hero is-white">
       <div class="hero-body">
         <div class="container">
-          <!--<div class="title">{{ $t('country') }}</div>-->
           <div class="country-header">
-
             <div class="country-left">
               <img class="country-flag" src="http://localhost:5000/static/flags/ci.svg" />
-              <div class="country-text">
-                <h1 class="title">Hungary</h1>
-                <h3 class="subtitle is-6">Last update <b>2012.13.11</b></h3>
+              <div class="country-text-box">
+                <div class="country-name">{{ dummyData.country }}</div>
+                <div class="last-update">Utoljára frissítve: <b>{{ dummyData.time }}</b></div>
+                <div class="country-number">Lakosság szám: <b>{{ dummyData.population }}</b></div>
               </div>
             </div>
-
             <div class="country-right">
               <div class="btn-content">
-                <b-button
-                  :class="'button'"
-                  :label="'Country'"
-                  :size="''"
-                  :type="'is-light'">
-                </b-button>
+                <b-button :class="'button'" :label="'Táblázat'" :type="'is-light'"></b-button>
               </div>
             </div>
           </div>
@@ -30,132 +24,82 @@
     </section>
     <section class="section body-content">
       <div class="container">
-        
         <div class="columns is-mobile">
           <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <div class="subtitle">Clients</div>
+            <template v-for="(columns, index) in layoutData">
+              <div class="columns" :key="index">
+                <template v-for="(name, index) in columns.row">
+                  <div :class="`column is-${12/layoutColumnsNumber}`" :key="index">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="subtitle">{{ name }}</div>
+                        <div class="title">{{ dummyData.detailData[name] }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </template>
               </div>
-            </div>
+            </template>
           </div>
         </div>
-    <!--    <div class="columns is-mobile">
-          <div class="column">
-            <div class="columns">
-              <div class="column is-2">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="subtitle">Clients</div>
-                  </div>
-                </div>
-              </div>
-              <div class="column is-2">
-                <div class="card">
-                  <div class="card-content">
-                    <div class="subtitle">Clients</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>-->
       </div>
-
-
     </section>
-
-
-    <!--<section class="section">
-      <div class="container">
-        <div class="box detail-content">
-          <div class="header-content">
-            <img class="country-flag" src="http://localhost:5000/static/flags/ci.svg" />
-            <div class="title">{{ $t('country') }}</div>
-          </div>
-          <div class="body-content">
-            <div class="card-item-content">
-
-              <div class="box">
-                <div class="">Hello World</div>
-                <div class="">What is up?</div>
-              </div>
-
-              <div class="box">
-                <p class="">Hello World</p>
-                <p class="">What is up?</p>
-              </div>
-              <div class="box">
-                <p class="">Hello World</p>
-                <p class="">What is up?</p>
-              </div>
-              <div class="box">
-                <p class="">Hello World</p>
-                <p class="">What is up?</p>
-              </div>
-              <div class="box">
-                <p class="">Hello World</p>
-                <p class="">What is up?</p>
-              </div>
-              <div class="box">
-                <p class="">Hello World</p>
-                <p class="">What is up?</p>
-              </div>
-
-              &lt;!&ndash;<div class="card">
-                <div class="card-content">
-                  <p class="">Hello World</p>
-                  <p class="">What is up?</p>
-                </div>
-              </div>&ndash;&gt;
-            </div>
-            &lt;!&ndash;  <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <div class="tile">
-                    <div class="">Clients </div>
-                    <div class="">512</div>
-
-                  </div>
-                </div>
-              </div>&ndash;&gt;
-            &lt;!&ndash; <div class="level">
-             <div class="level-left">
-               <div class="level-item">
-               </div>
-               <div class="level-item">
-               </div>
-             </div>
-             <div class="level-right">
-             </div>
-           </div>&ndash;&gt;
-            &lt;!&ndash;<div class="columns">
-              <div class="column is-2">
-                <div class="card">
-                  <div class="card-content">
-                    <h1 class="title">512</h1>
-                    <h3 class="subtitle is-spaced">Clients </h3>
-                  </div>
-                </div>
-              </div>
-            </div>&ndash;&gt;
-          </div>
-        </div>
-      </div>
-    </section>-->
-    <!--<button v-on:click="onClick">Back</button>-->
   </div>
 </template>
 <script lang="ts">
   import router from '@/router';
+  import { onMounted, ref } from '@vue/composition-api';
+
+  const dummyData = {
+    continent: 'Europe',
+    country: 'Hungary',
+    day: '2020-10-25',
+    time: '2020-10-25T02:30:06+00:00',
+    countryCode: 'hu',
+    population: 9652579,
+
+    detailData: {
+      casesNew: 1820,
+      casesActive: 38701,
+      casesCritical: 205,
+      casesRecovered: 16007,
+      cases1MPop: 5812,
+      casesTotal: 56098,
+      deathsNew: 38,
+      deaths1MPop: 144,
+      deathsTotal: 1390,
+      tests1MPop: 99605,
+      testsTotal: 961441,
+    },
+  };
+
+  const getRowLayout = (layoutColumnsNumber: number) => {
+    const columns = [] as any;
+    let column = 0;
+    Object.keys(dummyData.detailData).forEach((key, index) => {
+      if (index % layoutColumnsNumber === 0) {
+        columns.push({ row: [] });
+        column++;
+      }
+      columns[column - 1].row.push(key);
+    });
+    return columns;
+  };
 
   export default {
     setup(){
-      const onClick = () => {
-        router.push({ path: '/country' });
-      };
+      const layoutColumnsNumber = 3;
+      const layoutData = ref(getRowLayout(layoutColumnsNumber));
+      // const detailData = ref(dummyData.detailData);
+      // onMounted(() => {});
+      // const onClick = () => { router.push({ path: '/country' })};
 
       return {
-        onClick,
+        layoutData,
+        layoutColumnsNumber,
+        dummyData,
+        // detailData,
+        // onClick,
       };
     },
   };

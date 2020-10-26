@@ -6,10 +6,9 @@
       :type="'is-primary'"
       :size="'is-small'"
       :label="'Részletek'"
-      @click="onClick">
-    </b-button>
+      @click="onClick"
+    ></b-button>
   </div>
-
 </template>
 
 <script>

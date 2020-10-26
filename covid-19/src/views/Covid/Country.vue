@@ -111,13 +111,13 @@
   import { reactive } from '@vue/composition-api';
 
   export default {
-    data(){
+    data() {
       return {
         isOpenSetting: false,
       };
     },
 
-    setup(){
+    setup() {
       const searchInput = reactive({
         // rounded: true,
         loading: false,

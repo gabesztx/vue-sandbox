@@ -1,13 +1,7 @@
 <template>
   <div class="detail-icon">
-     <b-button
-       :type="'is-primary'"
-       :size="'is-small'"
-       :icon-right="'mdi mdi-eye'"
-       @click="onClick">
-     </b-button>
+    <b-button :type="'is-primary'" :size="'is-small'" :icon-right="'mdi mdi-eye'" @click="onClick"></b-button>
   </div>
-
 </template>
 
 <script>
@@ -20,8 +14,6 @@
       value: [String, Number],
     },
     setup(props, { emit }) {
-
-
       const onClick = () => {
         console.log('click');
         // emit('componentCellEmit', props.row);
