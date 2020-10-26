@@ -7,23 +7,25 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/',
     // name: 'home',
+    path: '/',
     component: () => import('@/views/Covid/Home.vue'),
     // beforeEnter: worldBeforeEnter,
   },
   {
-    path: '/country',
     // name: 'country',
+    path: '/country',
     meta: { slide: 0 },
-    component: () => import('@/views/Covid/Page.vue'),
+    component: () => import('@/views/Covid/Country.vue'),
+    // component: () => import('@/views/Covid/Page.vue'),
     beforeEnter: countryBeforeEnter,
   },
   {
-    path: '/country/:id',
     // name: 'country-detail',
+    path: '/country/:id',
     meta: { slide: 1 },
-    component: () => import('@/views/Covid/Page.vue'),
+    component: () => import('@/views/Covid/CountryDetail.vue'),
+    // component: () => import('@/views/Covid/Page.vue'),
   },
   {
     path: '/*',

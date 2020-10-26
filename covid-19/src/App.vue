@@ -1,13 +1,14 @@
 <template>
   <div class="main-content">
-    <router-view :pagePos="pagePos" />
+    <router-view/>
+    <!--<router-view :pagePos="pagePos" />-->
   </div>
 </template>
 
 <script lang="ts">
   import router from '@/router';
   import { ref } from '@vue/composition-api';
-  import { NavigationGuardNext, Route } from 'vue-router';
+  import { Route } from 'vue-router';
 
   export default {
     setup() {

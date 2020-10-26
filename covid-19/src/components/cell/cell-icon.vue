@@ -15,8 +15,7 @@
     },
     setup(props, { emit }) {
       const onClick = () => {
-        console.log('click');
-        // emit('componentCellEmit', props.row);
+        emit('componentCellEmit', props.row);
       };
       return {
         onClick,

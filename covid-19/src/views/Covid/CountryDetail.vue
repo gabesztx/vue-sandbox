@@ -48,7 +48,7 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { onMounted, ref } from '@vue/composition-api';
+  import { onMounted, onUnmounted, ref } from '@vue/composition-api';
 
   const dummyData = {
     continent: 'Europe',
@@ -91,8 +91,15 @@
       const layoutColumnsNumber = 3;
       const layoutData = ref(getRowLayout(layoutColumnsNumber));
       // const detailData = ref(dummyData.detailData);
-      // onMounted(() => {});
-      const onClick = () => { router.push({ path: '/country' })};
+      onMounted(() => {
+        // console.log('page 2 mount');
+      });
+      onUnmounted(() => {
+        // console.log('page 2 destroy');
+      });
+      const onClick = () => {
+        router.push({ path: '/country' })
+      };
 
       return {
         layoutData,

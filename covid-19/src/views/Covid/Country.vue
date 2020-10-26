@@ -95,7 +95,7 @@
                 :row-class="onRowClass"
                 @rowClick="onClick"
                 @pageChange="onPageChange"
-                @componentCellEmit="onComponentCellEmit"
+                @componentCellEmit="onNavigateToDetail"
               ></v-icell-table>
             </div>
           </div>
@@ -108,7 +108,7 @@
   import router from '@/router';
   // import { columns } from '@/views/Covid/table-config/columns';
   import { countryData } from '@/services/covid-data.service';
-  import { reactive } from '@vue/composition-api';
+  import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
     data() {
@@ -176,8 +176,8 @@
           return isFind;
         });
       };
-      const onComponentCellEmit = (value) => {
-        console.log('componentCellEmit', value);
+      const onNavigateToDetail = (value) => {
+        console.log('onNavigateToDetail', value);
       };
       const onPageChange = (page: number) => {
         table.currentPage = page;
@@ -200,6 +200,13 @@
           return 'is-anyad-selected-apadat'; // első sorra  ráteszi a classt
         }*/
       };
+
+      onMounted(() => {
+        // console.log('page 1 mount');
+      });
+      onUnmounted(() => {
+        // console.log('page 2 destroy');
+      });
       return {
         onClick,
         onInput,
@@ -207,7 +214,7 @@
         onFocus,
         onBlur,
         onPageChange,
-        onComponentCellEmit,
+        onNavigateToDetail,
         table,
         searchInput,
         settings,
