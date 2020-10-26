@@ -15,7 +15,7 @@
             </div>
             <div class="country-right">
               <div class="btn-content">
-                <b-button :class="'button'" :label="'Táblázat'" :type="'is-light'"></b-button>
+                <b-button :class="'button'" :label="'Táblázat'" :type="'is-light'" @click="onClick"></b-button>
               </div>
             </div>
           </div>
@@ -92,14 +92,14 @@
       const layoutData = ref(getRowLayout(layoutColumnsNumber));
       // const detailData = ref(dummyData.detailData);
       // onMounted(() => {});
-      // const onClick = () => { router.push({ path: '/country' })};
+      const onClick = () => { router.push({ path: '/country' })};
 
       return {
         layoutData,
         layoutColumnsNumber,
         dummyData,
         // detailData,
-        // onClick,
+        onClick,
       };
     },
   };
