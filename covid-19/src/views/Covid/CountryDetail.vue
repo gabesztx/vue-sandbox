@@ -90,24 +90,24 @@
     setup(){
       const layoutColumnsNumber = 3;
       const layoutData = ref(getRowLayout(layoutColumnsNumber));
-      // const detailData = ref(dummyData.detailData);
-      onMounted(() => {
-        // console.log('page 2 mount');
-      });
-      onUnmounted(() => {
-        // console.log('page 2 destroy');
-      });
       const onClick = () => {
-        router.push({ path: '/country' })
+        router.push({ path: '/countries' });
       };
 
       return {
         layoutData,
         layoutColumnsNumber,
         dummyData,
-        // detailData,
         onClick,
       };
     },
   };
 </script>
+
+<!--
+onMounted(() => {
+// console.log('page 2 mount');
+});
+onUnmounted(() => {
+// console.log('page 2 destroy');
+});-->

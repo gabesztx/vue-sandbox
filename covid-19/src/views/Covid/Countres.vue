@@ -1,4 +1,3 @@
-<!--<button v-on:click="onClick('/country/hungary')">Country Detail</button>-->
 <template>
   <div class="page-content country">
     <!--Header Content-->
@@ -111,13 +110,13 @@
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    data() {
+    data(){
       return {
         isOpenSetting: false,
       };
     },
 
-    setup() {
+    setup(){
       const searchInput = reactive({
         // rounded: true,
         loading: false,
@@ -176,8 +175,8 @@
           return isFind;
         });
       };
-      const onNavigateToDetail = (value) => {
-        console.log('onNavigateToDetail', value);
+      const onNavigateToDetail = ({ countryCode }) => {
+        router.push({ path: `/countries/${countryCode}` });
       };
       const onPageChange = (page: number) => {
         table.currentPage = page;

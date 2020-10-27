@@ -12,7 +12,7 @@
       const show = ref(true);
       const slideAnim = ref(``);
       const onClick = () => {
-        router.push({ path: '/country' });
+        router.push({ path: '/countries' });
       };
       return {
         onClick,

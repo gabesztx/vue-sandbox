@@ -8,29 +8,26 @@
 <script lang="ts">
   import router from '@/router';
   import { ref } from '@vue/composition-api';
-  import { Route } from 'vue-router';
 
   export default {
     setup() {
-      const pagePos = ref(0);
-      router.afterEach((to: Route, from: Route) => {
-        // console.log('afterEach');
-        pagePos.value = to.meta.slide;
-      });
+      // const pagePos = ref(0);
+      /*router.afterEach((to: Route, from: Route) => {
+        // pagePos.value = to.meta.slide;
+        console.log('afterEach');
+      });*/
+     /* router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
+        console.log('beforeEach');
+        next();
+      });*/
 
-      /*
-      router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
-        // console.log('beforeEach');
+      /*router.beforeResolve((to: Route, from: Route, next: NavigationGuardNext) => {
+        console.log('beforeResolve');
         next();
-      });
-      router.beforeResolve((to: Route, from: Route, next: NavigationGuardNext) => {
-        // console.log('beforeEach');
-        next();
-      });
-      */
+      });*/
 
       return {
-        pagePos,
+        // pagePos,
       };
     },
   };

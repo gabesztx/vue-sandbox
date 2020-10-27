@@ -32,12 +32,17 @@ app.get('/continent', (req, res) => {
 app.get('/world', (req, res) => {
   return res.send(covidDataService.getCovid19ContinentDB()[0]);
 });
-app.get('/country', (req, res) => {
+app.get('/countries', (req, res) => {
   return res.send(covidDataService.getCovid19CountryDB());
 });
+app.get('/countries/:countryCode', (req, res) => {
+  return res.send(covidDataService.getCovid19CountryDetail(req.params.countryCode));
+});
+
 
 // server.listen(port, () => console.log(`status: running / port: ${port}`));
-server.listen(port, () => {});
+server.listen(port, () => {
+});
 
 covidDataService.transformCovidDbData();
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');

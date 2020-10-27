@@ -1,40 +1,43 @@
 import Vue from 'vue';
-import VueRouter, { RouteConfig } from 'vue-router';
-import { countryBeforeEnter } from '@/services/covid-country-data.quard';
-import { worldBeforeEnter } from '@/services/covid-world-data.quard';
+import VueRouter, { NavigationGuardNext, Route, RouteConfig } from 'vue-router';
+import { countryBeforeEnter, countryDetailBeforeEnter } from '@/services/covid-data.quard';
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
+
   {
     // name: 'home',
-    path: '/',
+    path: '/home',
     component: () => import('@/views/Covid/Home.vue'),
-    // beforeEnter: worldBeforeEnter,
   },
+
   {
-    // name: 'country',
-    path: '/country',
-    meta: { slide: 0 },
-    component: () => import('@/views/Covid/Country.vue'),
-    // component: () => import('@/views/Covid/Page.vue'),
+    path: '/countries',
+    // name: 'list',
+    // meta: { slide: 0 },
     beforeEnter: countryBeforeEnter,
+    component: () => import('@/views/Covid/Countres.vue'),
+    // component: () => import('@/views/Covid/Page.vue'),
   },
   {
     // name: 'country-detail',
-    path: '/country/:id',
-    meta: { slide: 1 },
+    // meta: { slide: 1 },
+    path: '/countries/:countryCode',
+    beforeEnter: countryDetailBeforeEnter,
     component: () => import('@/views/Covid/CountryDetail.vue'),
     // component: () => import('@/views/Covid/Page.vue'),
   },
   {
     path: '/*',
-    redirect: '/',
+    redirect: '/home',
   },
-  {
-    path: '/',
-    redirect: '/',
-  },
+   {
+     path: '/',
+     redirect: '/home',
+   },
+
+
 ];
 
 const router = new VueRouter({
@@ -42,5 +45,26 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
+
+/*router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
+  console.log('beforeEach');
+  if (to.params.country) {
+    console.log('vaaaan');
+    // router.replace('/home');
+    // next({path:'/'});
+    /!*getCountryDetailData(to.params.country).then((res) => {
+      if (res.data) {
+        console.log('RES', res);
+      } else {
+        // console.log('NOOP');
+        router.push({ path: `/list` });
+      }
+    });*!/
+  } else {
+    next();
+  }
+
+});*/
+
 
 export default router;

@@ -38,7 +38,7 @@ const transformCovidDbData = () => {
       map((data) => transformCamelizeKeys(data)),
       map((data) => deleteNoCountryData(data)),
       map((data) => separateContinentData(data)),
-      switchMap((items) => writeCovidDataInFile$(items))
+      switchMap((items) => writeCovidDataInFile$(items)),
     )
     .subscribe((res) => {
       console.log('DB Data Done!');
@@ -51,12 +51,19 @@ const getCovid19CountryDB = () => {
   return JSON.parse(JSON.stringify(covid19CountryDB));
 };
 
+const getCovid19CountryDetail = (countryCode) => {
+  const countryList = getCovid19CountryDB();
+  const countryDetail = countryList.find((data) => data.countryCode === countryCode);
+  return countryDetail || false;
+};
+
 const getCovid19ContinentDB = () => {
   return JSON.parse(JSON.stringify(covid19ContinentDB));
 };
 
 module.exports = {
   transformCovidDbData: transformCovidDbData,
+  getCovid19CountryDetail: getCovid19CountryDetail,
   getCovid19CountryDB: getCovid19CountryDB,
   getCovid19ContinentDB: getCovid19ContinentDB,
 };
