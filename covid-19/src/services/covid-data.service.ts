@@ -1,28 +1,20 @@
 import http from 'axios';
 
-export let countryData = [];
-export let worldData = [];
+export let countriesData = [];
+export let countryDetailData = [];
 
 export const getCountries = (): Promise<any> => {
-  const url = `http://localhost:5000/countries`;
-  return http.get(url);
+  return http.get(`http://localhost:5000/countries`);
 };
-export const setCountries = (data) => {
-  countryData = data;
-};
-
-
 export const getCountryDetail = (countryCode): Promise<any> => {
-  const url = `http://localhost:5000/countries/${countryCode}`;
-  return http.get(url);
+  return http.get(`http://localhost:5000/countries/${countryCode}`);
 };
 
-export const getWorldData = (): Promise<any> => {
-  const url = `http://localhost:5000/world`;
-  return http.get(url);
+export const setCountries = (data) => {
+  countriesData = data;
 };
 
-
-export const setWorldData = (data) => {
-  worldData = data;
+export const setCountryDetailData = (data) => {
+  console.log('setCountryDetailData', data);
+  countryDetailData = data;
 };

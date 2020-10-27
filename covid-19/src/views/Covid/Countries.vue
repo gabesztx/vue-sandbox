@@ -106,7 +106,7 @@
 <script lang="ts">
   import router from '@/router';
   // import { columns } from '@/views/Covid/table-config/columns';
-  import { countryData } from '@/services/covid-data.service';
+  import { countriesData } from '@/services/covid-data.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
@@ -130,7 +130,7 @@
       const perPage = 10;
       const table = reactive({
         columns: columns,
-        data: countryData,
+        data: countriesData,
         scrollable: false,
         stickyHeader: false,
         paginated: true,
@@ -164,7 +164,7 @@
 
       const onInput = (event: InputEvent, value: any) => {
         // TODO: refactor, kiszervezés, speciális karakterek hiba kezelése
-        table.data = countryData.filter((item) => {
+        table.data = countriesData.filter((item) => {
           let isFind = false;
           Object.values(item).forEach((val: any) => {
             const isMatch = new RegExp(value, 'i').test(val);

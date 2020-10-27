@@ -22,7 +22,7 @@ import LegendComponent from '@/components/legend.vue';
 import ButtonComponent from '@/components/button.vue';
 import TableComponent from '@/components/table.vue';
 import PageComponent from '@/views/Covid/Page.vue';
-import CountryComponent from '@/views/Covid/Countres.vue';
+import CountryComponent from '@/views/Covid/Countries.vue';
 import CountryDetailComponent from '@/views/Covid/CountryDetail.vue';
 import CellBase from '@/components/cell/cell-base.vue';
 import CellImage from '@/components/cell/cell-image.vue';

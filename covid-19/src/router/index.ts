@@ -17,7 +17,7 @@ const routes: Array<RouteConfig> = [
     // name: 'list',
     // meta: { slide: 0 },
     beforeEnter: countryBeforeEnter,
-    component: () => import('@/views/Covid/Countres.vue'),
+    component: () => import('@/views/Covid/Countries.vue'),
     // component: () => import('@/views/Covid/Page.vue'),
   },
   {
