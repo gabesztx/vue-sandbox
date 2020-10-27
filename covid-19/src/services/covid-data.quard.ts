@@ -10,7 +10,7 @@ export const countryBeforeEnter = (to: Route, from: Route, next: NavigationGuard
 };
 
 export const countryDetailBeforeEnter = (to: Route, from: Route, next: NavigationGuardNext) => {
-  getCountryDetail(to.params.countryCode).then(res => {
+  getCountryDetail(to.params.countryCode).then((res) => {
     if (!res.data) {
       router.push({ path: '/countries' });
       next(false);

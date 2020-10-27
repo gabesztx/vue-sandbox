@@ -1,6 +1,6 @@
 <template>
   <div class="main-content">
-    <router-view/>
+    <router-view />
     <!--<router-view :pagePos="pagePos" />-->
   </div>
 </template>
@@ -16,7 +16,7 @@
         // pagePos.value = to.meta.slide;
         console.log('afterEach');
       });*/
-     /* router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
+      /* router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
         console.log('beforeEach');
         next();
       });*/

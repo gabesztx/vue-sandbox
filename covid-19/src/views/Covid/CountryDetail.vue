@@ -9,8 +9,14 @@
               <img class="country-flag" src="http://localhost:5000/static/flags/ci.svg" />
               <div class="country-text-box">
                 <div class="country-name">{{ dummyData.country }}</div>
-                <div class="last-update">Utoljára frissítve: <b>{{ dummyData.time }}</b></div>
-                <div class="country-number">Lakosság szám: <b>{{ dummyData.population }}</b></div>
+                <div class="last-update">
+                  Utoljára frissítve:
+                  <b>{{ dummyData.time }}</b>
+                </div>
+                <div class="country-number">
+                  Lakosság szám:
+                  <b>{{ dummyData.population }}</b>
+                </div>
               </div>
             </div>
             <div class="country-right">
@@ -29,7 +35,7 @@
             <template v-for="(columns, index) in layoutData">
               <div class="columns" :key="index">
                 <template v-for="(name, index) in columns.row">
-                  <div :class="`column is-${12/layoutColumnsNumber}`" :key="index">
+                  <div :class="`column is-${12 / layoutColumnsNumber}`" :key="index">
                     <div class="card">
                       <div class="card-content">
                         <div class="subtitle">{{ name }}</div>
@@ -87,7 +93,7 @@
   };
 
   export default {
-    setup(){
+    setup() {
       const layoutColumnsNumber = 3;
       const layoutData = ref(getRowLayout(layoutColumnsNumber));
       const onClick = () => {

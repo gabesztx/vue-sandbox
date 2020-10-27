@@ -88,7 +88,6 @@ Vue.component('cell-image', CellImage);
 Vue.component('cell-button', CellButton);
 Vue.component('cell-icon', CellIcon);
 
-
 new Vue({
   router,
   i18n,

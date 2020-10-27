@@ -5,7 +5,6 @@ import { countryBeforeEnter, countryDetailBeforeEnter } from '@/services/covid-d
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
-
   {
     // name: 'home',
     path: '/home',
@@ -32,12 +31,10 @@ const routes: Array<RouteConfig> = [
     path: '/*',
     redirect: '/home',
   },
-   {
-     path: '/',
-     redirect: '/home',
-   },
-
-
+  {
+    path: '/',
+    redirect: '/home',
+  },
 ];
 
 const router = new VueRouter({
@@ -65,6 +62,5 @@ const router = new VueRouter({
   }
 
 });*/
-
 
 export default router;
