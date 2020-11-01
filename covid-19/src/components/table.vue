@@ -35,7 +35,6 @@
     @check="onCheck"
     @click="onRowClick"
   >
-    <!--REFACTOR paginated -->
     <!-- No Found -->
     <template slot="empty">
       <div class="no-found-content">
@@ -66,12 +65,6 @@
       :custom-sort="column.customSort"
       :custom-key="column.customKey"
     >
-      <!-- thead -->
-      <!--<template v-slot:header>
-        {{ column.label }}
-      </template>-->
-
-      <!-- tbody -->
       <div class="cell-content">
         <template v-if="column.component">
           <component
@@ -160,7 +153,6 @@
       cellClass: String,
       id: [String, Number],
       isImage: Boolean,
-      // updateCell: Function,
     },
 
     setup(props: any, { emit }) {
@@ -183,7 +175,6 @@
       const onPageChange = (page: number) => {
         emit('pageChange', page);
       };
-
       const onUpdateCell = (cell, row) => {
         emit('updateCell', cell, row);
       };
@@ -205,17 +196,3 @@
   };
 </script>
 <style scoped></style>
-<!--<div class="td-img" :style="{ backgroundImage: `url(${props.row[column.field]})` }" />-->
-<!--
-<b-table-column :field="columns[0].field" v-slot="props" :width="columns[0].width">
-<div class="img-content">
-  <img class="img-flag" v-bind:src="props.row.countryCode">
-</div>
-</b-table-column>
-<b-table-column
-  :field="columns[1].field"
-  :label="columns[1].label"
-  v-slot="props"
->
-{{ props.row.countryText }}
-</b-table-column>-->
