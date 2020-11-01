@@ -15,6 +15,6 @@ export const setCountries = (data) => {
 };
 
 export const setCountryDetailData = (data) => {
-  console.log('setCountryDetailData', data);
+  console.log('setCountryDetailData');
   countryDetailData = data;
 };

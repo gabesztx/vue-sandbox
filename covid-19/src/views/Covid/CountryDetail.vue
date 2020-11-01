@@ -55,6 +55,7 @@
 <script lang="ts">
   import router from '@/router';
   import { onMounted, onUnmounted, ref } from '@vue/composition-api';
+  import { countryDetailData } from '@/services/covid-data.service';
 
   const dummyData = {
     continent: 'Europe',
@@ -79,6 +80,8 @@
     },
   };
 
+  const headerData = ['continent', 'country', 'day', 'time', 'countryCode', 'population'];
+
   const getRowLayout = (layoutColumnsNumber: number) => {
     const columns = [] as any;
     let column = 0;
@@ -92,8 +95,38 @@
     return columns;
   };
 
+  const getDetailData = () => {
+    // console.log(countryDetailData);
+    let newData = {};
+
+    Object.keys(countryDetailData).forEach((key) => {
+      const isDetail = headerData.find((item) => key === item);
+      if (isDetail) {
+        newData[key] = countryDetailData[key];
+        // console.log('isDetail');
+      } else {
+        // newData['detailData'] =
+      }
+    });
+
+    console.log('newData', newData);
+
+
+    /* if (key === 'country' || key === 'continent' || key === 'continent' || key === 'population') {
+          console.log('óóóó');
+        } else {
+          console.log('key', key);
+        }*/
+
+    // eslint-disable-next-line no-prototype-builtins
+    // const isDetail = countryDetailData.hasOwnProperty('continent');
+    // const data = {};
+  };
+
   export default {
-    setup() {
+    setup(){
+      // console.log('countryDetailData');
+      getDetailData();
       const layoutColumnsNumber = 3;
       const layoutData = ref(getRowLayout(layoutColumnsNumber));
       const onClick = () => {
