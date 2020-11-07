@@ -10,7 +10,6 @@ const routes: Array<RouteConfig> = [
     path: '/home',
     component: () => import('@/views/Covid/Home.vue'),
   },
-
   {
     path: '/countries',
     // name: 'list',
@@ -42,25 +41,5 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
-
-/*router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
-  console.log('beforeEach');
-  if (to.params.country) {
-    console.log('vaaaan');
-    // router.replace('/home');
-    // next({path:'/'});
-    /!*getCountryDetailData(to.params.country).then((res) => {
-      if (res.data) {
-        console.log('RES', res);
-      } else {
-        // console.log('NOOP');
-        router.push({ path: `/list` });
-      }
-    });*!/
-  } else {
-    next();
-  }
-
-});*/
 
 export default router;

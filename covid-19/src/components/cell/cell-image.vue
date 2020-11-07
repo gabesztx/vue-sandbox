@@ -12,7 +12,8 @@
       value: String,
     },
     setup(props) {
-      const getImagePath = computed(() => `url(${props.column.path}${props.value}.svg)`);
+      const path = `http://localhost:5000/static/flags/`;
+      const getImagePath = computed(() => `url(${path}${props.value}.svg)`);
       return {
         getImagePath,
       };

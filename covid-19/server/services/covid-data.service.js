@@ -47,13 +47,30 @@ const transformCovidDbData = () => {
     });
 };
 
+const getTransformCountryDetailData = (data) => {
+  const countryKeys = ['continent', 'country', 'day', 'time', 'countryCode', 'population'];
+  const detailData = { covidData: {} };
+  Object.keys(data).forEach((key) => {
+    const isDetail = countryKeys.find((item) => key === item);
+    if (isDetail) {
+      detailData[key] = data[key];
+    } else {
+      detailData.covidData[key] = data[key];
+    }
+  });
+  return detailData;
+};
+
 const getCovid19CountryDB = () => {
   return JSON.parse(JSON.stringify(covid19CountryDB));
 };
 
 const getCovid19CountryDetail = (countryCode) => {
   const countryList = getCovid19CountryDB();
-  const countryDetail = countryList.find((data) => data.countryCode === countryCode);
+  let countryDetail = countryList.find((data) => data.countryCode === countryCode);
+  if (countryDetail) {
+    countryDetail = getTransformCountryDetailData(countryDetail);
+  }
   return countryDetail || false;
 };
 

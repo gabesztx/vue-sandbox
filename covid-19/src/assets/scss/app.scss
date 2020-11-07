@@ -49,14 +49,7 @@ $table-head-cell-border-width: 1;
 @import '~buefy/src/scss/buefy';
 @import './transition-animation';
 
-html {
-  background-color: #f8f8f8;
-  //background-color: rgb(243, 243, 243);
-
-  //background-color: rgb(255, 255, 255);
-}
-
-body {
+html, body {
   font-family: 'Nunito Sans', sans-serif; // 200;300;400;600
 }
 
@@ -100,10 +93,6 @@ $detail-icon-button: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  //width: $detail-icon-button;
-  //height: $detail-icon-button;
-  //padding: 3px;
-  //background-color: #00c4a7;
   i {
     font-size: 18px;
   }
@@ -122,35 +111,42 @@ $table-padding: 20px;
 
       .country-left {
         display: flex;
-        //align-items: center;
+
         .country-flag {
-          width: 150px;
+          width: 160px;
           border-radius: 4px;
         }
+
         .country-text-box {
           padding-left: 25px;
-          .country-name{
+
+          .country-name {
             font-weight: 600;
             font-size: 30px;
           }
         }
       }
+
       .country-right {
         display: flex;
         align-items: center;
-        .btn-content {}
+
+        .btn-content {
+        }
       }
     }
   }
 
   .body-content {
     padding-top: 20px;
-    .card{
+
+    .card {
       //border: 1px solid rgba(219, 219, 219, 0.5);
       //box-shadow: none;
     }
   }
 }
+
 .country {
   .body-content {
     padding-top: 0;
@@ -327,7 +323,6 @@ $table-padding: 20px;
 
               .cell-content {
                 .cell-image {
-                  //padding: 10px 5px;
                   width: 30px;
                   height: 25px;
                   background-repeat: no-repeat;
@@ -350,18 +345,3 @@ $table-padding: 20px;
     }
   }
 }
-
-/*.title-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .table-icon {
-    display: none;
-    font-size: 12px;
-  }
-
-  .table-label {
-    padding-left: 5px;
-  }
-}*/

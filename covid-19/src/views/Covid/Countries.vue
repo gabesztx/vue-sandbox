@@ -110,21 +110,21 @@
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    data() {
+    data(){
       return {
         isOpenSetting: false,
       };
     },
 
-    setup() {
+    setup(){
       const searchInput = reactive({
         // rounded: true,
+        // iconRight: 'magnify',
         loading: false,
         placeHolder: 'Keresés...',
         customClass: 'searchInput',
         icon: 'magnify',
         size: 'is-small',
-        // iconRight: 'magnify',
       });
 
       const perPage = 10;
@@ -181,7 +181,6 @@
       const onPageChange = (page: number) => {
         table.currentPage = page;
       };
-
       const onFocus = () => {
         searchInput.customClass = 'searchInput active-focus';
       };
@@ -199,7 +198,6 @@
           return 'is-anyad-selected-apadat'; // első sorra  ráteszi a classt
         }*/
       };
-
       onMounted(() => {
         // console.log('page 1 mount');
       });
@@ -226,7 +224,7 @@
       label: '',
       width: 30,
       component: 'cell-image',
-      path: `http://localhost:5000/static/flags/`,
+
     },
     {
       // searchable: false,
@@ -305,13 +303,13 @@
   ];
 </script>
 
-<!-- <b-numberinput
-            v-model="table.perPage"
-            :controls-position="settings.numberInput.controlsPosition"
-            :controls-rounded="settings.numberInput.controlRounded"
-            :size="settings.numberInput.size"
-            :type="settings.numberInput.type"
-            :min="settings.numberInput.min"
-            :max="settings.numberInput.max"
-            :editable="settings.numberInput.editable"
-          ></b-numberinput>-->
+<!--<b-numberinput
+  v-model="table.perPage"
+  :controls-position="settings.numberInput.controlsPosition"
+  :controls-rounded="settings.numberInput.controlRounded"
+  :size="settings.numberInput.size"
+  :type="settings.numberInput.type"
+  :min="settings.numberInput.min"
+  :max="settings.numberInput.max"
+  :editable="settings.numberInput.editable"
+></b-numberinput>-->
