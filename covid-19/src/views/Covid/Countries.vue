@@ -1,5 +1,6 @@
 <template>
   <div class="page-content country">
+
     <!--Header Content-->
     <section class="header-content hero is-small">
       <div class="hero-body">

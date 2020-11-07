@@ -8,7 +8,7 @@ const routes: Array<RouteConfig> = [
   {
     // name: 'home',
     path: '/home',
-    component: () => import('@/views/Covid/Home.vue'),
+    component: () => import('@/views/Covid/World.vue'),
   },
   {
     path: '/countries',
