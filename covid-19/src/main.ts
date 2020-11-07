@@ -32,7 +32,7 @@ import CellIcon from '@/components/cell/cell-icon.vue';
 import { ValidationProvider, ValidationObserver } from 'vee-validate';
 import { required, length } from 'vee-validate/dist/rules';
 import { extend } from 'vee-validate';
-import i18n from './i18n';
+import { i18n } from './i18n';
 import { NavigationGuardNext, Route } from 'vue-router';
 
 // extend('required', required);

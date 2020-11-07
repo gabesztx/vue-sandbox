@@ -102,6 +102,7 @@
 <script lang="ts">
   import router from '@/router';
   // import { columns } from '@/views/Covid/table-config/columns';
+  import { i18n } from '@/i18n';
   import { countriesData } from '@/services/covid-data.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
@@ -111,7 +112,6 @@
         isOpenSetting: false,
       };
     },
-
     setup() {
       const searchInput = reactive({
         // rounded: true,
@@ -236,7 +236,7 @@
     },
     {
       field: 'casesNew',
-      label: 'Napi új esetek',
+      label: i18n.tc('casesNew'),
       sortable: true,
       centered: true,
       component: 'cell-base',
@@ -252,7 +252,7 @@
     },
     {
       field: 'deathsNew',
-      label: 'Napi új elhunytak',
+      label: i18n.tc('deathsNew'),
       sortable: true,
       centered: true,
       component: 'cell-base',
@@ -268,7 +268,7 @@
     },
     {
       field: 'casesActive',
-      label: 'Aktív esetek',
+      label: i18n.tc('casesActive'),
       sortable: true,
       centered: true,
       headerClass: 'customHead',
@@ -276,7 +276,7 @@
     },
     {
       field: 'casesCritical',
-      label: 'Kritikus esetek',
+      label: i18n.tc('casesCritical'),
       sortable: true,
       centered: true,
       headerClass: 'customHead',
@@ -292,19 +292,7 @@
       field: '',
       label: '',
       width: 30,
-      // component: 'cell-button',
       component: 'cell-icon',
     },
   ];
 </script>
-
-<!--<b-numberinput
-  v-model="table.perPage"
-  :controls-position="settings.numberInput.controlsPosition"
-  :controls-rounded="settings.numberInput.controlRounded"
-  :size="settings.numberInput.size"
-  :type="settings.numberInput.type"
-  :min="settings.numberInput.min"
-  :max="settings.numberInput.max"
-  :editable="settings.numberInput.editable"
-></b-numberinput>-->

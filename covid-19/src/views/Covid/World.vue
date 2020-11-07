@@ -17,20 +17,18 @@
   </div>
 </template>
 <script lang="ts">
+  // import { ref } from '@vue/composition-api';
   import router from '@/router';
-  import { ref } from '@vue/composition-api';
+  import { worldData } from '@/services/covid-data.service';
 
   export default {
     setup() {
-      const show = ref(true);
-      const slideAnim = ref(``);
       const onClick = () => {
         router.push({ path: '/countries' });
       };
       return {
         onClick,
-        show,
-        slideAnim,
+        worldData,
       };
     },
   };

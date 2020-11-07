@@ -48,15 +48,34 @@ const transformCovidDbData = () => {
 };
 
 const getTransformCountryDetailData = (data) => {
-  const countryKeys = ['continent', 'country', 'day', 'time', 'countryCode', 'population'];
-  const detailData = { covidData: {} };
-  Object.keys(data).forEach((key) => {
-    const isDetail = countryKeys.find((item) => key === item);
-    if (isDetail) {
-      detailData[key] = data[key];
-    } else {
-      detailData.covidData[key] = data[key];
-    }
+  const countryKeys = [
+    'continent',
+    'country',
+    'day',
+    'time',
+    'countryCode',
+    'population',
+  ];
+  const covidDataOrder = [
+    'casesNew',
+    'deathsNew',
+    'casesActive',
+    'casesCritical',
+    'casesRecovered',
+    'casesTotal',
+    'casesTotal',
+    'deathsTotal',
+    'testsTotal',
+    'cases1MPop',
+    'deaths1MPop',
+    'tests1MPop',
+  ];
+  let detailData = { covidData: {} };
+  countryKeys.forEach((key) => {
+    detailData[key] = data[key];
+  });
+  covidDataOrder.forEach((key) => {
+    detailData.covidData[key] = data[key];
   });
   return detailData;
 };

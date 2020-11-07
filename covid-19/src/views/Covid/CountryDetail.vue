@@ -9,11 +9,11 @@
               <div class="country-text-box">
                 <div class="country-name">{{ countryDetailData.country }}</div>
                 <div class="last-update">
-                  Utoljára frissítve:
+                  {{ $t('time') }}
                   <b>{{ countryDetailData.time }}</b>
                 </div>
                 <div class="country-number">
-                  Lakosság szám:
+                  {{ $t('population') }}
                   <b>{{ countryDetailData.population }}</b>
                 </div>
               </div>
@@ -43,7 +43,8 @@
                   <div :class="`column is-${12 / layoutColumnNumber}`" :key="index">
                     <div class="card">
                       <div class="card-content">
-                        <div class="subtitle">{{ name }}</div>
+                        <!--                        <div class="subtitle">{{ // name }}</div>-->
+                        <div class="subtitle">{{ $t(name) }}</div>
                         <div class="title">{{ countryDetailData.covidData[name] }}</div>
                       </div>
                     </div>
@@ -59,7 +60,7 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { ref } from '@vue/composition-api';
+  // import { ref } from '@vue/composition-api';
   import { countryDetailData } from '@/services/covid-data.service';
 
   const getRowLayout = (layoutColumnNumber: number) => {
@@ -79,7 +80,7 @@
     setup() {
       const flagImgPath = `http://localhost:5000/static/flags/${countryDetailData.countryCode}.svg`;
       const layoutColumnNumber = 3;
-      const layoutData = ref(getRowLayout(layoutColumnNumber));
+      const layoutData = getRowLayout(layoutColumnNumber);
       const onClick = () => {
         router.push({ path: '/countries' });
       };

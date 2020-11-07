@@ -1,10 +1,24 @@
 import { NavigationGuardNext, Route } from 'vue-router';
-import { getCountries, setCountries, getCountryDetail, setCountryDetailData } from '@/services/covid-data.service';
+import {
+  getWorld,
+  getCountries,
+  getCountryDetail,
+  setWorldData,
+  setCountriesData,
+  setCountryDetailData,
+} from '@/services/covid-data.service';
 import router from '@/router';
+
+export const wordBeforeEnter = (to: Route, from: Route, next: NavigationGuardNext) => {
+  getWorld().then((res) => {
+    setWorldData(res.data);
+    next();
+  });
+};
 
 export const countryBeforeEnter = (to: Route, from: Route, next: NavigationGuardNext) => {
   getCountries().then((res) => {
-    setCountries(res.data);
+    setCountriesData(res.data);
     next();
   });
 };
