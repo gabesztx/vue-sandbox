@@ -19,10 +19,6 @@
           <div class="card-content">
             <!-- Header Content-->
             <div class="header-content">
-              <!-- <div class="title-content">
-                 <b-icon class="table-icon" icon="virus-outline" type="" custom-size="fa-2x" size=""></b-icon>
-                 <div class="table-label">Covid 19</div>
-               </div>-->
               <v-icell-input
                 class="search-content"
                 :label="searchInput.label"
