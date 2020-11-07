@@ -20,7 +20,13 @@
             </div>
             <div class="country-right">
               <div class="btn-content">
-                <b-button :class="'button'" :label="'Táblázat'" :type="'is-primary'" :size="''" @click="onClick"></b-button>
+                <b-button
+                  :class="'button'"
+                  :label="'Táblázat'"
+                  :type="'is-primary'"
+                  :size="''"
+                  @click="onClick"
+                ></b-button>
               </div>
             </div>
           </div>
@@ -70,7 +76,7 @@
   };
 
   export default {
-    setup(){
+    setup() {
       const flagImgPath = `http://localhost:5000/static/flags/${countryDetailData.countryCode}.svg`;
       const layoutColumnNumber = 3;
       const layoutData = ref(getRowLayout(layoutColumnNumber));

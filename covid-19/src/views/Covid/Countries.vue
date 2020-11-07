@@ -110,13 +110,13 @@
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    data(){
+    data() {
       return {
         isOpenSetting: false,
       };
     },
 
-    setup(){
+    setup() {
       const searchInput = reactive({
         // rounded: true,
         // iconRight: 'magnify',
@@ -224,7 +224,6 @@
       label: '',
       width: 30,
       component: 'cell-image',
-
     },
     {
       // searchable: false,
