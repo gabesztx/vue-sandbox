@@ -63,31 +63,70 @@ html, body {
 
 .world {
   width: 100%;
+  height: 100%;
   background-color: white;
+
   .world-head {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .covid-icon {
       width: 170px;
     }
+
     .covid-label {
       font-size: 70px;
       font-weight: 700;
-      padding-left: 15px;
+      padding-left: 10px;
     }
-
   }
-  .world-sub{
-    text-align: center;
-    //padding-top: 15px;
-    .world-title{
 
+  .world-sub {
+    padding-top: 15px;
+    text-align: center;
+
+    .world-title {
+      font-size: 25px;
+      font-weight: 600;
     }
-    .world-update{
+
+    .world-update-time {
       font-size: 14px;
     }
   }
+
+  .world-body {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    .box-item {
+      text-align: center;
+      .box-item-label {
+        font-weight: 500;
+        font-size: 15px
+      }
+
+      .box-item-value {
+        font-weight: 700;
+        font-size: 25px
+      }
+    }
+
+    .notification {
+      padding: 15px;
+
+      &:nth-last-child(1) {
+      }
+    }
+  }
+
+  .world-button {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
 }
 
 .page-main-content {
