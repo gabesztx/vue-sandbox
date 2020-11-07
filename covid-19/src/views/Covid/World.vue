@@ -21,7 +21,7 @@
   import { ref } from '@vue/composition-api';
 
   export default {
-    setup(){
+    setup() {
       const show = ref(true);
       const slideAnim = ref(``);
       const onClick = () => {
