@@ -29,7 +29,6 @@
     :scrollable="scrollable"
     :height="height"
     :row-class="rowClass"
-    :filters-event="filtersEvent"
     @page-change="onPageChange"
     @select="onSelect"
     @check="onCheck"
@@ -66,9 +65,9 @@
       :custom-key="column.customKey"
     >
       <div class="cell-content">
-        <template v-if="column.component">
+        <template v-if="column.componentName">
           <component
-            v-bind:is="column.component"
+            v-bind:is="column.componentName"
             :column="column"
             :row="props.row"
             :value="props.row[column.field]"
@@ -147,7 +146,6 @@
       ariaCurrentLabel: String,
       stickyHeader: Boolean,
       height: [Number, String],
-      filtersEvent: String,
       centered: Boolean,
       subheading: [String, Number],
       cellClass: String,

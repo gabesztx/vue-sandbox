@@ -1,6 +1,5 @@
 <template>
   <div class="page-content country-page">
-
     <!--Header Content-->
     <section class="header-content hero is-small">
       <div class="hero-body">
@@ -22,21 +21,19 @@
             <div class="header-content">
               <v-icell-input
                 class="search-content"
-                :label="searchInput.label"
-                :place-holder="searchInput.placeHolder"
-                :rounded="searchInput.rounded"
-                :size="searchInput.size"
-                :loading="searchInput.loading"
-                :style-type="searchInput.styleType"
-                :expanded="searchInput.expanded"
-                :icon="searchInput.icon"
-                :icon-right="searchInput.iconRight"
-                :type="searchInput.type"
-                :custom-class="searchInput.customClass"
-                :classes="searchInput.classes"
+                :label="search.label"
+                :place-holder="search.placeHolder"
+                :rounded="search.rounded"
+                :size="search.size"
+                :loading="search.loading"
+                :style-type="search.styleType"
+                :expanded="search.expanded"
+                :icon="search.icon"
+                :icon-right="search.iconRight"
+                :type="search.type"
+                :custom-class="search.customClass"
+                :classes="search.classes"
                 @input="onInput"
-                @focus="onFocus()"
-                @blur="onBlur()"
               ></v-icell-input>
               <div class="settings-icon">
                 <div
@@ -53,12 +50,12 @@
             <div class="settings-content" v-if="isOpenSetting" :class="isOpenSetting ? 'active' : ''">
               <div class="settings-item-content">
                 <div class="settings-item">
-                  <b-button :label="'Első oldal'" :size="'is-small'" @click="table.currentPage = 1"></b-button>
+                  <b-button :label="'Első oldal'" :size="'is-small'" @click="onPageChange(1)"></b-button>
                 </div>
 
                 <div class="settings-item">
                   <b-select v-model="table.perPage" :size="'is-small'">
-                    <template v-for="(num, index) in settings.numberInput.perPageNumber">
+                    <template v-for="(num, index) in settings.perPageNumber">
                       <option :key="index" :label="`${num} sor`" :value="num"></option>
                     </template>
                   </b-select>
@@ -88,10 +85,8 @@
                 :sort-icon="table.sortIcon"
                 :height="table.height"
                 :filters-event="''"
-                :row-class="onRowClass"
-                @rowClick="onClick"
                 @pageChange="onPageChange"
-                @componentCellEmit="onNavigateToDetail"
+                @componentCellEmit="onNavigateDetail"
               ></v-icell-table>
             </div>
           </div>
@@ -102,18 +97,18 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { i18n } from '@/locales/i18n';
   import { countriesData } from '@/services/covid-data.service';
+  import { searchData, columnsData } from '@/services/table.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    data() {
+    data(){
       return {
         isOpenSetting: false,
       };
     },
-    setup() {
-      const searchInput = reactive({
+    setup(){
+      const search = reactive({
         loading: false,
         placeHolder: 'Keresés...',
         customClass: 'searchInput',
@@ -122,14 +117,14 @@
       });
 
       const table = reactive({
-        columns: columns,
+        columns: columnsData,
         data: countriesData,
         scrollable: false,
         stickyHeader: false,
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 5,
+        perPage: 7,
         subheading: 10,
         striped: true,
         currentPage: 1,
@@ -139,159 +134,36 @@
         showDetailIcon: false,
         sortIconSize: 'is-small',
         bordered: false,
-        sortIcon: 'menu-up', //'arrow-up'
+        sortIcon: 'menu-up',
       });
 
       const settings = reactive({
-        numberInput: {
-          controlsPosition: 'compact',
-          perPageNumber: 15,
-          size: 'is-small',
-          type: '',
-          controlRounded: true,
-          editable: false,
-          min: 1,
-          max: 15,
-        },
+        perPageNumber: 15,
       });
 
       const onInput = (event: InputEvent, value: any) => {
-        // TODO: refactor, kiszervezés, speciális karakterek hiba kezelése
-        table.data = countriesData.filter((item) => {
-          let isFind = false;
-          Object.values(item).forEach((val: any) => {
-            const isMatch = new RegExp(value, 'i').test(val);
-            if (isMatch) {
-              isFind = true;
-            }
-          });
-          return isFind;
-        });
+        table.data = searchData(countriesData, value);
       };
-      const onNavigateToDetail = ({ countryCode }) => {
+      const onNavigateDetail = ({ countryCode }) => {
         router.push({ path: `/countries/${countryCode}` });
       };
       const onPageChange = (page: number) => {
         table.currentPage = page;
       };
-      const onFocus = () => {
-        searchInput.customClass = 'searchInput active-focus';
-      };
-      const onBlur = () => {
-        searchInput.customClass = 'searchInput';
-      };
-      const onClick = (routerLink: string) => {
-        // router.push({ path: '/' });
-        // router.push({ path: routerLink });
-        // router.push({ path: `/country/${params}` });
-      };
-      const onRowClass = (row, index) => {
-        // console.log('onRowClass', row, ' - ', index);
-        /*if (index === 1) {
-          return 'is-anyad-selected-apadat'; // első sorra  ráteszi a classt
-        }*/
-      };
       onMounted(() => {
-        // console.log('page 1 mount');
       });
       onUnmounted(() => {
-        // console.log('page 2 destroy');
       });
       return {
-        onClick,
         onInput,
-        onRowClass,
-        onFocus,
-        onBlur,
         onPageChange,
-        onNavigateToDetail,
+        onNavigateDetail,
         table,
-        searchInput,
+        search,
         settings,
       };
     },
   };
-  const columns = [
-    {
-      field: 'countryCode',
-      label: '',
-      width: 30,
-      component: 'cell-image',
-    },
-    {
-      // searchable: false,
-      field: 'country',
-      label: 'Ország',
-      sortable: true,
-      width: 180,
-      headerClass: 'customHead',
-      customSort: (a, b, isAsc) => {
-        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
-        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-    },
-    {
-      field: 'casesNew',
-      label: i18n.tc('casesNew'),
-      sortable: true,
-      centered: true,
-      component: 'cell-base',
-      headerClass: 'customHead',
-      visible: true,
-      customValue: (v) => (v === 'N/A' ? 'Nincs adat' : '+' + v),
-      customClass: (v) => (v === 'N/A' ? 'is-no-data' : ''),
-      customSort: (a, b, isAsc) => {
-        const AObj = a.casesNew == 'N/A' ? -1 : Number(a.casesNew);
-        const BObj = b.casesNew == 'N/A' ? -1 : Number(b.casesNew);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-    },
-    {
-      field: 'deathsNew',
-      label: i18n.tc('deathsNew'),
-      sortable: true,
-      centered: true,
-      component: 'cell-base',
-      headerClass: 'customHead',
-      visible: true,
-      customValue: (v) => (v === 'N/A' ? 'Nincs adat' : '+' + v),
-      customClass: (v) => (v === 'N/A' ? 'is-no-data' : ''),
-      customSort: (a, b, isAsc) => {
-        const AObj = a.deathsNew === 'N/A' ? -1 : Number(a.deathsNew);
-        const BObj = b.deathsNew === 'N/A' ? -1 : Number(b.deathsNew);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-    },
-    {
-      field: 'casesActive',
-      label: i18n.tc('casesActive'),
-      sortable: true,
-      centered: true,
-      headerClass: 'customHead',
-      visible: true,
-    },
-    {
-      field: 'casesCritical',
-      label: i18n.tc('casesCritical'),
-      sortable: true,
-      centered: true,
-      headerClass: 'customHead',
-      visible: true,
-      customSort: (a, b, isAsc) => {
-        // TODO: refactor és kiszervezés
-        const AObj = a.casesCritical === '-' ? -1 : Number(a.casesCritical);
-        const BObj = b.casesCritical === '-' ? -1 : Number(b.casesCritical);
-        return !isAsc ? BObj - AObj : AObj - BObj;
-      },
-    },
-    {
-      field: '',
-      label: '',
-      width: 30,
-      component: 'cell-icon',
-    },
-  ];
 </script>
 
 <style scoped lang="scss">
