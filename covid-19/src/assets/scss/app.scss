@@ -101,7 +101,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    //flex-wrap: wrap;
+
     .box-item {
       margin-bottom: 0;
       margin-right: 15px;
@@ -123,6 +123,20 @@ html, body {
 
       &:nth-last-child(1) {
       }
+    }
+  }
+
+  .world-video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    video {
+      width: 100%;
+      max-width: 560px;
+      min-width: 300px;
+      border-radius: 0;
+      padding: 5px;
     }
   }
 

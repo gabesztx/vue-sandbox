@@ -30,22 +30,20 @@
             </div>
           </div>
           <div class="world-video-content">
-           <!-- <video
-              id="my-player"
-              class="video-js"
-              controls
-              preload="auto"
-              poster="//vjs.zencdn.net/v/oceans.png"
-              data-setup='{}'>
-              <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"/>
-              <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"/>
-              <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"/>
-            </video>-->
-            <!-- <video autoplay id="my-player" class="" preload="auto" data-setup='{}'>
-               <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-               <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
-               <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"/>
-             </video>-->
+            <video
+              class="box"
+              :id="video.id"
+              :muted="video.muted"
+              :autoplay="video.autoplay"
+              :preload="video.preload"
+              :loop="video.loop"
+              :controls="video.controls"
+              :poster="video.poster"
+            >
+              <template v-for="(source, index) in video.src">
+                <source :key="index" :src="source.src" :type="source.type" />
+              </template>
+            </video>
           </div>
           <div class="world-button">
             <b-button @click="onClick" label="Táblázat" type="is-primary"></b-button>
@@ -58,12 +56,31 @@
 <script lang="ts">
   import router from '@/router';
   import { worldData } from '@/services/covid-data.service';
-  import { onMounted, onUnmounted } from '@vue/composition-api';
+  import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    setup(){
+    setup() {
+      const video = reactive({
+        id: 'covid-video',
+        poster: '/static/video/covid-19.jpg',
+        muted: true,
+        controls: false,
+        autoplay: false,
+        loop: false,
+        playsinline: false,
+        preload: 'auto', // none, metadata
+        src: [
+          { type: 'video/mp4', src: '/static/video/covid-19.mp4' },
+          // { type: 'video/webm', src: '/static/video/covid-19.webm' },
+          // { type: 'video/ogg', src: '//vjs.zencdn.net/v/oceans.ogv' },
+        ],
+      });
+      let videtoTag = null as any;
       onMounted(() => {
-        console.log('page 1 mount');
+        videtoTag = document.querySelector('#covid-video') as HTMLVideoElement;
+        // videtoTag.onloadeddata = () => {};
+        // videtoTag.onloadstart = () => {};
+        // videtoTag.play();
       });
       const onClick = () => {
         router.push({ path: '/countries' });
@@ -71,6 +88,8 @@
       return {
         onClick,
         worldData,
+        video,
+        // videoConfig,
       };
     },
   };
