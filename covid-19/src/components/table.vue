@@ -29,6 +29,11 @@
     :scrollable="scrollable"
     :height="height"
     :row-class="rowClass"
+    :default-sort-direction="defaultSortDirection"
+    :default-sort="defaultSort"
+    :sort-multiple="sortMultiple"
+    :sort-multiple-data="sortMultipleData"
+    :sort-multiple-key="sortMultipleKey"
     @page-change="onPageChange"
     @select="onSelect"
     @check="onCheck"
@@ -153,7 +158,7 @@
       isImage: Boolean,
     },
 
-    setup(props: any, { emit }) {
+    setup(props: any, { emit }){
       const selectValue = ref(props.selected);
       const checkedRowsValue = ref(props.checkedRows);
       const onSelect = (value: any) => {

@@ -84,7 +84,11 @@
                 :sort-icon-size="table.sortIconSize"
                 :sort-icon="table.sortIcon"
                 :height="table.height"
-                :filters-event="''"
+                :default-sort-direction="table.defaultSortDirection"
+                :default-sort="table.defaultSort"
+                :sort-multiple="table.sortMultiple"
+                :sort-multiple-data="table.sortMultipleData"
+                :sort-multiple-key="table.sortMultipleKey"
                 @pageChange="onPageChange"
                 @componentCellEmit="onNavigateDetail"
               ></v-icell-table>
@@ -98,7 +102,7 @@
 <script lang="ts">
   import router from '@/router';
   import { countriesData } from '@/services/covid-data.service';
-  import { searchData, columnsData } from '@/services/table.service';
+  import { searchData, columns } from '@/services/table.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
@@ -117,7 +121,7 @@
       });
 
       const table = reactive({
-        columns: columnsData,
+        columns: columns,
         data: countriesData,
         scrollable: false,
         stickyHeader: false,
@@ -135,6 +139,11 @@
         sortIconSize: 'is-small',
         bordered: false,
         sortIcon: 'menu-up',
+        defaultSortDirection: 'asc', // 'desc'
+        defaultSort: '', // ['casesNew', 'desc'],
+        sortMultiple: false,
+        sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
+        sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
       });
 
       const settings = reactive({

@@ -1,7 +1,7 @@
 import { i18n } from '@/locales/i18n';
 import { IColumn } from '@/core/interfaces';
 
-export const columnsData: IColumn[] = [
+export const columns: IColumn[] = [
   {
     field: 'countryCode',
     width: 30,
