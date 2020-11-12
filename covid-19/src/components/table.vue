@@ -87,7 +87,7 @@
   import { ref } from '@vue/composition-api';
 
   export default {
-    name: 'v-table',
+    // name: 'v-table',
     props: {
       data: Array,
       columns: Array,

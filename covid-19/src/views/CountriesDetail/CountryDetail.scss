@@ -1,0 +1,39 @@
+.country-detail-page {
+  .header-content {
+    border-bottom: 1px solid rgba(24, 28, 33, .06);
+    .country-header {
+      display: flex;
+      justify-content: space-between;
+
+      .country-left {
+        display: flex;
+
+        .country-flag {
+          width: 160px;
+          border-radius: 4px;
+        }
+
+        .country-text-box {
+          padding-left: 25px;
+
+          .country-name {
+            font-weight: 600;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .country-right {
+        display: flex;
+        align-items: center;
+
+        .btn-content {
+        }
+      }
+    }
+  }
+
+  .body-content {
+    padding-top: 20px;
+  }
+}

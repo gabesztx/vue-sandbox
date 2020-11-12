@@ -1,0 +1,24 @@
+@import 'src/assets/scss/varibles/varibles';
+.table-content {
+  padding: 0 $table-padding;
+  .b-table {
+    .top {
+      padding-top: $table-padding;
+    }
+    .table-wrapper:not(:last-child) {
+      margin-bottom: 0;
+    }
+    .table {
+      th {
+        vertical-align: middle;
+      }
+      td {
+        vertical-align: middle;
+      }
+      tbody {
+        //font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}

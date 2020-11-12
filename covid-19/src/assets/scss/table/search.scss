@@ -1,0 +1,28 @@
+.search-content {
+  .icon {
+    top: 1px;
+    height: 100%;
+
+    i {
+      font-size: 14px;
+    }
+  }
+
+  .searchInput {
+    padding-left: 25px;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: all 0.25s ease-out;
+    border-color: rgba(219, 219, 219, 0.75);
+    background-color: rgba(243, 243, 243, 0);
+
+    &:hover {
+      border-color: rgba(219, 219, 219, 0.5);
+    }
+
+    &:focus {
+      border-color: rgba(219, 219, 219, 0);
+      background-color: rgba(243, 243, 243, 0.8);
+    }
+  }
+}

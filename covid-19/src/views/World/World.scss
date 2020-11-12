@@ -1,0 +1,79 @@
+.world-page {
+  width: 100%;
+  height: 100%;
+  .world-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .covid-icon {
+      width: 140px;
+    }
+
+    .covid-label {
+      font-size: 50px;
+      font-weight: 600;
+      padding-left: 5px;
+    }
+  }
+
+  .world-sub {
+    padding-top: 10px;
+    text-align: center;
+
+    .world-title {
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .world-update-time {
+      font-size: 14px;
+    }
+  }
+
+  .world-body {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box-item {
+      margin-bottom: 0;
+      margin-right: 15px;
+      text-align: center;
+      min-width: 180px;
+      .box-item-label {
+        font-weight: 400;
+        font-size: 16px
+      }
+
+      .box-item-value {
+        font-weight: 700;
+        font-size: 30px
+      }
+    }
+
+    .notification {
+      padding: 15px;
+    }
+  }
+
+  .world-video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    video {
+      width: 100%;
+      max-width: 560px;
+      min-width: 300px;
+      border-radius: 0;
+      padding: 5px;
+    }
+  }
+
+  .world-button {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
