@@ -5,7 +5,7 @@
         <div class="container">
           <div class="country-header">
             <div class="country-left">
-              <img class="country-flag" :src="flagImgPath" />
+              <img class="country-flag" :src="`/static/flags/${countryDetailData.countryCode}.svg`" />
               <div class="country-text-box">
                 <div class="country-name">{{ countryDetailData.country }}</div>
                 <div class="last-update">
@@ -25,7 +25,7 @@
                   :label="'Táblázat'"
                   :type="'is-primary'"
                   :size="''"
-                  @click="onClick"
+                  @click="onNavigate"
                 ></b-button>
               </div>
             </div>
@@ -59,36 +59,21 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  // import { ref } from '@vue/composition-api';
   import { countryDetailData } from '@/services/covid-data.service';
-
-  const getRowLayout = (layoutColumnNumber: number) => {
-    const columns = [] as any;
-    let column = 0;
-    Object.keys(countryDetailData.covidData).forEach((key, index) => {
-      if (index % layoutColumnNumber === 0) {
-        columns.push({ row: [] });
-        column++;
-      }
-      columns[column - 1].row.push(key);
-    });
-    return columns;
-  };
+  import { generateColumns } from '@/core/utils/layout-generator';
 
   export default {
-    setup() {
+    setup(){
       const layoutColumnNumber = 3;
-      const flagImgPath = `/static/flags/${countryDetailData.countryCode}.svg`;
-      const layoutData = getRowLayout(layoutColumnNumber);
-      const onClick = () => {
+      const layoutData = generateColumns(countryDetailData.covidData, layoutColumnNumber);
+      const onNavigate = () => {
         router.push({ path: '/countries' });
       };
       return {
-        flagImgPath,
         countryDetailData,
         layoutData,
         layoutColumnNumber,
-        onClick,
+        onNavigate,
       };
     },
   };

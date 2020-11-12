@@ -17,7 +17,7 @@ import CellIcon from '@/shared/components/cell-icon/cell-icon.vue';
 import './assets/scss/app.scss';
 
 // Validations
-import './core/validations';
+import './core/utils/validations';
 
 // Filters
 Vue.filter('nodata', noData);

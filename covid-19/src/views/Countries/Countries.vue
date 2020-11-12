@@ -141,7 +141,7 @@
         perPageNumber: 15,
       });
 
-      const onInput = (event: InputEvent, value: any) => {
+      const onInput = (value: any) => {
         table.data = searchData(countriesData, value);
       };
       const onNavigateDetail = ({ countryCode }) => {

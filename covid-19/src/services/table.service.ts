@@ -1,25 +1,7 @@
 import { i18n } from '@/locales/i18n';
+import { IColumn } from '@/core/interfaces';
 
-export const searchData = (searchData: any, searchValue: any) => {
-  return searchData.filter((item) => {
-    let isFind = false;
-    Object.values(item).forEach((val: any) => {
-      const isMatch = new RegExp(searchValue, 'i').test(val);
-      if (isMatch) {
-        isFind = true;
-      }
-    });
-    return isFind;
-  });
-};
-
-export const sortingCustomValue = (a, b, isAsc, filed, customValue) => {
-  const AObj = a[filed] === customValue ? -1 : Number(a[filed]);
-  const BObj = b[filed] === customValue ? -1 : Number(b[filed]);
-  return !isAsc ? BObj - AObj : AObj - BObj;
-};
-
-export const columnsData = [
+export const columnsData: IColumn[] = [
   {
     field: 'countryCode',
     width: 30,
@@ -38,8 +20,8 @@ export const columnsData = [
     centered: true,
     componentName: 'cell-base',
     visible: true,
-    customValue: (v) => (v === 'N/A' ? 'Nincs adat' : '+' + v),
-    customClass: (v) => (v === 'N/A' ? 'is-no-data' : ''),
+    customValue: (value) => (value === 'N/A' ? 'Nincs adat' : '+' + value),
+    customClass: (value) => (value === 'N/A' ? 'is-no-data' : ''),
     customSort: (a, b, isAsc) => sortingCustomValue(a, b, isAsc, 'casesNew', 'N/A'),
   },
   {
@@ -72,3 +54,22 @@ export const columnsData = [
     componentName: 'cell-icon',
   },
 ];
+
+export const searchData = (searchData: any, searchValue: any) => {
+  return searchData.filter((item) => {
+    let isFind = false;
+    Object.values(item).forEach((val: any) => {
+      const isMatch = new RegExp(searchValue, 'i').test(val);
+      if (isMatch) {
+        isFind = true;
+      }
+    });
+    return isFind;
+  });
+};
+
+export const sortingCustomValue = (a, b, isAsc, filed, customValue) => {
+  const AObj = a[filed] === customValue ? -1 : Number(a[filed]);
+  const BObj = b[filed] === customValue ? -1 : Number(b[filed]);
+  return !isAsc ? BObj - AObj : AObj - BObj;
+};

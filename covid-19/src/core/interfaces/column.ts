@@ -12,6 +12,8 @@ export interface IColumn {
   subheading?: string | number;
   customSort?: (a: object, b: object, isAsc: boolean) => number;
   customSearch?: (a: object, input: string) => any;
+  customValue?: (value) => any;
+  customClass?: (value) => any;
   sticky?: boolean;
   cellClass?: string;
   headerSelectable?: boolean;

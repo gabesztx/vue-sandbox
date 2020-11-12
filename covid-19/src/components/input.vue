@@ -1,9 +1,9 @@
 <template>
   <div :class="classes">
-    <ValidationProvider :rules="isRequired()" v-slot="">
+    <ValidationProvider :rules="isRequired()" v-slot="errors">
       <b-field :label="label" :type="styleType" :label-for="id">
         <b-input
-          v-model="model"
+          :value="value"
           :type="type"
           :capitalize="capitalize"
           :custom-class="customClass"
@@ -23,10 +23,11 @@
           :icon-clickable="iconClickable"
           :icon-right="iconRight"
           :icon-pack="iconPack"
+          :use-html5-validation="useHtml5Validation"
+          :validation-message="validationMessage"
+          v-on:input="onInput"
           @icon-click="onIconClick"
-          @input.native="onInput($event)"
-          @focus="onFocus()"
-          @blur="onBlur()"
+          @input.native="onValidationChange($event, errors)"
         />
       </b-field>
     </ValidationProvider>
@@ -35,14 +36,14 @@
 
 <script lang="ts">
   import { ref } from '@vue/composition-api';
-  import { BField } from 'buefy/src/components/field';
-  import { BInput } from 'buefy/src/components/input';
+  // import { BField } from 'buefy/src/components/field';
+  // import { BInput } from 'buefy/src/components/input';
 
   export default {
-    components: {
-      [BField.name]: BField,
-      [BInput.name]: BInput,
-    },
+    // components: {
+    //   [BField.name]: BField,
+    //   [BInput.name]: BInput,
+    // },
     name: 'v-icell-input',
     props: {
       ui: String,
@@ -72,28 +73,28 @@
       icon: String,
       iconRight: String,
       iconClickable: Boolean,
+      useHtml5Validation: Boolean,
+      validationMessage: String,
+      validationRules: String,
     },
-    setup(props: any, attr: any) {
+    setup(props: any, { emit }: any) {
       const model = ref(props.value);
       const isRequired = () => (props.required ? 'required' : '');
-      const onInput = (ev: InputEvent) => {
-        attr.emit('input', ev, model.value);
+
+      const onInput = (value) => {
+        emit('input', value);
+      };
+      const onValidationChange = (ev: InputEvent, errors: any) => {
+        emit('validation', errors);
       };
       const onIconClick = () => {
-        attr.emit('icon-click');
-      };
-      const onFocus = () => {
-        attr.emit('focus');
-      };
-      const onBlur = () => {
-        attr.emit('blur');
+        emit('icon-click');
       };
       return {
         isRequired,
         onInput,
+        onValidationChange,
         onIconClick,
-        onFocus,
-        onBlur,
         model,
       };
     },
