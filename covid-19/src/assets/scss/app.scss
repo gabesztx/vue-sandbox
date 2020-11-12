@@ -64,7 +64,7 @@ html, body {
 .world {
   width: 100%;
   height: 100%;
-  background-color: white;
+  //background-color: white;
 
   .world-head {
     display: flex;
@@ -72,23 +72,23 @@ html, body {
     align-items: center;
 
     .covid-icon {
-      width: 170px;
+      width: 140px;
     }
 
     .covid-label {
-      font-size: 70px;
-      font-weight: 700;
-      padding-left: 10px;
+      font-size: 50px;
+      font-weight: 600;
+      padding-left: 5px;
     }
   }
 
   .world-sub {
-    padding-top: 15px;
+    padding-top: 10px;
     text-align: center;
 
     .world-title {
       font-size: 25px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .world-update-time {
@@ -97,19 +97,24 @@ html, body {
   }
 
   .world-body {
+    padding-top: 40px;
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    align-items: center;
+    //flex-wrap: wrap;
     .box-item {
+      margin-bottom: 0;
+      margin-right: 15px;
       text-align: center;
+      min-width: 180px;
       .box-item-label {
-        font-weight: 500;
-        font-size: 15px
+        font-weight: 400;
+        font-size: 16px
       }
 
       .box-item-value {
         font-weight: 700;
-        font-size: 25px
+        font-size: 30px
       }
     }
 

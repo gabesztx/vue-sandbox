@@ -101,7 +101,6 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  // import { columns } from '@/views/Covid/table-config/columns';
   import { i18n } from '@/i18n';
   import { countriesData } from '@/services/covid-data.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
