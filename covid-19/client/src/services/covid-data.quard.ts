@@ -1,3 +1,4 @@
+import router from '@/router';
 import { NavigationGuardNext, Route } from 'vue-router';
 import {
   getWorld,
@@ -7,7 +8,6 @@ import {
   setCountriesData,
   setCountryDetailData,
 } from '@/services/covid-data.service';
-import router from '@/router';
 
 export const wordBeforeEnter = (to: Route, from: Route, next: NavigationGuardNext) => {
   getWorld().then((res) => {

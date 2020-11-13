@@ -1,17 +1,17 @@
-const path = require('path');
-const isoCountriesSchema = require('../utils/iso-countries_schema');
-const isoCountries = require('../utils/iso-countries');
+import { isoCountriesSchema } from '../../helpers/iso-countries_schema';
+import { isoCountries } from '../../helpers/iso-countries';
 
-const transformNoData = (data) => {
-  data.forEach((item) => {
+export const transformNoData = (data: any): any => {
+  data.forEach((item: any) => {
     Object.keys(item).forEach((key) => {
       item[key] = !item[key].length || item[key] === 'N/A' ? '-' : item[key];
     });
   });
   return data;
 };
-const transformRemoveComma = (data) => {
-  data.forEach((item) => {
+
+export const transformRemoveComma = (data: any) => {
+  data.forEach((item: any) => {
     Object.keys(item).forEach((key) => {
       if (item[key].search(',') > 0) {
         item[key] = item[key].replace(/,/g, '');
@@ -20,13 +20,12 @@ const transformRemoveComma = (data) => {
   });
   return data;
 };
-const transformRemoveAdds = (data) => {
-  data.forEach((item) => {
-    // eslint-disable-next-line no-prototype-builtins
+
+export const transformRemoveAdds = (data: any) => {
+  data.forEach((item: any) => {
     if (item.hasOwnProperty('cases') && item.cases.new && item.cases.new[0] === '+') {
       item.cases.new = item.cases.new.substring(1);
     }
-    // eslint-disable-next-line no-prototype-builtins
     if (item.hasOwnProperty('deaths') && item.deaths.new && item.deaths.new[0] === '+') {
       item.deaths.new = item.deaths.new.substring(1);
     }
@@ -34,8 +33,8 @@ const transformRemoveAdds = (data) => {
   return data;
 };
 
-const transformRemoveHyphen = (data) => {
-  data.forEach((item) => {
+export const transformRemoveHyphen = (data: any) => {
+  data.forEach((item: any) => {
     if (item.country && item.country.search('-') > 0) {
       item.country = item.country.replace(/-/g, ' ');
     }
@@ -46,14 +45,11 @@ const transformRemoveHyphen = (data) => {
   return data;
 };
 
-const getCountryCode = (data) => {
-  data.forEach((item) => {
+export const getCountryCode = (data: any) => {
+  data.forEach((item: any) => {
     const countryItem = item.country;
     Object.keys(isoCountriesSchema).forEach((code) => {
       if (countryItem === isoCountriesSchema[code]) {
-        // const flag = `http://localhost:5000/static/flags/${code.toLocaleLowerCase()}.svg`;
-        // const flag = code.toLocaleLowerCase();
-        // item.countryCode = code.toLowerCase();
         item.countryCode = code.toLowerCase();
       }
     });
@@ -61,10 +57,9 @@ const getCountryCode = (data) => {
   return data;
 };
 
-const getCountryName = (data) => {
-  data.forEach((item) => {
+export const getCountryName = (data: any) => {
+  data.forEach((item: any) => {
     const countryCode = item.countryCode ? item.countryCode.toUpperCase() : null;
-    // eslint-disable-next-line no-prototype-builtins,no-empty
     if (isoCountries.hasOwnProperty(countryCode)) {
       item.country = isoCountries[countryCode];
     }
@@ -73,10 +68,10 @@ const getCountryName = (data) => {
 };
 
 
-const separateContinentData = (data) => {
-  let continentData = [];
-  let countryData = [];
-  data.forEach((item) => {
+export const separateContinentData = (data: any) => {
+  let continentData = [] as any;
+  let countryData = [] as any;
+  data.forEach((item: any) => {
     if (item.country === item.continent) {
       continentData.push(item);
     } else {
@@ -86,16 +81,15 @@ const separateContinentData = (data) => {
   return [countryData, continentData];
 };
 
-const transformMergeObject = (items) => {
+export const transformMergeObject = (items: any) => {
   let data = items;
-  data.forEach((item) => {
+  data.forEach((item: any) => {
     const population = item.population;
     item.population = population === null ? 'N/A' : population;
     Object.keys(item).forEach((key) => {
       const obj = item[key];
       if (item[key] instanceof Object) {
         Object.keys(obj).forEach((prop) => {
-          // console.log('---', obj[prop]);
           item[`${key}_${prop}`] = obj[prop] === null ? 'N/A' : Number(obj[prop]);
         });
         delete item[key];
@@ -106,9 +100,9 @@ const transformMergeObject = (items) => {
   return data;
 };
 
-const deleteNoCountryData = (items) => {
+export const deleteNoCountryData = (items: any) => {
   const noCountryData = ['Channel Islands', 'Diamond Princess', 'MS Zaandam', 'Caribbean Netherlands', 'MS Zaandam ', 'Diamond Princess '];
-  let countryData = [];
+  let countryData = [] as any;
   items.forEach((item) => {
     const country = item.country;
     const isFind = noCountryData.find((item) => country === item);
@@ -116,18 +110,5 @@ const deleteNoCountryData = (items) => {
       countryData.push(item);
     }
   });
-
   return countryData;
-};
-
-module.exports = {
-  getCountryCode: getCountryCode,
-  getCountryName: getCountryName,
-  transformNoData: transformNoData,
-  transformRemoveComma: transformRemoveComma,
-  transformRemoveHyphen: transformRemoveHyphen,
-  transformRemoveAdds: transformRemoveAdds,
-  transformMergeObject: transformMergeObject,
-  separateContinentData: separateContinentData,
-  deleteNoCountryData: deleteNoCountryData,
 };

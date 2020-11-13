@@ -2,10 +2,12 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
+    "noImplicitAny": false,
     "rootDir": "./",
     "outDir": "./",
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "noUnusedLocals": false
   },
   "include": [
     "./**/*.ts"

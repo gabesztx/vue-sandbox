@@ -13,7 +13,7 @@ import CellIcon from '@/shared/components/cell-icon/cell-icon.vue';
 import App from './App.vue';
 
 // Buefy
-import './buefy';
+import './shared/buefy';
 // Styles
 import './assets/scss/app.scss';
 // Validations
@@ -31,7 +31,6 @@ Vue.component('cell-base', CellBase);
 Vue.component('cell-image', CellImage);
 Vue.component('cell-button', CellButton);
 Vue.component('cell-icon', CellIcon);
-
 
 Vue.use(VueCompositionApi);
 Vue.config.productionTip = false;

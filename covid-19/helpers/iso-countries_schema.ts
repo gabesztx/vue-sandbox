@@ -1,4 +1,4 @@
-module.exports = {
+export const isoCountriesSchema =  {
   'AF': 'Afghanistan',
   'AL': 'Albania',
   'DZ': 'Algeria',

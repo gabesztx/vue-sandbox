@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(basePath));
 
 /* Services */
-const covidDataService = require('./services/covid-data.service');
+const covidDataService = require('./common/services/covid-data.service');
 
 /* Server */
 const server = http.createServer(app);
