@@ -1,6 +1,14 @@
 <template>
   <div class="detail-icon">
-    <b-button :type="'is-primary'" :size="'is-small'" :icon-right="'mdi mdi-eye'" @click="onClick"></b-button>
+    <div class="icon-content" @click="onClick">
+      <i class="mdi mdi-eye"></i>
+    </div>
+    <!-- <b-button
+       :type="'is-primary'"
+       :size="'is-small'"
+       :icon-right="'mdi mdi-eye'"
+       @click="onClick">
+     </b-button>-->
   </div>
 </template>
 

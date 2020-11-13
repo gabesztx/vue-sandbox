@@ -1,27 +1,26 @@
 @import 'src/assets/scss/varibles/varibles';
 
 $settingsFontSize: 12px;
+$settingsContentHeight: 51px;
 .settings-content {
   width: 100%;
   padding: 0 $table-padding;
   margin-top: $table-padding;
   background-color: rgba(243, 243, 243, 1);
-
+  height: 0;
+  overflow: hidden;
+  transition: height $setting-anim-duration ease-in-out;
   &.active {
-    align-items: center;
+    height: $settingsContentHeight;
   }
-
   .settings-item-content {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 100%;
-    padding: 10px 0;
-
+    height: $settingsContentHeight;
     .settings-item {
       padding-left: 10px;
-
       /* Button */
       .button {
         font-size: $settingsFontSize;
@@ -70,5 +69,4 @@ $settingsFontSize: 12px;
       }
     }
   }
-
 }

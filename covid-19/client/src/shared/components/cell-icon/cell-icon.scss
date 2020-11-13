@@ -1,0 +1,24 @@
+$width: 25px;
+.detail-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  .icon-content {
+    cursor: pointer;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 11px;
+    width: $width;
+    height: $width;
+    color: whitesmoke;
+    background-color: #00d1b2;
+    //color: black;
+    //background-color: #eeeeee;
+    //color: #fff;
+    i{
+      margin-top: 1px;
+    }
+  }
+}

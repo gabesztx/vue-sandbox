@@ -3,20 +3,48 @@
 .country-page {
   .body-content {
     padding-top: 0;
+
     .card {
       border-radius: 20px;
       border: 1px solid rgba(24, 28, 33, 0.07);
+
       .card-content {
         padding: $table-padding 0;
+
         .header-content {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-end;
           align-items: center;
           padding: 0 $table-padding;
 
-          .settings-icon {
-            .icon-content {
+          .home-icon-content {
+            padding-left: 10px;
+            .home-icon {
               cursor: pointer;
+              border-radius: 4px;
+              padding: 7px;
+              background-color: #f4f4f4;
+
+              &:hover {
+                background-color: #eeeeee;
+                border-color: transparent;
+                color: rgba(0, 0, 0, 0.7);
+              }
+            }
+          }
+
+          .settings-icon {
+            border-radius: 4px;
+            padding: 7px;
+            background-color: #f4f4f4;
+            cursor: pointer;
+            &:hover {
+              background-color: #eeeeee;
+              border-color: transparent;
+              color: rgba(0, 0, 0, 0.7);
+            }
+            .icon-content {
+              color: rgba(0, 0, 0, .7);
               display: flex;
               justify-content: center;
               align-items: center;
@@ -24,7 +52,7 @@
               height: $icon-dimension;
               line-height: $icon-dimension;
               font-size: $icon-dimension;
-              transition: transform $setting-anim-duration ease-out;
+              transition: transform $setting-anim-duration ease-in-out;
               transform: rotateZ(0);
 
               &.active {
@@ -38,3 +66,31 @@
   }
 }
 
+
+/*.card-wrapper {
+  $border: 1px solid rgba(24, 28, 33, 0.07);
+  .card-top {
+    box-shadow: 0px -1px 13px 0px rgba(10,10,10,0.09);
+    //box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    border-top: $border;
+    border-right: $border;
+    border-left: $border;
+    height: 200px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .card-bottom {
+    box-shadow: 0px 8px 5px 0px rgba(10,10,10,0.09);
+    //box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    transform: translate3d(0, 0, 0);
+    border-bottom: $border;
+    border-right: $border;
+    border-left: $border;
+    height: 200px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}*/

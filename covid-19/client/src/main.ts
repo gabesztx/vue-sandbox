@@ -2,7 +2,6 @@ import Vue from 'vue';
 import VueCompositionApi from '@vue/composition-api';
 import router from './router';
 import { i18n } from './locales/i18n';
-import { ValidationProvider, ValidationObserver } from 'vee-validate';
 import { noData } from '@/filters/table.filter';
 import InputComponent from '@/components/input.vue';
 import TableComponent from '@/components/table.vue';
@@ -14,16 +13,17 @@ import App from './App.vue';
 
 // Buefy
 import './shared/buefy';
+
 // Styles
 import './assets/scss/app.scss';
+
 // Validations
 import './core/utils/validations';
 
 // Filters
 Vue.filter('nodata', noData);
+
 // Components
-Vue.component('ValidationProvider', ValidationProvider);
-Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('v-icell-table', TableComponent);
 Vue.component('v-icell-input', InputComponent);
 Vue.component('cell-base', CellBase);

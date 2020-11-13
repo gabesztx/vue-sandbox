@@ -1,5 +1,6 @@
 <template>
   <div class="page-content country-page">
+    
     <!--Header Content-->
     <section class="header-content hero is-small">
       <div class="hero-body">
@@ -15,8 +16,13 @@
     <!--Body Content-->
     <section class="body-content section">
       <div class="container">
+        <div class="card-wrapper" v-if="false">
+          <div class="card-top"></div>
+          <div class="card-bottom"></div>
+        </div>
         <div class="card">
           <div class="card-content">
+
             <!-- Header Content-->
             <div class="header-content">
               <v-icell-input
@@ -35,19 +41,19 @@
                 :classes="search.classes"
                 @input="onInput"
               ></v-icell-input>
-              <div class="settings-icon">
-                <div
-                  class="icon-content"
-                  @click="isOpenSetting = !isOpenSetting"
-                  :class="isOpenSetting ? 'active' : ''"
-                >
+
+              <div class="settings-icon" @click="isOpenSetting = !isOpenSetting">
+                <div class="icon-content" :class="isOpenSetting ? 'active' : ''">
                   <div class="icon-setting mdi mdi-cog"></div>
                 </div>
+              </div>
+              <div class="home-icon-content">
+                <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
               </div>
             </div>
 
             <!-- Settings Content-->
-            <div class="settings-content" v-if="isOpenSetting" :class="isOpenSetting ? 'active' : ''">
+            <div class="settings-content" :class="isOpenSetting ? 'active' : ''">
               <div class="settings-item-content">
                 <div class="settings-item">
                   <b-button :label="'Első oldal'" :size="'is-small'" @click="onPageChange(1)"></b-button>
@@ -106,12 +112,12 @@
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    data() {
+    data(){
       return {
         isOpenSetting: false,
       };
     },
-    setup() {
+    setup(){
       const search = reactive({
         loading: false,
         placeHolder: 'Keresés...',
@@ -128,7 +134,7 @@
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 7,
+        perPage: 6,
         subheading: 10,
         striped: true,
         currentPage: 1,
@@ -145,26 +151,30 @@
         sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
         sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
       });
-
       const settings = reactive({
         perPageNumber: 15,
       });
-
       const onInput = (value: any) => {
         table.data = searchData(countriesData, value);
       };
       const onNavigateDetail = ({ countryCode }) => {
         router.push({ path: `/countries/${countryCode}` });
       };
+      const onNavigateHome = () => {
+        router.push({ path: `/world` });
+      };
       const onPageChange = (page: number) => {
         table.currentPage = page;
       };
-      onMounted(() => {});
-      onUnmounted(() => {});
+      onMounted(() => {
+      });
+      onUnmounted(() => {
+      });
       return {
         onInput,
         onPageChange,
         onNavigateDetail,
+        onNavigateHome,
         table,
         search,
         settings,
