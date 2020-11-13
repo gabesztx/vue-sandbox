@@ -1,6 +1,5 @@
 <template>
   <div class="page-content country-page">
-    
     <!--Header Content-->
     <section class="header-content hero is-small">
       <div class="hero-body">
@@ -22,7 +21,6 @@
         </div>
         <div class="card">
           <div class="card-content">
-
             <!-- Header Content-->
             <div class="header-content">
               <v-icell-input
@@ -112,12 +110,12 @@
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {
-    data(){
+    data() {
       return {
         isOpenSetting: false,
       };
     },
-    setup(){
+    setup() {
       const search = reactive({
         loading: false,
         placeHolder: 'Keresés...',
@@ -166,10 +164,8 @@
       const onPageChange = (page: number) => {
         table.currentPage = page;
       };
-      onMounted(() => {
-      });
-      onUnmounted(() => {
-      });
+      onMounted(() => {});
+      onUnmounted(() => {});
       return {
         onInput,
         onPageChange,
