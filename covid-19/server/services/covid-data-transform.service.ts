@@ -1,5 +1,5 @@
-import { isoCountriesSchema } from '../../helpers/iso-countries_schema';
-import { isoCountries } from '../../helpers/iso-countries';
+import { isoCountriesSchema } from '../helpers/iso-countries_schema';
+import { isoCountries } from '../helpers/iso-countries';
 
 export const transformNoData = (data: any): any => {
   data.forEach((item: any) => {

@@ -1,8 +1,8 @@
 import { from } from 'rxjs';
 import { map, take, switchMap } from 'rxjs/operators';
-import { basePath } from '../../helpers/node-helper';
-import { transformCamelizeKeys } from '../../helpers/helpers';
-import { $getStatistics } from '../../server/api/covid-193.p.rapidapi';
+import { basePath } from '../helpers/node-helper';
+import { transformCamelizeKeys } from '../helpers/helpers';
+import { $getStatistics } from '../api/covid-193.p.rapidapi';
 import { jsFileService } from './jsonfile.service';
 import {
   transformRemoveHyphen,
@@ -14,13 +14,13 @@ import {
   separateContinentData,
 } from './covid-data-transform.service';
 
-const covid19CountryDB = require('../../server/db/covid19-country.db.json');
-const covid19ContinentDB = require('../../server/db/covid19-continent.db.json');
+const covid19CountryDB = require(`${basePath}/db/covid19-country.db.json`);
+const covid19ContinentDB = require(`${basePath}/db/covid19-continent.db.json`);
 
 const writeCovidDataInFile$ = (items: any) => from(
   Promise.all([
-    jsFileService.writeJsonFile(`${basePath}/server/db/covid19-country.db.json`, items[0]),
-    jsFileService.writeJsonFile(`${basePath}/server/db/covid19-continent.db.json`, items[1]),
+    jsFileService.writeJsonFile(`${basePath}/db/covid19-country.db.json`, items[0]),
+    jsFileService.writeJsonFile(`${basePath}/db/covid19-continent.db.json`, items[1]),
   ]),
 );
 

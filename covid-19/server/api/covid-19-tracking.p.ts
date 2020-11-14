@@ -1,7 +1,7 @@
 const { from } = require('rxjs');
 const { map } = require('rxjs/operators');
-const { transformObjectKeys } = require('../../helpers/helpers');
-const http = require('../../common/services/http.service');
+const { transformObjectKeys } = require('../helpers/helpers');
+const http = require('../services/http.service');
 const host = 'covid-19-tracking.p.rapidapi.com';
 
 const url = `https://${host}/v1`;

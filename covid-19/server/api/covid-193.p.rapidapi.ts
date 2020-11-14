@@ -1,6 +1,6 @@
 import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { httpService } from '../../common/services/http.service';
+import { httpService } from '../services/http.service';
 
 const host = 'covid-193.p.rapidapi.com';
 const url = `https://${host}`;
