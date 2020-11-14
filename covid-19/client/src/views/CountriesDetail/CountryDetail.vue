@@ -1,6 +1,6 @@
 <template>
   <div class="page-content country-detail-page">
-    <section class="header-content hero is-white">
+    <section class="header-content hero is-light">
       <div class="hero-body">
         <div class="container">
           <div class="country-header">

@@ -4,7 +4,7 @@
     "module": "commonjs",
     "noImplicitAny": false,
     "rootDir": "./",
-    "outDir": "./",
+    "outDir": "./build",
     "esModuleInterop": true,
     "strict": true,
     "noUnusedLocals": false
