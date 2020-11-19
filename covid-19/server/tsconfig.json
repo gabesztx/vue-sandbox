@@ -2,8 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": ".",
-    "rootDir": ".",
+    "outDir": "./build",
     "noImplicitAny": false,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -11,10 +10,8 @@
     "strict": true,
     "noUnusedLocals": false
   },
-  "exclude": [
-    "./client",
-    "./build",
-    "./node_modules"
-  ],
-  "lib": ["es2015"]
+//  "include": [""],
+  "lib": [
+    "es2015"
+  ]
 }

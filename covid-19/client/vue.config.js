@@ -1,5 +1,5 @@
 module.exports = {
-  outputDir: '../build/client',
+  outputDir: '../build',
   pluginOptions: {
     i18n: {
       locale: 'hu',

@@ -1,6 +1,6 @@
 import { from } from 'rxjs';
 import { map, take, switchMap } from 'rxjs/operators';
-import { basePath } from '../helpers/node-helper';
+import { basePath } from '../server';
 import { transformCamelizeKeys } from '../helpers/helpers';
 import { $getStatistics } from '../api/covid-193.p.rapidapi';
 import { jsFileService } from './jsonfile.service';
