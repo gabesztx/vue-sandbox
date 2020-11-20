@@ -1,3 +1,5 @@
 .DS_Store
 .idea
 .vscode/
+covid-19/build/
+covid-19/dist/

@@ -8,10 +8,10 @@
     "lint": "vue-cli-service lint",
     "serv:dev": "ts-node-dev --ignore-watch './server/db' --project './server/tsconfig.json' server/server.ts",
     "serv:compiler": "tsc --project './server/tsconfig.json'",
-    "serv:start": "node ./dist/server.js",
+    "serv:start": "node ./build/server.js",
     "build:all": "npm run build && npm run serv:compiler && npm run copy",
-    "clean": "rimraf ./dist",
-    "copy": "cp -R ./server/db ./dist/",
+    "clean": "rimraf ./build",
+    "copy": "cp -R ./server/db ./build/",
     "i18n:report": "vue-cli-service i18n:report --src 'src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
