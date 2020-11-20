@@ -34,7 +34,6 @@ Vue.component('cell-icon', CellIcon);
 
 Vue.use(VueCompositionApi);
 Vue.config.productionTip = false;
-
 new Vue({
   router,
   i18n,

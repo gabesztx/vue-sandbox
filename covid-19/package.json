@@ -9,7 +9,7 @@
     "serv:dev": "ts-node-dev --ignore-watch './server/db' --project './server/tsconfig.json' server/server.ts",
     "serv:compiler": "tsc --project './server/tsconfig.json'",
     "serv:start": "node ./build/server.js",
-    "build:all": "npm run build && npm run serv:compiler && npm run copy",
+    "build:all": "npm run build && npm run serv:compiler && npm run copy && npm run serv:start",
     "clean": "rimraf ./build",
     "copy": "cp -R ./server/db ./build/",
     "i18n:report": "vue-cli-service i18n:report --src 'src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
