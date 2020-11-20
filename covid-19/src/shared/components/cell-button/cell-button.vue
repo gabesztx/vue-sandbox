@@ -46,5 +46,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import './cell-button';
+  @import 'cell-button';
 </style>

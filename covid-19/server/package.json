@@ -5,8 +5,8 @@
   "scripts": {
     "start1": "nodemon server.ts",
     "start": "ts-node-dev --ignore-watch './db' --project 'tsconfig.json' server.ts",
-    "clean": "rimraf ./build",
     "tsc": "tsc --project 'tsconfig.json'",
+    "clean": "rimraf ./build",
     "copy": "cp -R ./db ./build",
     "prod": "node ./build/server.js",
     "build": "npm run clean && npm run tsc && npm run copy"

@@ -95,5 +95,5 @@
   };
 </script>
 <style scoped lang="scss">
-  @import './World';
+  @import 'World';
 </style>

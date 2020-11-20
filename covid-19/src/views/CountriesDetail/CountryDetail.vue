@@ -80,5 +80,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import './CountryDetail';
+  @import 'CountryDetail';
 </style>
