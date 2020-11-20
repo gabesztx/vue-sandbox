@@ -1,4 +1,4 @@
-@import '../../..varibles/varibles';
+@import '../varibles/varibles';
 .table-content {
   padding: 0 $table-padding;
   .b-table {
@@ -16,7 +16,6 @@
         vertical-align: middle;
       }
       tbody {
-        //font-size: 14px;
         font-weight: 400;
       }
     }
