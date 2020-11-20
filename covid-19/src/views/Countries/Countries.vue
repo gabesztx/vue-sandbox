@@ -12,10 +12,10 @@
     <!--Body Content-->
     <section class="body-content section">
       <div class="container">
-        <div class="card-wrapper" v-if="false">
+        <!--<div class="card-wrapper" v-if="false">
           <div class="card-top"></div>
           <div class="card-bottom"></div>
-        </div>
+        </div>-->
         <div class="card">
           <div class="card-content">
             <!-- Header Content-->
@@ -62,7 +62,12 @@
                 <div class="settings-item">
                   <b-select v-model="table.perPage" :size="'is-small'">
                     <template v-for="(num, index) in settings.perPageNumber">
-                      <option :key="index" :label="`${num} sor`" :value="num"></option>
+                      <option
+                        :key="index"
+                        :label="`${num} sor`"
+                        :value="num">
+                        {{num}} sor
+                      </option>
                     </template>
                   </b-select>
                 </div>

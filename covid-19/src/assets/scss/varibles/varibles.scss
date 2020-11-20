@@ -3,10 +3,19 @@ $icon-dimension: 16px;
 $setting-anim-duration: 0.5s;
 
 @keyframes rotationAnim {
-  from {
+  0% {
+    transform: scale(.8, .8) rotate(0deg);
+  }
+  50% {
+    transform: scale(1, 1) rotate(180deg);
+  }
+  100% {
+    transform: scale(.8, .8) rotate(359deg);
+  }
+  /*from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(359deg);
-  }
+  }*/
 }
