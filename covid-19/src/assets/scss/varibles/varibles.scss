@@ -2,3 +2,11 @@ $table-padding: 20px;
 $icon-dimension: 16px;
 $setting-anim-duration: 0.5s;
 
+@keyframes rotationAnim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

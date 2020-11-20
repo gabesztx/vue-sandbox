@@ -1,18 +1,23 @@
+@import '../../assets/scss/varibles/varibles';
+
 .world-page {
   width: 100%;
   height: 100%;
+
   .world-head {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 
     .covid-icon {
-      width: 140px;
+      width: 100px;
+      animation: rotationAnim 30s infinite linear;
     }
 
     .covid-label {
-      font-size: 50px;
-      font-weight: 600;
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 900;
       padding-left: 5px;
     }
   }
@@ -22,17 +27,16 @@
     text-align: center;
 
     .world-title {
-      font-size: 25px;
-      font-weight: 700;
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 900;
     }
 
     .world-update-time {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
-
   .world-body {
-    padding-top: 40px;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +44,11 @@
     .box-item {
       margin-bottom: 0;
       margin-right: 15px;
-      text-align: center;
+      //text-align: center;
+      //box-shadow: none;
       min-width: 180px;
+      border-radius: 6px;
+      border: 1px solid rgba(24, 28, 33, .06);
       .box-item-label {
         font-weight: 400;
         font-size: 16px
@@ -62,7 +69,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    //padding: 0 40px;
+
     video {
       width: 100%;
       max-width: 560px;
@@ -74,6 +82,11 @@
 
   .world-button {
     text-align: center;
-    padding-top: 20px;
+
+    button {
+      border-radius: 0;
+    }
+
+    //padding-top: 20px;
   }
 }

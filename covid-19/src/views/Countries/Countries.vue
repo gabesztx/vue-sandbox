@@ -1,13 +1,13 @@
 <template>
   <div class="page-content country-page">
     <!--Header Content-->
-    <section class="header-content hero is-small">
+    <section class="header-content hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Országonként</h1>
-          <h3 class="subtitle is-6">
-            <span>COVID-19</span>
-          </h3>
+          <h1 class="title has-text-centered">Országszerte</h1>
+          <!--   <h3 class="subtitle is-6">
+               <span>COVID-19</span>
+             </h3>-->
         </div>
       </div>
     </section>
@@ -22,31 +22,36 @@
         <div class="card">
           <div class="card-content">
             <!-- Header Content-->
-            <div class="header-content">
-              <v-icell-input
-                class="search-content"
-                :label="search.label"
-                :place-holder="search.placeHolder"
-                :rounded="search.rounded"
-                :size="search.size"
-                :loading="search.loading"
-                :style-type="search.styleType"
-                :expanded="search.expanded"
-                :icon="search.icon"
-                :icon-right="search.iconRight"
-                :type="search.type"
-                :custom-class="search.customClass"
-                :classes="search.classes"
-                @input="onInput"
-              ></v-icell-input>
-
-              <div class="settings-icon" @click="isOpenSetting = !isOpenSetting">
-                <div class="icon-content" :class="isOpenSetting ? 'active' : ''">
-                  <div class="icon-setting mdi mdi-cog"></div>
-                </div>
+            <div class="table-header-content">
+              <div class="table-icon-content">
+                <img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />
+                <div class="table-covid-text">COVID-19</div>
               </div>
-              <div class="home-icon-content">
-                <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
+              <div class="table-handler-content">
+                <v-icell-input
+                  class="search-content"
+                  :label="search.label"
+                  :place-holder="search.placeHolder"
+                  :rounded="search.rounded"
+                  :size="search.size"
+                  :loading="search.loading"
+                  :style-type="search.styleType"
+                  :expanded="search.expanded"
+                  :icon="search.icon"
+                  :icon-right="search.iconRight"
+                  :type="search.type"
+                  :custom-class="search.customClass"
+                  :classes="search.classes"
+                  @input="onInput"
+                ></v-icell-input>
+                <div class="settings-icon-content" @click="isOpenSetting = !isOpenSetting">
+                  <div class="icon-content" :class="isOpenSetting ? 'active' : ''">
+                    <div class="icon-setting mdi mdi-cog"></div>
+                  </div>
+                </div>
+                <div class="home-icon-content">
+                  <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
+                </div>
               </div>
             </div>
 
@@ -118,7 +123,7 @@
     setup() {
       const search = reactive({
         loading: false,
-        placeHolder: 'Keresés...',
+        placeHolder: 'Ország keresés...',
         customClass: 'searchInput',
         icon: 'magnify',
         size: 'is-small',

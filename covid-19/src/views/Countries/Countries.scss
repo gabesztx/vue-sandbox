@@ -1,6 +1,14 @@
 @import '../../assets/scss/varibles/varibles';
 
 .country-page {
+  .header-content {
+    .title {
+      color: rgba(0, 0, 0, .7);
+      font-weight: 900;
+      //opacity: 0;
+    }
+  }
+
   .body-content {
     padding-top: 0;
 
@@ -11,52 +19,78 @@
       .card-content {
         padding: $table-padding 0;
 
-        .header-content {
+        .table-header-content {
           display: flex;
-          justify-content: flex-end;
           align-items: center;
           padding: 0 $table-padding;
+          justify-content: space-between;
 
-          .home-icon-content {
-            padding-left: 10px;
-            .home-icon {
-              cursor: pointer;
+          .table-icon-content {
+            display: flex;
+            align-items: center;
+
+            .table-covid-text {
+              font-size: 20px;
+              color: rgba(0, 0, 0, 0.7);
+              font-weight: 700;
+              padding-left: 10px;
+
+            }
+
+            .table-covid-icon {
+              //margin-left: 5p;
+              width: 28px;
+            }
+          }
+
+          .table-handler-content {
+            display: flex;
+            align-items: center;
+
+            .home-icon-content {
+              padding-left: 10px;
+
+              .home-icon {
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 7px;
+                background-color: #f4f4f4;
+
+                &:hover {
+                  background-color: #eeeeee;
+                  border-color: transparent;
+                  color: rgba(0, 0, 0, 0.7);
+                }
+              }
+            }
+
+            .settings-icon-content {
               border-radius: 4px;
               padding: 7px;
               background-color: #f4f4f4;
+              cursor: pointer;
 
               &:hover {
                 background-color: #eeeeee;
                 border-color: transparent;
                 color: rgba(0, 0, 0, 0.7);
               }
-            }
-          }
 
-          .settings-icon {
-            border-radius: 4px;
-            padding: 7px;
-            background-color: #f4f4f4;
-            cursor: pointer;
-            &:hover {
-              background-color: #eeeeee;
-              border-color: transparent;
-              color: rgba(0, 0, 0, 0.7);
-            }
-            .icon-content {
-              color: rgba(0, 0, 0, .7);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: $icon-dimension;
-              height: $icon-dimension;
-              line-height: $icon-dimension;
-              font-size: $icon-dimension;
-              transition: transform $setting-anim-duration ease-in-out;
-              transform: rotateZ(0);
+              .icon-content {
+                color: rgba(0, 0, 0, .7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: $icon-dimension;
+                height: $icon-dimension;
+                line-height: $icon-dimension;
+                font-size: $icon-dimension;
+                transition: transform $setting-anim-duration ease-in-out;
+                transform: rotateZ(0);
 
-              &.active {
-                transform: rotateZ(200deg);
+                &.active {
+                  transform: rotateZ(200deg);
+                }
               }
             }
           }

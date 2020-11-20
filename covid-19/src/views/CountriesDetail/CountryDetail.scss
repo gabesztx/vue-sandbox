@@ -1,25 +1,41 @@
 .country-detail-page {
-  background-color: white;
+  //background-color: white;
+  position: relative;
+  $headerHeight: 200px;
   .header-content {
-    border-bottom: 1px solid rgba(24, 28, 33, .06);
-
+    background-image: url('/static/bg.png');
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: $headerHeight;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
     .country-header {
       display: flex;
       justify-content: space-between;
-
       .country-left {
         display: flex;
         .country-flag {
-          width: 160px;
-          border-radius: 4px;
+          width: 140px;
+          height: 95px;
+          border: 1px solid rgba(24, 28, 33, .07);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 10px;
         }
 
         .country-text-box {
           padding-left: 25px;
-
           .country-name {
+            color: #363636;
+            font-size: 2rem;
             font-weight: 600;
-            font-size: 30px;
+            line-height: 1.125;
           }
         }
       }
@@ -35,19 +51,20 @@
   }
 
   .body-content {
-    padding-top: 20px;
-
+    padding-top: $headerHeight + 40;
     .card {
       border: 1px solid rgba(24, 28, 33, .08);
-      border-radius: 6px;
+      //border-radius: 6px;
       box-shadow: none;
-      .subtitle{
-        font-size: 16px;
-      }
-      .title{
 
-        font-size: 24px;
+      .subtitle {
+        //font-size: 16px;
+        color: #7a7a7a;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.25;
       }
+
     }
   }
 }

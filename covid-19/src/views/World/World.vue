@@ -1,14 +1,14 @@
 <template>
   <div class="page-content world-page">
-    <section class="header-content hero is-small">
+    <section class="header-content hero">
       <div class="hero-body">
         <div class="container">
           <div class="world-head">
-            <img class="covid-icon" src="../../../public/static/covid-icon/covid-19.3.svg" />
-            <div class="covid-label">COVID-19</div>
+            <img class="covid-icon" src="static/covid-icon/covid-19.3.svg" />
+            <div class="covid-label title is-1">COVID-19</div>
           </div>
           <div class="world-sub">
-            <div class="world-title title">Világszerte</div>
+            <div class="world-title title is-4">Világszerte</div>
             <div class="world-update-time subtitle">{{ $t('time') }}: 2020.11.11</div>
           </div>
           <div class="world-body">
@@ -29,7 +29,7 @@
               <div class="box-item-value">{{ worldData.deathsTotal }}</div>
             </div>
           </div>
-          <div class="world-video-content">
+          <!--<div class="world-video-content">
             <video
               class="box"
               :id="video.id"
@@ -44,9 +44,15 @@
                 <source :key="index" :src="source.src" :type="source.type" />
               </template>
             </video>
-          </div>
+          </div>-->
           <div class="world-button">
-            <b-button @click="onClick" label="Táblázat" type="is-primary"></b-button>
+            <b-button
+              :label="'Országszerte'"
+              :type="'is-primary'"
+              size=""
+              :icon-left="'table'"
+              @click="onNavigate"
+            ></b-button>
           </div>
         </div>
       </div>
@@ -82,11 +88,11 @@
         // videtoTag.onloadstart = () => {};
         // videtoTag.play();
       });
-      const onClick = () => {
+      const onNavigate = () => {
         router.push({ path: '/countries' });
       };
       return {
-        onClick,
+        onNavigate,
         worldData,
         video,
         // videoConfig,

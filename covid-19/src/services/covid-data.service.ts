@@ -5,7 +5,7 @@ export let countriesData = [] as any;
 export let countryDetailData = {} as any;
 
 const env = process.env.NODE_ENV;
-console.log('ENV', env);
+// console.log('ENV', env);
 const host = env === 'development' ? process.env.VUE_APP_DEV_HOST : process.env.VUE_APP_PROD_HOST;
 
 export const getWorld = (): Promise<any> => {
