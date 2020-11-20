@@ -5,9 +5,6 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title has-text-centered">Országszerte</h1>
-          <!--   <h3 class="subtitle is-6">
-               <span>COVID-19</span>
-             </h3>-->
         </div>
       </div>
     </section>
@@ -123,7 +120,7 @@
     setup() {
       const search = reactive({
         loading: false,
-        placeHolder: 'Ország keresés...',
+        placeHolder: 'Ország keresés',
         customClass: 'searchInput',
         icon: 'magnify',
         size: 'is-small',

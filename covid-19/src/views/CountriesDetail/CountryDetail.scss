@@ -5,7 +5,7 @@
   .header-content {
     background-image: url('/static/bg.png');
     background-repeat: no-repeat;
-    //background-size: cover;
+    background-position: 15% 15%;
     background-color: white;
     position: fixed;
     display: flex;
@@ -54,11 +54,8 @@
     padding-top: $headerHeight + 40;
     .card {
       border: 1px solid rgba(24, 28, 33, .08);
-      //border-radius: 6px;
       box-shadow: none;
-
       .subtitle {
-        //font-size: 16px;
         color: #7a7a7a;
         font-size: 1.25rem;
         font-weight: 400;
