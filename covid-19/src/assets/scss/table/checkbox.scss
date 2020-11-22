@@ -1,0 +1,20 @@
+.b-checkbox.checkbox input[type=checkbox] + .check {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 2px;
+}
+
+.b-checkbox.checkbox input[type=checkbox]:checked + .check {
+  border-color: rgb(146, 146, 146);
+  background-color: rgba(146, 146, 146);
+}
+
+.b-checkbox.checkbox:hover input[type=checkbox]:not(:disabled) + .check {
+  border-color: rgb(146, 146, 146);
+}
+
+.b-checkbox.checkbox input[type=checkbox]:focus + .check {
+  box-shadow: none;
+}
+.b-checkbox.checkbox input[type=checkbox]:focus:checked + .check {
+  box-shadow: none;
+}

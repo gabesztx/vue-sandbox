@@ -21,8 +21,8 @@
             <!-- Header Content-->
             <div class="table-header-content">
               <div class="table-icon-content">
-                <img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />
                 <div class="table-covid-text">COVID-19</div>
+                <!--<img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
               </div>
               <div class="table-handler-content">
                 <v-icell-input
@@ -56,20 +56,32 @@
             <div class="settings-content" :class="isOpenSetting ? 'active' : ''">
               <div class="settings-item-content">
                 <div class="settings-item">
-                  <b-button :label="'Első oldal'" :size="'is-small'" @click="onPageChange(1)"></b-button>
+                  <!--v-model="selectedOptions"-->
+                  <b-dropdown class="selectDropDown" aria-role="list" :multiple="true">
+                    <b-button slot="trigger" :label="'Oszlopok'" :size="''"></b-button>
+                    <template v-for="(item, index) in settings.columns">
+                      <div class="dropDown-item" :key="index">
+                        <b-checkbox v-model="item.visible" :size="'is-small'">
+                          <span>{{ item.label }}</span>
+                          {{ item.visible }}
+                        </b-checkbox>
+                      </div>
+                    </template>
+                  </b-dropdown>
                 </div>
 
                 <div class="settings-item">
                   <b-select v-model="table.perPage" :size="'is-small'">
                     <template v-for="(num, index) in settings.perPageNumber">
-                      <option
-                        :key="index"
-                        :label="`${num} sor`"
-                        :value="num">
-                        {{num}} sor
+                      <option :key="index" :label="`Sorok: ${num}`" :value="num">
+                        {{ `Sorok: ${num}` }}
                       </option>
                     </template>
                   </b-select>
+                </div>
+
+                <div class="settings-item">
+                  <b-button :label="'Első oldal'" :size="'is-small'" @click="onPageChange(1)"></b-button>
                 </div>
               </div>
             </div>
@@ -112,14 +124,16 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { countriesData } from '@/services/covid-data.service';
+  import { countriesData, continentsData } from '@/services/covid-data.service';
   import { searchData, columns } from '@/services/table.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
+  import { IColumn } from '@/core/interfaces';
 
   export default {
     data() {
       return {
-        isOpenSetting: false,
+        isOpenSetting: true,
+        selectedOptions: [],
       };
     },
     setup() {
@@ -139,7 +153,7 @@
         paginated: true,
         paginationSimple: true,
         paginationSize: 'is-small',
-        perPage: 6,
+        perPage: 7,
         subheading: 10,
         striped: true,
         currentPage: 1,
@@ -156,10 +170,14 @@
         sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
         sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
       });
+
       const settings = reactive({
         perPageNumber: 15,
+        columns: columns.filter((column) => column.hasOwnProperty('visible')),
       });
+      // console.log(settings);
       const onInput = (value: any) => {
+        // console.log('value', countriesData);
         table.data = searchData(countriesData, value);
       };
       const onNavigateDetail = ({ countryCode }) => {

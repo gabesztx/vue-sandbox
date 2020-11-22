@@ -7,8 +7,9 @@ import path from 'path';
 export const basePath = path.join(__dirname, './');
 export const port = process.env.PORT || 5000;
 import {
-  getCovid19ContinentDB,
-  getCovid19CountryDB,
+  getCovid19World,
+  getCovid19Continents,
+  getCovid19Country,
   getCovid19CountryDetail,
   transformCovidDbData,
 } from './services/covid-data.service';
@@ -28,14 +29,14 @@ const server = http.createServer(app);
 // });
 
 // TODO: app.get routerek kiszervezése
-app.get('/continent', (req, res) => {
-  return res.send(getCovid19ContinentDB());
+app.get('/continents', (req, res) => {
+  return res.send(getCovid19Continents());
 });
 app.get('/world', (req, res) => {
-  return res.send(getCovid19ContinentDB()[0]);
+  return res.send(getCovid19World());
 });
 app.get('/countries', (req, res) => {
-  return res.send(getCovid19CountryDB());
+  return res.send(getCovid19Country());
 });
 app.get('/countries/:countryCode', (req, res) => {
   return res.send(getCovid19CountryDetail(req.params.countryCode));

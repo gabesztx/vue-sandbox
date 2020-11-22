@@ -7,11 +7,11 @@ $settingsContentHeight: 51px;
   padding: 0 $table-padding;
   margin-top: $table-padding;
   background-color: rgba(243, 243, 243, 1);
-  height: 0;
-  overflow: hidden;
+  //height: 0;
+  //overflow: hidden;
   transition: height $setting-anim-duration ease-in-out;
   &.active {
-    height: $settingsContentHeight;
+    //height: $settingsContentHeight;
   }
   .settings-item-content {
     display: flex;
@@ -30,41 +30,6 @@ $settingsContentHeight: 51px;
 
         &:focus {
           border-color: #dbdbdb;
-        }
-      }
-
-      /* Select */
-      .select {
-        font-size: $settingsFontSize;
-
-        &:not(.is-multiple):not(.is-loading)::after {
-          border-color: #dbdbdb;
-          z-index: 0;
-        }
-
-        select {
-          color: rgba(74, 74, 74, 0.9);
-          box-shadow: none;
-
-          &:focus {
-            border-color: #dbdbdb;
-          }
-        }
-      }
-
-      /* Input number */
-      .b-numberinput {
-        input {
-          border: 0;
-          font-size: $settingsFontSize;
-        }
-
-        button {
-          font-size: $settingsFontSize;
-          box-shadow: none;
-
-          &.is-primary {
-          }
         }
       }
     }

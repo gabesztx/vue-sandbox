@@ -18,4 +18,5 @@ export interface IColumn {
   cellClass?: string;
   headerSelectable?: boolean;
   componentName?: any;
+  isEdit?: boolean;
 }

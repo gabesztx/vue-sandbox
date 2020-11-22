@@ -2,11 +2,16 @@
 @import 'table/table';
 @import 'table/search';
 @import 'table/settings';
+@import 'table/selectDropDown';
+@import 'table/select';
+@import 'dropdown/dropdown';
+@import 'table/checkbox';
 
 html, body {
   font-family: 'Nunito Sans', sans-serif; // 200;300;400;600
   //background-color: #f5f5f5;
   background-color: #f8f8f8;
+
   .main-content {
     position: absolute;
     width: 100%;

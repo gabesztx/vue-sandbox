@@ -8,7 +8,7 @@
             <div class="covid-label title is-1">COVID-19</div>
           </div>
           <div class="world-sub">
-            <div class="world-title title is-4">Világszerte</div>
+            <div class="world-title title">Világszerte</div>
             <div class="world-update-time subtitle">{{ $t('time') }}: 2020.11.11</div>
           </div>
           <div class="world-body">

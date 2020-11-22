@@ -1,0 +1,16 @@
+.select {
+  &:not(.is-multiple):not(.is-loading)::after {
+    z-index: 0;
+    border: 2px solid #dbdbdb;
+    border-right: 0;
+    border-top: 0;
+  }
+  select {
+    //color: rgba(74, 74, 74, 0.9);
+    border-color: #dbdbdb;
+    &:focus {
+      box-shadow: none;
+      border-color: #dbdbdb;
+    }
+  }
+}

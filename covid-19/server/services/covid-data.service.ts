@@ -15,7 +15,7 @@ import {
 } from './covid-data-transform.service';
 
 const covid19CountryDB = require(`${basePath}/db/covid19-country.db.json`);
-const covid19ContinentDB = require(`${basePath}/db/covid19-continent.db.json`);
+const covid19ContinentsDB = require(`${basePath}/db/covid19-continent.db.json`);
 
 const writeCovidDataInFile$ = (items: any) => from(
   Promise.all([
@@ -48,7 +48,7 @@ const getTransformCountryDetailData = (data: any) => {
     'tests1MPop',
   ];
 
-  let detailData = { covidData: {} };
+  let detailData = {covidData: {}};
   countryKeys.forEach((key) => {
     detailData[key] = data[key];
   });
@@ -58,10 +58,13 @@ const getTransformCountryDetailData = (data: any) => {
   return detailData;
 };
 
-export const getCovid19ContinentDB = () => JSON.parse(JSON.stringify(covid19ContinentDB))
-export const getCovid19CountryDB = () => JSON.parse(JSON.stringify(covid19CountryDB));
+export const getCovid19Continents = () => JSON.parse(JSON.stringify(covid19ContinentsDB));
+// const continents = JSON.parse(JSON.stringify(covid19ContinentsDB));
+// continents.pop();
+export const getCovid19Country = () => JSON.parse(JSON.stringify(covid19CountryDB));
+export const getCovid19World = () => JSON.parse(JSON.stringify(covid19ContinentsDB[0]));
 export const getCovid19CountryDetail = (countryCode: string) => {
-  const countryList = getCovid19CountryDB();
+  const countryList = getCovid19Country();
   let countryDetail = countryList.find((data) => data.countryCode === countryCode);
   if (countryDetail) {
     countryDetail = getTransformCountryDetailData(countryDetail);

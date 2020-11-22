@@ -19,6 +19,7 @@ module.exports = {
     'no-implicit-any': 'off',
     'no-explicit-any': 'off',
     'no-empty': 'off',
+    'no-prototype-builtins': 'off',
     'vue/custom-event-name-casing': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-empty-function': 'off',
