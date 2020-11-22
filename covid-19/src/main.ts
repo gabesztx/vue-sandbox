@@ -9,6 +9,7 @@ import CellBase from '@/shared/components/cell-base/cell-base.vue';
 import CellImage from '@/shared/components/cell-image/cell-image.vue';
 import CellButton from '@/shared/components/cell-button/cell-button.vue';
 import CellIcon from '@/shared/components/cell-icon/cell-icon.vue';
+import CellCountry from '@/shared/components/cell-country/cell-country.vue';
 import App from './App.vue';
 
 // Buefy
@@ -31,6 +32,7 @@ Vue.component('cell-base', CellBase);
 Vue.component('cell-image', CellImage);
 Vue.component('cell-button', CellButton);
 Vue.component('cell-icon', CellIcon);
+Vue.component('cell-country', CellCountry);
 
 Vue.use(VueCompositionApi);
 Vue.config.productionTip = false;

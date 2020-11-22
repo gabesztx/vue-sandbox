@@ -69,8 +69,8 @@
       :custom-sort="column.customSort"
       :custom-key="column.customKey"
     >
-      <div class="cell-content">
-        <template v-if="column.componentName">
+      <template v-if="column.componentName">
+        <div class="cell-content">
           <component
             v-bind:is="column.componentName"
             :column="column"
@@ -78,11 +78,11 @@
             :value="props.row[column.field]"
             @componentCellEmit="onComponentCellEmit"
           ></component>
-        </template>
-        <template v-else>
-          {{ props.row[column.field] }}
-        </template>
-      </div>
+        </div>
+      </template>
+      <template v-else>
+        <div class="cell-content" v-html="props.row[column.field]"></div>
+      </template>
     </b-table-column>
   </b-table>
 </template>

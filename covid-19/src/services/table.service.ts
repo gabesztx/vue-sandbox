@@ -17,23 +17,23 @@ export const columns: IColumn[] = [
     field: 'casesNew',
     label: i18n.tc('casesNew'),
     sortable: true,
-    // centered: true,
-    visible: true,
     componentName: 'cell-base',
     customValue: (value) => (value === 'N/A' ? 'Nincs adat' : '+' + value),
     customClass: (value) => (value === 'N/A' ? 'is-no-data' : ''),
     customSort: (a, b, isAsc) => sortingCustomValue(a, b, isAsc, 'casesNew', 'N/A'),
+    visible: true,
+    // centered: true,
   },
   {
     field: 'deathsNew',
     label: i18n.tc('deathsNew'),
     sortable: true,
-    // centered: true,
     visible: true,
     componentName: 'cell-base',
     customValue: (v) => (v === 'N/A' ? 'Nincs adat' : '+' + v),
     customClass: (v) => (v === 'N/A' ? 'is-no-data' : ''),
     customSort: (a, b, isAsc) => sortingCustomValue(a, b, isAsc, 'deathsNew', 'N/A'),
+    // centered: true,
   },
   {
     field: 'casesActive',
@@ -46,8 +46,8 @@ export const columns: IColumn[] = [
     field: 'casesCritical',
     label: i18n.tc('casesCritical'),
     sortable: true,
-    // centered: true,
     visible: true,
+    // centered: true,
   },
   {
     width: 30,
@@ -55,17 +55,24 @@ export const columns: IColumn[] = [
   },
 ];
 
-export const searchData = (searchData: any, searchValue: any) => {
+// TODO: Highlights
+export const highlight = (value: any, result: any) => {
+  const reg = new RegExp(value, 'gi');
+  return result.replace(reg, (str) => '<b>' + str + '</b>');
+};
+
+export const searchData = (value: any, searchData: any) => {
   return searchData.filter((item) => {
     let isFind = false;
     Object.values(item).forEach((val: any) => {
-      const isMatch = new RegExp(searchValue, 'i').test(val);
+      const isMatch = new RegExp(value, 'i').test(val);
       if (isMatch) {
         isFind = true;
       }
     });
     return isFind;
   });
+
 };
 
 export const sortingCustomValue = (a, b, isAsc, filed, customValue) => {

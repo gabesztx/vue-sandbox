@@ -20,10 +20,12 @@
           <div class="card-content">
             <!-- Header Content-->
             <div class="table-header-content">
+
               <div class="table-icon-content">
                 <div class="table-covid-text">COVID-19</div>
-                <!--<img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
+                <!--                <img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
               </div>
+
               <div class="table-handler-content">
                 <v-icell-input
                   class="search-content"
@@ -62,7 +64,7 @@
                     <template v-for="(item, index) in settings.columns">
                       <div class="dropDown-item" :key="index">
                         <b-checkbox v-model="item.visible" :size="'is-small'">
-                          <span>{{ item.label }}</span>
+                          <span>{{item.label}}</span>
                         </b-checkbox>
                       </div>
                     </template>
@@ -72,8 +74,8 @@
                 <div class="settings-item">
                   <b-select v-model="table.perPage" :size="'is-small'">
                     <template v-for="(num, index) in settings.perPageNumber">
-                      <option :key="index" :label="`Sorok: ${num}`" :value="num">
-                        {{ `Sorok: ${num}` }}
+                      <option :key="index" :label="`${num} sor`" :value="num">
+                        {{`${num} sor`}}
                       </option>
                     </template>
                   </b-select>
@@ -122,85 +124,87 @@
   </div>
 </template>
 <script lang="ts">
-  import router from '@/router';
-  import { countriesData, continentsData } from '@/services/covid-data.service';
-  import { searchData, columns } from '@/services/table.service';
-  import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
-  import { IColumn } from '@/core/interfaces';
+import router from '@/router';
+import { countriesData, continentsData } from '@/services/covid-data.service';
+import { searchData, columns } from '@/services/table.service';
+import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
+import { IColumn } from '@/core/interfaces';
 
-  export default {
-    data() {
-      return {
-        isOpenSetting: true,
-        selectedOptions: [],
-      };
-    },
-    setup() {
-      const search = reactive({
-        loading: false,
-        placeHolder: 'Ország keresés',
-        customClass: 'searchInput',
-        icon: 'magnify',
-        size: 'is-small',
-      });
+export default {
+  data(){
+    return {
+      isOpenSetting: true,
+    };
+  },
+  setup(){
+    const search = reactive({
+      loading: false,
+      placeHolder: 'Ország keresés',
+      customClass: 'searchInput',
+      icon: 'magnify',
+      size: 'is-small',
+    });
 
-      const table = reactive({
-        columns: columns,
-        data: countriesData,
-        scrollable: false,
-        stickyHeader: false,
-        paginated: true,
-        paginationSimple: true,
-        paginationSize: 'is-small',
-        perPage: 7,
-        subheading: 10,
-        striped: true,
-        currentPage: 1,
-        narrowed: false,
-        mobileCards: true,
-        hoverable: false,
-        showDetailIcon: false,
-        sortIconSize: 'is-small',
-        bordered: false,
-        sortIcon: 'menu-up',
-        defaultSortDirection: 'asc', // 'desc'
-        defaultSort: '', // ['casesNew', 'desc'],
-        sortMultiple: false,
-        sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
-        sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
-      });
+    const table = reactive({
+      columns: columns,
+      data: countriesData,
+      scrollable: false,
+      stickyHeader: false,
+      paginated: true,
+      paginationSimple: true,
+      paginationSize: 'is-small',
+      perPage: 7,
+      subheading: 10,
+      striped: true,
+      currentPage: 1,
+      narrowed: false,
+      mobileCards: true,
+      hoverable: false,
+      showDetailIcon: false,
+      sortIconSize: 'is-small',
+      bordered: false,
+      sortIcon: 'menu-up',
+      defaultSortDirection: 'asc', // 'desc'
+      defaultSort: '', // ['casesNew', 'desc'],
+      sortMultiple: false,
+      sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
+      sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
+    });
 
-      const settings = reactive({
-        perPageNumber: 15,
-        columns: columns.filter((column) => column.hasOwnProperty('visible')),
-      });
-      const onInput = (value: any) => {
-        table.data = searchData(countriesData, value);
-      };
-      const onNavigateDetail = ({ countryCode }) => {
-        router.push({ path: `/countries/${countryCode}` });
-      };
-      const onNavigateHome = () => {
-        router.push({ path: `/world` });
-      };
-      const onPageChange = (page: number) => {
-        table.currentPage = page;
-      };
-      onMounted(() => {});
-      onUnmounted(() => {});
-      return {
-        onInput,
-        onPageChange,
-        onNavigateDetail,
-        onNavigateHome,
-        table,
-        search,
-        settings,
-      };
-    },
-  };
+    const settings = reactive({
+      perPageNumber: 15,
+      columns: columns.filter((column) => column.hasOwnProperty('visible')),
+    });
+    const onInput = (value: any) => {
+      // console.log(searchData(countriesData, value));
+      table.data = searchData(value, countriesData);
+    };
+    const onNavigateDetail = ({countryCode}) => {
+      router.push({path: `/countries/${countryCode}`});
+    };
+    const onNavigateHome = () => {
+      router.push({path: `/world`});
+    };
+    const onPageChange = (page: number) => {
+      table.currentPage = page;
+    };
+    onMounted(() => {
+    });
+    onUnmounted(() => {
+    });
+    return {
+      onInput,
+      onPageChange,
+      onNavigateDetail,
+      onNavigateHome,
+      table,
+      search,
+      settings,
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
-  @import 'Countries';
+@import 'Countries';
 </style>
