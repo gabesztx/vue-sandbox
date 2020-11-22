@@ -16,11 +16,11 @@ $settingsContentHeight: 51px;
   .settings-item-content {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     width: 100%;
+    justify-content: flex-end;
     height: $settingsContentHeight;
     .settings-item {
-      padding-left: 10px;
+      //padding-left: 10px;
       /* Button */
       .button {
         font-size: $settingsFontSize;

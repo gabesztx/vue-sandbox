@@ -16,30 +16,34 @@ import {
 
 /* App */
 const app = express();
+const server = http.createServer(app);
+
 app.use(history());
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(`${basePath}`));
-/* Server */
-const server = http.createServer(app);
 
-// app.get('/', (req, res) => {
-//   return res.sendFile(`${basePath}/build/index.html`);
-// });
+// TODO: app.get routerek kiszervezése: Then, load the router module in the app:
+// https://expressjs.com/en/guide/routing.html
 
-// TODO: app.get routerek kiszervezése
+app.post('/continent', (req, res) => {
+  const continent = req.body;
+  console.log('--: ', continent);
+  // res.end('oh_yes')
+  // return res.send(getCovid19Continents());
+});
 app.get('/continents', (req, res) => {
-  return res.send(getCovid19Continents());
+  res.send(getCovid19Continents());
 });
 app.get('/world', (req, res) => {
-  return res.send(getCovid19World());
+  res.send(getCovid19World());
 });
 app.get('/countries', (req, res) => {
-  return res.send(getCovid19Country());
+  res.send(getCovid19Country());
 });
 app.get('/countries/:countryCode', (req, res) => {
-  return res.send(getCovid19CountryDetail(req.params.countryCode));
+  res.send(getCovid19CountryDetail(req.params.countryCode));
 });
 server.listen(port, () => {
   transformCovidDbData();

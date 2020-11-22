@@ -58,11 +58,10 @@ const getTransformCountryDetailData = (data: any) => {
   return detailData;
 };
 
-export const getCovid19Continents = () => JSON.parse(JSON.stringify(covid19ContinentsDB));
-// const continents = JSON.parse(JSON.stringify(covid19ContinentsDB));
-// continents.pop();
-export const getCovid19Country = () => JSON.parse(JSON.stringify(covid19CountryDB));
 export const getCovid19World = () => JSON.parse(JSON.stringify(covid19ContinentsDB[0]));
+export const getCovid19Continents = () => JSON.parse(JSON.stringify(covid19ContinentsDB));
+
+export const getCovid19Country = () => JSON.parse(JSON.stringify(covid19CountryDB));
 export const getCovid19CountryDetail = (countryCode: string) => {
   const countryList = getCovid19Country();
   let countryDetail = countryList.find((data) => data.countryCode === countryCode);

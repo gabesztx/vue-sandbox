@@ -24,22 +24,30 @@
           margin: 0 $table-padding;
           justify-content: space-between;
 
+
+          /* Continent */
+          .table-continent-content{
+            .btn-continent{
+              margin-right: 5px;
+            }
+          }
+
           .table-icon-content {
             display: flex;
             align-items: center;
 
-            /*  .home-icon {
-                cursor: pointer;
-                border-radius: 4px;
-                padding: 7px;
-                background-color: #f4f4f4;
+            .home-icon {
+              cursor: pointer;
+              border-radius: 4px;
+              padding: 7px;
+              background-color: #f4f4f4;
 
-                &:hover {
-                  background-color: #eeeeee;
-                  border-color: transparent;
-                  color: rgba(0, 0, 0, 0.7);
-                }
-              }*/
+              &:hover {
+                background-color: #eeeeee;
+                border-color: transparent;
+                color: rgba(0, 0, 0, 0.7);
+              }
+            }
 
             .table-covid-text {
               font-size: 20px;
@@ -53,7 +61,7 @@
             }
           }
 
-          .table-name-content {
+          /*.table-name-content {
             z-index: 0;
             position: absolute;
             width: 100%;
@@ -63,7 +71,7 @@
               color: rgba(0, 0, 0, 0.6);
               font-weight: 700;
             }
-          }
+          }*/
 
           .table-handler-content {
             display: flex;
