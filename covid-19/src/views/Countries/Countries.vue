@@ -20,11 +20,16 @@
           <div class="card-content">
             <!-- Header Content-->
             <div class="table-header-content">
-
+              <!-- TODO: kontinens választó folytatás-->
               <div class="table-icon-content">
                 <div class="table-covid-text">COVID-19</div>
-                <!--                <img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
+<!--                <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>-->
+                <!--<img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
               </div>
+
+              <!--<div class="table-name-content">
+                <div class="table-covid-text">COVID-19</div>
+              </div>-->
 
               <div class="table-handler-content">
                 <v-icell-input
@@ -50,6 +55,7 @@
                 </div>
                 <div class="home-icon-content">
                   <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
+<!--                  <b-button :icon-pack="'fa'" :icon-left="'globe'" :size="'is-small'" :type="'is-light'"></b-button>-->
                 </div>
               </div>
             </div>
@@ -81,9 +87,9 @@
                   </b-select>
                 </div>
 
-                <div class="settings-item">
+                <!--<div class="settings-item">
                   <b-button :label="'Első oldal'" :size="'is-small'" @click="onPageChange(1)"></b-button>
-                </div>
+                </div>-->
               </div>
             </div>
 
@@ -133,7 +139,7 @@ import { IColumn } from '@/core/interfaces';
 export default {
   data(){
     return {
-      isOpenSetting: true,
+      isOpenSetting: false,
     };
   },
   setup(){

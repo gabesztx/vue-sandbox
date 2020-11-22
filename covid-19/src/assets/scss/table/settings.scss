@@ -7,11 +7,11 @@ $settingsContentHeight: 51px;
   padding: 0 $table-padding;
   margin-top: $table-padding;
   background-color: rgba(243, 243, 243, 1);
-  //height: 0;
+  height: 0;
   //overflow: hidden;
   transition: height $setting-anim-duration ease-in-out;
   &.active {
-    //height: $settingsContentHeight;
+    height: $settingsContentHeight;
   }
   .settings-item-content {
     display: flex;

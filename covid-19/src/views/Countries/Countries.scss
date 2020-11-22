@@ -13,17 +13,33 @@
 
     .card {
       border-radius: 20px;
+
       .card-content {
         padding: $table-padding 0;
+
         .table-header-content {
+          position: relative;
           display: flex;
           align-items: center;
-          padding: 0 $table-padding;
+          margin: 0 $table-padding;
           justify-content: space-between;
 
           .table-icon-content {
             display: flex;
             align-items: center;
+
+            /*  .home-icon {
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 7px;
+                background-color: #f4f4f4;
+
+                &:hover {
+                  background-color: #eeeeee;
+                  border-color: transparent;
+                  color: rgba(0, 0, 0, 0.7);
+                }
+              }*/
 
             .table-covid-text {
               font-size: 20px;
@@ -32,18 +48,28 @@
             }
 
             .table-covid-icon {
-              //margin-left: 10px;
-              //width: 25px;
+              margin-left: 10px;
+              width: 25px;
+            }
+          }
+
+          .table-name-content {
+            z-index: 0;
+            position: absolute;
+            width: 100%;
+            .table-covid-text {
+              text-align: center;
+              font-size: 20px;
+              color: rgba(0, 0, 0, 0.6);
+              font-weight: 700;
             }
           }
 
           .table-handler-content {
             display: flex;
             align-items: center;
-
             .home-icon-content {
               padding-left: 10px;
-
               .home-icon {
                 cursor: pointer;
                 border-radius: 4px;
