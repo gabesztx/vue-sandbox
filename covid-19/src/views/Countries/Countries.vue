@@ -63,7 +63,6 @@
                       <div class="dropDown-item" :key="index">
                         <b-checkbox v-model="item.visible" :size="'is-small'">
                           <span>{{ item.label }}</span>
-                          {{ item.visible }}
                         </b-checkbox>
                       </div>
                     </template>
@@ -175,9 +174,7 @@
         perPageNumber: 15,
         columns: columns.filter((column) => column.hasOwnProperty('visible')),
       });
-      // console.log(settings);
       const onInput = (value: any) => {
-        // console.log('value', countriesData);
         table.data = searchData(countriesData, value);
       };
       const onNavigateDetail = ({ countryCode }) => {

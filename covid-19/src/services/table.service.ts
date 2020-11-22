@@ -47,6 +47,7 @@ export const columns: IColumn[] = [
     label: i18n.tc('casesCritical'),
     sortable: true,
     // centered: true,
+    visible: true,
   },
   {
     width: 30,
