@@ -72,7 +72,6 @@ export const searchData = (value: any, searchData: any) => {
     });
     return isFind;
   });
-
 };
 
 export const sortingCustomValue = (a, b, isAsc, filed, customValue) => {
