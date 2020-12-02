@@ -34,7 +34,7 @@
       });
 
       const onClick = () => {
-        emit('componentCellEmit', props.row);
+        emit('onCellEmit', props.row);
       };
       return {
         onClick,

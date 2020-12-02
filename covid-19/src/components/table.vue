@@ -76,7 +76,7 @@
             :column="column"
             :row="props.row"
             :value="props.row[column.field]"
-            @componentCellEmit="onComponentCellEmit"
+            @onCellEmit="onCellEmit"
           ></component>
         </div>
       </template>
@@ -181,8 +181,8 @@
       const onUpdateCell = (cell, row) => {
         emit('updateCell', cell, row);
       };
-      const onComponentCellEmit = (value) => {
-        emit('componentCellEmit', value);
+      const onCellEmit = (value) => {
+        emit('onCellEmit', value);
       };
       return {
         onSelect,
@@ -191,7 +191,7 @@
         onRowClick,
         onCellClick,
         onUpdateCell,
-        onComponentCellEmit,
+        onCellEmit,
         selectValue,
         checkedRowsValue,
       };

@@ -146,7 +146,7 @@
                 :sort-multiple-data="table.sortMultipleData"
                 :sort-multiple-key="table.sortMultipleKey"
                 @pageChange="onPageChange"
-                @componentCellEmit="onNavigateDetail"
+                @onCellEmit="onNavigateDetail"
               ></v-icell-table>
             </div>
           </div>
