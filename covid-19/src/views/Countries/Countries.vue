@@ -21,7 +21,7 @@
             <!-- Header Content-->
             <div class="table-header-content">
               <div class="table-icon-content">
-<!--                <div class="table-covid-text">COVID-19</div>-->
+                <!--                <div class="table-covid-text">COVID-19</div>-->
                 <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
                 <!--<img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
               </div>
@@ -64,14 +64,13 @@
             <!-- Settings Content-->
             <div class="settings-content" :class="isOpenSetting ? 'active' : ''">
               <div class="settings-item-content">
-
                 <!-- Kontinensek -->
                 <div class="settings-item">
-<!--                  <b-select :size="'is-small'" v-model="settings.continent">-->
+                  <!--                  <b-select :size="'is-small'" v-model="settings.continent">-->
                   <b-select :size="'is-small'" v-model="settings.continent">
                     <template v-for="(item, index) in continentsData">
                       <option :key="index" :value="item.continent">
-                        {{`${item.continent}`}}
+                        {{ `${item.continent}` }}
                       </option>
                     </template>
                   </b-select>
@@ -87,7 +86,6 @@
                   </b-dropdown>-->
                 </div>
 
-
                 <!-- Oszlopok -->
                 <div class="settings-item">
                   <b-dropdown class="selectDropDown" aria-role="list" :multiple="true">
@@ -95,7 +93,7 @@
                     <template v-for="(item, index) in settings.columns">
                       <div class="dropDown-item" :key="index">
                         <b-checkbox v-model="item.visible" :size="'is-small'">
-                          <span>{{item.label}}</span>
+                          <span>{{ item.label }}</span>
                         </b-checkbox>
                       </div>
                     </template>
@@ -107,7 +105,7 @@
                   <b-select v-model="table.perPage" :size="'is-small'">
                     <template v-for="(num, index) in settings.perPageNumber">
                       <option :key="index" :label="`${num} sor`" :value="num">
-                        {{`${num} sor`}}
+                        {{ `${num} sor` }}
                       </option>
                     </template>
                   </b-select>
@@ -156,99 +154,92 @@
   </div>
 </template>
 <script lang="ts">
-import router from '@/router';
-import { countriesData, continentsData } from '@/services/covid-data.service';
-import { searchData, columns } from '@/services/table.service';
-import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
-import { IColumn } from '@/core/interfaces';
+  import router from '@/router';
+  import { countriesData, continentsData } from '@/services/covid-data.service';
+  import { searchData, columns } from '@/services/table.service';
+  import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
-export default {
-  data(){
-    return {
-      isOpenSetting: true,
-    };
-  },
-  setup(){
-    const search = reactive({
-      loading: false,
-      placeHolder: 'Ország keresés',
-      customClass: 'searchInput',
-      icon: 'magnify',
-      size: 'is-small',
-    });
+  export default {
+    data() {
+      return {
+        isOpenSetting: false,
+      };
+    },
+    setup() {
+      const search = reactive({
+        loading: false,
+        placeHolder: 'Ország keresés',
+        customClass: 'searchInput',
+        icon: 'magnify',
+        size: 'is-small',
+      });
 
-    // const continent
-    // console.log(continentsData);
-    // const continents = reactive();
+      const table = reactive({
+        columns: columns,
+        data: countriesData,
+        scrollable: false,
+        stickyHeader: false,
+        paginated: true,
+        paginationSimple: true,
+        paginationSize: 'is-small',
+        perPage: 7,
+        subheading: 10,
+        striped: true,
+        currentPage: 1,
+        narrowed: false,
+        mobileCards: true,
+        hoverable: false,
+        showDetailIcon: false,
+        sortIconSize: 'is-small',
+        bordered: false,
+        sortIcon: 'menu-up',
+        defaultSortDirection: 'asc', // 'desc'
+        defaultSort: '', // ['casesNew', 'desc'],
+        sortMultiple: false,
+        sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
+        sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
+      });
 
-    const table = reactive({
-      columns: columns,
-      data: countriesData,
-      scrollable: false,
-      stickyHeader: false,
-      paginated: true,
-      paginationSimple: true,
-      paginationSize: 'is-small',
-      perPage: 7,
-      subheading: 10,
-      striped: true,
-      currentPage: 1,
-      narrowed: false,
-      mobileCards: true,
-      hoverable: false,
-      showDetailIcon: false,
-      sortIconSize: 'is-small',
-      bordered: false,
-      sortIcon: 'menu-up',
-      defaultSortDirection: 'asc', // 'desc'
-      defaultSort: '', // ['casesNew', 'desc'],
-      sortMultiple: false,
-      sortMultipleKey: null, // 'shiftKey', 'altKey', 'ctrlKey'
-      sortMultipleData: [], // { field: 'casesCritical', order: 'asc' },{ field: 'casesActive', order: 'asc' }
-    });
+      const settings = reactive({
+        perPageNumber: 15,
+        columns: columns.filter((column) => column.hasOwnProperty('visible')),
+        continent: 'All',
+      });
 
-    const settings = reactive({
-      perPageNumber: 15,
-      columns: columns.filter((column) => column.hasOwnProperty('visible')),
-      continent: 'All'
-    });
-    console.log('continentsData', continentsData);
-    const onInput = (value: any) => {
-      // TODO: keresés optimalizálás
-      table.data = searchData(value, countriesData);
-    };
-    const onNavigateDetail = ({countryCode}) => {
-      router.push({path: `/countries/${countryCode}`});
-    };
-    const onNavigateHome = () => {
-      router.push({path: `/world`});
-    };
-    const onContinentClick = (continent: any) => {
-      console.log('click', continent);
-      // table.currentPage = page;
-    };
-    const onPageChange = (page: number) => {
-      table.currentPage = page;
-    };
-    onMounted(() => {
-    });
-    onUnmounted(() => {
-    });
-    return {
-      onInput,
-      onPageChange,
-      onNavigateDetail,
-      onNavigateHome,
-      onContinentClick,
-      continentsData,
-      table,
-      search,
-      settings,
-    };
-  },
-};
+      const onInput = (value: any) => {
+        // TODO: keresés optimalizálás
+        table.data = searchData(value, countriesData);
+      };
+      const onNavigateDetail = ({ countryCode }) => {
+        router.push({ path: `/countries/${countryCode}` });
+      };
+      const onNavigateHome = () => {
+        router.push({ path: `/world` });
+      };
+      const onContinentClick = (continent: any) => {
+        console.log('click', continent);
+        // table.currentPage = page;
+      };
+      const onPageChange = (page: number) => {
+        table.currentPage = page;
+      };
+      onMounted(() => {});
+      onUnmounted(() => {});
+      return {
+        onInput,
+        onPageChange,
+        onNavigateDetail,
+        onNavigateHome,
+        onContinentClick,
+        continentsData,
+        table,
+        search,
+        settings,
+      };
+    },
+  };
 </script>
 
 <style scoped lang="scss">
-@import 'Countries';
+  @import 'Countries';
 </style>

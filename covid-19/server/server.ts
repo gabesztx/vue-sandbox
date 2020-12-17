@@ -1,4 +1,5 @@
-import cors from 'cors';
+// import cors from 'cors';
+const cors = require('cors')
 import history from 'connect-history-api-fallback';
 import bodyParser from 'body-parser';
 import express from 'express';
@@ -19,9 +20,9 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(history());
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
 app.use(express.static(`${basePath}`));
 
 // TODO: app.get routerek kiszervezése: Then, load the router module in the app:
@@ -29,7 +30,6 @@ app.use(express.static(`${basePath}`));
 
 app.post('/continent', (req, res) => {
   const continent = req.body;
-  console.log('--: ', continent);
   // res.end('oh_yes')
   // return res.send(getCovid19Continents());
 });
