@@ -12,26 +12,15 @@
     <!--Body Content-->
     <section class="body-content section">
       <div class="container">
-        <!--<div class="card-wrapper" v-if="false">
-          <div class="card-top"></div>
-          <div class="card-bottom"></div>
-        </div>-->
         <div class="card">
           <div class="card-content">
             <!-- Header Content-->
             <div class="table-header-content">
               <div class="table-icon-content">
-                <!--                <div class="table-covid-text">COVID-19</div>-->
+                <!--<div class="table-covid-text">COVID-19</div>-->
                 <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
                 <!--<img class="table-covid-icon" src="static/covid-icon/covid-19.5.svg" />-->
               </div>
-
-              <!--<div class="table-continent-content"></div>-->
-
-              <!--<div class="table-name-content">
-                <div class="table-covid-text">COVID-19</div>
-              </div>-->
-
               <div class="table-handler-content">
                 <v-icell-input
                   class="search-content"
@@ -54,10 +43,6 @@
                     <div class="icon-setting mdi mdi-cog"></div>
                   </div>
                 </div>
-                <!--<div class="home-icon-content">
-                  <div class="home-icon fa fa-globe" @click="onNavigateHome"></div>
-                  &lt;!&ndash;<b-button :icon-pack="'fa'" :icon-left="'globe'" :size="'is-small'" :type="'is-light'"></b-button>&ndash;&gt;
-                </div>-->
               </div>
             </div>
 
@@ -74,16 +59,6 @@
                       </option>
                     </template>
                   </b-select>
-                  <!--<b-dropdown class="selectDropDown" aria-role="list" :multiple="false">
-                    <b-button slot="trigger" :label="'Kontinens'" :size="''"></b-button>
-                    <template v-for="(item, index) in settings.continents">
-                      <div class="dropDown-item" :key="index">
-                        <b-checkbox v-model="item.active" :size="'is-small'">
-                          <span>{{item.name}}</span>
-                        </b-checkbox>
-                      </div>
-                    </template>
-                  </b-dropdown>-->
                 </div>
 
                 <!-- Oszlopok -->
@@ -110,10 +85,6 @@
                     </template>
                   </b-select>
                 </div>
-
-                <!--<div class="settings-item">
-                  <b-button :label="'Első oldal'" :size="'is-small'" @click="onPageChange(1)"></b-button>
-                </div>-->
               </div>
             </div>
 
@@ -155,8 +126,8 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { countriesData, continentsData } from '@/services/covid-data.service';
-  import { searchData, columns } from '@/services/table.service';
+  import { countriesData, continentsData } from '@/core/services/covid-data.service';
+  import { searchData, columns } from '@/core/services/table.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {

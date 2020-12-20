@@ -9,7 +9,7 @@ import {
   setContinentsData,
   setCountriesData,
   setCountryDetailData,
-} from '@/services/covid-data.service';
+} from '@/core/services/covid-data.service';
 
 export const wordBeforeEnter = (to: Route, from: Route, next: NavigationGuardNext) => {
   getWorld().then((res) => {

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueCompositionApi from '@vue/composition-api';
 import { i18n } from './locales/i18n';
-import { noData } from '@/filters/table.filter';
+import { noData } from '@/core/filters/table.filter';
 import InputComponent from '@/components/input.vue';
 import TableComponent from '@/components/table.vue';
 import CellBase from '@/shared/components/cell-base/cell-base.vue';

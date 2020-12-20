@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { NavigationGuardNext, Route, RouteConfig } from 'vue-router';
-import { countryBeforeEnter, countryDetailBeforeEnter, wordBeforeEnter } from '@/services/covid-data.quard';
+import { countryBeforeEnter, countryDetailBeforeEnter, wordBeforeEnter } from '@/core/services/covid-data.quard';
 
 Vue.use(VueRouter);
 

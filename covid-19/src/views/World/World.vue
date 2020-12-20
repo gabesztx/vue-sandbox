@@ -61,7 +61,7 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { worldData } from '@/services/covid-data.service';
+  import { worldData } from '@/core/services/covid-data.service';
   import { onMounted, onUnmounted, reactive } from '@vue/composition-api';
 
   export default {

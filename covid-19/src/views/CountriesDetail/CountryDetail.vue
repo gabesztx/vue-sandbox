@@ -56,7 +56,7 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { countryDetailData } from '@/services/covid-data.service';
+  import { countryDetailData } from '@/core/services/covid-data.service';
   import { generateColumns } from '@/core/utils/layout-generator';
 
   export default {
