@@ -14,7 +14,7 @@ import App from './App.vue';
 import router from './router';
 // Buefy
 import './shared/buefy';
-
+import '@/assets/scss/animate.scss';
 // Styles
 import './assets/scss/app.scss';
 
