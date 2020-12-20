@@ -6,7 +6,7 @@ import express from 'express';
 import http from 'http';
 import path from 'path';
 export const basePath = path.join(__dirname, './');
-export const port = process.env.PORT || 80;
+export const port = process.env.PORT || 5000;
 import {
   getCovid19World,
   getCovid19Continents,

@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueCompositionApi from '@vue/composition-api';
-import router from './router';
 import { i18n } from './locales/i18n';
 import { noData } from '@/filters/table.filter';
 import InputComponent from '@/components/input.vue';
@@ -12,6 +11,7 @@ import CellIcon from '@/shared/components/cell-icon/cell-icon.vue';
 import CellCountry from '@/shared/components/cell-country/cell-country.vue';
 import App from './App.vue';
 
+import router from './router';
 // Buefy
 import './shared/buefy';
 
@@ -19,7 +19,7 @@ import './shared/buefy';
 import './assets/scss/app.scss';
 
 // Validations
-import './core/utils/validations';
+// import './core/utils/validations';
 
 // Filters
 Vue.filter('nodata', noData);
