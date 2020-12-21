@@ -1,23 +1,27 @@
 @import '../varibles/varibles';
-.table-content {
-  padding: 0 $table-padding;
-  .b-table {
-    .top {
-      padding-top: $table-padding;
+
+.b-table {
+  transition: none;
+  .top {
+    //padding-top: $table-padding;
+  }
+
+  .table-wrapper:not(:last-child) {
+    //margin-bottom: 0;
+  }
+
+  .table {
+    th {
+      vertical-align: middle;
     }
-    .table-wrapper:not(:last-child) {
-      margin-bottom: 0;
+
+    td {
+      vertical-align: middle;
     }
-    .table {
-      th {
-        vertical-align: middle;
-      }
-      td {
-        vertical-align: middle;
-      }
-      tbody {
-        font-weight: 400;
-      }
+
+    tbody {
+      font-weight: 400;
     }
   }
 }
+

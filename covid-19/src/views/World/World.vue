@@ -49,7 +49,8 @@
             <b-button
               :label="'Országszerte'"
               :type="'is-primary'"
-              size=""
+              :rounded="true"
+              size="is-small"
               :icon-left="'table'"
               @click="onNavigate"
             ></b-button>

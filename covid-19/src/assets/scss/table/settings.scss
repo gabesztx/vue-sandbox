@@ -1,33 +1,24 @@
 @import '../varibles/varibles';
 
 $settingsFontSize: 12px;
-$settingsContentHeight: 51px;
 .settings-content {
   width: 100%;
-  padding: 0 $table-padding;
-  margin-top: $table-padding;
+  position: absolute;
   background-color: rgba(243, 243, 243, 1);
-  height: 0;
-  //overflow: hidden;
-  transition: height $setting-anim-duration ease-in-out;
-  &.active {
-    height: $settingsContentHeight;
-  }
   .settings-item-content {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: flex-end;
-    height: $settingsContentHeight;
+    padding: 10px $table-padding;
     .settings-item {
-      //padding-left: 10px;
+      padding-left: 10px;
       /* Button */
       .button {
         font-size: $settingsFontSize;
         box-shadow: none;
         border-radius: 4px;
         color: rgba(74, 74, 74, 0.85);
-
         &:focus {
           border-color: #dbdbdb;
         }

@@ -13,12 +13,13 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: '/countries',
+    name: '1',
     beforeEnter: countryBeforeEnter,
     component: () => import('@/views/Countries/Countries.vue'),
     // component: () => import('@/views/Covid/Page.vue'),
   },
   {
-    // name: 'country-detail',
+    name: '2',
     // meta: { slide: 1 },
     path: '/countries/:countryCode',
     beforeEnter: countryDetailBeforeEnter,
