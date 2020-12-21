@@ -7,17 +7,6 @@
     <div class="page page2">
       <b-button @click="onClick2">page 2</b-button>
     </div>
-    <!--    <div class="page"></div>-->
-    <!--    <b-button @click="onClick2">page 2</b-button>-->
-    <!--    <div>Page Content</div>-->
-    <!--    <div class="pages" v-bind:style="{ transform: `translate3d(${slidePos}, 0, 0)` }">
-          <div class="page">
-            &lt;!&ndash;        <v-page-country></v-page-country>&ndash;&gt;
-          </div>
-          <div class="page">
-            &lt;!&ndash;        <v-page-country-detail></v-page-country-detail>&ndash;&gt;
-          </div>
-        </div>-->
   </div>
 </template>
 <script lang="ts">

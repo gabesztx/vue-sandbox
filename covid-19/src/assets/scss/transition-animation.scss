@@ -1,7 +1,7 @@
-//@import "animate/animate";
 
-.animated{
-  animation-duration: .8s;
+
+.animated {
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
@@ -11,6 +11,7 @@
   //animation: slideLeft 1.5s ease-in-out;
   //animation-fill-mode: both;
 }
+
 .animSlideRight {
   animation-name: slideRight;
 }
