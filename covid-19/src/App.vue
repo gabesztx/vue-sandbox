@@ -1,8 +1,7 @@
 <template>
   <div class="main-content">
-    <transition mode="" :enter-active-class="enterAnim" :leave-active-class="leaveAnim">
+<!--    <transition mode="" :enter-active-class="enterAnim" :leave-active-class="leaveAnim"></transition>-->
       <router-view />
-    </transition>
     <!--    <router-view />-->
     <!--<router-view :pagePos="pagePos" />-->
   </div>
@@ -20,7 +19,7 @@
       const leaveAnim = ref('');
       // const slideLeftRule = ['slideInLeft', 'slideOutRight'];
       // const slideRightRule = ['slideInRight', 'slideOutLeft'];
-      router.beforeEach((to: Route, from: Route, next: NavigationGuardNext<Vue>) => {
+    /*  router.beforeEach((to: Route, from: Route, next: NavigationGuardNext<Vue>) => {
         let enterClass = '';
         let leaveClass = '';
         // enterClass = `animate__animated animate__slideInLeft`;
@@ -37,9 +36,8 @@
         }
         enterAnim.value = enterClass;
         leaveAnim.value = leaveClass;
-
         next();
-      });
+      });*/
       // const pagePos = ref(0);
       /*router.afterEach((to: Route, from: Route) => {
       // pagePos.value = to.meta.slide;

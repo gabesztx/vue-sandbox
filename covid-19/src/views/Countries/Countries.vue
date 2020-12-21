@@ -9,8 +9,7 @@
       </div>
     </section>
 
-    <!--Body Content-->
-    <section class="body-content section">
+    <section class="body-content">
       <div class="container">
         <div class="card">
           <!-- Header Content-->
@@ -31,13 +30,13 @@
                 :style-type="search.styleType"
                 :expanded="search.expanded"
                 :icon="search.icon"
+                :icon-pack="search.iconPack"
                 :icon-right="search.iconRight"
                 :type="search.type"
                 :custom-class="search.customClass"
                 :classes="search.classes"
                 @input="onInput"
               ></v-icell-input>
-              <!--              <div class="settings-icon-content" @click="isOpenSetting = !isOpenSetting">-->
               <div class="settings-icon-content" @click="onClickSettings">
                 <div class="icon-content" :class="isOpenSettings ? 'active' : ''">
 <!--                  <div class="icon-setting mdi mdi-cog"></div>-->
@@ -140,8 +139,10 @@ export default {
       loading: false,
       placeHolder: 'Ország keresés',
       customClass: 'searchInput',
-      icon: 'magnify',
+      // icon: 'magnify',
+      icon: 'search',
       size: 'is-small',
+      iconPack: 'fa',
     });
 
     const table = reactive({

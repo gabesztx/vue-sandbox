@@ -1,7 +1,8 @@
 <template>
   <div class="detail-icon">
     <div class="icon-content" @click="onClick">
-      <i class="mdi mdi-eye"></i>
+<!--      <i class="mdi mdi-eye"></i>-->
+      <i class="fa fa-eye"></i>
     </div>
     <!-- <b-button
        :type="'is-primary'"

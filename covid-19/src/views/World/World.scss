@@ -44,16 +44,17 @@
     padding: 40px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    //align-items: center;
 
     .box-item {
       margin-bottom: 0;
       margin-right: 15px;
       //text-align: center;
       //box-shadow: none;
+      text-align: center;
       min-width: 180px;
-      border-radius: 6px;
-      border: 1px solid rgba(24, 28, 33, .06);
+      //border-radius: 6px;
+      //border: 1px solid rgba(24, 28, 33, .06);
       .box-item-label {
         font-weight: 400;
         font-size: 16px

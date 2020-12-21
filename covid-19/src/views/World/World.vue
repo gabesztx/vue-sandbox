@@ -53,8 +53,8 @@
             <b-button
               :label="'Országszerte'"
               :type="'is-primary'"
-              :rounded="true"
-              size="is-small"
+              :size="'is-small'"
+              :icon-pack="'fa'"
               :icon-left="'table'"
               @click="onNavigate"
             ></b-button>

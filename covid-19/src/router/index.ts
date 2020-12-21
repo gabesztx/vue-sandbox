@@ -18,8 +18,8 @@ const routes: Array<RouteConfig> = [
     // component: () => import('@/views/Covid/Page.vue'),
   },
   {
-    name: '2',
     path: '/countries/:countryCode',
+    name: '2',
     beforeEnter: countryDetailBeforeEnter,
     component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
   },

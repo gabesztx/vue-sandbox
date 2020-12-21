@@ -1,5 +1,6 @@
 @import '../../assets/scss/varibles/varibles';
 
+$border-radius: 20px;
 .country-page {
   .header-content {
     .title {
@@ -7,11 +8,8 @@
       font-weight: 900;
     }
   }
-
   .body-content {
     padding-top: 0;
-    $border-radius: 20px;
-
     .card {
       border-radius: $border-radius;
       background-color: transparent;
