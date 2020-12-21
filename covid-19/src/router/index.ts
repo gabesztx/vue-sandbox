@@ -14,14 +14,23 @@ const routes: Array<RouteConfig> = [
     path: '/countries',
     name: '1',
     beforeEnter: countryBeforeEnter,
-    component: () => import('@/views/Countries/Countries.vue'),
-    // component: () => import('@/views/Covid/Page.vue'),
+    component: () => import('@/views/Page.vue'),
+    props: {
+      pageId: 10,
+    },
+
+    // component: () => import('@/views/Countries/Countries.vue'),
+    // import Page from '@/views/Page';
   },
   {
     path: '/countries/:countryCode',
     name: '2',
-    beforeEnter: countryDetailBeforeEnter,
-    component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
+    component: () => import('@/views/Page.vue'),
+    props: {
+      pageId: 20,
+    },
+    // beforeEnter: countryDetailBeforeEnter,
+    // component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
   },
   {
     path: '',

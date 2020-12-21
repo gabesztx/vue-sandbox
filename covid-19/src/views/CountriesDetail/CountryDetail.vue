@@ -22,7 +22,13 @@
           </div>
           <div class="country-right">
             <div class="btn-content">
-              <b-button :label="''" :type="'is-light'" :icon-left="'table'" :icon-pack="'fa'" @click="onNavigate"></b-button>
+              <b-button
+                :label="''"
+                :type="'is-light'"
+                :icon-left="'table'"
+                :icon-pack="'fa'"
+                @click="onNavigate"
+              ></b-button>
               <!--:size="'is-small'"-->
             </div>
           </div>

@@ -9,12 +9,12 @@ import CellImage from '@/shared/components/cell-image/cell-image.vue';
 import CellButton from '@/shared/components/cell-button/cell-button.vue';
 import CellIcon from '@/shared/components/cell-icon/cell-icon.vue';
 import CellCountry from '@/shared/components/cell-country/cell-country.vue';
+
 import App from './App.vue';
 
 import router from './router';
 // Buefy
 import './shared/buefy';
-import '@/assets/scss/animate.scss';
 // Styles
 import './assets/scss/app.scss';
 
