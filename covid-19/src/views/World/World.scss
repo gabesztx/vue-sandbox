@@ -9,16 +9,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
-    .covid-icon {
-      width: 100px;
-      animation: rotationAnim 25s infinite linear;
-    }
-
     .covid-label {
+      display: flex;
+      align-items: center;
       color: rgba(0, 0, 0, 0.7);
       font-weight: 900;
-      padding-left: 5px;
+      .covid-icon {
+        width: 55px;
+        animation: rotationAnim 25s infinite linear;
+        margin-left: -3px;
+      }
+      .text-start{
+      }
+      .text-end{
+        margin-left: -5px;
+      }
     }
   }
 
