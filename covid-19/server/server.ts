@@ -33,19 +33,17 @@ app.use(express.static(`${basePath}`));
   // res.end('oh_yes')
   // return res.send(getCovid19Continents());
 });*/
-
-app.get('/world', (req, res) => {
+app.get('/getWorld', (req, res) => {
   res.send(getCovid19World());
 });
-app.get('/continents', (req, res) => {
-  res.send(getCovid19Continents());
-});
-
-app.get('/countries', (req, res) => {
+app.get('/getCountries', (req, res) => {
   res.send(getCovid19Country());
 });
-app.get('/countries/:countryCode', (req, res) => {
+app.get('/getCountries/:countryCode', (req, res) => {
   res.send(getCovid19CountryDetail(req.params.countryCode));
+});
+app.get('/getContinents', (req, res) => {
+  res.send(getCovid19Continents());
 });
 server.listen(port, () => {
   transformCovidDbData();

@@ -10,19 +10,19 @@ const env = process.env.NODE_ENV;
 const host = env === 'development' ? process.env.VUE_APP_DEV_HOST : process.env.VUE_APP_PROD_HOST;
 
 export const getWorld = (): Promise<any> => {
-  return http.get(`${host}/world`);
+  return http.get(`${host}/getWorld`);
 };
 export const getCountries = (): Promise<any> => {
-  return http.get(`${host}/countries`);
+  return http.get(`${host}/getCountries`);
 };
 export const getCountryDetail = (countryCode): Promise<any> => {
-  return http.get(`${host}/countries/${countryCode}`);
+  return http.get(`${host}/getCountries/${countryCode}`);
 };
 export const getContinents = (): Promise<any> => {
-  return http.get(`${host}/continents`);
+  return http.get(`${host}/getContinents`);
 };
 export const getContinent = (continent): Promise<any> => {
-  return http.get(`${host}/continents/${continent}`);
+  return http.get(`${host}/getContinents/${continent}`);
 };
 export const setWorldData = (data) => {
   worldData = data;
