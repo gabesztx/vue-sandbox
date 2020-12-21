@@ -6,8 +6,7 @@
 @import 'table/select';
 @import 'dropdown/dropdown';
 @import 'table/checkbox';
-@import 'transition-animation';
-@import 'animate/animate';
+@import 'animate/transition-animation';
 
 html, body {
   font-family: 'Nunito Sans', sans-serif; // 200;300;400;600
@@ -23,8 +22,9 @@ html, body {
       position: absolute;
       width: 100%;
       height: 100%;
-      animation-fill-mode: both;
-      transform: translateZ(1000px);
+      //animation-fill-mode: both;
+      //transform: translate3d(0, 0, 0);
+      //transform: translateZ(1000px);
 
       .page {
         position: absolute;

@@ -1,33 +1,32 @@
 <template>
   <div class="main-content">
-    <transition mode="" :enter-active-class="enterAnim" :leave-active-class="leaveAnim">
-      <router-view/>
-    </transition>
+    <!--    <transition mode="" :enter-active-class="enterAnim" :leave-active-class="leaveAnim">
+          <router-view/>
+        </transition>-->
     <!--    <keep-alive></keep-alive>-->
-    <!--<router-view :pagePos="pagePos" />-->
-<!--    <router-view/>-->
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
-import router from '@/router';
-import { NavigationGuardNext, Route } from 'vue-router';
-import Vue from 'vue';
-import { ref } from '@vue/composition-api';
+  import router from '@/router';
+  import { NavigationGuardNext, Route } from 'vue-router';
+  import Vue from 'vue';
+  import { ref } from '@vue/composition-api';
 
-export default {
-  // beforeRouteUpdate (to, from, next) {
-  //   console.log('beforeRouteUpdate');
-  //
-  // },
-  /* watch: {
+  export default {
+    // beforeRouteUpdate (to, from, next) {
+    //   console.log('beforeRouteUpdate');
+    //
+    // },
+    /* watch: {
    '$route'(to, from){
      console.log('Ssssss');
      // react to route changes...
    }
  },*/
-  setup(props, ctx){
-    const enterAnim = ref('');
+    setup(props, ctx) {
+      /*const enterAnim = ref('');
     const leaveAnim = ref('');
     router.beforeEach((to: Route, from: Route, next: NavigationGuardNext<Vue>) => {
       let enterClass = '';
@@ -45,29 +44,29 @@ export default {
       enterAnim.value = enterClass;
       leaveAnim.value = leaveClass;
       next();
-    });
+    });*/
 
-    // router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
-    //   // console.log(from.path, to.path);
-    //   // console.log('beforeEach');
-    //   next();
-    // });
-    //
-    //
-    // router.beforeResolve((to: Route, from: Route, next: NavigationGuardNext) => {
-    //   console.log('beforeResolve');
-    //   // next();
-    // });
-    //
-    // const pagePos = ref(1);
-    /*router.afterEach((to: Route, from: Route) => {
+      // router.beforeEach((to: Route, from: Route, next: NavigationGuardNext) => {
+      //   // console.log(from.path, to.path);
+      //   // console.log('beforeEach');
+      //   next();
+      // });
+      //
+      //
+      // router.beforeResolve((to: Route, from: Route, next: NavigationGuardNext) => {
+      //   console.log('beforeResolve');
+      //   // next();
+      // });
+      //
+      // const pagePos = ref(1);
+      /*router.afterEach((to: Route, from: Route) => {
 
   });*/
 
-    return {
-      enterAnim,
-      leaveAnim,
-    };
-  },
-};
+      return {
+        // enterAnim,
+        // leaveAnim,
+      };
+    },
+  };
 </script>

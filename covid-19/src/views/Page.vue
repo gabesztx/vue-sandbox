@@ -10,10 +10,8 @@
   </div>
 </template>
 <script lang="ts">
-  import Vue from 'vue';
   import router from '@/router';
   import { computed, onUnmounted, ref, watch } from '@vue/composition-api';
-  import { NavigationGuardNext, Route } from 'vue-router';
   import Countries from '@/views/Countries/Countries.vue';
 
   export default {

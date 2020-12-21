@@ -14,11 +14,11 @@ const routes: Array<RouteConfig> = [
     path: '/countries',
     name: '1',
     beforeEnter: countryBeforeEnter,
-    component: () => import('@/views/Countries/Countries.vue'),
-    // component: () => import('@/views/Page.vue'),
-    /*props: {
+    // component: () => import('@/views/Countries/Countries.vue'),
+    component: () => import('@/views/Page.vue'),
+    props: {
       slide: 1,
-    },*/
+    },
 
     // import Page from '@/views/Page';
   },
@@ -26,11 +26,11 @@ const routes: Array<RouteConfig> = [
     path: '/countries/:countryCode',
     name: '2',
     beforeEnter: countryDetailBeforeEnter,
-    component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
-    // component: () => import('@/views/Page.vue'),
-    /*props: {
+    // component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
+    component: () => import('@/views/Page.vue'),
+    props: {
       slide: 2,
-    },*/
+    },
   },
   {
     path: '',
