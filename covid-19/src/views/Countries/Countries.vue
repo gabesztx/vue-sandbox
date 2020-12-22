@@ -50,7 +50,7 @@
           <div class="settings-content">
             <div class="settings-item-content">
               <!-- Kontinensek -->
-              <div class="settings-item">
+              <div class="settings-item" v-if="continentsData">
                 <!--                  <b-select :size="'is-small'" v-model="settings.continent">-->
                 <b-select :size="'is-small'" v-model="settings.continent">
                   <template v-for="(item, index) in continentsData">
@@ -87,9 +87,12 @@
               </div>
             </div>
           </div>
-
           <!-- Table Content-->
-          <div class="table-body-content" v-bind:style="{ transform: `translate3d(0, ${settingsHeight}px, 0)` }">
+          <div
+            class="table-body-content"
+            v-if="table.data"
+            v-bind:style="{ transform: `translate3d(0, ${settingsHeight}px, 0)` }"
+          >
             <v-icell-table
               :data="table.data"
               :columns="table.columns"
@@ -125,16 +128,27 @@
   </div>
 </template>
 <script lang="ts">
+  import store from '@/store';
   import router from '@/router';
-  import { countriesData, continentsData } from '@/core/services/covid-data.service';
+  // import { countriesData as continentsAllData } from '@/core/services/covid-data.service';
+  import { countriesData as countriesAllData } from '@/core/services/covid-data.service';
   import { searchData, columns } from '@/core/services/table.service';
-  import { onMounted, onUnmounted, reactive, ref } from '@vue/composition-api';
+  import { computed, onMounted, onUnmounted, reactive, ref, watch } from '@vue/composition-api';
 
   export default {
     setup() {
       const isOpenSettings = ref(false);
       const settingsHeight = ref(0);
-
+      const continentsData = computed(() => store.getters['countries/getContinentsData']);
+      const countriesData = computed(() => store.getters['countries/getCountriesData']);
+      const countriesDataWatch = watch(
+        () => store.getters['countries/getCountriesData'],
+        (data) => {
+          if (!table.data) {
+            table.data = data;
+          }
+        }
+      );
       const search = reactive({
         loading: false,
         placeHolder: 'Ország keresés',
@@ -147,7 +161,7 @@
 
       const table = reactive({
         columns: columns,
-        data: countriesData,
+        data: countriesData.value,
         scrollable: false,
         stickyHeader: false,
         paginated: true,
@@ -184,7 +198,8 @@
       };
       const onInput = (value: any) => {
         // TODO: keresés optimalizálás
-        table.data = searchData(value, countriesData);
+        // console.log(value, countriesAllData);
+        table.data = searchData(value, countriesAllData);
       };
       const onNavigateDetail = ({ countryCode }) => {
         router.push({ path: `/countries/${countryCode}` });
@@ -196,13 +211,17 @@
         table.currentPage = page;
       };
       onMounted(() => {});
-      onUnmounted(() => {});
+      onUnmounted(() => {
+        countriesDataWatch();
+      });
       return {
         onInput,
         onPageChange,
         onNavigateDetail,
         onNavigateHome,
         onClickSettings,
+        // countries,
+        countriesData,
         continentsData,
         isOpenSettings,
         settingsHeight,

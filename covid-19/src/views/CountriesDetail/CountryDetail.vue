@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content country-detail-page">
+  <div class="page-content country-detail-page" v-if="countryDetailData">
     <section class="section header-content">
       <div class="container">
         <div class="country-header">
@@ -24,19 +24,19 @@
             <div class="btn-content">
               <b-button
                 :label="''"
+                :size="''"
                 :type="'is-light'"
                 :icon-left="'table'"
                 :icon-pack="'fa'"
                 @click="onNavigate"
               ></b-button>
-              <!--:size="'is-small'"-->
             </div>
           </div>
         </div>
       </div>
       <div class="header-bg"></div>
     </section>
-    <section class="section body-content">
+    <section class="section body-content" v-if="layoutData">
       <div class="container">
         <div class="columns is-mobile">
           <div class="column">
@@ -62,13 +62,16 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { countryDetailData } from '@/core/services/covid-data.service';
+  // import { countryDetailData } from '@/core/services/covid-data.service';
   import { generateColumns } from '@/core/utils/layout-generator';
+  import { computed } from '@vue/composition-api';
+  import store from '@/store';
 
   export default {
     setup() {
       const layoutColumnNumber = 3;
-      const layoutData = generateColumns(countryDetailData.covidData, layoutColumnNumber);
+      const countryDetailData = computed(() => store.getters['countries/getCountriesDetailData']);
+      const layoutData = computed(() => generateColumns(countryDetailData.value.covidData, layoutColumnNumber));
       const onNavigate = () => {
         router.push({ path: '/countries' });
       };

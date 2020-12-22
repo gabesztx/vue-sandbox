@@ -23,36 +23,6 @@ html, body {
       width: 100%;
       height: 100%;
     }
-
-    .country-content {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      //transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      animation-fill-mode: both;
-
-      .pages {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: gold;
-
-        &:nth-last-child(1) {
-          background-color: #cdffe9;
-          left: 100%
-        }
-      }
-
-      &.page1 {
-        transform: translate3d(0, 0, 0);
-      }
-
-      &.page2 {
-        transform: translate3d(-100%, 0, 0);
-      }
-    }
-
   }
 }
 

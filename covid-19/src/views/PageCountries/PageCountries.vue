@@ -1,22 +1,23 @@
 <template>
   <div class="country-content" :class="classes">
     <div class="pages">
-      <b-button @click="onClick1">page 1</b-button>
-      <countries></countries>
+      <countries-page></countries-page>
     </div>
     <div class="pages">
-      <b-button @click="onClick2">page 2</b-button>
+      <countries-detail-page></countries-detail-page>
     </div>
   </div>
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { computed, onUnmounted, onMounted, ref, watch } from '@vue/composition-api';
+  import { onUnmounted, onMounted, ref, watch } from '@vue/composition-api';
   import Countries from '@/views/Countries/Countries.vue';
+  import CountriesDetail from '@/views/CountriesDetail/CountryDetail.vue';
 
   export default {
     components: {
-      Countries,
+      'countries-page': Countries,
+      'countries-detail-page': CountriesDetail,
     },
     props: {
       slide: [String, Number],
@@ -24,15 +25,6 @@
     setup(props) {
       let countryContentEl: HTMLElement;
       const classes = ref(`page${props.slide}`);
-
-      const onClick1 = () => {
-        router.push({ path: `/countries/hu` });
-        // router.replace(url);
-      };
-      const onClick2 = () => {
-        router.push({ path: `/countries` });
-        // router.replace(url);
-      };
       const stopWatch = watch(
         () => props.slide,
         (value) => {
@@ -45,13 +37,11 @@
       };
       const removeAnimationListener = () => {
         countryContentEl.removeEventListener('animationend', onAnimationEnd);
-        // console.log('countryContentEl', countryContentEl);
       };
 
       const onAnimationEnd = () => {
-        console.log('Animation End OK', props.slide);
+        classes.value = `page${props.slide}`;
       };
-
       onMounted(() => {
         countryContentEl = document.querySelector('.country-content') as HTMLElement;
         addAnimationListener();
@@ -63,9 +53,10 @@
 
       return {
         classes,
-        onClick1,
-        onClick2,
       };
     },
   };
 </script>
+<style scoped lang="scss">
+  @import 'PageCountries';
+</style>

@@ -1,3 +1,4 @@
+import store from '@/store';
 import http from 'axios';
 
 export let worldData = {} as any;
@@ -6,7 +7,6 @@ export let continentsData = [] as any;
 export let countryDetailData = {} as any;
 
 const env = process.env.NODE_ENV;
-// console.log('ENV', env);
 const host = env === 'development' ? process.env.VUE_APP_DEV_HOST : process.env.VUE_APP_PROD_HOST;
 
 export const getWorld = (): Promise<any> => {
@@ -29,10 +29,13 @@ export const setWorldData = (data) => {
 };
 export const setContinentsData = (data) => {
   continentsData = data;
+  store.dispatch('countries/setContinentsData', data);
 };
 export const setCountriesData = (data) => {
   countriesData = data;
+  store.dispatch('countries/setCountriesData', data);
 };
 export const setCountryDetailData = (data) => {
   countryDetailData = data;
+  store.dispatch('countries/setCountriesDetailData', data);
 };

@@ -14,21 +14,21 @@ const routes: Array<RouteConfig> = [
     path: '/countries',
     name: '1',
     beforeEnter: countryBeforeEnter,
-    // component: () => import('@/views/Countries/Countries.vue'),
-    component: () => import('@/views/Page.vue'),
+    component: () => import('@/views/PageCountries/PageCountries.vue'),
     props: {
       slide: 1,
     },
+    // component: () => import('@/views/Countries/Countries.vue'),
   },
   {
     path: '/countries/:countryCode',
     name: '2',
     beforeEnter: countryDetailBeforeEnter,
-    // component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
-    component: () => import('@/views/Page.vue'),
+    component: () => import('@/views/PageCountries/PageCountries.vue'),
     props: {
       slide: 2,
     },
+    // component: () => import('@/views/CountriesDetail/CountryDetail.vue'),
   },
   {
     path: '',
