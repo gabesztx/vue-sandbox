@@ -1,86 +1,68 @@
 <template>
-  <div class="page-content" :class="anim">
-    <div class="page page1">
+  <div class="country-content" :class="classes">
+    <div class="pages">
       <b-button @click="onClick1">page 1</b-button>
-      <page-1></page-1>
+      <countries></countries>
     </div>
-    <div class="page page2">
+    <div class="pages">
       <b-button @click="onClick2">page 2</b-button>
     </div>
   </div>
 </template>
 <script lang="ts">
   import router from '@/router';
-  import { computed, onUnmounted, ref, watch } from '@vue/composition-api';
+  import { computed, onUnmounted, onMounted, ref, watch } from '@vue/composition-api';
   import Countries from '@/views/Countries/Countries.vue';
 
   export default {
     components: {
-      'page-1': Countries,
+      Countries,
     },
     props: {
-      pageId: Number,
+      slide: [String, Number],
     },
     setup(props) {
-      console.log(props.pageId);
-      // const slidePos = c
-      // coomputed(() => `${props.pagePos * -100}%`);
-      // const slidePos = computed(() => `${props.pagePos * -100}%`);
-      const anim = ref('');
-      const onClick1 = (url) => {
-        anim.value = 'animated animSlideLeft';
-        // console.log('click');
-        // router.push({path: `/countries`});
-        // router.push({ path: url });
-        // router.replace(url);
-      };
-      const onClick2 = (url) => {
-        anim.value = 'animated animSlideRight';
-        // router.push({path: `/countries/123345`});
-        // router.push({ path: url });
-        // router.replace(url);
-      };
+      let countryContentEl: HTMLElement;
+      const classes = ref(`page${props.slide}`);
 
+      const onClick1 = () => {
+        router.push({ path: `/countries/hu` });
+        // router.replace(url);
+      };
+      const onClick2 = () => {
+        router.push({ path: `/countries` });
+        // router.replace(url);
+      };
       const stopWatch = watch(
-        () => props.pageId,
-        (newVal) => {
-          update(newVal);
+        () => props.slide,
+        (value) => {
+          classes.value = `animated ${value === 1 ? 'slideRight' : 'slideLeft'}`;
         }
       );
 
-      // const enterAnim = ref('');
-      // const leaveAnim = ref('');
-      // const slideLeftRule = ['slideInLeft', 'slideOutRight'];
-      // const slideRightRule = ['slideInRight', 'slideOutLeft'];
-      const update = (num) => {
-        // let enterClass = '';
-        // let leaveClass = '';
-        // // enterClass = `animate__animated animate__slideInLeft`;
-        // // leaveClass = `animate__animated animate__slideOutRight`;
-        // const isLeft = from.name === '2' && to.name === '1';
-        // const isRight = from.name === '1' && to.name === '2';
-        // if (isLeft) {
-        //   enterClass = `animate__animated animate__slideInLeft`;
-        //   leaveClass = `animate__animated animate__slideOutRight`;
-        // }
-        // if (isRight) {
-        //   enterClass = `animate__animated animate__slideInRight`;
-        //   leaveClass = `animate__animated animate__slideOutLeft`;
-        // }
-        // enterAnim.value = enterClass;
-        // leaveAnim.value = leaveClass;
+      const addAnimationListener = () => {
+        countryContentEl.addEventListener('animationend', onAnimationEnd);
+      };
+      const removeAnimationListener = () => {
+        countryContentEl.removeEventListener('animationend', onAnimationEnd);
+        // console.log('countryContentEl', countryContentEl);
       };
 
-      update(props.pageId);
+      const onAnimationEnd = () => {
+        console.log('Animation End OK', props.slide);
+      };
 
+      onMounted(() => {
+        countryContentEl = document.querySelector('.country-content') as HTMLElement;
+        addAnimationListener();
+      });
       onUnmounted(() => {
-        console.log('unmount');
+        removeAnimationListener();
         stopWatch();
       });
 
       return {
-        // slidePos,
-        anim,
+        classes,
         onClick1,
         onClick2,
       };

@@ -19,8 +19,6 @@ const routes: Array<RouteConfig> = [
     props: {
       slide: 1,
     },
-
-    // import Page from '@/views/Page';
   },
   {
     path: '/countries/:countryCode',

@@ -1,18 +1,18 @@
 //@import 'animate';
 
 .animated {
-  animation-duration: .85s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  //animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
 
-.animSlideLeft {
+.slideLeft {
   animation-name: slideLeft;
   //animation: slideLeft 1.5s ease-in-out;
   //animation-fill-mode: both;
 }
 
-.animSlideRight {
+.slideRight {
   animation-name: slideRight;
 }
 

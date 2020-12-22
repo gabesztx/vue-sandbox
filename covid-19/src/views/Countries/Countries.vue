@@ -9,7 +9,7 @@
       </div>
     </section>
 
-    <section class="body-content">
+    <section class="body-content section">
       <div class="container">
         <div class="card">
           <!-- Header Content-->
