@@ -1,39 +1,33 @@
 // import cors from 'cors';
+// import bodyParser from 'body-parser';
 const cors = require('cors');
 import fs from 'fs';
 import path from 'path';
 import history from 'connect-history-api-fallback';
-import bodyParser from 'body-parser';
 import express from 'express';
 import http from 'http';
 import https from 'https';
 
 export const basePath = path.join(__dirname, './');
-export const httpPort = process.env.PORT || 80;
-export const httpsPort = process.env.PORT || 443;
+const dev = process.env.ENV === 'dev';
+const port = process.env.PORT || dev ? 80 : 443;
 
-
-// const privateKey = fs.readFileSync('./cert/privkey.pem');
-// const certificate = fs.readFileSync('./cert/cert.pem');
-
-
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/chain.pem', 'utf8');
-
-const option = {
-  key: privateKey,
-  cert: certificate,
-  ca: ca,
-};
 
 const app = express();
-// const httpServer = http.createServer(app);
-const httpsServer = https.createServer(option, app);
+const server = !dev ?
+  https.createServer({
+    key: fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/privkey.pem', 'utf8'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/cert.pem', 'utf8'),
+    ca: fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/chain.pem', 'utf8'),
+  }, app) :
+  http.createServer(app);
 
-app.use(history());
+// const server = http.createServer(app);
+// const httpsServer = https.createServer(option, app);
+
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: true}));
+app.use(history());
 app.use(cors());
 app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
 
@@ -52,13 +46,17 @@ app.get('/getCountries/:countryCode', (req, res) => {
 app.get('/getContinents', (req, res) => {
   // res.send(getCovid19Continents());
 });
-
-/*httpServer.listen(httpPort, () => {
-  console.log('Http Server started!', 'Port:', httpPort);
-});*/
-
-httpsServer.listen(httpsPort, () => {
-  console.log('Https Server started!', 'Port:', httpsPort);
-});
+server.listen(port, () => {
+  console.log('Http Server started!', 'Port:', port);
 // transformCovidDbData();
+});
+
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+// const privateKey = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/privkey.pem', 'utf8');
+// const certificate = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/cert.pem', 'utf8');
+// const ca = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/chain.pem', 'utf8');
+// const option = {
+//   key: privateKey,
+//   cert: certificate,
+//   ca: ca,
+// };
