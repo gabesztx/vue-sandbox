@@ -1,41 +1,46 @@
 // import cors from 'cors';
-const cors = require('cors')
+const cors = require('cors');
+import fs from 'fs';
+import path from 'path';
 import history from 'connect-history-api-fallback';
 import bodyParser from 'body-parser';
 import express from 'express';
 import http from 'http';
-import path from 'path';
+import https from 'https';
+
 export const basePath = path.join(__dirname, './');
-export const port = process.env.PORT || 80;
-import {
-  // getCovid19World,
-  // getCovid19Continents,
-  // getCovid19Country,
-  // getCovid19CountryDetail,
-  transformCovidDbData,
-} from './services/covid-data.service';
+export const httpPort = process.env.PORT || 80;
+export const httpsPort = process.env.PORT || 443;
 
 
+// const privateKey = fs.readFileSync('./cert/privkey.pem');
+// const certificate = fs.readFileSync('./cert/cert.pem');
 
-/* App */
+
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/chain.pem', 'utf8');
+
+const option = {
+  key: privateKey,
+  cert: certificate,
+  ca: ca,
+};
+
 const app = express();
-const server = http.createServer(app);
+// const httpServer = http.createServer(app);
+const httpsServer = https.createServer(option, app);
 
-// app.use(history());
+app.use(history());
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: true}));
-// app.use(cors());
-app.use(express.static(`${basePath}`, {dotfiles:'allow'}));
+app.use(cors());
+app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
 
 // TODO: app.get routerek kiszervezése: Then, load the router module in the app:
 // https://expressjs.com/en/guide/routing.html
 
-/*app.post('/continent', (req, res) => {
-  const continent = req.body;
-  // res.end('oh_yes')
-  // return res.send(getCovid19Continents());
-});*/
-/*app.get('/getWorld', (req, res) => {
+app.get('/getWorld', (req, res) => {
   // res.send(getCovid19World());
 });
 app.get('/getCountries', (reqx1, res) => {
@@ -46,9 +51,14 @@ app.get('/getCountries/:countryCode', (req, res) => {
 });
 app.get('/getContinents', (req, res) => {
   // res.send(getCovid19Continents());
-});*/
-server.listen(port, () => {
-  console.log('Server started!', 'Port:', port);
-  // transformCovidDbData();
 });
+
+/*httpServer.listen(httpPort, () => {
+  console.log('Http Server started!', 'Port:', httpPort);
+});*/
+
+httpsServer.listen(httpsPort, () => {
+  console.log('Https Server started!', 'Port:', httpsPort);
+});
+// transformCovidDbData();
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
