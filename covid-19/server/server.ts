@@ -16,9 +16,9 @@ const port = process.env.PORT || dev ? 80 : 443;
 const app = express();
 const server = !dev ?
   https.createServer({
-    key: fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/privkey.pem', 'utf8'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/cert.pem', 'utf8'),
-    ca: fs.readFileSync('/etc/letsencrypt/live/kbsz.duckdns.org/chain.pem', 'utf8'),
+    key: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/privkey.pem', 'utf8'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/cert.pem', 'utf8'),
+    ca: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/chain.pem', 'utf8'),
   }, app) :
   http.createServer(app);
 
