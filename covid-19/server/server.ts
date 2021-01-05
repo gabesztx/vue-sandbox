@@ -10,25 +10,26 @@ import https from 'https';
 
 export const basePath = path.join(__dirname, './');
 const dev = process.env.ENV === 'dev';
-const port = process.env.PORT || dev ? 80 : 443;
+// const port = process.env.PORT || dev ? 80 : 443;
+const port = 80;
 
 
 const app = express();
-const server = !dev ?
+/*const server = !dev ?
   https.createServer({
     key: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/privkey.pem', 'utf8'),
     cert: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/cert.pem', 'utf8'),
     ca: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/chain.pem', 'utf8'),
   }, app) :
-  http.createServer(app);
+  http.createServer(app);*/
 
-// const server = http.createServer(app);
+const server = http.createServer(app);
 // const httpsServer = https.createServer(option, app);
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: true}));
-app.use(history());
-app.use(cors());
+// app.use(history());
+// app.use(cors());
 app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
 
 // TODO: app.get routerek kiszervezése: Then, load the router module in the app:
