@@ -68,9 +68,9 @@ export const getCountryName = (data: any) => {
 };
 
 
-export const separateContinentData = (data: any) => {
-  let continentData = [] as any;
-  let countryData = [] as any;
+export const transformContinentCountryData = (data: any) => {
+  const continentData = [] as any;
+  const countryData = [] as any;
   data.forEach((item: any) => {
     if (item.country === item.continent) {
       continentData.push(item);
@@ -81,8 +81,15 @@ export const separateContinentData = (data: any) => {
   return [countryData, continentData];
 };
 
+export const transformCountryName = (data: any) => {
+  return data.map((item) => {
+    item.countrySearch = item.country;
+    return item;
+  });
+};
+
 export const transformMergeObject = (items: any) => {
-  let data = items;
+  const data = items;
   data.forEach((item: any) => {
     const population = item.population;
     item.population = population === null ? 'N/A' : population;
@@ -100,9 +107,16 @@ export const transformMergeObject = (items: any) => {
   return data;
 };
 
-export const deleteNoCountryData = (items: any) => {
+
+
+export const removeUnusedContinent = (items: any) => items.filter(item => !!item.continent);
+export const removeContinent = (items: any) => items.filter(item => item.continent !== item.country);
+
+
+
+/*export const deleteSameCountry = (items: any) => {
   const noCountryData = ['Channel Islands', 'Diamond Princess', 'MS Zaandam', 'Caribbean Netherlands', 'MS Zaandam ', 'Diamond Princess '];
-  let countryData = [] as any;
+  const countryData = [] as any;
   items.forEach((item) => {
     const country = item.country;
     const isFind = noCountryData.find((item) => country === item);
@@ -111,4 +125,4 @@ export const deleteNoCountryData = (items: any) => {
     }
   });
   return countryData;
-};
+};*/

@@ -238,7 +238,7 @@ export const isoCountries = {
   ZW: 'Zimbabwe',
   AX: 'Åland Islands',
   BQ: 'Bonaire, Sint Eustatius and Saba',
-  CW: 'Curaçao',
+  // CW: 'Curaçao',
   GG: 'Guernsey',
   IM: 'Isle of Man',
   JE: 'Jersey',

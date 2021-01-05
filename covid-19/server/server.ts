@@ -8,12 +8,14 @@ import path from 'path';
 export const basePath = path.join(__dirname, './');
 export const port = process.env.PORT || 5000;
 import {
-  getCovid19World,
-  getCovid19Continents,
-  getCovid19Country,
-  getCovid19CountryDetail,
+  // getCovid19World,
+  // getCovid19Continents,
+  // getCovid19Country,
+  // getCovid19CountryDetail,
   transformCovidDbData,
 } from './services/covid-data.service';
+
+
 
 /* App */
 const app = express();
@@ -34,16 +36,16 @@ app.use(express.static(`${basePath}`));
   // return res.send(getCovid19Continents());
 });*/
 app.get('/getWorld', (req, res) => {
-  res.send(getCovid19World());
+  // res.send(getCovid19World());
 });
-app.get('/getCountries', (req, res) => {
-  res.send(getCovid19Country());
+app.get('/getCountries', (reqx1, res) => {
+  // res.send(getCovid19Country());
 });
 app.get('/getCountries/:countryCode', (req, res) => {
-  res.send(getCovid19CountryDetail(req.params.countryCode));
+  // res.send(getCovid19CountryDetail(req.params.countryCode));
 });
 app.get('/getContinents', (req, res) => {
-  res.send(getCovid19Continents());
+  // res.send(getCovid19Continents());
 });
 server.listen(port, () => {
   transformCovidDbData();

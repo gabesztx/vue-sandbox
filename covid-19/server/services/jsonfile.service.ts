@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'jsonfile';
 
-export class JsonfileService {
+class JsonfileService {
   readJsonFile(file: any): Promise<any>{
     return readFile(file);
   }

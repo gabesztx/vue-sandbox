@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
     path: '/world',
-    beforeEnter: wordBeforeEnter,
+    // beforeEnter: wordBeforeEnter,
     component: () => import('@/views/World/World.vue'),
   },
   {

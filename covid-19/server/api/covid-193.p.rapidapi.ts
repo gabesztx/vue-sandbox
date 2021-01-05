@@ -12,7 +12,23 @@ const option = {
     useQueryString: true,
   },
 };
-export const $getCountries = (): Observable<any> => from(httpService.get(`${url}/countries`, option));
-export const $getStatistics = (): Observable<any> => from(httpService.get(`${url}/statistics`, option)).pipe(
-  map(value => value.data.response)
-);
+export const $getStatistics = (): Observable<any> => {
+  return from(httpService.get(`${url}/statistics`, option)).pipe(
+    map(value => value.data.response)
+  );
+};
+export const $getCountries = (): Observable<any> => {
+  return from(httpService.get(`${url}/countries`, option)).pipe(
+    map(value => value.data.response)
+  );
+};
+
+export const $getHistory = (params: any): Observable<any> => {
+  return from(httpService.get(`${url}/history`, {
+    ...option,
+    params: params
+  })).pipe(
+    map(value => value.data.response)
+  );
+};
+// https://rapidapi.com/api-sports/api/covid-193/endpoints
