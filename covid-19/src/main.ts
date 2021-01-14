@@ -41,7 +41,6 @@ new Vue({
   i18n,
   render: (h) => h(App),
 }).$mount('#app');
-console.log('ok');
 // Vue.component('v-page-country', CountryComponent);
 // Vue.component('v-page-country-detail', CountryDetailComponent);
 // Vue.component('v-page', PageComponent);
