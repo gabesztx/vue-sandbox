@@ -45,9 +45,10 @@ app.get('/getContinents', (req, res) => {
   // res.send(getCovid19Continents());
 });
 server.listen(port, () => {
+  transformCovidDbData();
   console.log('Http Server started!', 'Port:', port);
 });
-transformCovidDbData();
+
 
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
 // const httpsServer = https.createServer(option, app);
