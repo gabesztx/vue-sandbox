@@ -110,7 +110,7 @@ export const transformMergeObject = (items: any) => {
 
 
 export const removeUnusedContinent = (items: any) => items.filter(item => !!item.continent);
-export const removeContinent = (items: any) => items.filter(item => item.continent !== item.country);
+export const removeCountries = (items: any) => items.filter(item => item.continent === item.country);
 
 
 

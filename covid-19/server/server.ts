@@ -1,5 +1,7 @@
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
+import { transformCovidDbData } from './services/covid-data.service';
+
 const cors = require('cors');
 import fs from 'fs';
 import path from 'path';
@@ -25,7 +27,7 @@ const server = !dev ?
 // app.use(bodyParser.urlencoded({extended: true}));
 app.use(history());
 app.use(cors());
-app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
+app.use(express.static(`${basePath}`, { dotfiles: 'allow' }));
 
 // TODO: app.get routerek kiszervezése: Then, load the router module in the app:
 // https://expressjs.com/en/guide/routing.html
@@ -44,8 +46,8 @@ app.get('/getContinents', (req, res) => {
 });
 server.listen(port, () => {
   console.log('Http Server started!', 'Port:', port);
-// transformCovidDbData();
 });
+transformCovidDbData();
 
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
 // const httpsServer = https.createServer(option, app);
