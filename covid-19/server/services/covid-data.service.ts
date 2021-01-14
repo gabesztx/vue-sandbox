@@ -13,7 +13,10 @@ import {
   transformRemoveHyphen,
   transformRemoveAdds,
   transformMergeObject,
-  transformContinentCountryData, removeUnusedContinent, transformCountryName, removeCountries,
+  transformContinentCountryData,
+  removeUnusedContinent,
+  transformCountryName,
+  removeCountries,
   // separateContinentData,
   // deleteSameCountry,
 } from './covid-data-transform.service';
@@ -86,24 +89,24 @@ const getTransformCountryDetailData = (data: any) => {
 // );
 
 const getNoData = {
-  'continent': 'N/A',
-  'country': 'N/A',
-  'countryCode': 'N/A',
-  'population': 'N/A',
-  'day': 'N/A',
-  'time': 'N/A',
-  'countrySearch': 'N/A',
-  'casesNew': 'N/A',
-  'casesActive': 'N/A',
-  'casesCritical': 'N/A',
-  'casesRecovered': 'N/A',
-  'cases1MPop': 'N/A',
-  'casesTotal': 'N/A',
-  'deathsNew': 'N/A',
-  'deaths1MPop': 'N/A',
-  'deathsTotal': 'N/A',
-  'tests1MPop': 'N/A',
-  'testsTotal': 'N/A'
+  continent: 'N/A',
+  country: 'N/A',
+  countryCode: 'N/A',
+  population: 'N/A',
+  day: 'N/A',
+  time: 'N/A',
+  countrySearch: 'N/A',
+  casesNew: 'N/A',
+  casesActive: 'N/A',
+  casesCritical: 'N/A',
+  casesRecovered: 'N/A',
+  cases1MPop: 'N/A',
+  casesTotal: 'N/A',
+  deathsNew: 'N/A',
+  deaths1MPop: 'N/A',
+  deathsTotal: 'N/A',
+  tests1MPop: 'N/A',
+  testsTotal: 'N/A',
 };
 
 const writeCovidDataInFile$ = (data: any, fileName: string) => {
@@ -117,25 +120,25 @@ const transformData$ = (data): Observable<any> => {
     map((data) => transformRemoveHyphen(data)),
     map((data) => getCountryCode(data)),
     map((data) => transformMergeObject(data)),
-    map((data) => transformCamelizeKeys(data)),
+    map((data) => transformCamelizeKeys(data))
   );
 };
 const getContinentList = () => {
   return new Promise((resolve) => {
     $getStatistics()
-    .pipe(
-      map((data) => removeUnusedContinent(data)),
-      map((data) => removeCountries(data)),
-      mergeMap((data) => transformData$(data)),
-      // map(item => item.find((val) => val.continent === 'All'))
-      // tap(data => console.log('LOG:', data)),
-      // mergeMap((data) => writeCovidDataInFile$(data, 'statistics')),
-    )
-    .subscribe((list) => {
-      writeCovidDataInFile$(list, `country-data-continent`).then(() => {
-        resolve(list);
+      .pipe(
+        map((data) => removeUnusedContinent(data)),
+        map((data) => removeCountries(data)),
+        mergeMap((data) => transformData$(data))
+        // map(item => item.find((val) => val.continent === 'All'))
+        // tap(data => console.log('LOG:', data)),
+        // mergeMap((data) => writeCovidDataInFile$(data, 'statistics')),
+      )
+      .subscribe((list) => {
+        writeCovidDataInFile$(list, `country-data-continent`).then(() => {
+          resolve(list);
+        });
       });
-    });
   });
 };
 const getCountryList = (countryNames: any[], dayNumber?: number) => {
@@ -146,45 +149,46 @@ const getCountryList = (countryNames: any[], dayNumber?: number) => {
       countryNum++;
       $getHistory({
         country: countryNames[countryNum - 1].country,
-        day: getPreviousDayOfNumber(dayNumber)
+        day: getPreviousDayOfNumber(dayNumber),
       })
-      .pipe(
-        mergeMap(data => transformData$(data)),
-        map(value => {
-          const item = value[0];
-          return item ? item : {
-            ...getNoData,
-            country: countryNames[countryNum - 1].country,
-            countryCode: countryNames[countryNum - 1].countryCode,
-            noData: true,
-          };
-        }),
-        take(1)
-      )
-      .subscribe(
-        (country) => {
-          countryList.push(country);
-          if (countryNames.length === countryNum) {
-            writeCovidDataInFile$(countryList, `country-data-${dayNumber}`).then(() => {
-              resolve(countryList);
-            });
-          } else {
-            getAllData();
+        .pipe(
+          mergeMap((data) => transformData$(data)),
+          map((value) => {
+            const item = value[0];
+            return item
+              ? item
+              : {
+                  ...getNoData,
+                  country: countryNames[countryNum - 1].country,
+                  countryCode: countryNames[countryNum - 1].countryCode,
+                  noData: true,
+                };
+          }),
+          take(1)
+        )
+        .subscribe(
+          (country) => {
+            countryList.push(country);
+            if (countryNames.length === countryNum) {
+              writeCovidDataInFile$(countryList, `country-data-${dayNumber}`).then(() => {
+                resolve(countryList);
+              });
+            } else {
+              getAllData();
+            }
+          },
+          (error) => {
+            console.log('------------- ERROR ----------------');
+            console.log(error);
           }
-        },
-        error => {
-          console.log('------------- ERROR ----------------');
-          console.log(error);
-        }
-      );
-
+        );
     };
     getAllData();
   });
 };
 
 export const transformCovidDbData = async () => {
-  const countryNames = await (jsFileService.readJsonFile(`${basePath}/db/countries.json`));
+  const countryNames = await jsFileService.readJsonFile(`${basePath}/db/countries.json`);
   const allData = await Promise.all([
     getContinentList(),
     getCountryList(countryNames, 0),
@@ -193,8 +197,7 @@ export const transformCovidDbData = async () => {
   ]);
   // const continents = await getContinentList();
   console.log('All Done!');
-  // console.log(allData);
-
+  // TODO: adatok betöltése client oldalon :)
 
   /* forkJoin([
      from(getCountryList(countryNames, 0)),
@@ -245,7 +248,6 @@ $getStatistics()
   console.log('done');
 });
 */
-
 
 /*
 $getCountries()

@@ -1,7 +1,6 @@
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
 import { transformCovidDbData } from './services/covid-data.service';
-
 const cors = require('cors');
 import fs from 'fs';
 import path from 'path';
@@ -15,13 +14,16 @@ const port = process.env.PORT || dev ? 80 : 443;
 export const basePath = path.join(__dirname, './');
 
 const app = express();
-const server = !dev ?
-  https.createServer({
-    key: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/privkey.pem', 'utf8'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/cert.pem', 'utf8'),
-    ca: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/chain.pem', 'utf8'),
-  }, app) :
-  http.createServer(app);
+const server = !dev
+  ? https.createServer(
+      {
+        key: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/privkey.pem', 'utf8'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/cert.pem', 'utf8'),
+        ca: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/chain.pem', 'utf8'),
+      },
+      app
+    )
+  : http.createServer(app);
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: true}));
@@ -45,11 +47,10 @@ app.get('/getContinents', (req, res) => {
   // res.send(getCovid19Continents());
 });
 
-console.log('Server started...');
-transformCovidDbData().then(() => {
-  server.listen(port, () => {
-    console.log('Server is running!', 'Port:', port);
-  });
+server.listen(port, () => {
+  console.log('Server is running!', 'Port:', port);
 });
+
+transformCovidDbData();
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
 // const httpsServer = https.createServer(option, app);
