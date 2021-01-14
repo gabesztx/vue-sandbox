@@ -44,11 +44,12 @@ app.get('/getCountries/:countryCode', (req, res) => {
 app.get('/getContinents', (req, res) => {
   // res.send(getCovid19Continents());
 });
-server.listen(port, () => {
-  transformCovidDbData();
-  console.log('Http Server started!', 'Port:', port);
+
+console.log('Server started...');
+transformCovidDbData().then(() => {
+  server.listen(port, () => {
+    console.log('Server is running!', 'Port:', port);
+  });
 });
-
-
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
 // const httpsServer = https.createServer(option, app);
