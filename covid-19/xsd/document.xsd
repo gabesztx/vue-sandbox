@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:annox="http://annox.dev.java.net"
+           xmlns="http://document.dto.eets.icellmobilsoft.hu/document"
+           xmlns:fwcommon="http://common.dto.coffee.icellmobilsoft.hu/common"
+           xmlns:fwservice="http://common.dto.coffee.icellmobilsoft.hu/commonservice"
+           xmlns:fwdocument="http://document.dto.coffee.icellmobilsoft.hu/document"
+           targetNamespace="http://document.dto.eets.icellmobilsoft.hu/document"
+           elementFormDefault="qualified" attributeFormDefault="unqualified"
+           jaxb:version="2.0" jaxb:extensionBindingPrefixes="xjc annox">
+
+    <xs:import namespace="http://common.dto.coffee.icellmobilsoft.hu/common"/>
+    <xs:import namespace="http://common.dto.coffee.icellmobilsoft.hu/commonservice"/>
+    <xs:import namespace="http://document.dto.coffee.icellmobilsoft.hu/document"/>
+
+    <xs:simpleType name="TtlCycleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ANNUAL"/>
+            <xs:enumeration value="PERSIST">
+            </xs:enumeration>
+            <xs:enumeration value="MONTHLY">
+                <xs:annotation>
+                    <xs:documentation>Havi ciklus</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="DAILY">
+                <xs:annotation>
+                    <xs:documentation>Napi ciklus</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="DocumentFileDataRequestType">
+        <xs:sequence>
+            <xs:element name="fileName" type="fwcommon:SimpleText255Type"/>
+            <xs:element name="data" type="xs:base64Binary"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DocumentFileDataResponseType">
+        <xs:sequence>
+            <xs:element name="archivingId" type="fwcommon:EntityIdType"/>
+            <xs:element name="objectId" type="fwcommon:EntityIdType" minOccurs="0"/>
+            <xs:element name="fileName" type="fwcommon:SimpleText255Type"/>
+            <xs:element name="data" type="xs:base64Binary"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DocumentGenerateRequestType">
+        <xs:complexContent>
+            <xs:extension base="fwservice:BaseRequestType">
+                <xs:sequence>
+                    <xs:element name="relationId" type="fwcommon:EntityIdType" />
+                    <xs:element name="clientDocumentType" type="fwcommon:SimpleText15Type" />
+                    <xs:element name="template" type="fwdocument:TemplateType" />
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="DocumentUploadRequestType">
+        <xs:complexContent>
+            <xs:extension base="fwservice:BaseRequestType">
+                <xs:sequence>
+                    <xs:element name="relationId" type="fwcommon:EntityIdType" />
+                    <xs:element name="clientDocumentType" type="fwcommon:SimpleText15Type" />
+                    <xs:element name="documentFileData" type="DocumentFileDataRequestType" />
+                    <xs:element name="ttlParameters" type="TtlParameters" minOccurs="0"/>
+                    <xs:element name="additionalData" type="fwcommon:EntityIdType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="TtlParameters">
+        <xs:sequence>
+            <xs:element name="ttlValue" type="xs:int" />
+            <xs:element name="ttlCycle" type="TtlCycleType" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DocumentUploadResponseType">
+        <xs:complexContent>
+            <xs:extension base="fwservice:BaseResponseType" />
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="DocumentGenerateResponseType">
+        <xs:complexContent>
+            <xs:extension base="fwservice:BaseResponseType">
+                <xs:sequence>
+                    <xs:element name="documentFileData" type="DocumentFileDataResponseType" />
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="DocumentDataResponseType">
+        <xs:complexContent>
+            <xs:extension base="fwservice:BaseResponseType">
+                <xs:sequence>
+                    <xs:element name="documentFileData" type="DocumentFileDataResponseType" />
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="TemplateParameterType">
+        <xs:sequence>
+            <xs:element name="templateKey" type="xs:string"/>
+            <xs:element name="language" type="xs:string"/>
+            <xs:element name="parameterKey" type="xs:string"/>
+            <xs:element name="defaultValue" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TemplateParameterListType">
+        <xs:sequence>
+            <xs:element name="templateParameters" type="TemplateParameterType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TemplateParameterResponseType">
+        <xs:complexContent>
+            <xs:extension base="fwservice:BaseResponseType">
+                <xs:sequence>
+                    <xs:element name="templateParameterList" type="TemplateParameterListType" />
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="DocumentGenerateRequest">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="DocumentGenerateRequestType" />
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DocumentGenerateResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="DocumentGenerateResponseType" />
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DocumentUploadRequest">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="DocumentUploadRequestType" />
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DocumentUploadResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="DocumentUploadResponseType" />
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DocumentDataResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="DocumentDataResponseType" />
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TemplateParameterResponse">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="TemplateParameterResponseType" />
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

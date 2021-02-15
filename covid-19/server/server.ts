@@ -1,5 +1,6 @@
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
+import { xml2xsd, xsd2jsonSchema, json2xsd, validateXml, detectXmlSchema, jsonSchema2xsd } from 'xsdlibrary';
 import { transformCovidDbData } from './services/covid-data.service';
 const cors = require('cors');
 import fs from 'fs';
