@@ -70,9 +70,6 @@ const getContinentList = () => {
         map((data) => removeUnusedContinent(data)),
         map((data) => removeCountries(data)),
         mergeMap((data) => transformData$(data))
-        // map(item => item.find((val) => val.continent === 'All'))
-        // tap(data => console.log('LOG:', data)),
-        // mergeMap((data) => writeCovidDataInFile$(data, 'statistics')),
       )
       .subscribe((list) => {
         writeCovidDataInFile$(list, `country-data-continent`).then(() => {
@@ -82,12 +79,10 @@ const getContinentList = () => {
   });
 };
 const getCountryList = (countryNames: any[], dayNumber?: number) => {
-  console.log('countryNames', countryNames);
   return new Promise((resolve) => {
     let countryNum = 0;
     const countryList = [] as any;
     const getAllData = () => {
-      console.log('countryNum', countryNum);
       countryNum++;
       $getHistory({
         country: countryNames[countryNum - 1].country,
