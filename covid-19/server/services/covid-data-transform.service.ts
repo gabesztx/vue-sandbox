@@ -67,7 +67,6 @@ export const getCountryName = (data: any) => {
   return data;
 };
 
-
 export const transformContinentCountryData = (data: any) => {
   const continentData = [] as any;
   const countryData = [] as any;
