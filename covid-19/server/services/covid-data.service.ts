@@ -133,14 +133,14 @@ const getCountryList = (countryNames: any[], dayNumber?: number) => {
 };
 
 export const transformCovidDbData = async () => {
-  const countryNames = await jsFileService.readJsonFile(`${basePath}/db/countries.json`);
-  const allData = await Promise.all([
-    getContinentList(),
-    getCountryList(countryNames, 0),
-    getCountryList(countryNames, 1),
-    getCountryList(countryNames, 2),
-  ]);
-  const continents = await getContinentList();
+  // const countryNames = await jsFileService.readJsonFile(`${basePath}/db/countries.json`);
+  // const allData = await Promise.all([
+  //   getContinentList(),
+  //   getCountryList(countryNames, 0),
+  //   getCountryList(countryNames, 1),
+  //   getCountryList(countryNames, 2),
+  // ]);
+  // const continents = await getContinentList();
   console.log('All Done!');
 
   // TODO: adatok betöltése client oldalon :)
