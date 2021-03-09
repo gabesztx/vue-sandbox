@@ -1,6 +1,12 @@
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
-import { getContinents, getWorld, transformCovidDbData } from './services/covid-data.service';
+import {
+  getContinents,
+  getCountries,
+  getCountryDetail,
+  getWorld,
+  transformCovidDbData,
+} from './services/covid-data.service';
 const cors = require('cors');
 import fs from 'fs';
 import path from 'path';
@@ -41,13 +47,11 @@ app.get('/getContinents', (req, res) => {
   res.send(getContinents());
 });
 app.get('/getCountries', (reqx1, res) => {
-  // res.send(getCovid19Country());
+  res.send(getCountries());
 });
 app.get('/getCountries/:countryCode', (req, res) => {
-  // res.send(getCovid19CountryDetail(req.params.countryCode));
+  res.send(getCountryDetail(req.params.countryCode));
 });
-
-
 server.listen(port, () => {
   console.log('Server is running!', 'Port:', port);
 });

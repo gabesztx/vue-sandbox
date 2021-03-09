@@ -47,7 +47,7 @@
                     <div class="card">
                       <div class="card-content">
                         <div class="subtitle">{{ $t(name) }}</div>
-                        <div class="title">{{ countryDetailData.covidData[name] }}</div>
+                        <div class="title">{{ countryDetailData[name] }}</div>
                       </div>
                     </div>
                   </div>
@@ -62,7 +62,7 @@
 </template>
 <script lang="ts">
   import router from '@/router';
-  // import { countryDetailData } from '@/core/services/covid-data.service';
+  import { countryDetailData } from '@/core/services/covid-data.service';
   import { generateColumns } from '@/core/utils/layout-generator';
   import { computed } from '@vue/composition-api';
   import store from '@/store';
@@ -71,8 +71,9 @@
     setup() {
       const layoutColumnNumber = 3;
       const countryDetailData = computed(() => store.getters['countries/getCountriesDetailData']);
-      const layoutData = computed(() => generateColumns(countryDetailData.value.covidData, layoutColumnNumber));
+      const layoutData = computed(() => generateColumns(countryDetailData.value, layoutColumnNumber));
       const onNavigate = () => {
+        // console.log('countryDetailData', countryDetailData.value);
         router.push({ path: '/countries' });
       };
       return {

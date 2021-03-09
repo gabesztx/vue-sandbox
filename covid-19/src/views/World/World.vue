@@ -71,7 +71,6 @@
   export default {
     setup() {
       const onNavigate = () => {
-        console.log('navigateeee');
         router.push({ path: '/countries' });
       };
       /*

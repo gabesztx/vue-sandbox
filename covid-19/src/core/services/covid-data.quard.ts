@@ -24,9 +24,6 @@ export const countryBeforeEnter = (to: Route, from: Route, next: NavigationGuard
     setContinentsData(values[1].data);
     next();
   });
-  /*getCountries().then((res) => {
-    next();
-  });*/
 };
 
 export const countryDetailBeforeEnter = (to: Route, from: Route, next: NavigationGuardNext) => {
