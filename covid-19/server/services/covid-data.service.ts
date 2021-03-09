@@ -1,6 +1,5 @@
 import { combineLatest, forkJoin, from, Observable, of } from 'rxjs';
 import { map, take, switchMap, tap, mergeMap, filter } from 'rxjs/operators';
-
 // const fs = require('fs');
 import fs from 'fs';
 import { basePath } from '../server';
@@ -20,13 +19,16 @@ import {
   // separateContinentData,
   // deleteSameCountry,
 } from './covid-data-transform.service';
-import moment from 'moment';
 
+export const getWorld = () => {
+  return require(`../db/country-data-continent.json`).find((item) => item.continent === 'All');
+};
 
-// export const getCovid19World = () => JSON.parse(JSON.stringify(covid19ContinentsDB[0]));
+export const getContinents = () => {
+  return require(`../db/country-data-continent.json`).find((item) => item.continent !== 'All');
+};
 // export const getCovid19Continents = () => JSON.parse(JSON.stringify(covid19ContinentsDB));
 // export const getCovid19Country = () => JSON.parse(JSON.stringify(covid19CountryDB));
-
 
 const getNoData = {
   continent: 'N/A',
@@ -126,16 +128,14 @@ const getCountryList = (countryNames: any[], dayNumber?: number) => {
 
 export const transformCovidDbData = async () => {
   const countryNames = await jsFileService.readJsonFile(`${basePath}/db/countries.json`);
-
   const allData = await Promise.all([
     getContinentList(),
     getCountryList(countryNames, 0),
     getCountryList(countryNames, 1),
     getCountryList(countryNames, 2),
   ]);
-  // const continents = await getContinentList();
+  const continents = await getContinentList();
   console.log('All Done!');
+
   // TODO: adatok betöltése client oldalon :)
-
 };
-

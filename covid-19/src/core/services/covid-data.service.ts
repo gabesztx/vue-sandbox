@@ -8,7 +8,6 @@ export let countryDetailData = {} as any;
 
 const env = process.env.NODE_ENV;
 const host = env === 'development' ? process.env.VUE_APP_DEV_HOST : process.env.VUE_APP_PROD_HOST;
-
 export const getWorld = (): Promise<any> => {
   return http.get(`${host}/getWorld`);
 };

@@ -1,6 +1,6 @@
 // import cors from 'cors';
 // import bodyParser from 'body-parser';
-import { transformCovidDbData } from './services/covid-data.service';
+import { getContinents, getWorld, transformCovidDbData } from './services/covid-data.service';
 const cors = require('cors');
 import fs from 'fs';
 import path from 'path';
@@ -35,7 +35,10 @@ app.use(express.static(`${basePath}`, { dotfiles: 'allow' }));
 // https://expressjs.com/en/guide/routing.html
 
 app.get('/getWorld', (req, res) => {
-  // res.send(getCovid19World());
+  res.send(getWorld());
+});
+app.get('/getContinents', (req, res) => {
+  res.send(getContinents());
 });
 app.get('/getCountries', (reqx1, res) => {
   // res.send(getCovid19Country());
@@ -43,9 +46,7 @@ app.get('/getCountries', (reqx1, res) => {
 app.get('/getCountries/:countryCode', (req, res) => {
   // res.send(getCovid19CountryDetail(req.params.countryCode));
 });
-app.get('/getContinents', (req, res) => {
-  // res.send(getCovid19Continents());
-});
+
 
 server.listen(port, () => {
   console.log('Server is running!', 'Port:', port);
