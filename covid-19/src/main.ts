@@ -44,4 +44,4 @@ new Vue({
 // Vue.component('v-page-country', CountryComponent);
 // Vue.component('v-page-country-detail', CountryDetailComponent);
 // Vue.component('v-page', PageComponent);
-console.log('-----------dskndksndksndjsndsjndjndsjn');
+console.log('TESZT');
