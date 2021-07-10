@@ -55,7 +55,6 @@
           </a>
         </v-row>
       </v-col>
-      <v-btn color="warning">Button</v-btn>
 
       <v-col class="mb-5" cols="12">
         <h2 class="headline font-weight-bold mb-5">Ecosystem</h2>
