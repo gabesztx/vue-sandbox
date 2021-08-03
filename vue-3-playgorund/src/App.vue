@@ -1,5 +1,7 @@
 <template>
   <v-app>
+<!--    <Header></Header>-->
+    Header
     <v-main>
       <router-view />
     </v-main>
@@ -11,11 +13,5 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "App",
-
-  data() {
-    return {
-      //
-    };
-  },
 });
 </script>
