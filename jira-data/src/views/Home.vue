@@ -1,18 +1,36 @@
 <template>
   <div class="home">
     <h1>Home</h1>
+    <button @click="onClickGet">Get data</button>
+    <button @click="onClickPost">Post data</button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-// import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { defineComponent } from 'vue';
+import { getData, postData } from '@/core/services/http.service';
 
 export default defineComponent({
-  name: "Home",
+  name: 'Home',
   setup: () => {
-    console.log("setup");
-    return {};
+    const postDummyData = {
+      dummy: 'post data from client'
+    };
+
+    const onClickGet = () => {
+      getData().then((res) => {
+        console.log('GET OK!', res.data);
+      });
+    };
+    const onClickPost = () => {
+      postData(postDummyData).then((res) => {
+        console.log('POST OK!', res.data);
+      });
+    };
+    return {
+      onClickGet,
+      onClickPost,
+    };
   },
 });
 </script>

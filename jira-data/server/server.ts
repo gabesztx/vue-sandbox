@@ -1,4 +1,4 @@
-// import bodyParser from 'body-parser';
+import bodyParser from 'body-parser';
 // const cors = require('cors');
 import cors from 'cors';
 import express from 'express';
@@ -20,18 +20,23 @@ const server = !dev ? https.createServer(
       ca: fs.readFileSync('/etc/letsencrypt/live/covid.duckdns.org/chain.pem', 'utf8'),
     }, app)
   : http.createServer(app);
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({extended: true}));
 app.use(history());
 app.use(cors());
 app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
-
+const dummyResponse = {
+  name: 'dummy'
+};
 // https://expressjs.com/en/guide/routing.html
-/*app.get('/getWorld', (req, res) => {
-  res.send(getWorld());
+app.get('/getData', (req, res) => {
+  res.send(dummyResponse);
 });
-*/
+app.post('/postData', (req, res) => {
+  console.log('POST:', req.body);
+  res.send(dummyResponse);
+});
 server.listen(port, () => {
   console.log('Server is running!', 'Port:', port);
 });
