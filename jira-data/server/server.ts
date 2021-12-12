@@ -9,7 +9,7 @@ import http from 'http';
 import https from 'https';
 
 const app = express();
-const basePath = path.join(__dirname, './');
+// const basePath = path.join(__dirname, './');
 const dev = process.env.ENV === 'dev';
 const port = process.env.PORT || dev ? 80 : 443;
 const server = !dev ? https.createServer(
@@ -22,24 +22,23 @@ const server = !dev ? https.createServer(
 
 app.use(history());
 app.use(cors());
-app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
+// app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // const port = 80;
 // const server = http.createServer(app);
-// app.use(express.static(`${basePath}`));
 
-const dummyResponse = {
-  name: 'dummy'
-};
-// https://expressjs.com/en/guide/routing.html
-/*app.get('/getData', (req, res) => {
-  res.send(dummyResponse);
-});*/
+app.use(history());
+app.use(cors());
+app.use(express.static(__dirname, {dotfiles: 'allow'}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+// app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
+
 app.post('/webhook', (req, res) => {
   console.log('webhook:', req.body);
-  res.send(dummyResponse);
+  res.send({});
 });
 server.listen(port, () => {
   console.log('Server is running!', 'Port:', port);
