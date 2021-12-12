@@ -3,7 +3,7 @@ import http from 'axios';
 // const env = process.env.NODE_ENV;
 // const host = env === 'development' ? process.env.VUE_APP_DEV_HOST : process.env.VUE_APP_PROD_HOST;
 // const host = 'http://localhost:80';
-const host = 'http://gabesztx.duckdns.org';
+const host = 'https://gabesztx.duckdns.org';
 const config = {
   headers: {
     'Content-Type': 'application/json',

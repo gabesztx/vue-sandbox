@@ -8,11 +8,11 @@ import history from 'connect-history-api-fallback';
 import http from 'http';
 import https from 'https';
 
+const app = express();
 const basePath = path.join(__dirname, './');
 const dev = process.env.ENV === 'dev';
-const port = process.env.PORT || dev ? 80 : 443;
 
-const app = express();
+const port = process.env.PORT || dev ? 80 : 443;
 const server = !dev ? https.createServer(
     {
       key: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/privkey.pem', 'utf8'),
@@ -20,11 +20,18 @@ const server = !dev ? https.createServer(
       ca: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/chain.pem', 'utf8'),
     }, app)
   : http.createServer(app);
+
+
+// const port = 80;
+// const server = http.createServer(app);
+// app.use(express.static(`${basePath}`));
+
 app.use(history());
 app.use(cors());
 app.use(express.static(`${basePath}`, {dotfiles: 'allow'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+
 
 const dummyResponse = {
   name: 'dummy'
