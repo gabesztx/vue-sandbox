@@ -12,12 +12,11 @@ const app = express();
 const basePath = path.join(__dirname, './');
 const dev = process.env.ENV === 'dev';
 const port = process.env.PORT || dev ? 80 : 443;
-
 const server = !dev ? https.createServer(
     {
-      key: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/privkey.pem', 'utf8'),
-      cert: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/cert.pem', 'utf8'),
-      ca: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/chain.pem', 'utf8'),
+      key: fs.readFileSync('/home/gabesz/live/gabesztx.duckdns.org/privkey.pem', 'utf8'),
+      cert: fs.readFileSync('/home/gabesz/live/gabesztx.duckdns.org/cert.pem', 'utf8'),
+      ca: fs.readFileSync('/home/gabesz/live/gabesztx.duckdns.org/chain.pem', 'utf8'),
     }, app)
   : http.createServer(app);
 
