@@ -10,7 +10,7 @@ import history from 'connect-history-api-fallback';
 const app = express();
 const dev = process.env.ENV === 'dev';
 const port = process.env.PORT || dev ? 80 : 443;
-const domain = 'jira-sandbox.duckdns.org'
+const domain = 'jira-sandbox.duckdns.org';
 // const domain = 'gabesztx.duckdns.org'
 const server = dev ?
   http.createServer(app) :
@@ -28,13 +28,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/webhook', (req, res) => {
-  console.log(req.body);
-  res.send({});
+  triggerLamp();
+  res.send(null);
 });
 server.listen(port, () => {
   console.log('Server is running!', 'Port:', port);
 });
 
+
+import axios from 'axios';
+
+const triggerLamp = () => {
+  axios.get('http://192.168.1.5/cm?cmnd=Power%20TOGGLE').then((res) => {
+  });
+};
 // const basePath = path.join(__dirname, './');
 // res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
 // const httpsServer = https.createServer(option, app);
