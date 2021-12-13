@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "start": "vue-cli-service serve",
-    "serv:dev": "ENV=dev ts-node-dev --project './server/tsconfig.json' server/server.ts",
-    "serv:start": "node ./dist/server.js",
-    "serv:compiler": "tsc --project './server/tsconfig.json'",
+    "server:dev": "ENV=dev ts-node-dev --project './server/tsconfig.json' server/server.ts",
+    "server:prod": "node ./dist/server.js",
+    "server:compiler": "tsc --project './server/tsconfig.json'",
     "build": "vue-cli-service build",
-    "build:all": "ENV=prod npm run build && npm run serv:compiler && npm run serv:start",
+    "build:prod": "ENV=prod npm run build && npm run server:compiler && npm run server:prod",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
