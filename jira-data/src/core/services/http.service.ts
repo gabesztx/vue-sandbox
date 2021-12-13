@@ -1,23 +1,43 @@
-import http from 'axios';
+import axios, {
+  AxiosInstance,
+  AxiosRequestConfig,
+  AxiosResponse,
+} from 'axios';
 
-// const env = process.env.NODE_ENV;
-// const host = env === 'development' ? process.env.VUE_APP_DEV_HOST : process.env.VUE_APP_PROD_HOST;
-// const host = 'http://localhost:4200';
-const config = {
-  headers: {
-    Authorization: `Bearer ${process.env.VUE_APP_JIRA_TOKEN}`,
-    'Content-Type': 'application/json',
-    'Cache-Control': 'no-cache',
-    'Access-Control-Allow-Origin': '*',
-  },
-  baseURL: '/',
-};
-export const getData = (): Promise<any> => {
-  // return http.get(`${host}/rest/agile/1.0/board`, config);
-  return http.get(`/rest/agile/1.0/board`, config);
-};
-/*
-export const postData = (data: any): Promise<any> => {
-  return http.post(`postData`, data, config);
-};
-*/
+class HttpService {
+  http: AxiosInstance;
+  private _isPending = 0;
+
+  constructor(){
+    this.http = axios.create({
+      headers: {
+        // Authorization: `gabor.martus@icellmobilsoft.hu:${process.env.VUE_APP_JIRA_TOKEN}`,
+        // Authorization: `gabesztx@gmail.com:XDStw5py7Ma4qNUu0im54DFC`,
+        Authorization: `Bearer ${process.env.VUE_APP_JIRA_TOKEN}`,
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-cache',
+        'Access-Control-Allow-Origin': '*',
+      },
+      baseURL: '/',
+    });
+
+  }
+
+  get<R>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<R>>{
+    return this.http.get(url, {
+      ...config,
+    });
+  }
+
+  post<R, D = unknown>(
+    url: string,
+    data?: D,
+    config?: AxiosRequestConfig
+  ): Promise<AxiosResponse<R>>{
+    return this.http.post(url, data, {
+      ...config,
+    });
+  }
+}
+
+export default new HttpService();

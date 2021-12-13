@@ -8,14 +8,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { getData } from "@/core/services/http.service";
+import { getIssue } from "@/core/api/jira.service";
 
 export default defineComponent({
   name: "Home",
   setup: () => {
     const onClickGet = () => {
-      getData().then((res) => {
-        console.log("GET OK!", res.data);
+      getIssue().then((res) => {
+        console.log("GET OK!");
       });
     };
     const onClickPost = () => {
