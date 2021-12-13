@@ -9,14 +9,16 @@ import history from 'connect-history-api-fallback';
 
 const app = express();
 const dev = process.env.ENV === 'dev';
-const port = process.env.PORT || !dev ? 80 : 443;
-const server = !dev ?
+const port = process.env.PORT || dev ? 80 : 443;
+const domain = 'jira-sandbox.duckdns.org'
+// const domain = 'gabesztx.duckdns.org'
+const server = dev ?
   http.createServer(app) :
   https.createServer(
     {
-      key: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/privkey.pem', 'utf8'),
-      cert: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/cert.pem', 'utf8'),
-      ca: fs.readFileSync('/etc/letsencrypt/live/gabesztx.duckdns.org/chain.pem', 'utf8'),
+      key: fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8'),
+      cert: fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8'),
+      ca: fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8'),
     }, app);
 
 app.use(history());
@@ -26,7 +28,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/webhook', (req, res) => {
-  console.log('webhook:', req.body);
+  console.log(req.body);
   res.send({});
 });
 server.listen(port, () => {

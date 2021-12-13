@@ -7,25 +7,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { getData, postData } from '@/core/services/http.service';
+import { defineComponent } from "vue";
+import { getData } from "@/core/services/http.service";
 
 export default defineComponent({
-  name: 'Home',
+  name: "Home",
   setup: () => {
-    const postDummyData = {
-      dummy: 'post data from client'
-    };
-
     const onClickGet = () => {
       getData().then((res) => {
-        console.log('GET OK!', res.data);
+        console.log("GET OK!", res.data);
       });
     };
     const onClickPost = () => {
-      postData(postDummyData).then((res) => {
+      /*    postData(postDummyData).then((res) => {
         console.log('POST OK!', res.data);
-      });
+      });*/
     };
     return {
       onClickGet,
