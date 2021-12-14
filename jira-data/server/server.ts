@@ -28,20 +28,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/webhook', (req, res) => {
-  triggerLamp();
-  res.send(null);
+  // triggerLamp();
+  res.send({});
 });
 server.listen(port, () => {
   console.log('Server is running!', 'Port:', port);
 });
 
 
-import axios from 'axios';
+// import axios from 'axios';
 
-const triggerLamp = () => {
+/*const triggerLamp = () => {
   axios.get('http://192.168.1.5/cm?cmnd=Power%20TOGGLE').then((res) => {
   });
-};
+};*/
 // const basePath = path.join(__dirname, './');
-// res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
-// const httpsServer = https.createServer(option, app);

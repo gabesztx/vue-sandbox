@@ -11,8 +11,6 @@ class HttpService {
   constructor(){
     this.http = axios.create({
       headers: {
-        // Authorization: `gabor.martus@icellmobilsoft.hu:${process.env.VUE_APP_JIRA_TOKEN}`,
-        // Authorization: `gabesztx@gmail.com:XDStw5py7Ma4qNUu0im54DFC`,
         Authorization: `Bearer ${process.env.VUE_APP_JIRA_TOKEN}`,
         'Content-Type': 'application/json',
         'Cache-Control': 'no-cache',
