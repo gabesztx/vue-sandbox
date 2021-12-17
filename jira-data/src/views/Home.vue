@@ -1,23 +1,47 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <button @click="onClickGetAllBoards">Get All Boards</button>
-    <button @click="onClickGetBoard">Get Hugo Board</button>
-    <button @click="onClickGetEpicFromBoard">Get Epic from Board</button>
-    <button @click="onClickGetProject">Get Project from Board</button>
-    <button @click="onClickGetIssue">Get Issue from Board</button>
-    <button @click="onClickGetEpic">Get Epic</button>
-    <!--    <button @click="onClickGetEpicFromFeatures">Get Features from Hugo Board</button>-->
+    <div>
+      <button @click="onClickGetAllBoards">Get All Boards</button>
+    </div>
+
+    <div>
+      <button @click="onClickGetBoard">Get Hugo Board</button>
+    </div>
+    <div>
+      <button @click="onClickGetEpicFromBoard">Get Epic from Board</button>
+    </div>
+    <div>
+      <button @click="onClickGetProject">Get Project from Board</button>
+    </div>
+    <div>
+      <button @click="onClickGetIssue">Get Issue from Board</button>
+    </div>
+    <div>
+      <button @click="onClickGetEpic">Get Epic</button>
+    </div>
+    <div>
+      <button @click="onClickGetStuff">Get Stuff from Board</button>
+    </div>
+
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { getAllBoards, getBoard, getBoardEpics, getBoardProjects, getBoardIssue, getEpic } from "@/core/api/jira.board.api";
+import {
+  getAllBoards,
+  getBoard,
+  getBoardEpics,
+  getBoardProjects,
+  getBoardIssue,
+  getEpic, getBoardAllQuickFilters
+} from "@/core/api/jira.board.api";
 
 export default defineComponent({
   name: "Home",
   setup: () => {
+    const board = 229;
     const onClickGetAllBoards = () => {
       getAllBoards().then((res) => {
         console.log(res);
@@ -25,27 +49,33 @@ export default defineComponent({
 
     };
     const onClickGetBoard = () => {
-      getBoard(229).then((res) => {
+      getBoard(board).then((res) => {
         console.log(res);
       });
     };
     const onClickGetEpicFromBoard = () => {
-      getBoardEpics(229).then((res) => {
+      getBoardEpics(board).then((res) => {
         console.log(res);
       });
     };
     const onClickGetProject = () => {
-      getBoardProjects(229).then((res) => {
+      getBoardProjects(board).then((res) => {
         console.log(res);
       });
     };
     const onClickGetIssue = () => {
-      getBoardIssue(229).then((res) => {
+      getBoardIssue(board).then((res) => {
         console.log(res);
       });
     };
     const onClickGetEpic = () => {
       getEpic().then((res) => {
+        console.log(res);
+      });
+    };
+
+    const onClickGetStuff = () => {
+      getBoardAllQuickFilters(board).then((res) => {
         console.log(res);
       });
     };
@@ -55,7 +85,8 @@ export default defineComponent({
       onClickGetEpicFromBoard,
       onClickGetProject,
       onClickGetIssue,
-      onClickGetEpic
+      onClickGetEpic,
+      onClickGetStuff,
     };
   }
 });
