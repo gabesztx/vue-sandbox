@@ -18,7 +18,7 @@
       <button @click="onClickGetIssue">Get Issue from Board</button>
     </div>
     <div>
-      <button @click="onClickGetEpic">Get Epic</button>
+      <button @click="onClickGetSprint">Get Sprint from Board</button>
     </div>
     <div>
       <button @click="onClickGetStuff">Get Stuff from Board</button>
@@ -35,13 +35,13 @@ import {
   getBoardEpics,
   getBoardProjects,
   getBoardIssue,
-  getEpic, getBoardAllQuickFilters
+  getBoardAllQuickFilters, getBoardAllSprint
 } from "@/core/api/jira.board.api";
 
 export default defineComponent({
   name: "Home",
   setup: () => {
-    const board = 229;
+    const board = 223;
     const onClickGetAllBoards = () => {
       getAllBoards().then((res) => {
         console.log(res);
@@ -68,15 +68,15 @@ export default defineComponent({
         console.log(res);
       });
     };
-    const onClickGetEpic = () => {
-      getEpic().then((res) => {
+    const onClickGetSprint = () => {
+      getBoardAllSprint(board).then((res) => {
         console.log(res);
       });
     };
 
     const onClickGetStuff = () => {
-      getBoardAllQuickFilters(board).then((res) => {
-        console.log(res);
+      getBoardAllQuickFilters(950).then((res) => {
+        console.log(res.issues);
       });
     };
     return {
@@ -85,7 +85,7 @@ export default defineComponent({
       onClickGetEpicFromBoard,
       onClickGetProject,
       onClickGetIssue,
-      onClickGetEpic,
+      onClickGetSprint,
       onClickGetStuff,
     };
   }
