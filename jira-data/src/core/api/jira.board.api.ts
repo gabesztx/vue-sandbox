@@ -5,34 +5,35 @@ import { ProjectQuery } from "@/core/dataTypes/types/project.interface";
 
 export const getAllBoards = (): Promise<BoardListQuery> =>
   http
-  .get<never>(`/rest/agile/latest/board`)
+  .get<never>(`/rest/agile/1.0/board`)
   // .get<never>(`/rest/api/3/dashboard`)
   .then((response) => response.data);
 
 export const getBoard = (boardId: number): Promise<Board> =>
-  http.get<never>(`/rest/agile/latest/board/${boardId}`)
+  http.get<never>(`/rest/agile/1.0/board/${boardId}`)
   .then((response) => response.data);
 
 export const getBoardEpics = (boardId: number): Promise<EpicsQuery> =>
-  http.get<never>(`/rest/agile/latest/board/${boardId}/epic?startAt=0&maxResults=50`)
+  http.get<never>(`/rest/agile/1.0/board/${boardId}/epic?startAt=0&maxResults=50`)
   .then((response) => response.data);
 
 export const getBoardProjects = (boardId: number): Promise<ProjectQuery> =>
-  http.get<never>(`/rest/agile/latest/board/${boardId}/project`)
+  http.get<never>(`/rest/agile/1.0/board/${boardId}/project`)
   .then((response) => response.data);
 
 export const getBoardIssue = (boardId: number): Promise<any> =>
   // jql=issuetype=Story%20AND%20status="In%20Progress"%20AND%20assignee=gabor.martus
-  http.get<never>(`/rest/agile/latest/board/${boardId}/issue?startAt=0&maxResults=50`)
+  http.get<never>(`/rest/agile/1.0/board/${boardId}/issue?startAt=0&maxResults=50`)
   .then((response) => response.data);
 
 export const getBoardAllSprint = (boardId:number): Promise<any> =>
-  http.get<never>(`/rest/agile/latest/board/${boardId}/sprint`)
+  http.get<never>(`/rest/agile/1.0/board/${boardId}/sprint`)
   .then((response) => response.data);
 
 
 export const getBoardAllQuickFilters = (sprintId: number): Promise<any> =>
-  http.get<never>(`/rest/agile/latest/sprint/${sprintId}/issue`)
+  // http.get<never>(`/rest/agile/latest/sprint/${sprintId}/issue?jql=issuetype=Story`)
+  http.get<never>(`/rest/agile/1.0/sprint/${sprintId}/issue?jql=issuetype=Story`)
   .then((response) => response.data);
 
 

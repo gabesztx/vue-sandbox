@@ -75,10 +75,13 @@ export default defineComponent({
     };
 
     const onClickGetStuff = () => {
-      getBoardAllQuickFilters(950).then((res) => {
+      getBoardAllQuickFilters(953).then((res) => {
         console.log(res.issues);
       });
     };
+    // getBoardAllQuickFilters(950).then((res) => {
+    //   console.log(res.issues);
+    // });
     return {
       onClickGetAllBoards,
       onClickGetBoard,
