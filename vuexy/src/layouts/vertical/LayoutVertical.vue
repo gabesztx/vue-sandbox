@@ -1,8 +1,11 @@
 <template>
   <layout-vertical>
 
+    <!-- CUSTOM-->
+<!--    <div slot="navbar" class="px-1">
+      <p class="mb-0">I am in navbar, Everything else is removed</p>
+    </div>-->
     <router-view />
-
     <template #navbar="{ toggleVerticalMenuActive }">
       <navbar :toggle-vertical-menu-active="toggleVerticalMenuActive" />
     </template>

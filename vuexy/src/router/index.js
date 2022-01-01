@@ -39,6 +39,11 @@ const router = new VueRouter({
       },
     },
     {
+      path: '/sandbox-page',
+      name: 'sandbox-page',
+      component: () => import('@/views/SandBoxPage.vue'),
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('@/views/Login.vue'),
